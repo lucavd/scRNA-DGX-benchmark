@@ -1,0 +1,180 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{CZCellxGene2025}
+\citation{Luecken2019,Heumos2023}
+\citation{Wolf2018}
+\citation{Dicks2026}
+\citation{Virshup2024}
+\@writefile{toc}{\contentsline {title}{Supplementary Material. GPU-accelerated single-cell (NVIDIA DGX H100) and spatial (RTX 4090) transcriptomics: per-step speedups, capacity and concordance against a 100-CPU reference}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\authcount {4}}
+\@writefile{toc}{\contentsline {author}{Luca Vedovelli \and Corrado Lanera \and Daniele Sabbatini \and Dario Gregori}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Overview}{1}{section.1}\protected@file@percent }
+\newlabel{overview}{{1}{1}{Overview}{section.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Supplementary Methods}{1}{section.2}\protected@file@percent }
+\newlabel{supplementary-methods}{{2}{1}{Supplementary Methods}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Dataset and subsampling}{1}{subsection.2.1}\protected@file@percent }
+\newlabel{dataset-and-subsampling}{{2.1}{1}{Dataset and subsampling}{subsection.2.1}{}}
+\citation{Satija2015,Yip2019}
+\citation{Traag2019}
+\citation{McInnes2018}
+\citation{Soneson2018}
+\gdef \LT@i {\LT@entry 
+    {1}{39.23196pt}\LT@entry 
+    {1}{72.26628pt}\LT@entry 
+    {1}{103.29547pt}\LT@entry 
+    {1}{132.32979pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Analysis pipeline}{2}{subsection.2.2}\protected@file@percent }
+\newlabel{analysis-pipeline}{{2.2}{2}{Analysis pipeline}{subsection.2.2}{}}
+\newlabel{tab:S1}{{S1}{2}{Analysis pipeline}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S1}{Pipeline steps, parameters, and implementations for the scRNA-seq benchmark. All steps used identical parameters for the CPU and GPU pipelines except where noted.}}{2}{table.1}\protected@file@percent }
+\citation{Rocklin2015}
+\citation{RAPIDS2024}
+\citation{Tian2019,Duo2020,Luecken2022}
+\citation{Luecken2022}
+\citation{Gardner2025}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Multi-GPU configuration}{3}{subsection.2.3}\protected@file@percent }
+\newlabel{multi-gpu-configuration}{{2.3}{3}{Multi-GPU configuration}{subsection.2.3}{}}
+\citation{Gardner2025}
+\citation{Hubert1985}
+\citation{Vinh2010}
+\gdef \LT@ii {\LT@entry 
+    {1}{102.48065pt}\LT@entry 
+    {1}{154.70546pt}\LT@entry 
+    {1}{89.93222pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Concordance metrics}{4}{subsection.2.4}\protected@file@percent }
+\newlabel{concordance-metrics}{{2.4}{4}{Concordance metrics}{subsection.2.4}{}}
+\newlabel{tab:S2}{{S2}{4}{Concordance metrics}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S2}{Concordance metrics used to compare CPU and GPU pipeline outputs. Concordance was computed once, at 10,000 cells, on a separate pair of CPU and GPU runs made on 11 March 2026 (UTC) in a preliminary test job (16 CPUs, one GPU), with the same input file and parameters as the benchmark but before the timed repeats; at Leiden r = 1.0 and 1.5 its CPU run found 40 and 45 clusters, against 41 and 46 in all five timed CPU repeats.}}{4}{table.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Stress test: maximum capacity}{4}{subsection.2.5}\protected@file@percent }
+\newlabel{stress-test-maximum-capacity}{{2.5}{4}{Stress test: maximum capacity}{subsection.2.5}{}}
+\citation{Squair2021}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Differential expression at scale}{5}{subsection.2.6}\protected@file@percent }
+\newlabel{differential-expression-at-scale}{{2.6}{5}{Differential expression at scale}{subsection.2.6}{}}
+\citation{Palla2022}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Spatial datasets}{6}{subsection.2.7}\protected@file@percent }
+\newlabel{spatial-datasets}{{2.7}{6}{Spatial datasets}{subsection.2.7}{}}
+\gdef \LT@iii {\LT@entry 
+    {1}{56.35735pt}\LT@entry 
+    {1}{103.63297pt}\LT@entry 
+    {1}{121.7606pt}\LT@entry 
+    {1}{65.40326pt}}
+\citation{Palla2022}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8}Spatial analysis pipeline}{7}{subsection.2.8}\protected@file@percent }
+\newlabel{spatial-analysis-pipeline}{{2.8}{7}{Spatial analysis pipeline}{subsection.2.8}{}}
+\newlabel{tab:S3}{{S3}{7}{Spatial analysis pipeline}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S3}{Spatial analysis pipeline steps. Steps 1-8 share parameters with the scRNA-seq pipeline (Table S1) except for QC filtering, which used \texttt  {min\_\allowbreak  {}genes} = 1 for Visium HD (Space Ranger pre-filters on-tissue barcodes). Steps 9-14 are spatial-specific.}}{7}{table.3}\protected@file@percent }
+\citation{Palla2022}
+\citation{Marconato2024}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.9}Spatial concordance metrics}{8}{subsection.2.9}\protected@file@percent }
+\newlabel{spatial-concordance-metrics}{{2.9}{8}{Spatial concordance metrics}{subsection.2.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.10}Hardware and software environment}{8}{subsection.2.10}\protected@file@percent }
+\newlabel{hardware-and-software-environment}{{2.10}{8}{Hardware and software environment}{subsection.2.10}{}}
+\citation{Collange2015,Shanmugavelu2024}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.11}Reproducibility}{9}{subsection.2.11}\protected@file@percent }
+\newlabel{reproducibility}{{2.11}{9}{Reproducibility}{subsection.2.11}{}}
+\citation{Dicks2026}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Supplementary Results}{10}{section.3}\protected@file@percent }
+\newlabel{supplementary-results}{{3}{10}{Supplementary Results}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}End-to-end speedup}{10}{subsection.3.1}\protected@file@percent }
+\newlabel{end-to-end-speedup}{{3.1}{10}{End-to-end speedup}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Per-step speedup}{10}{subsection.3.2}\protected@file@percent }
+\newlabel{per-step-speedup}{{3.2}{10}{Per-step speedup}{subsection.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {S1}{\ignorespaces Step-level wall time decomposition for CPU vs single-GPU at 10k, 50k, and 100k cells, mean of five repeats (first repeat included); the CPU and GPU panels have separate time axes. On CPU, DE testing and UMAP dominate; on GPU, the longest step, DE testing at 100k cells, takes 6.4 s on average. CPU neighbour search ran on one Numba thread, the Scanpy default (see Methods).}}{11}{figure.1}\protected@file@percent }
+\newlabel{fig:S1}{{S1}{11}{Step-level wall time decomposition for CPU vs single-GPU at 10k, 50k, and 100k cells, mean of five repeats (first repeat included); the CPU and GPU panels have separate time axes. On CPU, DE testing and UMAP dominate; on GPU, the longest step, DE testing at 100k cells, takes 6.4 s on average. CPU neighbour search ran on one Numba thread, the Scanpy default (see Methods)}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Multi-GPU configuration}{11}{subsection.3.3}\protected@file@percent }
+\newlabel{multi-gpu-configuration-1}{{3.3}{11}{Multi-GPU configuration}{subsection.3.3}{}}
+\citation{Gardner2025}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Concordance at 10,000 cells}{12}{subsection.3.4}\protected@file@percent }
+\newlabel{concordance-at-10000-cells}{{3.4}{12}{Concordance at 10,000 cells}{subsection.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Memory at benchmark scale}{12}{subsection.3.5}\protected@file@percent }
+\newlabel{memory-at-benchmark-scale}{{3.5}{12}{Memory at benchmark scale}{subsection.3.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {S2}{\ignorespaces Peak memory usage across dataset sizes, mean of five repeats (first repeat included); error bars: SD. Left: CPU RAM; right: aggregate GPU VRAM summed over the allocated devices (for 2, 4 and 8 GPUs dominated by the RMM pools pre-allocated by each Dask worker). CPU RAM grows roughly linearly; GPU VRAM is approximately constant for single-GPU runs due to RMM pool pre-allocation. All repeats of a configuration ran in one process; in the multi-GPU runs VRAM grew from the first to later repeats.}}{13}{figure.2}\protected@file@percent }
+\newlabel{fig:S2}{{S2}{13}{Peak memory usage across dataset sizes, mean of five repeats (first repeat included); error bars: SD. Left: CPU RAM; right: aggregate GPU VRAM summed over the allocated devices (for 2, 4 and 8 GPUs dominated by the RMM pools pre-allocated by each Dask worker). CPU RAM grows roughly linearly; GPU VRAM is approximately constant for single-GPU runs due to RMM pool pre-allocation. All repeats of a configuration ran in one process; in the multi-GPU runs VRAM grew from the first to later repeats}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Stress test}{13}{subsection.3.6}\protected@file@percent }
+\newlabel{stress-test}{{3.6}{13}{Stress test}{subsection.3.6}{}}
+\citation{Hu2025}
+\gdef \LT@iv {\LT@entry 
+    {1}{34.25513pt}\LT@entry 
+    {1}{73.1224pt}\LT@entry 
+    {1}{68.51025pt}\LT@entry 
+    {1}{73.1224pt}\LT@entry 
+    {1}{59.28595pt}\LT@entry 
+    {1}{38.86728pt}}
+\newlabel{tab:S4}{{S4}{14}{Stress test}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S4}{Stress test results: maximum cell count on a single DGX H100 node (8$\times $H100, 2 TB RAM) using the memory-optimised pipeline. Timings exclude DE testing, which was benchmarked separately (Table S6). Memory in GiB. Rows are a selection of the 16 sizes that completed (1.7M to 11.9M cells); the result files of all of them are in the repository. Above 3.4M cells the input contains replicated cells (see text).}}{14}{table.4}\protected@file@percent }
+\gdef \LT@v {\LT@entry 
+    {1}{300.86134pt}\LT@entry 
+    {1}{46.26218pt}}
+\newlabel{tab:S5}{{S5}{15}{Stress test}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S5}{Indicative memory budget at 11.9M cells, the largest completed run (GiB). Baseline components are read from the 11.9M-cell memory trace and sum to the 535 GiB recorded there; all rows refer to 11.9M cells. The transient contributions are estimated from the operations in the pipeline code; they are not measured, because the instrumentation samples only between steps and only the parent process (Methods). The budget does not account for the full working set at any moment, and is presented to indicate which operations dominate.}}{15}{table.5}\protected@file@percent }
+\gdef \LT@vi {\LT@entry 
+    {4}{104.33691pt}\LT@entry 
+    {4}{77.89626pt}\LT@entry 
+    {1}{28.13763pt}\LT@entry 
+    {1}{38.99843pt}\LT@entry 
+    {1}{36.18097pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Differential expression}{16}{subsection.3.7}\protected@file@percent }
+\newlabel{differential-expression}{{3.7}{16}{Differential expression}{subsection.3.7}{}}
+\newlabel{tab:S6}{{S6}{16}{Differential expression}{table.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S6}{Differential expression benchmark at 3.4M cells $\times $ 41k genes $\times $ 81 Leiden clusters. Speedup is relative to CPU t-test (5,598 s).}}{16}{table.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8}Spatial end-to-end speedup and co-occurrence}{17}{subsection.3.8}\protected@file@percent }
+\newlabel{spatial-end-to-end-speedup-and-co-occurrence}{{3.8}{17}{Spatial end-to-end speedup and co-occurrence}{subsection.3.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {S3}{\ignorespaces Total pipeline wall time on three Visium platforms: CPU reference (one DGX H100 node, 100 CPUs) and GPU (one RTX 4090), mean of five repeats, each in a fresh process; error bars: SD. Labels give the speedup (ratio of means). At Visium HD 8~\textmu {}m the bars include co-occurrence, whose GPU result with rapids-singlecell 0.14.1 was incorrect (see text); the dashed lines mark the totals without it (6.9$\times $). Visium HD 2~\textmu {}m was randomly subsampled to 400,000 bins (389,492 after QC) to fit in the 24 GiB of the RTX 4090.}}{17}{figure.3}\protected@file@percent }
+\newlabel{fig:S3}{{S3}{17}{Total pipeline wall time on three Visium platforms: CPU reference (one DGX H100 node, 100 CPUs) and GPU (one RTX 4090), mean of five repeats, each in a fresh process; error bars: SD. Labels give the speedup (ratio of means). At Visium HD 8~\textmu {}m the bars include co-occurrence, whose GPU result with rapids-singlecell 0.14.1 was incorrect (see text); the dashed lines mark the totals without it (6.9$\times $). Visium HD 2~\textmu {}m was randomly subsampled to 400,000 bins (389,492 after QC) to fit in the 24 GiB of the RTX 4090}{figure.3}{}}
+\gdef \LT@vii {\LT@entry 
+    {1}{126.69974pt}\LT@entry 
+    {1}{74.14296pt}\LT@entry 
+    {1}{74.14296pt}\LT@entry 
+    {1}{72.14296pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9}Spatial per-step speedup}{18}{subsection.3.9}\protected@file@percent }
+\newlabel{spatial-per-step-speedup}{{3.9}{18}{Spatial per-step speedup}{subsection.3.9}{}}
+\newlabel{tab:S7}{{S7}{18}{Spatial per-step speedup}{table.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S7}{Per-step wall time and GPU speedup on Visium HD 8~\textmu {}m (393,543 bins): mean~$\pm $~SD of five repeats, each in a fresh process; CPU reference: one DGX H100 node (100 CPUs); speedup: ratio of means with 95\% bootstrap interval. Spatial neighbours and neighbourhood enrichment have no GPU implementation in rapids-singlecell 0.14.1: the GPU pipeline calls Squidpy on the CPU, so the GPU column for these rows is CPU time on the workstation. PCA includes scaling. CPU expression neighbour search ran on one Numba thread (Methods). Co-occurrence: the GPU result with rapids-singlecell 0.14.1 was incorrect (see text), so no GPU time or speedup is reported (n.r.); with 0.15.1, in a separate check, it took 4.41 s (23.4$\times $). The total includes co-occurrence.}}{18}{table.7}\protected@file@percent }
+\gdef \LT@viii {\LT@entry 
+    {1}{97.74666pt}\LT@entry 
+    {1}{79.23608pt}\LT@entry 
+    {1}{86.07294pt}\LT@entry 
+    {1}{84.07294pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.10}Spatial concordance}{19}{subsection.3.10}\protected@file@percent }
+\newlabel{spatial-concordance}{{3.10}{19}{Spatial concordance}{subsection.3.10}{}}
+\newlabel{tab:S8}{{S8}{19}{Spatial concordance}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {S8}{Spatial concordance between the CPU reference (DGX node) and GPU pipelines, CPU repeat k against GPU repeat k (k = 1-5): a single value when it is the same in the five pairs, otherwise the range. SVG Jaccard reports the overlap of spatially variable genes ranked by Moran's I. Co-occurrence and neighbourhood enrichment were skipped on the HD 2~\textmu {}m subsample (more than 500 groups); at Visium HD 8~\textmu {}m the GPU co-occurrence is the incorrect result of rapids-singlecell 0.14.1 (see text). N clusters: groups returned by each pipeline's own Leiden run in each repeat. With the workstation CPU as reference, CPU Leiden returned 16, 7 and 2,559 groups and the ARI was 0.856, 0.972-0.975 and 0.084.}}{19}{table.8}\protected@file@percent }
+\citation{Dicks2026}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.11}Spatial memory}{20}{subsection.3.11}\protected@file@percent }
+\newlabel{spatial-memory}{{3.11}{20}{Spatial memory}{subsection.3.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Supplementary Discussion}{20}{section.4}\protected@file@percent }
+\newlabel{supplementary-discussion}{{4}{20}{Supplementary Discussion}{section.4}{}}
+\citation{Korsunsky2019}
+\citation{Lopez2018}
+\bibstyle{splncs04}
+\bibdata{cibb2026_references}
+\bibcite{Collange2015}{1}
+\bibcite{CZCellxGene2025}{2}
+\bibcite{Dicks2026}{3}
+\bibcite{Duo2020}{4}
+\bibcite{Gardner2025}{5}
+\bibcite{Heumos2023}{6}
+\bibcite{Hu2025}{7}
+\bibcite{Hubert1985}{8}
+\bibcite{Korsunsky2019}{9}
+\bibcite{Lopez2018}{10}
+\bibcite{Luecken2022}{11}
+\bibcite{Luecken2019}{12}
+\bibcite{Marconato2024}{13}
+\bibcite{McInnes2018}{14}
+\bibcite{Palla2022}{15}
+\bibcite{RAPIDS2024}{16}
+\bibcite{Rocklin2015}{17}
+\bibcite{Satija2015}{18}
+\bibcite{Shanmugavelu2024}{19}
+\bibcite{Soneson2018}{20}
+\bibcite{Squair2021}{21}
+\bibcite{Tian2019}{22}
+\bibcite{Traag2019}{23}
+\bibcite{Vinh2010}{24}
+\bibcite{Virshup2024}{25}
+\bibcite{Wolf2018}{26}
+\bibcite{Yip2019}{27}
+\gdef \@abspage@last{24}

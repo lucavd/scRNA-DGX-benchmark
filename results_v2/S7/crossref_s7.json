@@ -1,0 +1,576 @@
+{
+ "at": "2026-11-05",
+ "bib_md5": "0545ef29119d63866360fb950ce29c11",
+ "n_cited": 34,
+ "summary": {
+  "crossref_ok_direct": 26,
+  "crossref_ok_after_normalisation": 5,
+  "arxiv_ok": 1,
+  "no_doi": 2,
+  "discrepancies": 0
+ },
+ "entries": [
+  {
+   "key": "CZCellxGene2025",
+   "doi": "10.1093/nar/gkae1142",
+   "bib_year": "2025",
+   "bib_title": "CZ CELLxGENE Discover: a single-cell data platform for scalable exploration, analysis and ",
+   "cr_title": "CZ CELLxGENE Discover: a single-cell data platform for scalable exploration, analysis and ",
+   "cr_years": [
+    "2024",
+    "2025"
+   ],
+   "cr_first": "CZI Cell Science Program",
+   "bib_first": "Program",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": false,
+   "title_ok": true,
+   "status": "CHECK",
+   "resolution": "consortium author: Crossref 'CZI Cell Science Program', bib '{CZI Cell Science Program}'; same"
+  },
+  {
+   "key": "Collange2015",
+   "doi": "10.1016/j.parco.2015.09.001",
+   "bib_year": "2015",
+   "bib_title": "Numerical reproducibility for the parallel reduction on multi- and many-core architectures",
+   "cr_title": "Numerical reproducibility for the parallel reduction on multi- and many-core architectures",
+   "cr_years": [
+    "2015"
+   ],
+   "cr_first": "Collange",
+   "bib_first": "Collange",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Dicks2026",
+   "doi": "10.48550/arXiv.2603.02402",
+   "bib_year": "2026",
+   "bib_title": "GPU-accelerated single-cell analysis at scale with rapids-singlecell",
+   "status": "crossref HTTP 404",
+   "resolution": "arXiv DOI (DataCite, not Crossref): arXiv API record 2603.02402 has the same title, first author Severin Dicks, published 2026-03-02"
+  },
+  {
+   "key": "Duo2020",
+   "doi": "10.12688/f1000research.15666.3",
+   "bib_year": "2020",
+   "bib_title": "A systematic performance evaluation of clustering methods for single-cell RNA-seq data",
+   "cr_title": "A systematic performance evaluation of clustering methods for single-cell RNA-seq data",
+   "cr_years": [
+    "2020"
+   ],
+   "cr_first": "Duò",
+   "bib_first": "Du{\\`o",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": false,
+   "title_ok": true,
+   "status": "CHECK",
+   "resolution": "accent: Crossref 'Duò', bib 'Du{\\`o}'; same"
+  },
+  {
+   "key": "Gardner2025",
+   "doi": "10.1145/3731599.3767378",
+   "bib_year": "2025",
+   "bib_title": "Evaluating Accuracy and Performance Tradeoffs in GPU Accelerated Single Cell RNA-seq Analy",
+   "cr_title": "Evaluating Accuracy and Performance Tradeoffs in GPU Accelerated Single Cell RNA-seq Analy",
+   "cr_years": [
+    "2025"
+   ],
+   "cr_first": "Gardner",
+   "bib_first": "Gardner",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Heumos2023",
+   "doi": "10.1038/s41576-023-00586-w",
+   "bib_year": "2023",
+   "bib_title": "Best practices for single-cell analysis across modalities",
+   "cr_title": "Best practices for single-cell analysis across modalities",
+   "cr_years": [
+    "2023"
+   ],
+   "cr_first": "Heumos",
+   "bib_first": "Heumos",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Hu2025",
+   "doi": "10.1093/bioadv/vbaf167",
+   "bib_year": "2025",
+   "bib_title": "ScaleSC: a superfast and scalable single-cell RNA-seq data analysis pipeline powered by GP",
+   "cr_title": "<i>ScaleSC</i>\n                    : a superfast and scalable single-cell RNA-seq data ana",
+   "cr_years": [
+    "2024",
+    "2025"
+   ],
+   "cr_first": "Hu",
+   "bib_first": "Hu",
+   "title_jaccard": 0.94,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Hubert1985",
+   "doi": "10.1007/BF01908075",
+   "bib_year": "1985",
+   "bib_title": "Comparing partitions",
+   "cr_title": "Comparing partitions",
+   "cr_years": [
+    "1985"
+   ],
+   "cr_first": "Hubert",
+   "bib_first": "Hubert",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Korsunsky2019",
+   "doi": "10.1038/s41592-019-0619-0",
+   "bib_year": "2019",
+   "bib_title": "Fast, sensitive and accurate integration of single-cell data with Harmony",
+   "cr_title": "Fast, sensitive and accurate integration of single-cell data with Harmony",
+   "cr_years": [
+    "2019"
+   ],
+   "cr_first": "Korsunsky",
+   "bib_first": "Korsunsky",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Lopez2018",
+   "doi": "10.1038/s41592-018-0229-2",
+   "bib_year": "2018",
+   "bib_title": "Deep generative modeling for single-cell transcriptomics",
+   "cr_title": "Deep generative modeling for single-cell transcriptomics",
+   "cr_years": [
+    "2018"
+   ],
+   "cr_first": "Lopez",
+   "bib_first": "Lopez",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Love2014",
+   "doi": "10.1186/s13059-014-0550-8",
+   "bib_year": "2014",
+   "bib_title": "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2",
+   "cr_title": "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2",
+   "cr_years": [
+    "2014"
+   ],
+   "cr_first": "Love",
+   "bib_first": "Love",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Luecken2019",
+   "doi": "10.15252/msb.20188746",
+   "bib_year": "2019",
+   "bib_title": "Current best practices in single-cell RNA-seq analysis: a tutorial",
+   "cr_title": "Current best practices in single‐cell RNA‐seq analysis: a tutorial",
+   "cr_years": [
+    "2019"
+   ],
+   "cr_first": "Luecken",
+   "bib_first": "Luecken",
+   "title_jaccard": 0.54,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": false,
+   "status": "CHECK",
+   "resolution": "Crossref title uses U+2010 hyphens ('single‐cell', 'RNA‐seq'); same words"
+  },
+  {
+   "key": "Luecken2022",
+   "doi": "10.1038/s41592-021-01336-8",
+   "bib_year": "2022",
+   "bib_title": "Benchmarking atlas-level data integration in single-cell genomics",
+   "cr_title": "Benchmarking atlas-level data integration in single-cell genomics",
+   "cr_years": [
+    "2021",
+    "2022"
+   ],
+   "cr_first": "Luecken",
+   "bib_first": "Luecken",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Marconato2024",
+   "doi": "10.1038/s41592-024-02212-x",
+   "bib_year": "2025",
+   "bib_title": "SpatialData: an open and universal data framework for spatial omics",
+   "cr_title": "SpatialData: an open and universal data framework for spatial omics",
+   "cr_years": [
+    "2024",
+    "2025"
+   ],
+   "cr_first": "Marconato",
+   "bib_first": "Marconato",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "McInnes2018",
+   "doi": "10.21105/joss.00861",
+   "bib_year": "2018",
+   "bib_title": "UMAP: Uniform Manifold Approximation and Projection",
+   "cr_title": "UMAP: Uniform Manifold Approximation and Projection",
+   "cr_years": [
+    "2018"
+   ],
+   "cr_first": "McInnes",
+   "bib_first": "McInnes",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Nolet2022",
+   "doi": "10.1101/2022.05.26.493607",
+   "bib_year": "2022",
+   "bib_title": "Accelerating single-cell genomic analysis with GPUs",
+   "cr_title": "Accelerating single-cell genomic analysis with GPUs",
+   "cr_years": [
+    "2022"
+   ],
+   "cr_first": "Nolet",
+   "bib_first": "Nolet",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Palla2022",
+   "doi": "10.1038/s41592-021-01358-2",
+   "bib_year": "2022",
+   "bib_title": "Squidpy: a scalable framework for spatial omics analysis",
+   "cr_title": "Squidpy: a scalable framework for spatial omics analysis",
+   "cr_years": [
+    "2022"
+   ],
+   "cr_first": "Palla",
+   "bib_first": "Palla",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "RAPIDS2024",
+   "doi": null,
+   "bib_year": "2026",
+   "bib_title": "RAPIDS: Libraries for End to End GPU Data Science",
+   "status": "no DOI",
+   "resolution": "software, no DOI (rapids.ai, version 26.02); not checkable on Crossref; read in S3"
+  },
+  {
+   "key": "Regev2017",
+   "doi": "10.7554/eLife.27041",
+   "bib_year": "2017",
+   "bib_title": "The Human Cell Atlas",
+   "cr_title": "The Human Cell Atlas",
+   "cr_years": [
+    "2017"
+   ],
+   "cr_first": "Regev",
+   "bib_first": "Regev",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Robinson2010",
+   "doi": "10.1093/bioinformatics/btp616",
+   "bib_year": "2010",
+   "bib_title": "edgeR: a Bioconductor package for differential expression analysis of digital gene express",
+   "cr_title": "<tt>edgeR</tt>\n                    : a Bioconductor package for differential expression an",
+   "cr_years": [
+    "2009",
+    "2010"
+   ],
+   "cr_first": "Robinson",
+   "bib_first": "Robinson",
+   "title_jaccard": 0.92,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Rocklin2015",
+   "doi": "10.25080/Majora-7b98e3ed-013",
+   "bib_year": "2015",
+   "bib_title": "Dask: Parallel Computation with Blocked algorithms and Task Scheduling",
+   "cr_title": "Dask: Parallel Computation with Blocked algorithms and Task Scheduling",
+   "cr_years": [
+    "2015"
+   ],
+   "cr_first": "Rocklin",
+   "bib_first": "Rocklin",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Satija2015",
+   "doi": "10.1038/nbt.3192",
+   "bib_year": "2015",
+   "bib_title": "Spatial reconstruction of single-cell gene expression data",
+   "cr_title": "Spatial reconstruction of single-cell gene expression data",
+   "cr_years": [
+    "2015"
+   ],
+   "cr_first": "Satija",
+   "bib_first": "Satija",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Shanmugavelu2024",
+   "doi": "10.1109/SCW63240.2024.00028",
+   "bib_year": "2024",
+   "bib_title": "Impacts of floating-point non-associativity on reproducibility for HPC and deep learning a",
+   "cr_title": "Impacts of floating-point non-associativity on reproducibility for HPC and deep learning a",
+   "cr_years": [
+    "2024"
+   ],
+   "cr_first": "Shanmugavelu",
+   "bib_first": "Shanmugavelu",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Soneson2018",
+   "doi": "10.1038/nmeth.4612",
+   "bib_year": "2018",
+   "bib_title": "Bias, robustness and scalability in single-cell differential expression analysis",
+   "cr_title": "Bias, robustness and scalability in single-cell differential expression analysis",
+   "cr_years": [
+    "2018"
+   ],
+   "cr_first": "Soneson",
+   "bib_first": "Soneson",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Squair2021",
+   "doi": "10.1038/s41467-021-25960-2",
+   "bib_year": "2021",
+   "bib_title": "Confronting false discoveries in single-cell differential expression",
+   "cr_title": "Confronting false discoveries in single-cell differential expression",
+   "cr_years": [
+    "2021"
+   ],
+   "cr_first": "Squair",
+   "bib_first": "Squair",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "TabulaSapiens2022",
+   "doi": "10.1126/science.abl4896",
+   "bib_year": "2022",
+   "bib_title": "The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans",
+   "cr_title": "The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans",
+   "cr_years": [
+    "2022"
+   ],
+   "cr_first": "The Tabula Sapiens Consortium*",
+   "bib_first": "Consortium",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": false,
+   "title_ok": true,
+   "status": "CHECK",
+   "resolution": "consortium author: 'The Tabula Sapiens Consortium*' vs bib '{The Tabula Sapiens Consortium}'; same"
+  },
+  {
+   "key": "TaylorWeiner2019",
+   "doi": "10.1186/s13059-019-1836-7",
+   "bib_year": "2019",
+   "bib_title": "Scaling computational genomics to millions of individuals with GPUs",
+   "cr_title": "Scaling computational genomics to millions of individuals with GPUs",
+   "cr_years": [
+    "2019"
+   ],
+   "cr_first": "Taylor-Weiner",
+   "bib_first": "",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": false,
+   "title_ok": true,
+   "status": "CHECK",
+   "resolution": "bib author in nested braces, parser of this check did not read it; compiled reference reads 'Taylor-Weiner, A.', Crossref 'Taylor-Weiner'; same"
+  },
+  {
+   "key": "Tian2019",
+   "doi": "10.1038/s41592-019-0425-8",
+   "bib_year": "2019",
+   "bib_title": "Benchmarking single cell RNA-sequencing analysis pipelines using mixture control experimen",
+   "cr_title": "Benchmarking single cell RNA-sequencing analysis pipelines using mixture control experimen",
+   "cr_years": [
+    "2019"
+   ],
+   "cr_first": "Tian",
+   "bib_first": "Tian",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Traag2019",
+   "doi": "10.1038/s41598-019-41695-z",
+   "bib_year": "2019",
+   "bib_title": "From Louvain to Leiden: guaranteeing well-connected communities",
+   "cr_title": "From Louvain to Leiden: guaranteeing well-connected communities",
+   "cr_years": [
+    "2019"
+   ],
+   "cr_first": "Traag",
+   "bib_first": "Traag",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Vinh2010",
+   "doi": null,
+   "bib_year": "2010",
+   "bib_title": "Information theoretic measures for clusterings comparison: Variants, properties, normaliza",
+   "status": "no DOI",
+   "resolution": "no DOI (JMLR 11, 2837-2854, URL in bib); not checkable on Crossref; read in S3"
+  },
+  {
+   "key": "Virshup2024",
+   "doi": "10.21105/joss.04371",
+   "bib_year": "2024",
+   "bib_title": "anndata: Access and store annotated data matrices",
+   "cr_title": "anndata: Access and store annotated data\nmatrices",
+   "cr_years": [
+    "2024"
+   ],
+   "cr_first": "Virshup",
+   "bib_first": "Virshup",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Wolf2018",
+   "doi": "10.1186/s13059-017-1382-0",
+   "bib_year": "2018",
+   "bib_title": "SCANPY: large-scale single-cell gene expression data analysis",
+   "cr_title": "SCANPY: large-scale single-cell gene expression data analysis",
+   "cr_years": [
+    "2018"
+   ],
+   "cr_first": "Wolf",
+   "bib_first": "Wolf",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Yao2023",
+   "doi": "10.1038/s41586-023-06812-z",
+   "bib_year": "2023",
+   "bib_title": "A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
+   "cr_title": "A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
+   "cr_years": [
+    "2023"
+   ],
+   "cr_first": "Yao",
+   "bib_first": "Yao",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  },
+  {
+   "key": "Yip2019",
+   "doi": "10.1093/bib/bby011",
+   "bib_year": "2019",
+   "bib_title": "Evaluation of tools for highly variable gene discovery from single-cell RNA-seq data",
+   "cr_title": "Evaluation of tools for highly variable gene discovery from single-cell RNA-seq data",
+   "cr_years": [
+    "2018",
+    "2019"
+   ],
+   "cr_first": "Yip",
+   "bib_first": "Yip",
+   "title_jaccard": 1.0,
+   "year_ok": true,
+   "author_ok": true,
+   "title_ok": true,
+   "status": "ok"
+  }
+ ]
+}

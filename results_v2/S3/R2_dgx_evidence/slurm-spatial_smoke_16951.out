@@ -1,0 +1,92 @@
+=== Spatial Smoke Test ===
+Container: /home/u0044/sc-gpu-benchmark/sc-benchmark-2406.sif
+Python:    /opt/conda/bin/python
+Data dir:  /home/u0044/sc-gpu-benchmark/SPATIAL/data
+Output:    /home/u0044/sc-gpu-benchmark/SPATIAL/results
+Node:      poddgx02
+GPUs:      0
+
+>>> [1/2] CPU benchmark — Visium v1 (2,695 spots)
+
+######################################################################
+# REPEAT 1/1
+######################################################################
+
+======================================================================
+SPATIAL CPU BENCHMARK — visium — 16 threads
+======================================================================
+  Step                           |     Time |               Memory
+  -------------------------------+----------+---------------------
+  data_loading                   |     0.73s | RAM: 0.9 -> 1.2 GB
+    Loaded: 2,695 spots × 32,285 genes
+    Spatial coords: (2695, 2)
+  qc_filtering                   |     0.51s | RAM: 1.1 -> 1.1 GB
+    After QC: 2,695 spots × 19,112 genes
+  normalization                  |     0.07s | RAM: 1.1 -> 1.1 GB
+  hvg_selection                  |     0.13s | RAM: 1.1 -> 1.1 GB
+    HVGs selected: 2000
+  pca                            |     0.84s | RAM: 1.1 -> 1.3 GB
+  expression_neighbors           |     5.21s | RAM: 1.1 -> 1.2 GB
+  leiden                         |     0.05s | RAM: 1.2 -> 1.2 GB
+    Leiden clusters: 16 (resolution=1.0)
+  umap                           |     2.86s | RAM: 1.2 -> 1.2 GB
+
+                     ─── SPATIAL STEPS ───                    
+  spatial_neighbors              |     0.32s | RAM: 1.2 -> 1.2 GB
+  spatial_autocorr_moran         |     0.15s | RAM: 1.2 -> 1.3 GB
+    SVGs (Moran's I, FDR < 0.05): 1434
+  spatial_autocorr_geary         |     0.14s | RAM: 1.2 -> 1.4 GB
+    SVGs (Geary's C, FDR < 0.05): 1472
+  co_occurrence                  |     1.72s | RAM: 1.2 -> 1.2 GB
+  nhood_enrichment               |     1.19s | RAM: 1.2 -> 1.2 GB
+  ligrec                         |     7.98s | RAM: 1.2 -> 1.3 GB
+
+  TOTAL                          |    21.92s | Peak RAM: 1.4 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/SPATIAL/results/spatial_cpu_visium_r1_results.json
+  Moran's I saved: /home/u0044/sc-gpu-benchmark/SPATIAL/results/spatial_cpu_visium_r1_moranI.csv
+  Geary's C saved: /home/u0044/sc-gpu-benchmark/SPATIAL/results/spatial_cpu_visium_r1_gearyC.csv
+  Clusters saved: /home/u0044/sc-gpu-benchmark/SPATIAL/results/spatial_cpu_visium_r1_clusters.csv
+  Co-occurrence saved: /home/u0044/sc-gpu-benchmark/SPATIAL/results/spatial_cpu_visium_r1_co_occurrence.npy
+  Nhood enrichment saved: /home/u0044/sc-gpu-benchmark/SPATIAL/results/spatial_cpu_visium_r1_nhood_enrichment.npy
+
+All 1 repeat(s) completed!
+CPU exit code: 0
+
+>>> [2/2] GPU benchmark — Visium v1 (2,695 spots)
+
+######################################################################
+# REPEAT 1/1
+######################################################################
+
+================================================================================
+SPATIAL GPU BENCHMARK — visium — GPU 0
+================================================================================
+  CuPy default allocator (no RMM): 79.6 GB total VRAM
+  GPU warmup (CUDA context + JIT)... done
+  Step                           |     Time |                  RAM |                 VRAM
+  -------------------------------+----------+----------------------+---------------------
+  data_loading                   |     1.13s | RAM: 1.2->1.8 GB | VRAM: 1.1->1.4 GB
+    Loaded: 2,695 spots × 32,285 genes
+filtered out 13173 genes that are detected in less than 3 cells
+  qc_filtering                   |     0.13s | RAM: 1.8->1.8 GB | VRAM: 1.4->2.2 GB
+    After QC: 2,695 spots × 19,112 genes
+  normalization                  |     0.01s | RAM: 1.8->1.8 GB | VRAM: 2.2->2.2 GB
+  hvg_selection                  |     0.02s | RAM: 1.8->1.8 GB | VRAM: 2.2->2.2 GB
+    HVGs selected: 2000
+  pca                            |     0.34s | RAM: 2.0->2.1 GB | VRAM: 2.2->2.5 GB
+  GPU expression graph failed due to CuSparse/CUDA init; falling back to Scanpy CPU for neighbors/leiden/umap
+  expression_neighbors           |     5.30s | RAM: 2.3->2.4 GB | VRAM: 2.3->2.3 GB
+  leiden                         |     0.05s | RAM: 2.4->2.4 GB | VRAM: 2.3->2.3 GB
+  umap                           |     2.90s | RAM: 2.4->2.4 GB | VRAM: 2.3->2.3 GB
+    Leiden clusters: 16 (resolution=1.0)
+
+                          ─── SPATIAL STEPS ───                         
+  spatial_neighbors              |     0.33s | RAM: 2.4->2.4 GB | VRAM: 2.3->2.3 GB
+  spatial_autocorr warmup (JIT)... done
+GPU exit code: 1
+
+=== Smoke Test Done ===
+CPU exit: 0
+GPU exit: 1
+FAILURES DETECTED

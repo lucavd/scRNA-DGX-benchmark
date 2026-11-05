@@ -1,0 +1,4 @@
+-rwxr-xr-x jordan.stefani/unix_compbio 189450309 2024-04-01 20:01 binned_outputs/square_002um/filtered_feature_bc_matrix.h5
+-rwxr-xr-x jordan.stefani/unix_compbio 192859638 2024-04-01 20:01 binned_outputs/square_002um/raw_feature_bc_matrix.h5
+-rwxr-xr-x jordan.stefani/unix_compbio  116570275 2024-04-01 20:01 binned_outputs/square_008um/filtered_feature_bc_matrix.h5
+-rwxr-xr-x jordan.stefani/unix_compbio  136554383 2024-04-01 20:01 binned_outputs/square_008um/raw_feature_bc_matrix.h5

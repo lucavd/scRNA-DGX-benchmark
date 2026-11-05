@@ -1,0 +1,114 @@
+---
+title: "Step S7: LaTeX, verifica finale e pacchetto METEOR"
+subtitle: "Capitolo LNBI scRNA DGX, 5 novembre 2026"
+lang: it
+format:
+  html:
+    embed-resources: true
+    toc: true
+---
+
+## In breve: il capitolo è pronto da caricare su METEOR?
+
+**A cosa serviva.** Questo passo produce il sorgente LaTeX definitivo nel formato Springer, ricontrolla ogni numero del capitolo e del supplemento contro i file dei risultati e prepara i file per la sottomissione. La sottomissione la fai tu.
+
+**Cosa abbiamo trovato.**
+
+1. **Il capitolo compila in 14 pagine Springer, senza errori, e il PDF è pronto.** I riferimenti partono da pagina 12, quindi restano tre pagine di margine fino al limite di 17. Ringraziamenti e dichiarazione sugli interessi stanno nel riquadro finale che Springer richiede. Il supplemento da pubblicare con il codice misura 24 pagine.
+2. **Il LaTeX dice esattamente ciò che dice il testo che hai approvato.** Il sorgente è generato da uno script e non corretto a mano. Un controllo scritto a parte ritrova gli stessi numeri e le stesse citazioni, nello stesso ordine, nel capitolo (561 numeri, 48 citazioni) e nel supplemento. Ho provato il controllo inserendo apposta quattro errori: li trova tutti.
+3. **Ogni numero torna ai file dei risultati, e i ricalcoli di oggi danno gli stessi valori di prima.** Le 483 ricevute delle correzioni di sostanza, i 198 valori delle figure single-cell e i 129 delle figure spatial si rifanno oggi dai file grezzi senza discordanze. Sei ricevute andavano rilette su file nuovi, perché un ambiente temporaneo era stato cancellato e una tabella era passata nel supplemento: i valori sono uguali. I risultati grezzi non sono cambiati.
+4. **Ho corretto quattro cose del repository che un revisore avrebbe visto.** Lo script di download spatial puntava a un altro dataset di 10x. Ora scarica quello analizzato e ne controlla le matrici, che ho confrontato byte per byte con le nostre. Lo script dei run a 8 GPU chiedeva 200 CPU, ma i run ne avevano 100. Il README riportava ancora gli speedup spatial di marzo, 51,6 e 3.272 volte. Infine c'erano didascalie dello short paper fra i file delle figure.
+5. **Il pacchetto per METEOR è completo, salvo ciò che spetta a te.** Contiene il PDF, l'archivio dei sorgenti, che compila da solo in una cartella vuota, e le quattro figure col nome del loro numero. Ci sono anche la frase sugli interessi da incollare, una bozza dei testi alternativi delle figure e una lista di controllo. Le voci tue sono la licenza, i testi alternativi da confermare con l'assistente di METEOR e la dichiarazione sui contenuti di terzi (non ce ne sono).
+
+**Cosa devi decidere.**
+
+1. **Crei ora la release del repository con il DOI di Zenodo? Raccomando di sì, prima della sottomissione.** Il capitolo dice che il supplemento è archiviato con il codice, e i revisori devono poterlo aprire. Servono il collegamento del repository a Zenodo e una release su GitHub. Poi mi mandi il DOI e io lo scrivo nel capitolo e rigenero PDF e pacchetto, in circa un quarto d'ora. In alternativa si sottomette ora con il solo indirizzo GitHub e il DOI entra nella versione finale. In quel caso conviene scrivere nel testo dove si trova il PDF del supplemento.
+2. **Confermi i ringraziamenti come sono? Raccomando di scrivere ora a `hpc@unipd.it` per la formula CONVECS e di tenerla se non rispondono entro il 9 novembre.** La formula viene dal sito di CONVECS. La frase sull'uso di un assistente basato su modelli linguistici non nomina lo strumento: puoi aggiungerlo, ma non è necessario.
+3. **Approvi il PDF finale? Raccomando di sì, dopo averlo sfogliato.** Il testo è quello che hai approvato. Cambiano l'impaginazione e la dichiarazione sugli interessi, ora nella formula standard di Springer («The authors have no competing interests to declare that are relevant to the content of this article.»). Se vuoi gli ORCID degli autori nell'intestazione, come Springer raccomanda, mandameli: non li scrivo a memoria.
+
+**Comunque.**
+
+- Appena ho il DOI lo inserisco nel testo e in Availability, rigenero capitolo, supplemento e pacchetto e rifaccio tutti i controlli.
+- Ti lascio la lista di controllo con l'ordine delle operazioni su METEOR.
+
+Appena decidi questi 3 punti, lo step è chiuso.
+
+**Sui tempi di calcolo.** Il passo ha richiesto poco più di un'ora (dalle 13:14 alle 14:25 circa), senza calcoli pesanti sul server. La parte più lunga è stato lo scaricamento di controllo dell'archivio 10x da 4,6 GB, circa tre minuti. Il pacchetto è pronto oggi, 5 novembre, con cinque giorni di margine sul 10. Manca solo il DOI.
+
+# Dubbi rinviati
+
+Nessuno. Il DOI e i ringraziamenti sono scelte del PI, elencate sopra.
+
+# Cancelli e previsioni
+
+| id | atteso | osservato | esito |
+|---|---|---|---|
+| G1 | manifest dei grezzi con 0 differenze all'inizio e alla fine | inizio (13:22): 921 file, 0 differenze, 0 file nuovi; `SPATIAL/results_v2`: 380 file controllati, 0 differenze (109 mai tracciati e `.gitignore` non elencato, come in S5). Fine (14:06): 921 file, 0 differenze, 0 file nuovi; `SPATIAL/results_v2`: 380 file, 0 differenze (`results_v2/S7/manifest*_check_*.json`) | superato |
+| G2 | `.tex` generato da script, 0 errori, 0 citazioni e riferimenti non definiti, 13-17 pagine, abstract 150-250 parole, `credits` | capitolo: 14 pagine, riferimenti da pagina 12, 0 errori, 0 citazioni e 0 riferimenti non definiti, abstract di 247 parole, Acknowledgements e Disclosure of Interests in `credits`; supplemento: 24 pagine, 0 errori, 0 non definiti (`results_v2/S7/build/*/receipt.json`) | superato |
+| G3 | stessi numeri e stesse citazioni fra `.md` e `.tex`; 0 trascrizioni ASCII; 0 lineette; figure e rimandi coerenti | capitolo: 561 numeri e 48 citazioni nella stessa sequenza; supplemento: 978 numeri e 34 citazioni nella stessa sequenza; 0 trascrizioni residue; 0 U+2013/U+2014 in `.md` e `.tex`; 7 figure con numero del file = didascalia = contatore LaTeX; 10 tabelle con didascalia = contatore; 64 rimandi, 0 a figure o tabelle inesistenti; md5 delle 7 copie uguale ai PDF degli script (`results_v2/S7/s7_check.json`). Il controllo trova 4 errori su 4 inseriti apposta (`results_v2/S7/s7_check_mutations.json`) | superato |
+| G4 | ricevute S3, valori S4 e numeri S5 ricalcolati con 0 discordanze; 0 numeri senza provenienza | S3: 483 ricevute, 477 riprodotte al primo colpo, 6 rilette su file nuovi e uguali (spiegato sotto); S4: 198 valori su 198; S5: 129 valori su 129, 60 controlli di testo su 65 al primo colpo e i 5 restanti ritrovati nel testo finale (spiegato sotto); provenienza: 565 numeri nel capitolo e 976 nel supplemento, 0 senza provenienza (`results_v2/S7/rerun/`, `results_v2/S7/provenance.json`) | superato, con le due spiegazioni sotto |
+| G5 | pacchetto METEOR completo e compilabile da zero; OKF | `manuscript/meteor/`: archivio dei sorgenti che compila da zero in una cartella vuota (14 pagine, 0 errori, `.bbl` identico), PDF, 4 figure con md5 uguale ai PDF degli script, dichiarazione di interessi uguale nel `.md`, nel `.tex` e nel file per METEOR, bozza dei testi alternativi (0 numeri assenti dal capitolo), lista di controllo con ogni voce fatta o assegnata al PI (`manuscript/meteor/package.json`, `CHECKLIST_METEOR.md`); `tools/okf.py check` superato | superato |
+| P1 | 15 pagine (intervallo 14-16) | 14 | confermata, al bordo basso: restano 3 pagine di margine fino a 17 |
+| P2 | 26 pagine del supplemento (24-28) | 24 | confermata, al bordo basso (font Latin Modern e tabelle in corpo minore) |
+| P3 | 0 righe oltre 1 pt nel capitolo (0-2) | 0 (una sola riga larga 0,35 pt) | confermata |
+| P4 | 0 voci bibliografiche diverse da Crossref | 0: 26 voci uguali al primo confronto, 5 uguali dopo aver normalizzato nomi di consorzi, accenti e trattini Unicode, 1 preprint arXiv uguale al record arXiv, 2 senza DOI (JMLR e la pagina del software RAPIDS) lette in S3 (`results_v2/S7/crossref_s7.json`) | confermata |
+
+# Dubbi e come si sono chiusi
+
+- **Sei ricevute di S3 non si ricalcolavano più (spiegato e corretto, cancello G4).** Tre (la soglia di 8.192 cellule e `n_jobs` = 1 di Scanpy) leggevano il sorgente di Scanpy 1.12 in un ambiente temporaneo di S2 che non esiste più. Le ho rilette da una nuova installazione di Scanpy 1.12: 8192, 1 e 8192, come in S3. Le altre tre contano le righe della tabella delle metriche di concordanza, che S6 ha spostato dal capitolo (Table 2) al supplemento (Table S2): ricontate su Table S2, 6 righe, 5 ambiti e 2 di clustering, come in S3 (`tools/s7_receipts_rerun.py`, `results_v2/S7/rerun/s7_receipts_rerun.json`). Nessun valore è cambiato.
+- **Cinque controlli di testo di S5 cercavano frasi tolte da S6 (spiegato, cancello G4).** Sono la didascalia lunga della vecchia Figure 8, la frase sul minimo di rho nelle Conclusioni e due frasi di riepilogo. Ogni numero di quelle frasi compare, con la sua unità, nel capitolo o nel supplemento finali, e lo script riporta la frase che oggi lo porta. Il controllo di S6 aveva già mostrato che nessun numero si era perso nel taglio.
+- **«repeats 2-5» segnalato come superato da S5 (spiegato).** Il controllo cerca la frase solo nel testo spatial. Sul file unito di capitolo e supplemento ha preso come spatial anche l'inizio del supplemento, dove la frase compare due volte in frasi scRNA-seq, ammesse dalla convenzione sulle ripetizioni.
+- **Cancello G3 di S4 non superato nella riesecuzione (spiegato).** Quel cancello chiede due esecuzioni dello script delle figure (`--rerun-dir`), che qui non servono: le figure non sono state rigenerate e le loro copie hanno lo stesso md5 dei PDF di S4 e S5.
+- **Provenienza per valore, non per frase (limite dichiarato).** `tools/s7_provenance.py` dimostra che ogni numero del testo finale ha una fonte calcolata: una ricevuta di S3, un valore ricalcolato da S4, da S5 o dai file di S1, una voce verificata della revisione n.2, una regola strutturale (anno, versione, codice) o uno dei 6 numeri ricalcolati a mano dai JSON (`tools/s7_provenance_manual.py`). Il confronto è per valore: non prova che ogni occorrenza sia la quantità giusta. Quella garanzia viene dalle ricevute di S3-S5 rilette oggi e dal controllo di S6 sul taglio.
+- **README con i numeri superati (anomalia corretta).** Il README citava 51,6x e 3.272x per lo spatial, valori di marzo che il capitolo non riporta più. Il blocco dei risultati principali ora riporta i numeri del capitolo, controllati da codice ([Correzioni del repository prima della release (D-24)](../docs/decisions/D-24.md)).
+- **Font bitmap nel PDF (anomalia corretta).** La distribuzione TeX del server usa font di tipo 3 per la codifica T1; con `lmodern` tutti i font sono di tipo 1 e incorporati ([Sorgente LaTeX generato da script, figure copiate con il loro numero (D-23)](../docs/decisions/D-23.md)).
+- **Copie di luglio in `manuscript/lncs_latex/` (anomalia corretta).** Il `.bib` e le 9 PNG di luglio, con la numerazione dello short paper, sono state sostituite dalla copia attuale del `.bib` e spostate in `figures/retired/lncs_latex_2026-07/`.
+- **Lineette nei commenti del `.bib` (spiegato).** Il controllo delle lineette trova U+2014 in 7 righe di commento del `.bib` (per esempio «% CATEGORY A», seguito da una lineetta lunga e dal nome della categoria), che non vanno nel PDF. Il file è lo stesso dello step S3 (md5 `0545ef29119d63866360fb950ce29c11`, su cui poggia il controllo delle citazioni di S6) e resta invariato; capitolo, supplemento, `.tex` e script modificati hanno 0 lineette.
+- **Dubbi ricevuti da [correzioni di sostanza (S3)](../docs/steps/S3.md), [integrazione spatial (S5)](../docs/steps/S5.md) e [taglio e stile (S6)](../docs/steps/S6.md).** Script di download spatial: corretto e verificato con l'md5 dell'archivio 10x ([Correzioni del repository prima della release (D-24)](../docs/decisions/D-24.md)). Script SLURM a 8 GPU: riportato a 100 CPU. Figure spatial e rinumerazione: sostituite dalla voce di S6, fatte con copie numerate ([Sorgente LaTeX generato da script, figure copiate con il loro numero (D-23)](../docs/decisions/D-23.md)). Righe vuote dopo le figure: nel PDF compilato il testo dopo ogni figura apre un capoverso nuovo. Tabelle larghe: 0 righe oltre 1 pt in capitolo e supplemento. `LEGENDS.md`: rigenerato dalle didascalie attuali. Pagine: 14. Celle `---`: 12 celle `n.a.`. PDF del supplemento: pronto. Release e DOI, ringraziamento CONVECS e nome dello strumento di LLM: scelte del PI, sotto.
+
+# Seguito: release pulita e DOI (5 novembre 2026, dopo le scelte del PI)
+
+Scelte del PI registrate in [Repository pubblica pulita scRNA-DGX-benchmark con DOI Zenodo (D-25)](../docs/decisions/D-25.md).
+
+- **DOI riservato.** Bozza Zenodo 23984290 con DOI riservato `10.5281/zenodo.23984290`, tipo software, licenza MIT, versione 1.0.0, quattro autori con l'affiliazione 1.
+- **Testo.** Indirizzo nuovo e DOI scritti in Availability del capitolo e nella sezione Reproducibility del supplemento (`tools/s7_release_text.py`, `results_v2/S7/s7_release_text.json`). Rigenerati LaTeX e pacchetto METEOR: capitolo 14 pagine, supplemento 24, 0 errori; controllo `.md` contro `.tex` superato e prova con errori inseriti 4 su 4; 0 numeri senza provenienza; archivio dei sorgenti compilabile da zero (commit `0655a7d`).
+- **Repository di lavoro.** Tolti i 6 PDF degli articoli citati da `manuscript/bibliography/`; il README rimanda alla release.
+- **Repository pulita.** `https://github.com/lucavd/scRNA-DGX-benchmark`, un solo commit (`f38e8ce`) e tag `v1.0.0`, costruita da `tools/s7_release_tree.py` a partire dal commit `de1abf5` del repository di lavoro: 1.155 file, 68 MB; 109 file esclusi (bozze `.docx`, short paper, talk, pacchetto METEOR, PDF degli articoli, file per gli assistenti di programmazione e prompt); 0 file oltre 50 MB, 0 stringhe simili a credenziali; 52 link relativi interrotti nei documenti, tutti già interrotti nel repository di lavoro e nessuno causato dalle esclusioni (`/mnt/micron/lnbi_release/release_check.json`, `release_manifest.tsv` nella release). Nella release i controlli girano: `tools/s7_check.py` superato, 0 numeri senza provenienza, il LaTeX del capitolo compila in 14 pagine.
+- **Archivio su Zenodo.** Caricato nella bozza `scRNA-DGX-benchmark-v1.0.0.zip` (27.902.092 byte, md5 `2efb4adff0fe5efc1a6b5cad1eae4175`, uguale a quello calcolato prima del caricamento). La bozza **non è pubblicata**: la pubblicazione rende il DOI definitivo e non si annulla, e aspetta l'ok del PI.
+
+# Cosa è girato
+
+| cosa | dettaglio |
+|---|---|
+| commit | attese `e6c271d` (13:22); lavoro e chiusura nel commit di chiusura dello step |
+| modifiche al testo | `tools/s7_apply.py` (12 celle `n.a.`, barre protette in Table S2, sezioni finali riordinate e Disclosure of Interests; registro in `results_v2/S7/s7_apply.json`); righe di separazione di Table 1, Table 2, Tables S7 e S8 per le larghezze delle colonne (nessuna cella cambia) |
+| sorgente LaTeX | `tools/s7_md2lncs.py` (md5 `4ad19dfb5498ec691c70f91a4c233df2`), pandoc 3.1.3, pdfTeX 1.40.27 (TinyTeX, TeX Live), `llncs.cls` 2.26 (md5 `543b73320c367b0229b3cdfcddaedc46`), `splncs04.bst`; ricevute `results_v2/S7/build/chapter/receipt.json` e `.../supplement/receipt.json`; pochi secondi per documento |
+| controllo `.md` contro `.tex` | `tools/s7_check.py` (md5 `9433e24d0953896fcb10dde60095281d`), prova con errori inseriti `tools/s7_check_mutations.py` |
+| ricalcoli | `tools/s3_check.py`, `tools/s4_check.py`, `tools/s5_check.py` rieseguiti senza modifiche (`results_v2/S7/rerun/`), ambiente `uv` da `scripts/requirements_figures.txt`; `tools/s7_receipts_rerun.py` con Scanpy 1.12 (solo sorgente, `--no-deps`) |
+| provenienza | `tools/s7_provenance.py`, `tools/s7_provenance_manual.py` (`results_v2/S7/provenance.json`, `provenance_manual.csv`) |
+| bibliografia | Crossref per 32 DOI, API arXiv per 1 preprint (`results_v2/S7/crossref_s7.json`); `.bib` md5 `0545ef29119d63866360fb950ce29c11` |
+| dataset Visium HD | archivio 10x `Visium_HD_Mouse_Brain_binned_outputs.tar.gz` (4.616.239.264 byte) scaricato sul server, md5 delle 4 matrici uguale ai file analizzati, poi cancellato (`results_v2/S7/visium_hd_archive/`) |
+| pacchetto | `tools/s7_meteor_package.py`; `manuscript/meteor/` (PDF md5 `bf8fff0558049e39218ac2310217f60d`, archivio `e9e845d0f7db77785bbc741b2051c25e`, supplemento `ce22e9d7631beab52222defc7df87768`) |
+| grezzi | `tools/check_manifest.py` e `tools/check_manifest_v2.py` alle 13:22 e alle 14:06, 0 differenze |
+| carico del server | un processo R di un altro progetto per tutto lo step (load 2, Tctl 66 °C all'apertura); nessun tempo misurato |
+
+# Appendice: da dove vengono i numeri del riassunto
+
+| frase del riassunto | file | valore letto |
+|---|---|---|
+| 14 pagine, riferimenti da pagina 12 | `results_v2/S7/build/chapter/receipt.json` (`pages_total`, `refs_start_page`) | 14, 12 |
+| supplemento di 24 pagine | `results_v2/S7/build/supplement/receipt.json` (`pages_total`) | 24 |
+| senza errori | stessi file (`latex_errors`, `undefined_citations`, `undefined_references`) | 0, [], [] |
+| 561 numeri, 48 citazioni nello stesso ordine | `results_v2/S7/s7_check.json` (`G3.chapter.n_numbers_md`, `n_numbers_tex`, `n_cites_md`, `cite_sequence_equal`) | 561, 561, 48, true |
+| quattro errori inseriti, trovati tutti | `results_v2/S7/s7_check_mutations.json` (`all_detected`) | true |
+| 483 ricevute | `results_v2/S7/rerun/s3_check.json` (`G3.n_receipts`, `n_recomputed`, `mismatches`) | 483, 483, 6 |
+| sei ricevute rilette, valori uguali | `results_v2/S7/rerun/s7_receipts_rerun.json` (`receipts[].ok`) | 6 su 6 true |
+| 198 valori delle figure single-cell | `results_v2/S7/rerun/s4_check.json` (`gates.G2.values`) | 198 values, 0 mismatches, 0 missing |
+| 129 valori delle figure spatial | `results_v2/S7/rerun/s5_check.json` (`summary.G2_values`) | 129/129 |
+| risultati grezzi non cambiati | `results_v2/S7/manifest_check_end.json`, `manifest_v2_check_end.json` | 921 file, 0 differenze; 380 file, 0 differenze |
+| matrici confrontate byte per byte | `results_v2/S7/visium_hd_archive/compare.txt` | 4 righe SAME |
+| run a 8 GPU con 100 CPU | `results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt` (`gpu_bench_8`, AllocCPUS) | 5 job, 100 |
+| README con 51,6 e 3.272 volte | `README.md` prima della modifica, riga 10 | 51.6x, 3,272x |
+| archivio che compila da solo | `manuscript/meteor/package.json` (`clean_build.pass`, `pages`) | true, 14 |
+| quattro figure col nome del loro numero | `manuscript/meteor/package.json` (`figures[].same_md5_as_source`) | 4 true |
+| tre pagine di margine fino a 17 | 17 meno 14 pagine | 3 |

@@ -1,0 +1,50 @@
+{
+ "tag": "S6_main",
+ "at": "2026-11-04T22:46:35+01:00",
+ "src": "manuscript/full_paper_LNBI.md",
+ "src_md5": "50049fe0e4b13f2039cda7b23537aea9",
+ "bib_md5": "0545ef29119d63866360fb950ce29c11",
+ "llncs_md5": "543b73320c367b0229b3cdfcddaedc46",
+ "support_md5": {
+  "aliascnt.sty": "813491e2bc95c1dafbb39cd7c54b380b"
+ },
+ "pandoc": "pandoc 3.1.3",
+ "pages_total": 15,
+ "refs_start_page": 13,
+ "pages_before_refs": 13,
+ "latex_errors": 0,
+ "undefined_citations": [],
+ "overfull_hbox": 14,
+ "abstract_words": 247,
+ "body_words_intro_to_end": 4202,
+ "section_words": {
+  "Introduction": 361,
+  "Data and Methods": 972,
+  "Results": 1894,
+  "Discussion": 655,
+  "Conclusions": 93,
+  "Conflict of Interest": 11,
+  "Acknowledgements": 112,
+  "Funding": 57,
+  "Availability of Data and Software Code": 47
+ },
+ "commands": [
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ],
+  [
+   "bibtex paper",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ]
+ ],
+ "pdf": "results_v2/S6/pages/main/paper.pdf"
+}

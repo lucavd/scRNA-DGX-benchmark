@@ -1,0 +1,21 @@
+utc: 2026-11-03T12:32:21Z
+host: poddgx02.cluster.lan  job: 425527
+loadavg: 5.45 4.52 2.98
+coretemp_package_max: 57000
+node_jobs: 425527:u0044:RUNNING 
+top_processes:
+    PID USER     %CPU     ELAPSED COMMAND
+  14124 root      6.5 119-21:01:33 nv-hostengine
+3580826 root      3.7    06:20:17 nvsm_core
+  15936 root      2.2 119-21:01:06 cmd
+   5914 root      2.1 119-21:03:59 kipmi0
+  14137 root      0.8 119-21:01:33 irqbalance
+  31309 root      0.5 119-20:46:47 nvsm_api_gatewa
+ 857031 root      0.5       04:45 slurmstepd
+     15 root      0.2 119-21:09:28 rcu_sched
+   5923 root      0.2 119-21:03:46 nvswi1
+   5937 root      0.2 119-21:03:40 nvswi2
+  24894 root      0.2 119-20:48:30 mosquitto
+   5921 root      0.1 119-21:03:53 nvswi0
+   5962 root      0.1 119-21:03:33 nvswi3
+  14251 root      0.1 119-21:01:33 nv-fabricmanage

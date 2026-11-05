@@ -1,0 +1,170 @@
+{
+ "G3": {
+  "chapter": {
+   "md": "manuscript/full_paper_LNBI.md",
+   "md_md5": "6e8437eceac8c5ade5a4569766c78398",
+   "tex": "manuscript/lncs_latex/full_paper_LNBI.tex",
+   "tex_md5": "b69f2cb0fddb40487d93d760d776cf02",
+   "n_numbers_md": 562,
+   "n_numbers_tex": 562,
+   "number_diffs": [],
+   "n_cites_md": 48,
+   "n_cites_tex": 48,
+   "cite_sequence_equal": true,
+   "residual_ascii": {},
+   "dash_chars": {
+    "md": 0,
+    "tex": 0
+   },
+   "figures": [
+    {
+     "file_number": "1",
+     "label": "1",
+     "counter": "1"
+    },
+    {
+     "file_number": "2",
+     "label": "2",
+     "counter": "2"
+    },
+    {
+     "file_number": "3",
+     "label": "3",
+     "counter": "3"
+    },
+    {
+     "file_number": "4",
+     "label": "4",
+     "counter": "4"
+    }
+   ],
+   "figure_mismatches": [],
+   "tables": [
+    {
+     "label": "1",
+     "counter": "1"
+    },
+    {
+     "label": "2",
+     "counter": "2"
+    }
+   ],
+   "table_mismatches": [],
+   "pass": true
+  },
+  "supplement": {
+   "md": "manuscript/supplementary_LNBI.md",
+   "md_md5": "96ad48a485f3b60340fb97ef28e3053e",
+   "tex": "manuscript/lncs_latex/supplementary_LNBI.tex",
+   "tex_md5": "68b4e26cbbc949d363d7b3ecec1d9048",
+   "n_numbers_md": 978,
+   "n_numbers_tex": 978,
+   "number_diffs": [],
+   "n_cites_md": 34,
+   "n_cites_tex": 34,
+   "cite_sequence_equal": true,
+   "residual_ascii": {},
+   "dash_chars": {
+    "md": 0,
+    "tex": 0
+   },
+   "figures": [
+    {
+     "file_number": "S1",
+     "label": "S1",
+     "counter": "S1"
+    },
+    {
+     "file_number": "S2",
+     "label": "S2",
+     "counter": "S2"
+    },
+    {
+     "file_number": "S3",
+     "label": "S3",
+     "counter": "S3"
+    }
+   ],
+   "figure_mismatches": [],
+   "tables": [
+    {
+     "label": "S1",
+     "counter": "S1"
+    },
+    {
+     "label": "S2",
+     "counter": "S2"
+    },
+    {
+     "label": "S3",
+     "counter": "S3"
+    },
+    {
+     "label": "S4",
+     "counter": "S4"
+    },
+    {
+     "label": "S5",
+     "counter": "S5"
+    },
+    {
+     "label": "S6",
+     "counter": "S6"
+    },
+    {
+     "label": "S7",
+     "counter": "S7"
+    },
+    {
+     "label": "S8",
+     "counter": "S8"
+    }
+   ],
+   "table_mismatches": [],
+   "pass": true
+  },
+  "references": {
+   "n_references": 64,
+   "dangling": [],
+   "pass": true
+  },
+  "figure_files": [
+   {
+    "file": "figures/fig1.pdf",
+    "source": "figures/fig1_speedup_heatmap.pdf",
+    "same_md5": true
+   },
+   {
+    "file": "figures/fig2.pdf",
+    "source": "figures/fig3_concordance.pdf",
+    "same_md5": true
+   },
+   {
+    "file": "figures/fig3.pdf",
+    "source": "figures/fig8_spatial_perstep.pdf",
+    "same_md5": true
+   },
+   {
+    "file": "figures/fig4.pdf",
+    "source": "figures/fig9_spatial_concordance.pdf",
+    "same_md5": true
+   },
+   {
+    "file": "figures/figS1.pdf",
+    "source": "figures/fig5_timing_breakdown.pdf",
+    "same_md5": true
+   },
+   {
+    "file": "figures/figS2.pdf",
+    "source": "figures/fig4_memory_profile.pdf",
+    "same_md5": true
+   },
+   {
+    "file": "figures/figS3.pdf",
+    "source": "figures/fig7_spatial_speedup.pdf",
+    "same_md5": true
+   }
+  ],
+  "pass": true
+ }
+}

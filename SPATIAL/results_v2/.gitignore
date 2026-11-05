@@ -1,0 +1,4 @@
+# S1 rerun: own-Leiden cluster files (about 10 MB each) stay out of git,
+# except the three label files that define the groups; md5 of every file in manifest_md5.tsv
+*_clusters.csv
+!dgx_cpu/*_r1_clusters.csv

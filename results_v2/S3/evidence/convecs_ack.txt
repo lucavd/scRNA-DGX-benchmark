@@ -1,0 +1,4 @@
+URL: https://convecs.it/projects-and-ack/
+Read: 2026-11-04
+Passage:
+PAPER acknowledgment This work was supported in part by the high-performance computing infrastructure developed under the project “CONVECS”, funded by the PR Veneto FESR 2021-2027 program, Priority 1 – Specific Objective 1.1 – Action 1.1.2

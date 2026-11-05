@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:05:31Z
+loadavg: 1.13 1.19 3.51
+tctl: +71.5°C
+gpu: 100 %, 313 MiB, 46, 2685 MHz
+top_processes:
+2044347 user      20   0   15404   6924   3816 R   1.5   0.0   0:00.08 top
+   4032 root      20   0   19.0g  93256  18608 S   1.0   0.0  35:12.13 teamviewerd
+1126386 user      20   0 5738720 353624  79028 S   1.0   0.1  41:57.10 claude
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:15.15 nvidia-modeset/kthread_q
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  36:13.05 rserver
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:29.83 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.04 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     12 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_pe
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread

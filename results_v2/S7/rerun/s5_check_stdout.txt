@@ -1,0 +1,8 @@
+/tmp/lnbi_s7_venv/lib/python3.12/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+{"G2_values": "129/129", "G2_text": "60/65", "G3_pdf_ok": true, "G3_colours": true, "G3_fig8": true, "G3_fig9": true, "G3_total_height_cm": 18.2, "G4_ok": false, "G4_superseded": {"repeats 2-5": 1}}
+FAIL Fig 8 caption UMAP (197x) and Geary's C (122x); Moran's I reached 20.8x
+FAIL Fig 8 caption CPU steps (open circles; 0.80x and 1.1x)
+FAIL rho min concl (Spearman rho at least 0.9995)
+FAIL disc summary end-to-end speedups of 1.4x (Visium v1), 6.9x (Visium HD 8 um, co-occurrence excluded) and 10.4x (Visium HD 2 um subsample) against the 100-CPU DGX reference (1.6x, 6.1x and 9.4x against the workstati
+FAIL conclusions end-to-end speedups against a 100-CPU DGX node were 1.4x on Visium v1, 6.9x on Visium HD 8 um with co-occurrence excluded and 10.4x on a random 400k-bin subsample

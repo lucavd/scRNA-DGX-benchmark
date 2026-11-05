@@ -1,0 +1,20 @@
+utc: 2026-11-03T17:18:15Z
+loadavg: 74.13 42.16 47.88
+tctl: +61.6°C
+gpu: 0 %, 313 MiB, 41, 210 MHz
+top_processes:
+2092471 user      20   0   15404   6940   3832 R   1.5   0.0   0:00.08 top
+    413 root      rt   0       0      0      0 S   0.5   0.0   0:03.70 migration/66
+    455 root      rt   0       0      0      0 S   0.5   0.0   0:03.72 migration/73
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:42.35 nvidia-modeset/kthread_q
+   2409 systemd+  20   0   18140   7712   6740 S   0.5   0.0   9:24.83 systemd-oomd
+   2517 root      20   0  337656  20944  16524 S   0.5   0.0   7:34.80 NetworkManager
+   2518 root      20   0 2667104  11800  10208 S   0.5   0.0  39:39.89 fctsched
+   3551 root      20   0 1003824  71684  29256 S   0.5   0.0  60:15.67 mongod
+   3791 root      20   0 3394788  30576  13720 S   0.5   0.0   3:40.02 firewall
+   4022 rstudio+  20   0 9621404  23792  11176 S   0.5   0.0   3:07.42 rstudio-local-l
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  37:08.20 rserver
+ 227737 riccardo  20   0  390604   9084   7924 S   0.5   0.0   0:06.57 gvfsd-dnssd
+ 766829 root      20   0 1371876  49300  18816 S   0.5   0.0   5:54.22 tailscaled
+1126386 user      20   0 5738720 357800  79644 S   0.5   0.1  44:19.71 claude
+1843744 user      20   0   71.3g  69232  18360 S   0.5   0.0   3:31.37 bun

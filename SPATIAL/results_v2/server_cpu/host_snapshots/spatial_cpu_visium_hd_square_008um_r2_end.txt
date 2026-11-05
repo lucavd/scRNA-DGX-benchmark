@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:52:48Z
+loadavg: 82.92 54.71 37.69
+tctl: +73.2°C
+gpu: 0 %, 313 MiB, 39, 210 MHz
+top_processes:
+2066313 user      20   0   15404   6936   3824 R   1.5   0.0   0:00.08 top
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:20.10 nvidia-modeset/kthread_q
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  39:04.13 fctsched
+   3551 root      20   0 1003824  71612  29256 S   0.5   0.0  59:18.18 mongod
+   3873 root      20   0   41.0g   1.1g  36264 S   0.5   0.4  21:34.95 java
+   6591 user      20   0   11.8g 344840 157112 S   0.5   0.1  20:31.37 TeamViewer
+   8074 user      20   0 1324228  81496  52008 S   0.5   0.0  10:20.16 cloud-drive-ui
+   8279 user      20   0  811660  13012  11404 S   0.5   0.0  14:57.98 cloud-drive-dae
+ 228334 riccardo  20   0 1390820  73436  45212 S   0.5   0.0   0:04.11 gnome-calendar
+ 766829 root      20   0 1371876  36312  12428 S   0.5   0.0   5:37.45 tailscaled
+1843744 user      20   0   71.3g  68756  18136 S   0.5   0.0   2:36.70 bun
+2065262 root      20   0       0      0      0 I   0.5   0.0   0:00.09 kworker/u260:2-events_power_efficient
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:33.72 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.06 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release

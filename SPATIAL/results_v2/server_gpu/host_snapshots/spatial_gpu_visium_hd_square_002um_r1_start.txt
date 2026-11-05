@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:10:20Z
+loadavg: 1.27 1.18 2.87
+tctl: +59.4°C
+gpu: 0 %, 313 MiB, 45, 210 MHz
+top_processes:
+2046088 user      20   0   15404   6940   3832 R   2.0   0.0   0:00.08 top
+1843744 user      20   0   71.3g  68416  17864 S   1.0   0.0   2:20.36 bun
+   1567 root       0 -20       0      0      0 I   0.5   0.0   0:00.50 kworker/0:1H-kblockd
+   2409 systemd+  20   0   18140   7712   6740 S   0.5   0.0   9:10.41 systemd-oomd
+   2443 avahi     20   0   19000   7900   6208 S   0.5   0.0   1:06.99 avahi-daemon
+   2477 root      20   0   19104  10136   7896 S   0.5   0.0   1:51.26 systemd-logind
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  38:53.96 fctsched
+   3551 root      20   0 1003824  71608  29256 S   0.5   0.0  59:02.02 mongod
+   6591 user      20   0   11.8g 344840 157112 S   0.5   0.1  20:25.75 TeamViewer
+ 226422 riccardo  20   0  890968  24620  21168 S   0.5   0.0   0:00.33 evolution-calen
+1126386 user      20   0 5738720 353036  79028 S   0.5   0.1  41:58.85 claude
+1986574 root      20   0       0      0      0 I   0.5   0.0   0:00.90 kworker/34:2-mm_percpu_wq
+2028469 root      20   0       0      0      0 I   0.5   0.0   0:00.05 kworker/86:0-events
+2041044 root      20   0       0      0      0 I   0.5   0.0   0:00.03 kworker/1:1-events
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:30.12 systemd

@@ -1,0 +1,20 @@
+utc: 2026-11-03T15:34:10Z
+loadavg: 80.92 53.88 43.38
+tctl: +78.1°C
+gpu: 0 %, 313 MiB, 39, 210 MHz
+top_processes:
+2073907 user      20   0   15404   6940   3828 R   2.0   0.0   0:00.08 top
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:25.66 nvidia-modeset/kthread_q
+   2477 root      20   0   19104  10136   7896 S   0.5   0.0   1:52.77 systemd-logind
+   2517 root      20   0  337656  20944  16524 S   0.5   0.0   7:25.76 NetworkManager
+   3551 root      20   0 1003824  71628  29256 S   0.5   0.0  59:36.70 mongod
+   6811 user      20   0 4406580 260608  96576 S   0.5   0.1   7:00.65 gnome-shell
+   6998 user      20   0  890968  24484  21012 S   0.5   0.0   0:00.44 evolution-calen
+   7153 user      20   0  751820  30288  26204 S   0.5   0.0   0:00.34 evolution-addre
+ 225526 riccardo  20   0   20692   9252   6740 S   0.5   0.0   0:02.11 dbus-daemon
+ 226844 riccardo  20   0  898472  15232  12324 S   0.5   0.0   0:18.21 xdg-desktop-por
+1126386 user      20   0 5738720 358768  79256 S   0.5   0.1  42:57.73 claude
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:38.20 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.06 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g

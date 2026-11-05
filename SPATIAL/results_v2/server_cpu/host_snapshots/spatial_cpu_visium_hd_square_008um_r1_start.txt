@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:28:07Z
+loadavg: 1.48 2.76 2.52
+tctl: +54.4°C
+gpu: 0 %, 313 MiB, 41, 210 MHz
+top_processes:
+1843744 user      20   0   71.3g  68428  17864 S   1.5   0.0   2:24.67 bun
+2061478 user      20   0   15404   6936   3828 R   1.5   0.0   0:00.07 top
+   3551 root      20   0 1003824  71608  29256 S   0.5   0.0  59:05.94 mongod
+1126386 user      20   0 5738720 356444  79192 S   0.5   0.1  42:06.17 claude
+2039012 root      20   0       0      0      0 I   0.5   0.0   0:00.02 kworker/80:0-mm_percpu_wq
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:31.45 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.05 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     12 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_pe
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread

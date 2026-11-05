@@ -1,0 +1,39 @@
+/opt/conda/lib/python3.11/site-packages/squidpy/gr/_utils.py:23: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('anndata')` instead.
+  CAN_USE_SPARSE_ARRAY = Version(anndata.__version__) >= Version("0.11.0rc1")
+/opt/conda/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/opt/conda/lib/python3.11/site-packages/anndata/_core/anndata.py:1825: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/opt/conda/lib/python3.11/site-packages/anndata/_core/anndata.py:1825: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+  0%|          | 0/1 [00:00<?, ?/s]100%|██████████| 1/1 [00:01<00:00,  1.40s/]100%|██████████| 1/1 [00:01<00:00,  1.40s/]
+  0%|          | 0/1000 [00:00<?, ?/s] 50%|████▉     | 495/1000 [00:00<00:00, 4942.89/s]100%|██████████| 1000/1000 [00:00<00:00, 5450.91/s]
+  0%|          | 0/100 [00:00<?, ?permutation/s]  1%|          | 1/100 [00:01<02:44,  1.66s/permutation]100%|██████████| 100/100 [00:01<00:00, 59.13permutation/s]
+/opt/conda/lib/python3.11/site-packages/squidpy/gr/_utils.py:23: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('anndata')` instead.
+  CAN_USE_SPARSE_ARRAY = Version(anndata.__version__) >= Version("0.11.0rc1")
+/opt/conda/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+Traceback (most recent call last):
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 767, in <module>
+    main()
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 751, in main
+    result, adata = run_pipeline(
+                    ^^^^^^^^^^^^^
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 309, in run_pipeline
+    gpu_warmup()
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 203, in gpu_warmup
+    a = cp.random.random((100, 100), dtype=cp.float32)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/cupy/random/_sample.py", line 155, in random_sample
+    rs = _generator.get_random_state()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/cupy/random/_generator.py", line 1306, in get_random_state
+    rs = RandomState(seed)
+         ^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/cupy/random/_generator.py", line 60, in __init__
+    self._generator = curand.createGenerator(method)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy_backends/cuda/libs/curand.pyx", line 95, in cupy_backends.cuda.libs.curand.createGenerator
+  File "cupy_backends/cuda/libs/curand.pyx", line 99, in cupy_backends.cuda.libs.curand.createGenerator
+  File "cupy_backends/cuda/libs/curand.pyx", line 88, in cupy_backends.cuda.libs.curand.check_status
+cupy_backends.cuda.libs.curand.CURANDError: CURAND_STATUS_INITIALIZATION_FAILED

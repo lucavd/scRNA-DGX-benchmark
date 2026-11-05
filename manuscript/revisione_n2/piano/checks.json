@@ -1,0 +1,75 @@
+{
+ "manuscript_md5": "4587032be8d2905007687e0bb50d848e",
+ "G2_manuscript_unchanged": true,
+ "G3": {
+  "rows": 424,
+  "entries": 424,
+  "duplicates": [],
+  "missing": [],
+  "extra": [],
+  "absorbed_to_nonprimary": [],
+  "empty_instruction": [],
+  "na_without_reason": [],
+  "pass": true
+ },
+ "G4": {
+  "unique_anchors_checked": 391,
+  "unique_anchor_failures": [],
+  "prose_target_without_unique_anchor": [],
+  "value_old_not_near_anchor": [],
+  "pass": true
+ },
+ "no_dashes": {
+  "ids": [],
+  "pass": true
+ },
+ "dependencies_to_missing": [],
+ "dependency_cycles": {
+  "n_cycles": 15,
+  "joint_groups": 10,
+  "groups_across_steps": [],
+  "pass": true
+ },
+ "G5": {
+  "paths": 71,
+  "missing": [],
+  "unchecked": [],
+  "to_create": [
+   "manuscript/meteor (da-creare:S7)"
+  ],
+  "pass": true
+ },
+ "stats": {
+  "primary": 269,
+  "by_kind": {
+   "riformulare": 103,
+   "assorbita": 146,
+   "verificare-in-step": 22,
+   "correggere": 70,
+   "superata-da-S1": 28,
+   "non-applicabile": 9,
+   "togliere": 30,
+   "aggiungere": 16
+  },
+  "primary_by_step": {
+   "S3": 190,
+   "S7": 10,
+   "S6": 9,
+   "S5": 49,
+   "S4": 11
+  },
+  "primary_by_level": {
+   "L2": 186,
+   "L5": 14,
+   "L3": 25,
+   "L1": 35,
+   "L4": 9
+  },
+  "transactions": 81,
+  "occurrences": 449,
+  "occ_unclassified": 0,
+  "pass_decay": 170,
+  "refs_outside_repo": 48,
+  "arbitrated_fields": 120
+ }
+}

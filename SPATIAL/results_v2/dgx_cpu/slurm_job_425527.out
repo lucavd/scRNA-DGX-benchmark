@@ -1,0 +1,18 @@
+start 2026-11-03T13:27:40+01:00 node=poddgx02.cluster.lan job=425527 apptainer=/usr/bin/apptainer
+spatial_cpu_visium_r1 rc=0 wall=61s
+spatial_cpu_visium_r2 rc=0 wall=54s
+spatial_cpu_visium_r3 rc=0 wall=53s
+spatial_cpu_visium_r4 rc=0 wall=54s
+spatial_cpu_visium_r5 rc=0 wall=56s
+spatial_cpu_visium_hd_square_008um_r1 rc=0 wall=737s
+spatial_cpu_visium_hd_square_008um_r2 rc=0 wall=745s
+spatial_cpu_visium_hd_square_008um_r3 rc=0 wall=736s
+spatial_cpu_visium_hd_square_008um_r4 rc=0 wall=749s
+spatial_cpu_visium_hd_square_008um_r5 rc=0 wall=737s
+spatial_cpu_visium_hd_square_002um_r1 rc=0 wall=1124s
+spatial_cpu_visium_hd_square_002um_r2 rc=0 wall=1155s
+spatial_cpu_visium_hd_square_002um_r3 rc=0 wall=1153s
+spatial_cpu_visium_hd_square_002um_r4 rc=0 wall=1137s
+spatial_cpu_visium_hd_square_002um_r5 rc=0 wall=1249s
+mechanism rc=0
+end 2026-11-03T16:12:12+01:00

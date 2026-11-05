@@ -1,0 +1,32 @@
+{
+ "orcid_check": "pub.orcid.org/v3.0/0000-0003-4847-2333/person: Luca Vedovelli; employment University of Padua",
+ "edits": [
+  {
+   "file": "manuscript/full_paper_LNBI.md",
+   "old": "bibliography: bibliography/cibb2026_references.bib\n---\n",
+   "new": "bibliography: bibliography/cibb2026_references.bib\norcid:\n  Luca Vedovelli: 0000-0003-4847-2333\n---\n",
+   "md5": [
+    "44cda299743155db10b92a1a4cc0cc3d",
+    "c19c70ebfea1143fae8a762ba6ad4dcf"
+   ]
+  },
+  {
+   "file": "manuscript/supplementary_LNBI.md",
+   "old": "bibliography: bibliography/cibb2026_references.bib\n---\n",
+   "new": "bibliography: bibliography/cibb2026_references.bib\norcid:\n  Luca Vedovelli: 0000-0003-4847-2333\n---\n",
+   "md5": [
+    "b4ee580b0c7b6116b4a7b558b5bda965",
+    "96ad48a485f3b60340fb97ef28e3053e"
+   ]
+  },
+  {
+   "file": "manuscript/full_paper_LNBI.md",
+   "old": "The authors used a large language model-based assistant to check the analysis code",
+   "new": "The authors used a large language model-based assistant (Claude Opus 5.5, Anthropic) to check the analysis code",
+   "md5": [
+    "c19c70ebfea1143fae8a762ba6ad4dcf",
+    "6e8437eceac8c5ade5a4569766c78398"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+# Dockerfile.spatial — GPU-accelerated spatial transcriptomics benchmark
+# Base: NVIDIA RAPIDS 26.02 with CUDA 12, Python 3.12
+# Works locally on RTX 4090 (driver 550+). For DGX with driver 535,
+# rebuild on rapidsai/base:24.06-cuda12.2-py3.11 (see SPATIAL.md).
+FROM nvcr.io/nvidia/rapidsai/base:26.02-cuda12-py3.12
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+USER root
+RUN mkdir -p /var/lib/apt/lists/partial && \
+    apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install rapids-singlecell without deps (cuml/cupy already in RAPIDS base),
+# then all other packages including spatial-specific ones.
+RUN pip install --no-cache-dir --no-deps rapids-singlecell && \
+    pip install --no-cache-dir \
+    scanpy \
+    anndata \
+    squidpy \
+    spatialdata \
+    spatialdata-io \
+    scikit-learn \
+    scipy \
+    pandas \
+    numpy \
+    matplotlib \
+    seaborn \
+    psutil \
+    nvidia-ml-py \
+    h5py \
+    leidenalg \
+    igraph \
+    && pip cache purge \
+    && chmod -R o+rX /opt/conda
+
+WORKDIR /workspace
+CMD ["/bin/bash"]

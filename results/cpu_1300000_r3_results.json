@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "pipeline": "cpu_scanpy",
+    "n_cells_input": 1300000,
+    "n_cpus": 100,
+    "n_gpus": 0,
+    "random_seed": 42,
+    "timestamp": "2026-03-14T13:27:18.346765+00:00",
+    "software_versions": {
+      "scanpy": "1.12",
+      "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+      "numpy": "2.2.6",
+      "leidenalg": "0.11.0",
+      "igraph": "1.0.0"
+    },
+    "configuration": {
+      "leiden_backend": "igraph",
+      "threading_vars": {
+        "OMP_NUM_THREADS": "100",
+        "MKL_NUM_THREADS": "100",
+        "OPENBLAS_NUM_THREADS": "100",
+        "NUMBA_NUM_THREADS": "100"
+      },
+      "numpy_blas_backend": "blas"
+    },
+    "input_file": "/home/u0044/sc-gpu-benchmark/data/brain_1300000.h5ad",
+    "repeat_id": 3
+  },
+  "timings": {
+    "data_loading": 90.7445,
+    "qc_filtering": 174.84,
+    "normalization": 12.8616,
+    "hvg_selection": 47.2301,
+    "pca": 72.5563,
+    "neighbors": 141.6631,
+    "leiden_0.5": 50.2745,
+    "leiden_1.0": 50.1627,
+    "leiden_1.5": 50.1873,
+    "umap": 2456.5708,
+    "de_testing": 48638.4373,
+    "total": 51785.5282
+  },
+  "memory": {
+    "peak_ram_gb": 107.98,
+    "peak_vram_gb": 0.0,
+    "detailed": {
+      "data_loading_ram_before_gb": 5.34,
+      "data_loading_ram_after_gb": 51.71,
+      "qc_filtering_ram_before_gb": 51.71,
+      "qc_filtering_ram_after_gb": 51.84,
+      "normalization_ram_before_gb": 51.84,
+      "normalization_ram_after_gb": 51.84,
+      "hvg_selection_ram_before_gb": 51.84,
+      "hvg_selection_ram_after_gb": 51.84,
+      "pca_ram_before_gb": 52.53,
+      "pca_ram_after_gb": 107.98,
+      "neighbors_ram_before_gb": 61.66,
+      "neighbors_ram_after_gb": 62.17,
+      "leiden_0.5_ram_before_gb": 62.17,
+      "leiden_0.5_ram_after_gb": 62.17,
+      "leiden_1.0_ram_before_gb": 62.17,
+      "leiden_1.0_ram_after_gb": 62.17,
+      "leiden_1.5_ram_before_gb": 62.17,
+      "leiden_1.5_ram_after_gb": 62.17,
+      "umap_ram_before_gb": 62.17,
+      "umap_ram_after_gb": 62.23,
+      "de_testing_ram_before_gb": 62.23,
+      "de_testing_ram_after_gb": 62.37
+    }
+  },
+  "results_summary": {
+    "n_cells_after_qc": 1299956,
+    "n_genes_after_qc": 39182,
+    "n_hvgs": 2000,
+    "hvg_list_hash": "ab6e3677f1f60f94",
+    "n_clusters_0.5": 59,
+    "n_clusters_1.0": 75,
+    "n_clusters_1.5": 89,
+    "cluster_labels_hash_0.5": "edd1c476fa4eb0e5",
+    "cluster_labels_hash_1.0": "a22721525c6d018c",
+    "cluster_labels_hash_1.5": "4f6b01d4ee530ed1"
+  }
+}

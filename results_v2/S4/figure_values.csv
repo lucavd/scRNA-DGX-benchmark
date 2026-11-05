@@ -1,0 +1,199 @@
+figure,panel,series,x,stat,value,n
+fig1_speedup_heatmap,main,Data loading,10000,speedup_ratio_of_means,0.849756463094792,5
+fig1_speedup_heatmap,main,QC and filtering,10000,speedup_ratio_of_means,8.776667241082198,5
+fig1_speedup_heatmap,main,Normalisation,10000,speedup_ratio_of_means,329.2923076923076,5
+fig1_speedup_heatmap,main,HVG selection,10000,speedup_ratio_of_means,23.640113798008535,5
+fig1_speedup_heatmap,main,PCA,10000,speedup_ratio_of_means,4.794994786235662,5
+fig1_speedup_heatmap,main,Neighbour graph,10000,speedup_ratio_of_means,88.14311528731479,5
+fig1_speedup_heatmap,main,Leiden r = 0.5,10000,speedup_ratio_of_means,0.364822617914911,5
+fig1_speedup_heatmap,main,Leiden r = 1.0,10000,speedup_ratio_of_means,1.362174578866769,5
+fig1_speedup_heatmap,main,Leiden r = 1.5,10000,speedup_ratio_of_means,1.6041102077687446,5
+fig1_speedup_heatmap,main,UMAP,10000,speedup_ratio_of_means,28.947541179279067,5
+fig1_speedup_heatmap,main,DE testing,10000,speedup_ratio_of_means,15.59186610445119,5
+fig1_speedup_heatmap,main,Data loading,50000,speedup_ratio_of_means,0.7957739703215778,5
+fig1_speedup_heatmap,main,QC and filtering,50000,speedup_ratio_of_means,27.21074082953728,5
+fig1_speedup_heatmap,main,Normalisation,50000,speedup_ratio_of_means,206.05527638190955,5
+fig1_speedup_heatmap,main,HVG selection,50000,speedup_ratio_of_means,70.21296296296298,5
+fig1_speedup_heatmap,main,PCA,50000,speedup_ratio_of_means,20.501381215469618,5
+fig1_speedup_heatmap,main,Neighbour graph,50000,speedup_ratio_of_means,60.50388888888888,5
+fig1_speedup_heatmap,main,Leiden r = 0.5,50000,speedup_ratio_of_means,1.8046477850399412,5
+fig1_speedup_heatmap,main,Leiden r = 1.0,50000,speedup_ratio_of_means,5.461327285748389,5
+fig1_speedup_heatmap,main,Leiden r = 1.5,50000,speedup_ratio_of_means,5.552314368370298,5
+fig1_speedup_heatmap,main,UMAP,50000,speedup_ratio_of_means,26.91738166393521,5
+fig1_speedup_heatmap,main,DE testing,50000,speedup_ratio_of_means,66.86486878514683,5
+fig1_speedup_heatmap,main,Data loading,100000,speedup_ratio_of_means,0.7563884397807958,5
+fig1_speedup_heatmap,main,QC and filtering,100000,speedup_ratio_of_means,33.36570015733872,5
+fig1_speedup_heatmap,main,Normalisation,100000,speedup_ratio_of_means,173.07031249999994,5
+fig1_speedup_heatmap,main,HVG selection,100000,speedup_ratio_of_means,94.218438538206,5
+fig1_speedup_heatmap,main,PCA,100000,speedup_ratio_of_means,36.46348915368164,5
+fig1_speedup_heatmap,main,Neighbour graph,100000,speedup_ratio_of_means,44.30818155536282,5
+fig1_speedup_heatmap,main,Leiden r = 0.5,100000,speedup_ratio_of_means,3.581170146176222,5
+fig1_speedup_heatmap,main,Leiden r = 1.0,100000,speedup_ratio_of_means,8.832771654977686,5
+fig1_speedup_heatmap,main,Leiden r = 1.5,100000,speedup_ratio_of_means,8.395885340449341,5
+fig1_speedup_heatmap,main,UMAP,100000,speedup_ratio_of_means,45.2925366420512,5
+fig1_speedup_heatmap,main,DE testing,100000,speedup_ratio_of_means,87.52714434396752,5
+fig5_timing_breakdown,cpu,Data loading,10000,mean_s,0.54432,5
+fig5_timing_breakdown,cpu,QC and filtering,10000,mean_s,1.0186199999999999,5
+fig5_timing_breakdown,cpu,Normalisation,10000,mean_s,0.4280799999999999,5
+fig5_timing_breakdown,cpu,HVG selection,10000,mean_s,0.33238,5
+fig5_timing_breakdown,cpu,PCA,10000,mean_s,0.45983999999999997,5
+fig5_timing_breakdown,cpu,Neighbour graph,10000,mean_s,4.87784,5
+fig5_timing_breakdown,cpu,Leiden r = 0.5,10000,mean_s,0.16104000000000002,5
+fig5_timing_breakdown,cpu,Leiden r = 1.0,10000,mean_s,0.14232,5
+fig5_timing_breakdown,cpu,Leiden r = 1.5,10000,mean_s,0.14206000000000002,5
+fig5_timing_breakdown,cpu,UMAP,10000,mean_s,9.7009,5
+fig5_timing_breakdown,cpu,DE testing,10000,mean_s,21.66864,5
+fig5_timing_breakdown,cpu,stack_total,10000,sum_of_step_means_s,39.47604,5
+fig5_timing_breakdown,cpu,Data loading,50000,mean_s,2.15042,5
+fig5_timing_breakdown,cpu,QC and filtering,50000,mean_s,4.53984,5
+fig5_timing_breakdown,cpu,Normalisation,50000,mean_s,0.8201,5
+fig5_timing_breakdown,cpu,HVG selection,50000,mean_s,1.21328,5
+fig5_timing_breakdown,cpu,PCA,50000,mean_s,2.37488,5
+fig5_timing_breakdown,cpu,Neighbour graph,50000,mean_s,6.53442,5
+fig5_timing_breakdown,cpu,Leiden r = 0.5,50000,mean_s,0.9442999999999999,5
+fig5_timing_breakdown,cpu,Leiden r = 1.0,50000,mean_s,0.9151,5
+fig5_timing_breakdown,cpu,Leiden r = 1.5,50000,mean_s,0.9212399999999998,5
+fig5_timing_breakdown,cpu,UMAP,50000,mean_s,22.33712,5
+fig5_timing_breakdown,cpu,DE testing,50000,mean_s,239.70788,5
+fig5_timing_breakdown,cpu,stack_total,50000,sum_of_step_means_s,282.45858,5
+fig5_timing_breakdown,cpu,Data loading,100000,mean_s,4.276,5
+fig5_timing_breakdown,cpu,QC and filtering,100000,mean_s,8.90664,5
+fig5_timing_breakdown,cpu,Normalisation,100000,mean_s,1.3291799999999998,5
+fig5_timing_breakdown,cpu,HVG selection,100000,mean_s,2.2687800000000005,5
+fig5_timing_breakdown,cpu,PCA,100000,mean_s,4.7738,5
+fig5_timing_breakdown,cpu,Neighbour graph,100000,mean_s,9.19572,5
+fig5_timing_breakdown,cpu,Leiden r = 0.5,100000,mean_s,1.9452200000000002,5
+fig5_timing_breakdown,cpu,Leiden r = 1.0,100000,mean_s,1.9395,5
+fig5_timing_breakdown,cpu,Leiden r = 1.5,100000,mean_s,1.9507,5
+fig5_timing_breakdown,cpu,UMAP,100000,mean_s,48.33076,5
+fig5_timing_breakdown,cpu,DE testing,100000,mean_s,561.7737199999999,5
+fig5_timing_breakdown,cpu,stack_total,100000,sum_of_step_means_s,646.6900199999999,5
+fig5_timing_breakdown,gpu1,Data loading,10000,mean_s,0.64056,5
+fig5_timing_breakdown,gpu1,QC and filtering,10000,mean_s,0.11606000000000001,5
+fig5_timing_breakdown,gpu1,Normalisation,10000,mean_s,0.0013000000000000002,5
+fig5_timing_breakdown,gpu1,HVG selection,10000,mean_s,0.01406,5
+fig5_timing_breakdown,gpu1,PCA,10000,mean_s,0.0959,5
+fig5_timing_breakdown,gpu1,Neighbour graph,10000,mean_s,0.05534,5
+fig5_timing_breakdown,gpu1,Leiden r = 0.5,10000,mean_s,0.44142000000000003,5
+fig5_timing_breakdown,gpu1,Leiden r = 1.0,10000,mean_s,0.10447999999999999,5
+fig5_timing_breakdown,gpu1,Leiden r = 1.5,10000,mean_s,0.08856,5
+fig5_timing_breakdown,gpu1,UMAP,10000,mean_s,0.33512,5
+fig5_timing_breakdown,gpu1,DE testing,10000,mean_s,1.3897400000000002,5
+fig5_timing_breakdown,gpu1,stack_total,10000,sum_of_step_means_s,3.28254,5
+fig5_timing_breakdown,gpu1,Data loading,50000,mean_s,2.7023,5
+fig5_timing_breakdown,gpu1,QC and filtering,50000,mean_s,0.16684000000000002,5
+fig5_timing_breakdown,gpu1,Normalisation,50000,mean_s,0.00398,5
+fig5_timing_breakdown,gpu1,HVG selection,50000,mean_s,0.017279999999999997,5
+fig5_timing_breakdown,gpu1,PCA,50000,mean_s,0.11583999999999998,5
+fig5_timing_breakdown,gpu1,Neighbour graph,50000,mean_s,0.10800000000000001,5
+fig5_timing_breakdown,gpu1,Leiden r = 0.5,50000,mean_s,0.5232600000000002,5
+fig5_timing_breakdown,gpu1,Leiden r = 1.0,50000,mean_s,0.16756,5
+fig5_timing_breakdown,gpu1,Leiden r = 1.5,50000,mean_s,0.16592,5
+fig5_timing_breakdown,gpu1,UMAP,50000,mean_s,0.8298400000000001,5
+fig5_timing_breakdown,gpu1,DE testing,50000,mean_s,3.58496,5
+fig5_timing_breakdown,gpu1,stack_total,50000,sum_of_step_means_s,8.38578,5
+fig5_timing_breakdown,gpu1,Data loading,100000,mean_s,5.653180000000001,5
+fig5_timing_breakdown,gpu1,QC and filtering,100000,mean_s,0.26694,5
+fig5_timing_breakdown,gpu1,Normalisation,100000,mean_s,0.007680000000000001,5
+fig5_timing_breakdown,gpu1,HVG selection,100000,mean_s,0.02408,5
+fig5_timing_breakdown,gpu1,PCA,100000,mean_s,0.13091999999999998,5
+fig5_timing_breakdown,gpu1,Neighbour graph,100000,mean_s,0.20754,5
+fig5_timing_breakdown,gpu1,Leiden r = 0.5,100000,mean_s,0.54318,5
+fig5_timing_breakdown,gpu1,Leiden r = 1.0,100000,mean_s,0.21957999999999997,5
+fig5_timing_breakdown,gpu1,Leiden r = 1.5,100000,mean_s,0.23234,5
+fig5_timing_breakdown,gpu1,UMAP,100000,mean_s,1.06708,5
+fig5_timing_breakdown,gpu1,DE testing,100000,mean_s,6.41828,5
+fig5_timing_breakdown,gpu1,stack_total,100000,sum_of_step_means_s,14.770800000000001,5
+fig3_concordance,clustering,ARI,leiden_0.5,value,0.931675,
+fig3_concordance,clustering,ARI,leiden_1.0,value,0.907733,
+fig3_concordance,clustering,ARI,leiden_1.5,value,0.963095,
+fig3_concordance,clustering,NMI,leiden_0.5,value,0.950564,
+fig3_concordance,clustering,NMI,leiden_1.0,value,0.950967,
+fig3_concordance,clustering,NMI,leiden_1.5,value,0.970895,
+fig3_concordance,other,HVG Jaccard,,value,1.0,
+fig3_concordance,other,PCA |ρ|,,value,1.0,
+fig3_concordance,other,kNN Jaccard,,value,0.930422,
+fig3_concordance,other,DE logFC ρ,,value,0.945536,
+fig3_concordance,other,kNN Jaccard ceiling,,value,0.9375,
+fig4_memory_profile,ram,cpu,10000,mean_gib,1.182,5
+fig4_memory_profile,ram,cpu,10000,sd_gib,0.11562871615649808,5
+fig4_memory_profile,ram,cpu,50000,mean_gib,3.556,5
+fig4_memory_profile,ram,cpu,50000,sd_gib,0.18447222013083708,5
+fig4_memory_profile,ram,cpu,100000,mean_gib,6.654000000000001,5
+fig4_memory_profile,ram,cpu,100000,sd_gib,0.3099677402569501,5
+fig4_memory_profile,ram,cpu,500000,mean_gib,29.689999999999998,5
+fig4_memory_profile,ram,cpu,500000,sd_gib,0.5578978401105353,5
+fig4_memory_profile,ram,cpu,1300000,mean_gib,107.354,5
+fig4_memory_profile,ram,cpu,1300000,sd_gib,1.4521122546139458,5
+fig4_memory_profile,ram,gpu1,10000,mean_gib,2.442,5
+fig4_memory_profile,ram,gpu1,10000,sd_gib,0.017888543819998333,5
+fig4_memory_profile,ram,gpu1,50000,mean_gib,5.408000000000001,5
+fig4_memory_profile,ram,gpu1,50000,sd_gib,0.021679483388678727,5
+fig4_memory_profile,ram,gpu1,100000,mean_gib,8.792000000000002,5
+fig4_memory_profile,ram,gpu1,100000,sd_gib,0.021679483388679237,5
+fig4_memory_profile,vram,gpu1,10000,mean_gib,40.698,5
+fig4_memory_profile,vram,gpu1,10000,sd_gib,0.12969194269498743,5
+fig4_memory_profile,vram,gpu1,50000,mean_gib,40.698,5
+fig4_memory_profile,vram,gpu1,50000,sd_gib,0.12969194269498743,5
+fig4_memory_profile,vram,gpu1,100000,mean_gib,40.698,5
+fig4_memory_profile,vram,gpu1,100000,sd_gib,0.12969194269498743,5
+fig4_memory_profile,ram,gpu2,10000,mean_gib,2.3,5
+fig4_memory_profile,ram,gpu2,10000,sd_gib,0.007071067811865481,5
+fig4_memory_profile,ram,gpu2,50000,mean_gib,3.518,5
+fig4_memory_profile,ram,gpu2,50000,sd_gib,0.01643167672515482,5
+fig4_memory_profile,ram,gpu2,100000,mean_gib,4.872,5
+fig4_memory_profile,ram,gpu2,100000,sd_gib,0.03834057902536185,5
+fig4_memory_profile,ram,gpu2,500000,mean_gib,15.572,5
+fig4_memory_profile,ram,gpu2,500000,sd_gib,0.0775886589650833,5
+fig4_memory_profile,ram,gpu2,1300000,mean_gib,60.74399999999999,5
+fig4_memory_profile,ram,gpu2,1300000,sd_gib,18.618621860921927,5
+fig4_memory_profile,vram,gpu2,10000,mean_gib,52.42999999999999,5
+fig4_memory_profile,vram,gpu2,10000,sd_gib,7.246119651234032,5
+fig4_memory_profile,vram,gpu2,50000,mean_gib,52.436,5
+fig4_memory_profile,vram,gpu2,50000,sd_gib,7.14082138132582,5
+fig4_memory_profile,vram,gpu2,100000,mean_gib,52.448,5
+fig4_memory_profile,vram,gpu2,100000,sd_gib,7.018929405543269,5
+fig4_memory_profile,vram,gpu2,500000,mean_gib,52.658,5
+fig4_memory_profile,vram,gpu2,500000,sd_gib,6.192190242555536,5
+fig4_memory_profile,vram,gpu2,1300000,mean_gib,74.944,5
+fig4_memory_profile,vram,gpu2,1300000,sd_gib,17.084176304405197,5
+fig4_memory_profile,ram,gpu4,10000,mean_gib,2.274,5
+fig4_memory_profile,ram,gpu4,10000,sd_gib,0.005477225575051544,5
+fig4_memory_profile,ram,gpu4,50000,mean_gib,3.4520000000000004,5
+fig4_memory_profile,ram,gpu4,50000,sd_gib,0.008366600265340736,5
+fig4_memory_profile,ram,gpu4,100000,mean_gib,4.886,5
+fig4_memory_profile,ram,gpu4,100000,sd_gib,0.03781534080237802,5
+fig4_memory_profile,ram,gpu4,500000,mean_gib,15.896,5
+fig4_memory_profile,ram,gpu4,500000,sd_gib,0.28962044126753206,5
+fig4_memory_profile,ram,gpu4,1300000,mean_gib,60.693999999999996,5
+fig4_memory_profile,ram,gpu4,1300000,sd_gib,18.652208448331262,5
+fig4_memory_profile,vram,gpu4,10000,mean_gib,64.994,5
+fig4_memory_profile,vram,gpu4,10000,sd_gib,14.436136255937738,5
+fig4_memory_profile,vram,gpu4,50000,mean_gib,65.03399999999999,5
+fig4_memory_profile,vram,gpu4,50000,sd_gib,14.272642712546265,5
+fig4_memory_profile,vram,gpu4,100000,mean_gib,65.086,5
+fig4_memory_profile,vram,gpu4,100000,sd_gib,14.063978100096712,5
+fig4_memory_profile,vram,gpu4,500000,mean_gib,65.498,5
+fig4_memory_profile,vram,gpu4,500000,sd_gib,12.406626052235152,5
+fig4_memory_profile,vram,gpu4,1300000,mean_gib,92.69000000000001,5
+fig4_memory_profile,vram,gpu4,1300000,sd_gib,23.3328438043887,5
+fig4_memory_profile,ram,gpu8,10000,mean_gib,2.318,5
+fig4_memory_profile,ram,gpu8,10000,sd_gib,0.004472135954999484,5
+fig4_memory_profile,ram,gpu8,50000,mean_gib,3.45,5
+fig4_memory_profile,ram,gpu8,50000,sd_gib,0.029999999999999954,5
+fig4_memory_profile,ram,gpu8,100000,mean_gib,4.936000000000001,5
+fig4_memory_profile,ram,gpu8,100000,sd_gib,0.03781534080237804,5
+fig4_memory_profile,ram,gpu8,500000,mean_gib,15.548000000000002,5
+fig4_memory_profile,ram,gpu8,500000,sd_gib,0.07981227975693954,5
+fig4_memory_profile,ram,gpu8,1300000,mean_gib,52.290000000000006,5
+fig4_memory_profile,ram,gpu8,1300000,sd_gib,0.06819090848492952,5
+fig4_memory_profile,vram,gpu8,10000,mean_gib,106.48000000000002,5
+fig4_memory_profile,vram,gpu8,10000,sd_gib,14.438833055340726,5
+fig4_memory_profile,vram,gpu8,50000,mean_gib,106.51999999999998,5
+fig4_memory_profile,vram,gpu8,50000,sd_gib,14.272811566051027,5
+fig4_memory_profile,vram,gpu8,100000,mean_gib,106.572,5
+fig4_memory_profile,vram,gpu8,100000,sd_gib,14.06498915747893,5
+fig4_memory_profile,vram,gpu8,500000,mean_gib,106.982,5
+fig4_memory_profile,vram,gpu8,500000,sd_gib,12.40392961927792,5
+fig4_memory_profile,vram,gpu8,1300000,mean_gib,134.176,5
+fig4_memory_profile,vram,gpu8,1300000,sd_gib,23.330927542641763,5

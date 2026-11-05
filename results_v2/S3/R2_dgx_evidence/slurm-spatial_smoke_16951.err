@@ -1,0 +1,70 @@
+/opt/conda/lib/python3.11/site-packages/squidpy/gr/_utils.py:23: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('anndata')` instead.
+  CAN_USE_SPARSE_ARRAY = Version(anndata.__version__) >= Version("0.11.0rc1")
+/opt/conda/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/opt/conda/lib/python3.11/site-packages/anndata/_core/anndata.py:1825: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/opt/conda/lib/python3.11/site-packages/anndata/_core/anndata.py:1825: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+  0%|          | 0/1 [00:00<?, ?/s]100%|██████████| 1/1 [00:01<00:00,  1.70s/]100%|██████████| 1/1 [00:01<00:00,  1.70s/]
+  0%|          | 0/1000 [00:00<?, ?/s] 49%|████▉     | 493/1000 [00:00<00:00, 4926.56/s]100%|██████████| 1000/1000 [00:00<00:00, 5493.60/s]
+  0%|          | 0/100 [00:00<?, ?permutation/s]  1%|          | 1/100 [00:01<03:06,  1.89s/permutation]100%|██████████| 100/100 [00:01<00:00, 52.10permutation/s]
+/opt/conda/lib/python3.11/site-packages/squidpy/gr/_utils.py:23: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('anndata')` instead.
+  CAN_USE_SPARSE_ARRAY = Version(anndata.__version__) >= Version("0.11.0rc1")
+/opt/conda/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/opt/conda/lib/python3.11/site-packages/anndata/_core/anndata.py:1825: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/opt/conda/lib/python3.11/site-packages/anndata/_core/anndata.py:1825: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+Traceback (most recent call last):
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 806, in <module>
+    main()
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 790, in main
+    result, adata = run_pipeline(
+                    ^^^^^^^^^^^^^
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 513, in run_pipeline
+    time_step(
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 120, in time_step
+    result = func()
+             ^^^^^^
+  File "/home/u0044/sc-gpu-benchmark/SPATIAL/scripts/benchmark_spatial_gpu.py", line 515, in <lambda>
+    lambda: rsc.gr.spatial_autocorr(adata, mode="moran"),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/rapids_singlecell/squidpy_gpu/_autocorr.py", line 109, in spatial_autocorr
+    row_sums = adj_matrix_cupy.sum(axis=1).reshape(-1, 1)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/cupyx/scipy/sparse/_base.py", line 520, in sum
+    ret = self.dot(cupy.ones(n, dtype=self.dtype)).reshape(m, 1)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/cupyx/scipy/sparse/_base.py", line 341, in dot
+    return self @ other
+           ~~~~~^~~~~~~
+  File "/opt/conda/lib/python3.11/site-packages/cupyx/scipy/sparse/_base.py", line 130, in __matmul__
+    return self.__mul__(other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/cupyx/scipy/sparse/_csr.py", line 189, in __mul__
+    self.sum_duplicates()
+  File "/opt/conda/lib/python3.11/site-packages/cupyx/scipy/sparse/_compressed.py", line 776, in sum_duplicates
+    coo = self.tocoo()
+          ^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/cupyx/scipy/sparse/_csr.py", line 460, in tocoo
+    return cusparse.csr2coo(self, data, indices)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/cupyx/cusparse.py", line 1000, in csr2coo
+    handle = _device.get_cusparse_handle()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/cuda/device.pyx", line 73, in cupy.cuda.device.get_cusparse_handle
+  File "cupy/cuda/device.pyx", line 74, in cupy.cuda.device.get_cusparse_handle
+  File "cupy/cuda/device.pyx", line 290, in cupy.cuda.device.Device.cusparse_handle.__get__
+  File "cupy/cuda/device.pyx", line 239, in cupy.cuda.device.Device._get_handle
+  File "cupy_backends/cuda/libs/cusparse.pyx", line 1568, in cupy_backends.cuda.libs.cusparse.create
+  File "cupy_backends/cuda/libs/cusparse.pyx", line 1571, in cupy_backends.cuda.libs.cusparse.create
+  File "cupy_backends/cuda/libs/cusparse.pyx", line 1535, in cupy_backends.cuda.libs.cusparse.check_status
+cupy_backends.cuda.libs.cusparse.CuSparseError: CUSPARSE_STATUS_NOT_INITIALIZED: initialization error

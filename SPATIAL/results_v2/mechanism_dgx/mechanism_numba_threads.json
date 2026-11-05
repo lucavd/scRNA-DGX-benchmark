@@ -1,0 +1,124 @@
+{
+  "n_cpus_requested": 100,
+  "numba_config_num_threads": 100,
+  "calls": [
+    {
+      "repeat": 1,
+      "call": "repeat_start",
+      "numba_threads_before": 100,
+      "numba_threads_after": 100
+    },
+    {
+      "repeat": 1,
+      "call": "sc.pp.neighbors",
+      "numba_threads_before": 100,
+      "numba_threads_after": 100
+    },
+    {
+      "repeat": 1,
+      "call": "sc.tl.umap",
+      "numba_threads_before": 100,
+      "numba_threads_after": 100
+    },
+    {
+      "repeat": 1,
+      "call": "sq.gr.spatial_neighbors",
+      "numba_threads_before": 100,
+      "numba_threads_after": 100
+    },
+    {
+      "repeat": 1,
+      "call": "sq.gr.spatial_autocorr",
+      "numba_threads_before": 100,
+      "numba_threads_after": 100
+    },
+    {
+      "repeat": 1,
+      "call": "sq.gr.spatial_autocorr",
+      "numba_threads_before": 100,
+      "numba_threads_after": 100
+    },
+    {
+      "repeat": 1,
+      "call": "sq.gr.co_occurrence",
+      "numba_threads_before": 100,
+      "numba_threads_after": 100
+    },
+    {
+      "repeat": 1,
+      "call": "sq.gr.nhood_enrichment",
+      "numba_threads_before": 100,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 1,
+      "call": "sq.gr.ligrec",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "repeat_start",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "sc.pp.neighbors",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "sc.tl.umap",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "sq.gr.spatial_neighbors",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "sq.gr.spatial_autocorr",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "sq.gr.spatial_autocorr",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "sq.gr.co_occurrence",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "sq.gr.nhood_enrichment",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    },
+    {
+      "repeat": 2,
+      "call": "sq.gr.ligrec",
+      "numba_threads_before": 1,
+      "numba_threads_after": 1
+    }
+  ],
+  "calls_that_lowered_threads": [
+    {
+      "repeat": 1,
+      "call": "sq.gr.nhood_enrichment",
+      "numba_threads_before": 100,
+      "numba_threads_after": 1
+    }
+  ],
+  "threads_at_start_of_repeat_2": 1,
+  "mechanism_confirmed": true
+}

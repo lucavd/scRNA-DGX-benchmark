@@ -1,0 +1,734 @@
+{
+  "metadata": {
+    "pipeline": "spatial_cpu_squidpy",
+    "platform": "visium_hd",
+    "bin_size": "square_002um",
+    "n_spots_input": 6296688,
+    "n_genes_input": 19059,
+    "n_cpus": 100,
+    "n_gpus": 0,
+    "random_seed": 42,
+    "timestamp": "2026-11-03T14:31:19.224491+00:00",
+    "software_versions": {
+      "scanpy": "1.12",
+      "squidpy": "1.8.1",
+      "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+      "numpy": "2.2.6",
+      "numba": "0.61.2",
+      "threadpoolctl": "3.6.0"
+    },
+    "system": {
+      "hostname": "poddgx02.cluster.lan",
+      "container_hostname": "poddgx02.cluster.lan",
+      "os_cpu_count": 224,
+      "affinity_n_cpus": 100,
+      "affinity_cpus": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161
+      ],
+      "requested_cpus": 100,
+      "cpu_model": "Intel(R) Xeon(R) Platinum 8480C",
+      "kernel": "5.15.0-1079-nvidia",
+      "gpu": {
+        "unavailable": "NVMLError_LibraryNotFound"
+      },
+      "env": {
+        "OMP_NUM_THREADS": "100",
+        "MKL_NUM_THREADS": "100",
+        "OPENBLAS_NUM_THREADS": "100",
+        "NUMBA_NUM_THREADS": "100",
+        "SLURM_JOB_ID": "425527",
+        "SLURM_STEP_ID": "12",
+        "SLURM_CPUS_PER_TASK": "100",
+        "SLURM_JOB_NODELIST": "poddgx02",
+        "LNBI_GIT_COMMIT": "f04e364b4d3a9b3b2014634c3f43096fe9d517a5",
+        "LNBI_IMAGE_ID": "sha256:738c8cc7301590c95a3ddc3b7dd74bafeefee1f1ce188063e14a166a707a6ddd",
+        "LNBI_RUN_ID": null,
+        "LNBI_MACHINE_ROLE": "dgx_cpu_reference"
+      },
+      "git_commit": "f04e364b4d3a9b3b2014634c3f43096fe9d517a5",
+      "image_id": "sha256:738c8cc7301590c95a3ddc3b7dd74bafeefee1f1ce188063e14a166a707a6ddd"
+    },
+    "threads_at_start": {
+      "numba_num_threads": 100,
+      "numba_config_num_threads": 100,
+      "threadpools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "prefix": "libopenblas",
+          "num_threads": 100
+        },
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "prefix": "libgomp",
+          "num_threads": 100
+        }
+      ]
+    },
+    "host_start": {
+      "utc": "2026-11-03T14:12:20.503957+00:00",
+      "loadavg_1_5_15": [
+        66.27,
+        41.17,
+        34.94
+      ],
+      "cpu_temp_c": {
+        "package_max": 59.0
+      }
+    },
+    "host_end": {
+      "utc": "2026-11-03T14:31:19.273089+00:00",
+      "loadavg_1_5_15": [
+        88.02,
+        44.24,
+        35.08
+      ],
+      "cpu_temp_c": {
+        "package_max": 63.0
+      }
+    },
+    "steps_runtime": {
+      "data_loading": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:12:20.534373+00:00",
+          "loadavg_1_5_15": [
+            66.27,
+            41.17,
+            34.94
+          ],
+          "cpu_temp_c": {
+            "package_max": 59.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:12:46.430316+00:00",
+          "loadavg_1_5_15": [
+            44.49,
+            38.06,
+            34.07
+          ],
+          "cpu_temp_c": {
+            "package_max": 58.0
+          }
+        }
+      },
+      "qc_filtering": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:12:46.869010+00:00",
+          "loadavg_1_5_15": [
+            44.49,
+            38.06,
+            34.07
+          ],
+          "cpu_temp_c": {
+            "package_max": 58.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:12:47.653997+00:00",
+          "loadavg_1_5_15": [
+            44.49,
+            38.06,
+            34.07
+          ],
+          "cpu_temp_c": {
+            "package_max": 57.0
+          }
+        }
+      },
+      "normalization": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:12:47.658094+00:00",
+          "loadavg_1_5_15": [
+            44.49,
+            38.06,
+            34.07
+          ],
+          "cpu_temp_c": {
+            "package_max": 57.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:12:50.112363+00:00",
+          "loadavg_1_5_15": [
+            40.93,
+            37.42,
+            33.89
+          ],
+          "cpu_temp_c": {
+            "package_max": 58.0
+          }
+        }
+      },
+      "hvg_selection": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:12:50.116301+00:00",
+          "loadavg_1_5_15": [
+            40.93,
+            37.42,
+            33.89
+          ],
+          "cpu_temp_c": {
+            "package_max": 58.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:12:50.686322+00:00",
+          "loadavg_1_5_15": [
+            40.93,
+            37.42,
+            33.89
+          ],
+          "cpu_temp_c": {
+            "package_max": 58.0
+          }
+        }
+      },
+      "pca": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:12:50.882077+00:00",
+          "loadavg_1_5_15": [
+            40.93,
+            37.42,
+            33.89
+          ],
+          "cpu_temp_c": {
+            "package_max": 58.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:13:08.422830+00:00",
+          "loadavg_1_5_15": [
+            40.38,
+            37.36,
+            33.92
+          ],
+          "cpu_temp_c": {
+            "package_max": 64.0
+          }
+        }
+      },
+      "expression_neighbors": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:13:08.426714+00:00",
+          "loadavg_1_5_15": [
+            40.38,
+            37.36,
+            33.92
+          ],
+          "cpu_temp_c": {
+            "package_max": 64.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:13:59.925423+00:00",
+          "loadavg_1_5_15": [
+            17.8,
+            31.55,
+            32.13
+          ],
+          "cpu_temp_c": {
+            "package_max": 57.0
+          }
+        }
+      },
+      "leiden": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:13:59.929468+00:00",
+          "loadavg_1_5_15": [
+            17.8,
+            31.55,
+            32.13
+          ],
+          "cpu_temp_c": {
+            "package_max": 57.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:14:09.347457+00:00",
+          "loadavg_1_5_15": [
+            15.3,
+            30.56,
+            31.8
+          ],
+          "cpu_temp_c": {
+            "package_max": 59.0
+          }
+        }
+      },
+      "umap": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:14:09.352836+00:00",
+          "loadavg_1_5_15": [
+            15.3,
+            30.56,
+            31.8
+          ],
+          "cpu_temp_c": {
+            "package_max": 59.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:27:43.835188+00:00",
+          "loadavg_1_5_15": [
+            2.68,
+            11.4,
+            25.58
+          ],
+          "cpu_temp_c": {
+            "package_max": 58.0
+          }
+        }
+      },
+      "spatial_neighbors": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:27:44.498297+00:00",
+          "loadavg_1_5_15": [
+            2.63,
+            11.25,
+            25.45
+          ],
+          "cpu_temp_c": {
+            "package_max": 58.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:28:29.850199+00:00",
+          "loadavg_1_5_15": [
+            2.65,
+            10.03,
+            24.37
+          ],
+          "cpu_temp_c": {
+            "package_max": 59.0
+          }
+        }
+      },
+      "spatial_autocorr_moran": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:28:29.854474+00:00",
+          "loadavg_1_5_15": [
+            2.65,
+            10.03,
+            24.37
+          ],
+          "cpu_temp_c": {
+            "package_max": 59.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:29:51.051093+00:00",
+          "loadavg_1_5_15": [
+            66.68,
+            28.91,
+            29.82
+          ],
+          "cpu_temp_c": {
+            "package_max": 68.0
+          }
+        }
+      },
+      "spatial_autocorr_geary": {
+        "start": {
+          "numba_num_threads": 100,
+          "numba_config_num_threads": 100,
+          "threadpools": [
+            {
+              "user_api": "blas",
+              "internal_api": "openblas",
+              "prefix": "libopenblas",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            },
+            {
+              "user_api": "openmp",
+              "internal_api": "openmp",
+              "prefix": "libgomp",
+              "num_threads": 100
+            }
+          ],
+          "utc": "2026-11-03T14:29:51.055896+00:00",
+          "loadavg_1_5_15": [
+            66.68,
+            28.91,
+            29.82
+          ],
+          "cpu_temp_c": {
+            "package_max": 68.0
+          }
+        },
+        "end": {
+          "numba_num_threads": 100,
+          "utc": "2026-11-03T14:31:19.221361+00:00",
+          "loadavg_1_5_15": [
+            88.02,
+            44.24,
+            35.08
+          ],
+          "cpu_temp_c": {
+            "package_max": 63.0
+          }
+        }
+      }
+    },
+    "groups": {
+      "labels_file": "/home/u0044/lnbi_spatial_v2/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r1_clusters.csv",
+      "labels_md5": "c8df12a0b077c2f8988f0bd09542bec8",
+      "labels_column": "leiden_1.0",
+      "n_labels_in_file": 389492,
+      "n_obs_labelled": 389492,
+      "n_groups_used": 3027,
+      "group_key": "spatial_groups"
+    },
+    "repeats_in_this_process": 1,
+    "repeat_id": 3
+  },
+  "timings": {
+    "data_loading": 25.8021,
+    "qc_filtering": 0.5469,
+    "normalization": 2.3487,
+    "hvg_selection": 0.4606,
+    "pca": 17.416,
+    "expression_neighbors": 51.3755,
+    "leiden": 9.1585,
+    "umap": 814.2944,
+    "spatial_neighbors": 45.1004,
+    "spatial_autocorr_moran": 80.9557,
+    "spatial_autocorr_geary": 87.8931,
+    "co_occurrence": -1,
+    "nhood_enrichment": -1,
+    "ligrec": -1,
+    "total": 1135.3519
+  },
+  "memory": {
+    "peak_ram_gb": 7.96,
+    "peak_vram_gb": 0.0,
+    "detailed": {
+      "data_loading_ram_before_gb": 0.5,
+      "data_loading_ram_after_gb": 5.3,
+      "qc_filtering_ram_before_gb": 3.03,
+      "qc_filtering_ram_after_gb": 3.09,
+      "normalization_ram_before_gb": 3.09,
+      "normalization_ram_after_gb": 3.13,
+      "hvg_selection_ram_before_gb": 3.13,
+      "hvg_selection_ram_after_gb": 3.13,
+      "pca_ram_before_gb": 3.16,
+      "pca_ram_after_gb": 6.61,
+      "expression_neighbors_ram_before_gb": 6.61,
+      "expression_neighbors_ram_after_gb": 7.23,
+      "leiden_ram_before_gb": 7.23,
+      "leiden_ram_after_gb": 7.27,
+      "umap_ram_before_gb": 7.27,
+      "umap_ram_after_gb": 7.26,
+      "spatial_neighbors_ram_before_gb": 7.26,
+      "spatial_neighbors_ram_after_gb": 7.31,
+      "spatial_autocorr_moran_ram_before_gb": 7.31,
+      "spatial_autocorr_moran_ram_after_gb": 7.96,
+      "spatial_autocorr_geary_ram_before_gb": 7.89,
+      "spatial_autocorr_geary_ram_after_gb": 7.96
+    }
+  },
+  "results_summary": {
+    "n_spots_after_qc": 389492,
+    "n_genes_after_qc": 14380,
+    "n_hvgs": 2000,
+    "hvg_list_hash": "c06f07738f586af2",
+    "n_clusters": 3027,
+    "n_groups_spatial_steps": 3027,
+    "n_svgs_moran_fdr005": 484,
+    "n_svgs_geary_fdr005": 1782
+  }
+}

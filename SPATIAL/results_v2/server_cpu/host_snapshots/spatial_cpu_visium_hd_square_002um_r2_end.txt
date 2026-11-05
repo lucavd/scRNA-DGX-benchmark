@@ -1,0 +1,20 @@
+utc: 2026-11-03T16:15:59Z
+loadavg: 74.56 42.04 47.38
+tctl: +62.5°C
+gpu: 0 %, 313 MiB, 39, 210 MHz
+top_processes:
+2081083 user      20   0   15404   6936   3832 R   2.0   0.0   0:00.08 top
+   3551 root      20   0 1003824  71644  29256 S   1.0   0.0  59:51.70 mongod
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:32.48 nvidia-modeset/kthread_q
+   2518 root      20   0 2667104  11800  10208 S   0.5   0.0  39:24.77 fctsched
+   3854 rstudio+  20   0   18.0g  45036  12972 S   0.5   0.0   6:51.13 rstudio-launche
+   4022 rstudio+  20   0 9621404  23780  11176 S   0.5   0.0   3:05.74 rstudio-local-l
+   5773 rstudio+  20   0   98764   9888   8512 S   0.5   0.0  24:51.89 rserver-monitor
+   6591 user      20   0   11.8g 344840 157112 S   0.5   0.1  20:43.27 TeamViewer
+   7153 user      20   0  751820  30288  26204 S   0.5   0.0   0:00.35 evolution-addre
+1126386 user      20   0 5738720 354332  79644 S   0.5   0.1  43:31.97 claude
+1843744 user      20   0   71.3g  68956  18360 S   0.5   0.0   3:08.88 bun
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:42.10 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.07 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g

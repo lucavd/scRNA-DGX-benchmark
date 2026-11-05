@@ -1,0 +1,392 @@
+{
+ "gates": {
+  "G2": {
+   "ok": true,
+   "values": "198 values, 0 mismatches, 0 missing",
+   "captions": "0/0 caption checks"
+  },
+  "G3": {
+   "ok": false
+  },
+  "G4": {
+   "ok": true
+  }
+ },
+ "predictions": {
+  "P1": {
+   "outcome": "indeterminata",
+   "by_size": {
+    "10000": {
+     "order_top3": [
+      "de_testing",
+      "umap",
+      "neighbors"
+     ],
+     "frac_umap_second": 0.947,
+     "frac_de_first": 1.0,
+     "de_share_pct": 54.89061212826819,
+     "de_share_ci95": [
+      45.388442908429546,
+      61.64995683875221
+     ],
+     "umap_share_pct": 24.5741467482554
+    },
+    "50000": {
+     "order_top3": [
+      "de_testing",
+      "umap",
+      "neighbors"
+     ],
+     "frac_umap_second": 1.0,
+     "frac_de_first": 1.0,
+     "de_share_pct": 84.86478973306457,
+     "de_share_ci95": [
+      82.30212994722456,
+      86.22195136005267
+     ],
+     "umap_share_pct": 7.908104614842997
+    },
+    "100000": {
+     "order_top3": [
+      "de_testing",
+      "umap",
+      "neighbors"
+     ],
+     "frac_umap_second": 1.0,
+     "frac_de_first": 1.0,
+     "de_share_pct": 86.86908760398066,
+     "de_share_ci95": [
+      85.69804830789008,
+      87.49955071071295
+     ],
+     "umap_share_pct": 7.473558970339453
+    }
+   }
+  },
+  "P2": {
+   "outcome": "indeterminata",
+   "by_size": {
+    "10000": {
+     "step": "de_testing",
+     "mean_s": 1.38974,
+     "sd_s": 0.6193558653956543,
+     "mean_plus_2sd": 2.6284517307913084,
+     "all_steps_mean_plus_2sd_max": 2.6284517307913084
+    },
+    "50000": {
+     "step": "de_testing",
+     "mean_s": 3.58496,
+     "sd_s": 0.6409387903692522,
+     "mean_plus_2sd": 4.866837580738505,
+     "all_steps_mean_plus_2sd_max": 4.866837580738505
+    },
+    "100000": {
+     "step": "de_testing",
+     "mean_s": 6.41828,
+     "sd_s": 0.622287198164963,
+     "mean_plus_2sd": 7.6628543963299265,
+     "all_steps_mean_plus_2sd_max": 7.6628543963299265
+    }
+   }
+  },
+  "P3": {
+   "outcome": "confermata",
+   "by_size": {
+    "10000": {
+     "speedup": 0.849756463094792,
+     "ci95": [
+      0.7503576823958055,
+      0.9601424279808911
+     ]
+    },
+    "50000": {
+     "speedup": 0.795773970321578,
+     "ci95": [
+      0.7063966681863465,
+      0.8951537343609957
+     ]
+    },
+    "100000": {
+     "speedup": 0.756388439780796,
+     "ci95": [
+      0.6923696994768869,
+      0.8356655264054507
+     ]
+    }
+   }
+  },
+  "P4": {
+   "outcome": "confermata",
+   "by_size": {
+    "10000": {
+     "mean_gib": 40.698,
+     "sd_gib": 0.12969194269498743
+    },
+    "50000": {
+     "mean_gib": 40.698,
+     "sd_gib": 0.12969194269498743
+    },
+    "100000": {
+     "mean_gib": 40.698,
+     "sd_gib": 0.12969194269498743
+    }
+   }
+  }
+ },
+ "details": {
+  "values": {
+   "n_values": 198,
+   "n_expected": 198,
+   "mismatches": [],
+   "n_mismatches": 0,
+   "missing_from_figures": []
+  },
+  "caption_values": {
+   "fig1_max_normalisation": 329.2923076923077,
+   "fig1_max_any": 329.2923076923077,
+   "fig1_data_loading_min_max": [
+    0.756388439780796,
+    0.849756463094792
+   ],
+   "cpu_n_cpus": [
+    100
+   ],
+   "gpu1_names": [
+    "NVIDIA H100 80GB HBM3"
+   ],
+   "fig2_max_gpu_step_mean": 6.41828,
+   "fig2_cpu_top3": {
+    "10000": [
+     "de_testing",
+     "umap",
+     "neighbors"
+    ],
+    "50000": [
+     "de_testing",
+     "umap",
+     "neighbors"
+    ],
+    "100000": [
+     "de_testing",
+     "umap",
+     "neighbors"
+    ]
+   },
+   "fig5_values": {
+    "ARI": 0.963095,
+    "NMI": 0.970895,
+    "HVG Jaccard": 1.0,
+    "PCA |\u03c1|": 1.0,
+    "kNN Jaccard": 0.930422,
+    "DE logFC \u03c1": 0.945536,
+    "kNN Jaccard ceiling": 0.9375
+   },
+   "fig5_de_pairs": 40,
+   "repeats_per_config": [
+    5
+   ],
+   "vram_r1_vs_later": {
+    "gpu1_10000": {
+     "r1": 40.93,
+     "r2_5_min": 40.64,
+     "r2_5_max": 40.64,
+     "r1_below_all_later": false
+    },
+    "gpu1_50000": {
+     "r1": 40.93,
+     "r2_5_min": 40.64,
+     "r2_5_max": 40.64,
+     "r1_below_all_later": false
+    },
+    "gpu1_100000": {
+     "r1": 40.93,
+     "r2_5_min": 40.64,
+     "r2_5_max": 40.64,
+     "r1_below_all_later": false
+    },
+    "gpu2_10000": {
+     "r1": 41.23,
+     "r2_5_min": 50.94,
+     "r2_5_max": 60.8,
+     "r1_below_all_later": true
+    },
+    "gpu2_50000": {
+     "r1": 41.38,
+     "r2_5_min": 50.98,
+     "r2_5_max": 60.65,
+     "r1_below_all_later": true
+    },
+    "gpu2_100000": {
+     "r1": 41.57,
+     "r2_5_min": 51.02,
+     "r2_5_max": 60.5,
+     "r1_below_all_later": true
+    },
+    "gpu2_500000": {
+     "r1": 43.06,
+     "r2_5_min": 51.4,
+     "r2_5_max": 59.76,
+     "r1_below_all_later": true
+    },
+    "gpu2_1300000": {
+     "r1": 46.04,
+     "r2_5_min": 73.5,
+     "r2_5_max": 88.7,
+     "r1_below_all_later": true
+    },
+    "gpu4_10000": {
+     "r1": 42.61,
+     "r2_5_min": 62.07,
+     "r2_5_max": 81.54,
+     "r1_below_all_later": true
+    },
+    "gpu4_50000": {
+     "r1": 42.9,
+     "r2_5_min": 62.15,
+     "r2_5_max": 81.39,
+     "r1_below_all_later": true
+    },
+    "gpu4_100000": {
+     "r1": 43.28,
+     "r2_5_min": 62.24,
+     "r2_5_max": 81.21,
+     "r1_below_all_later": true
+    },
+    "gpu4_500000": {
+     "r1": 46.26,
+     "r2_5_min": 62.99,
+     "r2_5_max": 79.72,
+     "r1_below_all_later": true
+    },
+    "gpu4_1300000": {
+     "r1": 52.22,
+     "r2_5_min": 93.83,
+     "r2_5_max": 109.44,
+     "r1_below_all_later": true
+    },
+    "gpu8_10000": {
+     "r1": 84.09,
+     "r2_5_min": 103.56,
+     "r2_5_max": 123.03,
+     "r1_below_all_later": true
+    },
+    "gpu8_50000": {
+     "r1": 84.39,
+     "r2_5_min": 103.63,
+     "r2_5_max": 122.88,
+     "r1_below_all_later": true
+    },
+    "gpu8_100000": {
+     "r1": 84.76,
+     "r2_5_min": 103.73,
+     "r2_5_max": 122.69,
+     "r1_below_all_later": true
+    },
+    "gpu8_500000": {
+     "r1": 87.75,
+     "r2_5_min": 104.47,
+     "r2_5_max": 121.2,
+     "r1_below_all_later": true
+    },
+    "gpu8_1300000": {
+     "r1": 93.71,
+     "r2_5_min": 135.31,
+     "r2_5_max": 150.92,
+     "r1_below_all_later": true
+    }
+   }
+  },
+  "print_spec": {
+   "fig1_speedup_heatmap": {
+    "width_cm": 8.4,
+    "height_cm": 8.0,
+    "min_text_pt": 7.0,
+    "n_text_spans": 53,
+    "fonts": [
+     "BMQQDV+DejaVuSans:ttf"
+    ],
+    "fonts_embedded": true,
+    "raster_images": 0,
+    "png_dpi": [
+     800,
+     800
+    ],
+    "pdf_md5": "43c2e665d3a0addbc440588f822ff963"
+   },
+   "fig5_timing_breakdown": {
+    "width_cm": 12.2,
+    "height_cm": 6.0,
+    "min_text_pt": 7.0,
+    "n_text_spans": 43,
+    "fonts": [
+     "BMQQDV+DejaVuSans:ttf"
+    ],
+    "fonts_embedded": true,
+    "raster_images": 0,
+    "png_dpi": [
+     800,
+     800
+    ],
+    "pdf_md5": "86f64ec2798f5de98e71d26db6aeed74"
+   },
+   "fig3_concordance": {
+    "width_cm": 12.2,
+    "height_cm": 5.2,
+    "min_text_pt": 7.0,
+    "n_text_spans": 37,
+    "fonts": [
+     "BMQQDV+DejaVuSans:ttf"
+    ],
+    "fonts_embedded": true,
+    "raster_images": 0,
+    "png_dpi": [
+     800,
+     800
+    ],
+    "pdf_md5": "fde366b542fbec8703d05a1faa59f0b7"
+   },
+   "fig4_memory_profile": {
+    "width_cm": 12.2,
+    "height_cm": 5.6,
+    "min_text_pt": 7.0,
+    "n_text_spans": 27,
+    "fonts": [
+     "BMQQDV+DejaVuSans:ttf"
+    ],
+    "fonts_embedded": true,
+    "raster_images": 0,
+    "png_dpi": [
+     800,
+     800
+    ],
+    "pdf_md5": "4b1bb326742675d14074fbc7f3af9b44"
+   }
+  },
+  "greyscale": {
+   "fig1_min_contrast": 4.794556147252515,
+   "fig1_extreme_luminance_diff": 92.45820913376343,
+   "fig2_luminance_by_order": [
+    30.7,
+    55.1,
+    73.3,
+    86.5,
+    97.9,
+    108.8,
+    120.7,
+    139.8,
+    163.0,
+    185.7,
+    208.0
+   ],
+   "fig2_min_adjacent_diff": 10.93736361000002,
+   "fig5_clustering_pairs_distinct": true,
+   "fig5_other_distinct_positions": true,
+   "fig6_pairs_distinct": true
+  }
+ },
+ "inputs": {
+  "n_result_files": 115,
+  "concordance_md5": "59d2b912f926a827cd7ea35d5c067188",
+  "figure_values_md5": "fa8aea68598874b1ecedd515428c53ca"
+ }
+}

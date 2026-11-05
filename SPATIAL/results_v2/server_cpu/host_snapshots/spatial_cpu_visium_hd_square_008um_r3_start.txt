@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:56:14Z
+loadavg: 2.84 27.58 30.23
+tctl: +40.4°C
+gpu: 0 %, 313 MiB, 41, 210 MHz
+top_processes:
+    802 root      20   0       0      0      0 S  13.3   0.0  79:28.30 kcompactd0
+   5773 rstudio+  20   0   98764   9888   8512 S   2.0   0.0  24:37.10 rserver-monitor
+2066810 user      20   0   15404   6932   3828 R   1.5   0.0   0:00.08 top
+   3551 root      20   0 1003824  71612  29256 S   1.0   0.0  59:19.16 mongod
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:20.53 nvidia-modeset/kthread_q
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  39:04.87 fctsched
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  36:23.93 rserver
+1126386 user      20   0 5738720 357344  79256 S   0.5   0.1  42:29.33 claude
+1843744 user      20   0   71.3g  68796  18136 S   0.5   0.0   2:37.84 bun
+1926791 root      20   0       0      0      0 I   0.5   0.0   0:02.89 kworker/127:0-mm_percpu_wq
+2034954 root      20   0       0      0      0 I   0.5   0.0   0:01.97 kworker/u256:2-ixgbe
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:33.89 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.06 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g

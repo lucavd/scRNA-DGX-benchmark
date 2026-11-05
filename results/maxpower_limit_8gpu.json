@@ -1,0 +1,9 @@
+{
+  "max_cells": 11900000,
+  "first_oom_at": 12000000,
+  "n_gpus": 8,
+  "source_cells": 3436470,
+  "pca_method": "covariance_distributed",
+  "rmm_pool_size": "2GB",
+  "timestamp": "2026-03-20T22:45:45.147027+00:00"
+}

@@ -1,0 +1,20 @@
+utc: 2026-11-03T15:55:28Z
+loadavg: 72.76 42.33 47.32
+tctl: +61.2°C
+gpu: 0 %, 313 MiB, 39, 210 MHz
+top_processes:
+2077820 user      20   0   15404   6912   3800 R   1.5   0.0   0:00.08 top
+   5773 rstudio+  20   0   98764   9888   8512 S   1.0   0.0  24:48.39 rserver-monitor
+     17 root      20   0       0      0      0 I   0.5   0.0  17:06.17 rcu_preempt
+   2517 root      20   0  337656  20944  16524 S   0.5   0.0   7:27.58 NetworkManager
+   3873 root      20   0   41.0g   1.1g  36264 S   0.5   0.4  21:47.61 java
+   4032 root      20   0   19.0g  93256  18608 S   0.5   0.0  35:38.63 teamviewerd
+   7304 user      20   0  389388   8248   7140 S   0.5   0.0   0:35.34 gvfs-afc-volume
+ 226224 riccardo  20   0   11.5g 269216 114688 S   0.5   0.1  18:09.21 TeamViewer
+1126386 user      20   0 5738720 358816  79256 S   0.5   0.1  43:15.69 claude
+2075971 root      20   0       0      0      0 I   0.5   0.0   0:00.03 kworker/59:2-events
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:40.22 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.07 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p

@@ -1,0 +1,213 @@
+{
+ "scanpy_version": "1.12",
+ "receipts": [
+  {
+   "ricevuta": "R2-R012",
+   "valore_scritto": "8,192",
+   "valore_letto_S3": "8192",
+   "riletto_S7": "8192",
+   "ok": true,
+   "written_in": [
+    "chapter",
+    "supplement"
+   ]
+  },
+  {
+   "ricevuta": "R2-R013",
+   "valore_scritto": "`n_jobs` = 1",
+   "valore_letto_S3": "1",
+   "riletto_S7": "1",
+   "ok": true,
+   "written_in": [
+    "chapter",
+    "supplement"
+   ]
+  },
+  {
+   "ricevuta": "R2-R017",
+   "valore_scritto": "8,192",
+   "valore_letto_S3": "8192",
+   "riletto_S7": "8192",
+   "ok": true,
+   "written_in": [
+    "chapter",
+    "supplement"
+   ]
+  },
+  {
+   "ricevuta": "R2-R036",
+   "valore_scritto": "six",
+   "valore_letto_S3": "6",
+   "riletto_S7": "6",
+   "ok": true,
+   "written_in": [
+    "chapter",
+    "supplement"
+   ]
+  },
+  {
+   "ricevuta": "R2-R037",
+   "valore_scritto": "five",
+   "valore_letto_S3": "5",
+   "riletto_S7": "5",
+   "ok": true,
+   "written_in": [
+    "chapter",
+    "supplement"
+   ]
+  },
+  {
+   "ricevuta": "R2-R038",
+   "valore_scritto": "two for clustering",
+   "valore_letto_S3": "2",
+   "riletto_S7": "2",
+   "ok": true,
+   "written_in": [
+    "supplement"
+   ]
+  }
+ ],
+ "s5_text_rechecks": [
+  {
+   "check": "Fig 8 caption",
+   "string": "UMAP (197x) and Geary's C (122x); Moran's I reached 20.8x",
+   "numbers": [
+    {
+     "number": "197x",
+     "n_sentences": 3,
+     "example": "On Visium HD 8 um the GPU accelerated UMAP 197x, Geary's C 122x, PCA 37.0x, normalisation 30.4x and Moran's I 20.8x (Fig."
+    },
+    {
+     "number": "122x",
+     "n_sentences": 3,
+     "example": "On Visium HD 8 um the GPU accelerated UMAP 197x, Geary's C 122x, PCA 37.0x, normalisation 30.4x and Moran's I 20.8x (Fig."
+    },
+    {
+     "number": "20.8x",
+     "n_sentences": 3,
+     "example": "On Visium HD 8 um the GPU accelerated UMAP 197x, Geary's C 122x, PCA 37.0x, normalisation 30.4x and Moran's I 20.8x (Fig."
+    }
+   ],
+   "ok": true
+  },
+  {
+   "check": "Fig 8 caption CPU steps",
+   "string": "(open circles; 0.80x and 1.1x)",
+   "numbers": [
+    {
+     "number": "0.80x",
+     "n_sentences": 3,
+     "example": "Spatial neighbours and neighbourhood enrichment ran in Squidpy on the CPU in both pipelines (0.80x and 1.1x)."
+    },
+    {
+     "number": "1.1x",
+     "n_sentences": 3,
+     "example": "Spatial neighbours and neighbourhood enrichment ran in Squidpy on the CPU in both pipelines (0.80x and 1.1x)."
+    }
+   ],
+   "ok": true
+  },
+  {
+   "check": "rho min concl",
+   "string": "(Spearman rho at least 0.9995)",
+   "numbers": [
+    {
+     "number": "0.9995",
+     "n_sentences": 5,
+     "example": "DE log-fold-changes over 40 matched cluster pairs had a mean Spearman rho of 0.946 (median 0.9995)."
+    }
+   ],
+   "ok": true
+  },
+  {
+   "check": "disc summary",
+   "string": "end-to-end speedups of 1.4x (Visium v1), 6.9x (Visium HD 8 um, co-occurrence excluded) and 10.4x (Visium HD 2 um subsample) against the 100-CPU DGX reference (1.6x, 6.1x and 9.4x against the workstation CPU)",
+   "numbers": [
+    {
+     "number": "1.4x",
+     "n_sentences": 3,
+     "example": "Against the DGX CPU reference, end-to-end GPU speedups were 1.4x on Visium v1 and 6.9x on Visium HD 8 um, with co-occurrence excluded (Table 2, Supplementary Fi"
+    },
+    {
+     "number": "6.9x",
+     "n_sentences": 4,
+     "example": "Against the DGX CPU reference, end-to-end GPU speedups were 1.4x on Visium v1 and 6.9x on Visium HD 8 um, with co-occurrence excluded (Table 2, Supplementary Fi"
+    },
+    {
+     "number": "8 um",
+     "n_sentences": 33,
+     "example": "Against 100 CPUs of a DGX H100 node, an RTX 4090 accelerated end-to-end analysis 1.4-fold on Visium v1, 6.9-fold on Visium HD 8 um (without co-occurrence) and 1"
+    },
+    {
+     "number": "10.4x",
+     "n_sentences": 2,
+     "example": "On the random 400k-bin subsample of Visium HD 2 um the speedup was 10.4x."
+    },
+    {
+     "number": "2 um",
+     "n_sentences": 29,
+     "example": "Against 100 CPUs of a DGX H100 node, an RTX 4090 accelerated end-to-end analysis 1.4-fold on Visium v1, 6.9-fold on Visium HD 8 um (without co-occurrence) and 1"
+    },
+    {
+     "number": "100",
+     "n_sentences": 62,
+     "example": "title: \"GPU-accelerated single-cell (NVIDIA DGX H100) and spatial (RTX 4090) transcriptomics: per-step speedups, capacity and concordance against a 100-CPU refe"
+    },
+    {
+     "number": "1.6x",
+     "n_sentences": 2,
+     "example": "With the 128-thread workstation CPU as reference the speedups were 1.6x, 6.1x and 9.4x."
+    },
+    {
+     "number": "6.1x",
+     "n_sentences": 3,
+     "example": "With the 128-thread workstation CPU as reference the speedups were 1.6x, 6.1x and 9.4x."
+    },
+    {
+     "number": "9.4x",
+     "n_sentences": 2,
+     "example": "With the 128-thread workstation CPU as reference the speedups were 1.6x, 6.1x and 9.4x."
+    }
+   ],
+   "ok": true
+  },
+  {
+   "check": "conclusions",
+   "string": "end-to-end speedups against a 100-CPU DGX node were 1.4x on Visium v1, 6.9x on Visium HD 8 um with co-occurrence excluded and 10.4x on a random 400k-bin subsample",
+   "numbers": [
+    {
+     "number": "100",
+     "n_sentences": 62,
+     "example": "title: \"GPU-accelerated single-cell (NVIDIA DGX H100) and spatial (RTX 4090) transcriptomics: per-step speedups, capacity and concordance against a 100-CPU refe"
+    },
+    {
+     "number": "1.4x",
+     "n_sentences": 3,
+     "example": "Against the DGX CPU reference, end-to-end GPU speedups were 1.4x on Visium v1 and 6.9x on Visium HD 8 um, with co-occurrence excluded (Table 2, Supplementary Fi"
+    },
+    {
+     "number": "6.9x",
+     "n_sentences": 4,
+     "example": "Against the DGX CPU reference, end-to-end GPU speedups were 1.4x on Visium v1 and 6.9x on Visium HD 8 um, with co-occurrence excluded (Table 2, Supplementary Fi"
+    },
+    {
+     "number": "8 um",
+     "n_sentences": 33,
+     "example": "Against 100 CPUs of a DGX H100 node, an RTX 4090 accelerated end-to-end analysis 1.4-fold on Visium v1, 6.9-fold on Visium HD 8 um (without co-occurrence) and 1"
+    },
+    {
+     "number": "10.4x",
+     "n_sentences": 2,
+     "example": "On the random 400k-bin subsample of Visium HD 2 um the speedup was 10.4x."
+    },
+    {
+     "number": "400",
+     "n_sentences": 12,
+     "example": "DE was benchmarked separately on a 3,400,000-cell subset with 81 Leiden clusters."
+    }
+   ],
+   "ok": true
+  }
+ ],
+ "pass": true
+}

@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "pipeline": "spatial_cpu_squidpy",
+    "platform": "visium_hd",
+    "bin_size": "square_008um",
+    "n_spots_input": 393543,
+    "n_genes_input": 19059,
+    "n_cpus": 128,
+    "n_gpus": 0,
+    "random_seed": 42,
+    "timestamp": "2026-03-27T20:09:01.042922+00:00",
+    "software_versions": {
+      "scanpy": "1.12",
+      "squidpy": "1.8.1",
+      "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+      "numpy": "2.2.6"
+    },
+    "repeat_id": 5
+  },
+  "timings": {
+    "data_loading": 3.3497,
+    "qc_filtering": 1.5791,
+    "normalization": 0.6458,
+    "hvg_selection": 0.9266,
+    "pca": 72.6309,
+    "expression_neighbors": 39.1305,
+    "leiden": 19.7188,
+    "umap": 190.4209,
+    "spatial_neighbors": 55.5018,
+    "spatial_autocorr_moran": 48.8988,
+    "spatial_autocorr_geary": 48.4792,
+    "co_occurrence": 3574.2528,
+    "nhood_enrichment": 11.7507,
+    "ligrec": -1,
+    "total": 4067.2856
+  },
+  "memory": {
+    "peak_ram_gb": 8.45,
+    "peak_vram_gb": 0.0,
+    "detailed": {
+      "data_loading_ram_before_gb": 3.28,
+      "data_loading_ram_after_gb": 5.16,
+      "qc_filtering_ram_before_gb": 3.97,
+      "qc_filtering_ram_after_gb": 3.97,
+      "normalization_ram_before_gb": 3.97,
+      "normalization_ram_after_gb": 3.97,
+      "hvg_selection_ram_before_gb": 3.97,
+      "hvg_selection_ram_after_gb": 3.97,
+      "pca_ram_before_gb": 4.04,
+      "pca_ram_after_gb": 7.54,
+      "expression_neighbors_ram_before_gb": 6.95,
+      "expression_neighbors_ram_after_gb": 7.25,
+      "leiden_ram_before_gb": 7.25,
+      "leiden_ram_after_gb": 7.24,
+      "umap_ram_before_gb": 7.24,
+      "umap_ram_after_gb": 7.24,
+      "spatial_neighbors_ram_before_gb": 7.24,
+      "spatial_neighbors_ram_after_gb": 7.27,
+      "spatial_autocorr_moran_ram_before_gb": 7.27,
+      "spatial_autocorr_moran_ram_after_gb": 8.45,
+      "spatial_autocorr_geary_ram_before_gb": 7.27,
+      "spatial_autocorr_geary_ram_after_gb": 8.45,
+      "co_occurrence_ram_before_gb": 7.27,
+      "co_occurrence_ram_after_gb": 7.28,
+      "nhood_enrichment_ram_before_gb": 7.28,
+      "nhood_enrichment_ram_after_gb": 7.27
+    }
+  },
+  "results_summary": {
+    "n_spots_after_qc": 393543,
+    "n_genes_after_qc": 18821,
+    "n_hvgs": 2000,
+    "hvg_list_hash": "b3428b7a6c0b34ff",
+    "n_clusters": 7,
+    "n_svgs_moran_fdr005": 1384,
+    "n_svgs_geary_fdr005": 1582
+  }
+}

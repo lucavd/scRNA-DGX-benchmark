@@ -1,0 +1,47 @@
+=== Download full mouse brain dataset from CELLxGENE Census ===
+Date: Mon Mar 16 09:49:43 CET 2026
+Node: poddgx02
+Workdir: /home/u0044/sc-gpu-benchmark
+
+Data directory: /home/u0044/sc-gpu-benchmark/data
+
+======================================================================
+Downloading mouse brain cells from CZ CELLxGENE Census
+Target: 10,000,000 cells (10x assays only)
+Census version: 2025-11-08
+======================================================================
+  Opening Census (version: 2025-11-08)...
+  Step 1/2: Fetching cell metadata (lightweight)...
+  Found 3,436,470 matching cells
+  Step 2/2: Downloading expression data for 3,436,470 cells...
+  Downloaded: 3,436,470 cells x 53,384 genes in 448s
+  Saving to: /home/u0044/sc-gpu-benchmark/data/brain_10000000.h5ad
+  Saved: 122.56 GB
+
+======================================================================
+DATASET VERIFICATION
+======================================================================
+  brain_10000.h5ad                         |     10,000 cells |   53,384 genes |    252.3 MB
+  brain_100000.h5ad                        |    100,000 cells |   53,384 genes |   2448.9 MB
+  brain_10000000.h5ad                      |  3,436,470 cells |   53,384 genes | 125497.7 MB
+  brain_1300000.h5ad                       |  1,300,000 cells |   53,384 genes |  47512.1 MB
+  brain_50000.h5ad                         |     50,000 cells |   53,384 genes |   1232.3 MB
+  brain_500000.h5ad                        |    500,000 cells |   53,384 genes |  12201.8 MB
+
+Done!
+
+Download exit code: 0
+Renamed: brain_10000000.h5ad -> brain_full_3436470.h5ad (3,436,470 cells)
+
+=== Data directory ===
+-rw-r----- 1 u0044 gprojects 253M Mar 12 00:09 /home/u0044/sc-gpu-benchmark/data/brain_10000.h5ad
+-rw-r----- 1 u0044 gprojects 2.4G Mar 12 07:38 /home/u0044/sc-gpu-benchmark/data/brain_100000.h5ad
+-rw-r----- 1 u0044 gprojects  47G Mar 12 07:36 /home/u0044/sc-gpu-benchmark/data/brain_1300000.h5ad
+-rw-r----- 1 u0044 gprojects 1.3G Mar 12 07:38 /home/u0044/sc-gpu-benchmark/data/brain_50000.h5ad
+-rw-r----- 1 u0044 gprojects  12G Mar 12 07:39 /home/u0044/sc-gpu-benchmark/data/brain_500000.h5ad
+-rw-r----- 1 u0044 gprojects 123G Mar 16 09:56 /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+
+=== Disk usage ===
+116G	/home/u0044/sc-gpu-benchmark/
+
+End: Mon Mar 16 10:00:55 CET 2026

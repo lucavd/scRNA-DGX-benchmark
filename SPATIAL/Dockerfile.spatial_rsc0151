@@ -1,0 +1,8 @@
+# S1 co-occurrence check (D-13): the original spatial image with rapids-singlecell
+# 0.15.1 (integer-overflow fix in co_occurrence) instead of 0.14.1. Nothing else changes.
+# base image id at build time: sha256:738c8cc7301590c95a3ddc3b7dd74bafeefee1f1ce188063e14a166a707a6ddd (checked by the build job)
+FROM lucavd/sc-benchmark-spatial:latest
+USER root
+RUN pip uninstall -y rapids-singlecell && \
+    pip install --no-cache-dir --no-deps rapids-singlecell-cu12==0.15.1 && \
+    pip cache purge || true

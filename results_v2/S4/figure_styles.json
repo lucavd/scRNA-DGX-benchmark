@@ -1,0 +1,464 @@
+{
+ "fig1_speedup_heatmap": {
+  "heatmap_cells": [
+   {
+    "step": "data_loading",
+    "n_cells": 10000,
+    "value": 0.849756463094792,
+    "cell_color": "#f5e3d6",
+    "text_color": "black",
+    "contrast": 16.84334855811853,
+    "luminance": 230.90353111925037
+   },
+   {
+    "step": "data_loading",
+    "n_cells": 50000,
+    "value": 0.7957739703215778,
+    "cell_color": "#f4d9c5",
+    "text_color": "black",
+    "contrast": 15.513468512754036,
+    "luminance": 222.3834880555274
+   },
+   {
+    "step": "data_loading",
+    "n_cells": 100000,
+    "value": 0.7563884397807958,
+    "cell_color": "#f3d1b9",
+    "text_color": "black",
+    "contrast": 14.675839407007176,
+    "luminance": 216.70345934637874
+   },
+   {
+    "step": "qc_filtering",
+    "n_cells": 10000,
+    "value": 8.776667241082198,
+    "cell_color": "#b3d1ea",
+    "text_color": "black",
+    "contrast": 13.245996220519073,
+    "luminance": 202.91481078900642
+   },
+   {
+    "step": "qc_filtering",
+    "n_cells": 50000,
+    "value": 27.21074082953728,
+    "cell_color": "#79b5da",
+    "text_color": "black",
+    "contrast": 9.449040045765503,
+    "luminance": 167.45215080214035
+   },
+   {
+    "step": "qc_filtering",
+    "n_cells": 100000,
+    "value": 33.36570015733872,
+    "cell_color": "#6fb0d7",
+    "text_color": "black",
+    "contrast": 8.887436707866701,
+    "luminance": 161.24618530443877
+   },
+   {
+    "step": "normalization",
+    "n_cells": 10000,
+    "value": 329.2923076923076,
+    "cell_color": "#0c3975",
+    "text_color": "white",
+    "contrast": 11.272893163363758,
+    "luminance": 50.40487699368256
+   },
+   {
+    "step": "normalization",
+    "n_cells": 50000,
+    "value": 206.05527638190955,
+    "cell_color": "#165393",
+    "text_color": "white",
+    "contrast": 7.782236039536755,
+    "luminance": 72.04836180911643
+   },
+   {
+    "step": "normalization",
+    "n_cells": 100000,
+    "value": 173.07031249999994,
+    "cell_color": "#195c9e",
+    "text_color": "white",
+    "contrast": 6.826211876071991,
+    "luminance": 79.68723880279897
+   },
+   {
+    "step": "hvg_selection",
+    "n_cells": 10000,
+    "value": 23.640113798008535,
+    "cell_color": "#81b9dc",
+    "text_color": "black",
+    "contrast": 9.868369421689833,
+    "luminance": 171.8849833004986
+   },
+   {
+    "step": "hvg_selection",
+    "n_cells": 50000,
+    "value": 70.21296296296298,
+    "cell_color": "#418cc3",
+    "text_color": "black",
+    "contrast": 5.747639535770766,
+    "luminance": 123.75742529389981
+   },
+   {
+    "step": "hvg_selection",
+    "n_cells": 100000,
+    "value": 94.218438538206,
+    "cell_color": "#307dbc",
+    "text_color": "black",
+    "contrast": 4.794556147252515,
+    "luminance": 109.22948672112936
+   },
+   {
+    "step": "pca",
+    "n_cells": 10000,
+    "value": 4.794994786235662,
+    "cell_color": "#ccdff0",
+    "text_color": "black",
+    "contrast": 15.359376639767651,
+    "luminance": 219.20430316151268
+   },
+   {
+    "step": "pca",
+    "n_cells": 50000,
+    "value": 20.501381215469618,
+    "cell_color": "#88bcde",
+    "text_color": "black",
+    "contrast": 10.303093520856446,
+    "luminance": 176.31781579885688
+   },
+   {
+    "step": "pca",
+    "n_cells": 100000,
+    "value": 36.46348915368164,
+    "cell_color": "#6baed6",
+    "text_color": "black",
+    "contrast": 8.655710453803591,
+    "luminance": 158.58648580542382
+   },
+   {
+    "step": "neighbors",
+    "n_cells": 10000,
+    "value": 88.14311528731479,
+    "cell_color": "#3380bd",
+    "text_color": "black",
+    "contrast": 4.973542443337267,
+    "luminance": 112.13507443568345
+   },
+   {
+    "step": "neighbors",
+    "n_cells": 50000,
+    "value": 60.50388888888888,
+    "cell_color": "#4c94c8",
+    "text_color": "black",
+    "contrast": 6.390973343510621,
+    "luminance": 132.4741884375621
+   },
+   {
+    "step": "neighbors",
+    "n_cells": 100000,
+    "value": 44.30818155536282,
+    "cell_color": "#5fa4d1",
+    "text_color": "black",
+    "contrast": 7.715715341413422,
+    "luminance": 148.45492086760964
+   },
+   {
+    "step": "leiden_0.5",
+    "n_cells": 10000,
+    "value": 0.364822617914911,
+    "cell_color": "#e87624",
+    "text_color": "black",
+    "contrast": 7.064995242194378,
+    "luminance": 142.863086127446
+   },
+   {
+    "step": "leiden_0.5",
+    "n_cells": 50000,
+    "value": 1.8046477850399412,
+    "cell_color": "#e7eef4",
+    "text_color": "black",
+    "contrast": 17.958649098306648,
+    "luminance": 236.7862603418924
+   },
+   {
+    "step": "leiden_0.5",
+    "n_cells": 100000,
+    "value": 3.581170146176222,
+    "cell_color": "#d4e3f1",
+    "text_color": "black",
+    "contrast": 16.072777772433742,
+    "luminance": 224.22771949876403
+   },
+   {
+    "step": "leiden_1.0",
+    "n_cells": 10000,
+    "value": 1.362174578866769,
+    "cell_color": "#eff2f6",
+    "text_color": "black",
+    "contrast": 18.75455722192087,
+    "luminance": 241.8096766791437
+   },
+   {
+    "step": "leiden_1.0",
+    "n_cells": 50000,
+    "value": 5.461327285748389,
+    "cell_color": "#c9dcef",
+    "text_color": "black",
+    "contrast": 15.01133148260183,
+    "luminance": 216.69259499288702
+   },
+   {
+    "step": "leiden_1.0",
+    "n_cells": 100000,
+    "value": 8.832771654977686,
+    "cell_color": "#b3d1ea",
+    "text_color": "black",
+    "contrast": 13.245996220519073,
+    "luminance": 202.91481078900642
+   },
+   {
+    "step": "leiden_1.5",
+    "n_cells": 10000,
+    "value": 1.6041102077687446,
+    "cell_color": "#eaf0f5",
+    "text_color": "black",
+    "contrast": 18.274135914907887,
+    "luminance": 238.79562687679297
+   },
+   {
+    "step": "leiden_1.5",
+    "n_cells": 50000,
+    "value": 5.552314368370298,
+    "cell_color": "#c9dcef",
+    "text_color": "black",
+    "contrast": 15.01133148260183,
+    "luminance": 216.69259499288702
+   },
+   {
+    "step": "leiden_1.5",
+    "n_cells": 100000,
+    "value": 8.395885340449341,
+    "cell_color": "#b5d3ea",
+    "text_color": "black",
+    "contrast": 13.463188388988247,
+    "luminance": 204.68794378834977
+   },
+   {
+    "step": "umap",
+    "n_cells": 10000,
+    "value": 28.947541179279067,
+    "cell_color": "#77b4d9",
+    "text_color": "black",
+    "contrast": 9.285571443043688,
+    "luminance": 165.67901780279703
+   },
+   {
+    "step": "umap",
+    "n_cells": 50000,
+    "value": 26.91738166393521,
+    "cell_color": "#7bb6da",
+    "text_color": "black",
+    "contrast": 9.531684455608959,
+    "luminance": 168.33871730181198
+   },
+   {
+    "step": "umap",
+    "n_cells": 100000,
+    "value": 45.2925366420512,
+    "cell_color": "#5da3d0",
+    "text_color": "black",
+    "contrast": 7.587332452521661,
+    "luminance": 147.00212701033257
+   },
+   {
+    "step": "de_testing",
+    "n_cells": 10000,
+    "value": 15.59186610445119,
+    "cell_color": "#96c3e2",
+    "text_color": "black",
+    "contrast": 11.219549187739744,
+    "luminance": 185.18348079557342
+   },
+   {
+    "step": "de_testing",
+    "n_cells": 50000,
+    "value": 66.86486878514683,
+    "cell_color": "#458ec5",
+    "text_color": "black",
+    "contrast": 5.956008418936314,
+    "luminance": 126.66301300845393
+   },
+   {
+    "step": "de_testing",
+    "n_cells": 100000,
+    "value": 87.52714434396752,
+    "cell_color": "#3582be",
+    "text_color": "black",
+    "contrast": 5.065188862731789,
+    "luminance": 113.58786829296052
+   }
+  ],
+  "colour_limits": [
+   0.3,
+   400.0
+  ],
+  "colourbar_ticks": [
+   0.5,
+   1,
+   10,
+   100
+  ]
+ },
+ "fig5_timing_breakdown": {
+  "stacked": [
+   {
+    "step": "data_loading",
+    "order": 0,
+    "color": "#440154",
+    "luminance": 30.663378719999997
+   },
+   {
+    "step": "qc_filtering",
+    "order": 1,
+    "color": "#482374",
+    "luminance": 55.09479867
+   },
+   {
+    "step": "normalization",
+    "order": 2,
+    "color": "#424186",
+    "luminance": 73.26552135
+   },
+   {
+    "step": "hvg_selection",
+    "order": 3,
+    "color": "#365d8d",
+    "luminance": 86.54690565
+   },
+   {
+    "step": "pca",
+    "order": 4,
+    "color": "#2b758e",
+    "luminance": 97.89551438999999
+   },
+   {
+    "step": "neighbors",
+    "order": 5,
+    "color": "#228d8d",
+    "luminance": 108.83287800000001
+   },
+   {
+    "step": "leiden_0.5",
+    "order": 6,
+    "color": "#20a386",
+    "luminance": 120.70312264499998
+   },
+   {
+    "step": "leiden_1.0",
+    "order": 7,
+    "color": "#3aba76",
+    "luminance": 139.81851577499998
+   },
+   {
+    "step": "leiden_1.5",
+    "order": 8,
+    "color": "#6ccd5a",
+    "luminance": 163.01068034999997
+   },
+   {
+    "step": "umap",
+    "order": 9,
+    "color": "#aadc32",
+    "luminance": 185.67033505499998
+   },
+   {
+    "step": "de_testing",
+    "order": 10,
+    "color": "#ece51b",
+    "luminance": 207.95313699
+   }
+  ]
+ },
+ "fig3_concordance": {
+  "series": {
+   "clustering": [
+    {
+     "name": "ARI",
+     "marker": "o",
+     "fill": "black",
+     "linestyle": "none",
+     "color": "black"
+    },
+    {
+     "name": "NMI",
+     "marker": "s",
+     "fill": "white",
+     "linestyle": "none",
+     "color": "black"
+    }
+   ],
+   "other": [
+    {
+     "name": "HVG Jaccard",
+     "x_position": 0
+    },
+    {
+     "name": "PCA |\u03c1|",
+     "x_position": 1
+    },
+    {
+     "name": "kNN Jaccard",
+     "x_position": 2
+    },
+    {
+     "name": "DE logFC \u03c1",
+     "x_position": 3
+    }
+   ]
+  },
+  "ylim": [
+   0.8,
+   1.012
+  ]
+ },
+ "fig4_memory_profile": {
+  "series": [
+   {
+    "config": "cpu",
+    "color": "#4477AA",
+    "marker": "o",
+    "linestyle": "-",
+    "filled": true
+   },
+   {
+    "config": "gpu1",
+    "color": "#EE6677",
+    "marker": "s",
+    "linestyle": "--",
+    "filled": false
+   },
+   {
+    "config": "gpu2",
+    "color": "#228833",
+    "marker": "^",
+    "linestyle": ":",
+    "filled": true
+   },
+   {
+    "config": "gpu4",
+    "color": "#CCBB44",
+    "marker": "D",
+    "linestyle": "-.",
+    "filled": false
+   },
+   {
+    "config": "gpu8",
+    "color": "#AA3377",
+    "marker": "v",
+    "linestyle": "(0, (5, 1.5, 1, 1.5, 1, 1.5))",
+    "filled": true
+   }
+  ]
+ }
+}

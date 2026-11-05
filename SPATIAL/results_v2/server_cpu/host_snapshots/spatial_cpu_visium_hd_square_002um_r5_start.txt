@@ -1,0 +1,20 @@
+utc: 2026-11-03T17:01:05Z
+loadavg: 2.37 21.62 39.50
+tctl: +40.1°C
+gpu: 0 %, 313 MiB, 40, 210 MHz
+top_processes:
+1843744 user      20   0   71.3g  69072  18360 S   2.0   0.0   3:25.18 bun
+2088439 user      20   0   15404   6920   3812 R   1.5   0.0   0:00.08 top
+   3551 root      20   0 1003824  71684  29256 S   1.0   0.0  60:09.21 mongod
+1126386 user      20   0 5738720 356880  79644 S   1.0   0.1  44:06.39 claude
+     17 root      20   0       0      0      0 I   0.5   0.0  17:11.00 rcu_preempt
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:39.58 nvidia-modeset/kthread_q
+   4032 root      20   0   19.0g  93268  18608 S   0.5   0.0  35:55.08 teamviewerd
+   7304 user      20   0  389388   8248   7140 S   0.5   0.0   0:35.68 gvfs-afc-volume
+   8074 user      20   0 1324228  81496  52008 S   0.5   0.0  10:28.86 cloud-drive-ui
+ 766829 root      20   0 1371876  45184  18548 S   0.5   0.0   5:50.64 tailscaled
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:45.69 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.07 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p

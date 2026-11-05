@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:24:03Z
+loadavg: 6.61 2.88 2.41
+tctl: +64.4°C
+gpu: 0 %, 313 MiB, 42, 210 MHz
+top_processes:
+2056754 user      20   0   15688   7136   3832 R   1.5   0.0   0:00.08 top
+   4032 root      20   0   19.0g  93256  18608 S   1.0   0.0  35:14.53 teamviewerd
+   4199 rstudio+  20   0  854192  28952  20072 S   1.0   0.0  36:15.19 rserver
+     17 root      20   0       0      0      0 I   0.5   0.0  16:58.93 rcu_preempt
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:16.29 nvidia-modeset/kthread_q
+   2409 systemd+  20   0   18140   7712   6740 S   0.5   0.0   9:10.90 systemd-oomd
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  38:56.82 fctsched
+   3551 root      20   0 1003824  71608  29256 S   0.5   0.0  59:04.89 mongod
+   4022 rstudio+  20   0 9621404  23748  11176 S   0.5   0.0   3:02.90 rstudio-local-l
+   7492 user      20   0 1530200  25172  22080 S   0.5   0.0   5:26.24 fortitray
+ 226401 riccardo  20   0  546808  22720  19388 S   0.5   0.0   0:00.27 goa-daemon
+ 226422 riccardo  20   0  890968  24620  21168 S   0.5   0.0   0:00.36 evolution-calen
+ 226568 riccardo  20   0  825540  30392  26296 S   0.5   0.0   0:00.31 evolution-addre
+1126386 user      20   0 5738720 356444  79192 S   0.5   0.1  42:04.18 claude
+1843744 user      20   0   71.3g  68416  17864 S   0.5   0.0   2:23.42 bun

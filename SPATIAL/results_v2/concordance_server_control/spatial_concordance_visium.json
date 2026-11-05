@@ -1,0 +1,627 @@
+[
+  {
+    "platform": "visium",
+    "repeat_id": 1,
+    "moranI": {
+      "n_common_genes": 2000,
+      "I_spearman_rho": 1.0,
+      "I_spearman_pval": 0.0,
+      "I_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1434,
+      "n_svg_gpu": 1434,
+      "n_svg_shared": 1434
+    },
+    "gearyC": {
+      "n_common_genes": 2000,
+      "C_spearman_rho": 1.0,
+      "C_spearman_pval": 0.0,
+      "C_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1472,
+      "n_svg_gpu": 1472,
+      "n_svg_shared": 1472
+    },
+    "clusters": {
+      "n_common_spots": 2695,
+      "ari": 0.8561,
+      "nmi": 0.8915,
+      "n_clusters_cpu": 16,
+      "n_clusters_gpu": 15
+    },
+    "co_occurrence": {
+      "spearman_rho": 1.0,
+      "pearson_r": 1.0,
+      "max_abs_diff": 1e-05,
+      "n_values": 12544
+    },
+    "nhood_enrichment": {
+      "spearman_rho": 0.9982,
+      "pearson_r": 0.999405,
+      "n_values": 256
+    },
+    "timing": {
+      "data_loading": {
+        "cpu_seconds": 0.6326,
+        "gpu_seconds": 0.7182,
+        "speedup": 0.88
+      },
+      "qc_filtering": {
+        "cpu_seconds": 0.3002,
+        "gpu_seconds": 2.8327,
+        "speedup": 0.11
+      },
+      "normalization": {
+        "cpu_seconds": 2.394,
+        "gpu_seconds": 0.083,
+        "speedup": 28.84
+      },
+      "hvg_selection": {
+        "cpu_seconds": 0.6203,
+        "gpu_seconds": 0.5514,
+        "speedup": 1.12
+      },
+      "pca": {
+        "cpu_seconds": 0.469,
+        "gpu_seconds": 0.6847,
+        "speedup": 0.68
+      },
+      "expression_neighbors": {
+        "cpu_seconds": 9.0213,
+        "gpu_seconds": 2.1829,
+        "speedup": 4.13
+      },
+      "leiden": {
+        "cpu_seconds": 0.0726,
+        "gpu_seconds": 0.4821,
+        "speedup": 0.15
+      },
+      "umap": {
+        "cpu_seconds": 2.4314,
+        "gpu_seconds": 0.1598,
+        "speedup": 15.22
+      },
+      "spatial_neighbors": {
+        "cpu_seconds": 0.3789,
+        "gpu_seconds": 0.383,
+        "speedup": 0.99
+      },
+      "spatial_autocorr_moran": {
+        "cpu_seconds": 1.6065,
+        "gpu_seconds": 3.2708,
+        "speedup": 0.49
+      },
+      "spatial_autocorr_geary": {
+        "cpu_seconds": 1.6337,
+        "gpu_seconds": 0.2225,
+        "speedup": 7.34
+      },
+      "co_occurrence": {
+        "cpu_seconds": 8.0891,
+        "gpu_seconds": 1.6449,
+        "speedup": 4.92
+      },
+      "nhood_enrichment": {
+        "cpu_seconds": 1.3988,
+        "gpu_seconds": 1.6777,
+        "speedup": 0.83
+      },
+      "ligrec": {
+        "cpu_seconds": 9.4878,
+        "gpu_seconds": 9.3189,
+        "speedup": 1.02
+      },
+      "total": {
+        "cpu_seconds": 38.5362,
+        "gpu_seconds": 24.2126,
+        "speedup": 1.59
+      }
+    }
+  },
+  {
+    "platform": "visium",
+    "repeat_id": 2,
+    "moranI": {
+      "n_common_genes": 2000,
+      "I_spearman_rho": 1.0,
+      "I_spearman_pval": 0.0,
+      "I_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1434,
+      "n_svg_gpu": 1434,
+      "n_svg_shared": 1434
+    },
+    "gearyC": {
+      "n_common_genes": 2000,
+      "C_spearman_rho": 1.0,
+      "C_spearman_pval": 0.0,
+      "C_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1472,
+      "n_svg_gpu": 1472,
+      "n_svg_shared": 1472
+    },
+    "clusters": {
+      "n_common_spots": 2695,
+      "ari": 0.8561,
+      "nmi": 0.8915,
+      "n_clusters_cpu": 16,
+      "n_clusters_gpu": 15
+    },
+    "co_occurrence": {
+      "spearman_rho": 1.0,
+      "pearson_r": 1.0,
+      "max_abs_diff": 1e-05,
+      "n_values": 12544
+    },
+    "nhood_enrichment": {
+      "spearman_rho": 0.998245,
+      "pearson_r": 0.999168,
+      "n_values": 256
+    },
+    "timing": {
+      "data_loading": {
+        "cpu_seconds": 0.6234,
+        "gpu_seconds": 0.7155,
+        "speedup": 0.87
+      },
+      "qc_filtering": {
+        "cpu_seconds": 0.2914,
+        "gpu_seconds": 2.8455,
+        "speedup": 0.1
+      },
+      "normalization": {
+        "cpu_seconds": 2.3536,
+        "gpu_seconds": 0.0835,
+        "speedup": 28.19
+      },
+      "hvg_selection": {
+        "cpu_seconds": 0.5957,
+        "gpu_seconds": 0.5517,
+        "speedup": 1.08
+      },
+      "pca": {
+        "cpu_seconds": 0.4822,
+        "gpu_seconds": 0.6861,
+        "speedup": 0.7
+      },
+      "expression_neighbors": {
+        "cpu_seconds": 8.97,
+        "gpu_seconds": 2.2047,
+        "speedup": 4.07
+      },
+      "leiden": {
+        "cpu_seconds": 0.0628,
+        "gpu_seconds": 0.5112,
+        "speedup": 0.12
+      },
+      "umap": {
+        "cpu_seconds": 2.4479,
+        "gpu_seconds": 0.1897,
+        "speedup": 12.9
+      },
+      "spatial_neighbors": {
+        "cpu_seconds": 0.3756,
+        "gpu_seconds": 0.4441,
+        "speedup": 0.85
+      },
+      "spatial_autocorr_moran": {
+        "cpu_seconds": 1.5906,
+        "gpu_seconds": 3.2512,
+        "speedup": 0.49
+      },
+      "spatial_autocorr_geary": {
+        "cpu_seconds": 1.6175,
+        "gpu_seconds": 0.2082,
+        "speedup": 7.77
+      },
+      "co_occurrence": {
+        "cpu_seconds": 8.0314,
+        "gpu_seconds": 1.4473,
+        "speedup": 5.55
+      },
+      "nhood_enrichment": {
+        "cpu_seconds": 1.3788,
+        "gpu_seconds": 1.6762,
+        "speedup": 0.82
+      },
+      "ligrec": {
+        "cpu_seconds": 9.504,
+        "gpu_seconds": 9.0268,
+        "speedup": 1.05
+      },
+      "total": {
+        "cpu_seconds": 38.3249,
+        "gpu_seconds": 23.8417,
+        "speedup": 1.61
+      }
+    }
+  },
+  {
+    "platform": "visium",
+    "repeat_id": 3,
+    "moranI": {
+      "n_common_genes": 2000,
+      "I_spearman_rho": 1.0,
+      "I_spearman_pval": 0.0,
+      "I_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1434,
+      "n_svg_gpu": 1434,
+      "n_svg_shared": 1434
+    },
+    "gearyC": {
+      "n_common_genes": 2000,
+      "C_spearman_rho": 1.0,
+      "C_spearman_pval": 0.0,
+      "C_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1472,
+      "n_svg_gpu": 1472,
+      "n_svg_shared": 1472
+    },
+    "clusters": {
+      "n_common_spots": 2695,
+      "ari": 0.8561,
+      "nmi": 0.8915,
+      "n_clusters_cpu": 16,
+      "n_clusters_gpu": 15
+    },
+    "co_occurrence": {
+      "spearman_rho": 1.0,
+      "pearson_r": 1.0,
+      "max_abs_diff": 1e-05,
+      "n_values": 12544
+    },
+    "nhood_enrichment": {
+      "spearman_rho": 0.998087,
+      "pearson_r": 0.999307,
+      "n_values": 256
+    },
+    "timing": {
+      "data_loading": {
+        "cpu_seconds": 0.6343,
+        "gpu_seconds": 0.7233,
+        "speedup": 0.88
+      },
+      "qc_filtering": {
+        "cpu_seconds": 0.2947,
+        "gpu_seconds": 2.8521,
+        "speedup": 0.1
+      },
+      "normalization": {
+        "cpu_seconds": 2.3728,
+        "gpu_seconds": 0.0845,
+        "speedup": 28.08
+      },
+      "hvg_selection": {
+        "cpu_seconds": 0.5935,
+        "gpu_seconds": 0.5561,
+        "speedup": 1.07
+      },
+      "pca": {
+        "cpu_seconds": 1.1811,
+        "gpu_seconds": 0.6869,
+        "speedup": 1.72
+      },
+      "expression_neighbors": {
+        "cpu_seconds": 9.0097,
+        "gpu_seconds": 2.2682,
+        "speedup": 3.97
+      },
+      "leiden": {
+        "cpu_seconds": 0.0631,
+        "gpu_seconds": 0.4661,
+        "speedup": 0.14
+      },
+      "umap": {
+        "cpu_seconds": 2.4642,
+        "gpu_seconds": 0.1624,
+        "speedup": 15.17
+      },
+      "spatial_neighbors": {
+        "cpu_seconds": 0.3801,
+        "gpu_seconds": 0.3853,
+        "speedup": 0.99
+      },
+      "spatial_autocorr_moran": {
+        "cpu_seconds": 1.6074,
+        "gpu_seconds": 3.2426,
+        "speedup": 0.5
+      },
+      "spatial_autocorr_geary": {
+        "cpu_seconds": 1.6347,
+        "gpu_seconds": 0.2181,
+        "speedup": 7.5
+      },
+      "co_occurrence": {
+        "cpu_seconds": 8.0232,
+        "gpu_seconds": 1.4578,
+        "speedup": 5.5
+      },
+      "nhood_enrichment": {
+        "cpu_seconds": 1.3706,
+        "gpu_seconds": 1.6733,
+        "speedup": 0.82
+      },
+      "ligrec": {
+        "cpu_seconds": 9.4583,
+        "gpu_seconds": 9.1664,
+        "speedup": 1.03
+      },
+      "total": {
+        "cpu_seconds": 39.0877,
+        "gpu_seconds": 23.9431,
+        "speedup": 1.63
+      }
+    }
+  },
+  {
+    "platform": "visium",
+    "repeat_id": 4,
+    "moranI": {
+      "n_common_genes": 2000,
+      "I_spearman_rho": 1.0,
+      "I_spearman_pval": 0.0,
+      "I_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1434,
+      "n_svg_gpu": 1434,
+      "n_svg_shared": 1434
+    },
+    "gearyC": {
+      "n_common_genes": 2000,
+      "C_spearman_rho": 1.0,
+      "C_spearman_pval": 0.0,
+      "C_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1472,
+      "n_svg_gpu": 1472,
+      "n_svg_shared": 1472
+    },
+    "clusters": {
+      "n_common_spots": 2695,
+      "ari": 0.8561,
+      "nmi": 0.8915,
+      "n_clusters_cpu": 16,
+      "n_clusters_gpu": 15
+    },
+    "co_occurrence": {
+      "spearman_rho": 1.0,
+      "pearson_r": 1.0,
+      "max_abs_diff": 1e-05,
+      "n_values": 12544
+    },
+    "nhood_enrichment": {
+      "spearman_rho": 0.998137,
+      "pearson_r": 0.999326,
+      "n_values": 256
+    },
+    "timing": {
+      "data_loading": {
+        "cpu_seconds": 0.6286,
+        "gpu_seconds": 0.7127,
+        "speedup": 0.88
+      },
+      "qc_filtering": {
+        "cpu_seconds": 0.3029,
+        "gpu_seconds": 2.8374,
+        "speedup": 0.11
+      },
+      "normalization": {
+        "cpu_seconds": 2.3678,
+        "gpu_seconds": 0.0835,
+        "speedup": 28.36
+      },
+      "hvg_selection": {
+        "cpu_seconds": 0.592,
+        "gpu_seconds": 0.5525,
+        "speedup": 1.07
+      },
+      "pca": {
+        "cpu_seconds": 0.6479,
+        "gpu_seconds": 0.6815,
+        "speedup": 0.95
+      },
+      "expression_neighbors": {
+        "cpu_seconds": 8.9753,
+        "gpu_seconds": 2.2662,
+        "speedup": 3.96
+      },
+      "leiden": {
+        "cpu_seconds": 0.0628,
+        "gpu_seconds": 0.5303,
+        "speedup": 0.12
+      },
+      "umap": {
+        "cpu_seconds": 2.4468,
+        "gpu_seconds": 0.1614,
+        "speedup": 15.16
+      },
+      "spatial_neighbors": {
+        "cpu_seconds": 0.378,
+        "gpu_seconds": 0.384,
+        "speedup": 0.98
+      },
+      "spatial_autocorr_moran": {
+        "cpu_seconds": 1.5614,
+        "gpu_seconds": 3.2683,
+        "speedup": 0.48
+      },
+      "spatial_autocorr_geary": {
+        "cpu_seconds": 1.6058,
+        "gpu_seconds": 0.2104,
+        "speedup": 7.63
+      },
+      "co_occurrence": {
+        "cpu_seconds": 8.0964,
+        "gpu_seconds": 1.4625,
+        "speedup": 5.54
+      },
+      "nhood_enrichment": {
+        "cpu_seconds": 1.3691,
+        "gpu_seconds": 1.7,
+        "speedup": 0.81
+      },
+      "ligrec": {
+        "cpu_seconds": 9.3003,
+        "gpu_seconds": 9.2657,
+        "speedup": 1.0
+      },
+      "total": {
+        "cpu_seconds": 38.3351,
+        "gpu_seconds": 24.1164,
+        "speedup": 1.59
+      }
+    }
+  },
+  {
+    "platform": "visium",
+    "repeat_id": 5,
+    "moranI": {
+      "n_common_genes": 2000,
+      "I_spearman_rho": 1.0,
+      "I_spearman_pval": 0.0,
+      "I_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1434,
+      "n_svg_gpu": 1434,
+      "n_svg_shared": 1434
+    },
+    "gearyC": {
+      "n_common_genes": 2000,
+      "C_spearman_rho": 1.0,
+      "C_spearman_pval": 0.0,
+      "C_pearson_r": 1.0,
+      "svg_jaccard_top50": 1.0,
+      "svg_jaccard_top100": 1.0,
+      "svg_jaccard_top200": 1.0,
+      "svg_jaccard_fdr005": 1.0,
+      "n_svg_cpu": 1472,
+      "n_svg_gpu": 1472,
+      "n_svg_shared": 1472
+    },
+    "clusters": {
+      "n_common_spots": 2695,
+      "ari": 0.8561,
+      "nmi": 0.8915,
+      "n_clusters_cpu": 16,
+      "n_clusters_gpu": 15
+    },
+    "co_occurrence": {
+      "spearman_rho": 1.0,
+      "pearson_r": 1.0,
+      "max_abs_diff": 1e-05,
+      "n_values": 12544
+    },
+    "nhood_enrichment": {
+      "spearman_rho": 0.998408,
+      "pearson_r": 0.999518,
+      "n_values": 256
+    },
+    "timing": {
+      "data_loading": {
+        "cpu_seconds": 0.6314,
+        "gpu_seconds": 0.7229,
+        "speedup": 0.87
+      },
+      "qc_filtering": {
+        "cpu_seconds": 0.289,
+        "gpu_seconds": 2.8377,
+        "speedup": 0.1
+      },
+      "normalization": {
+        "cpu_seconds": 2.364,
+        "gpu_seconds": 0.0835,
+        "speedup": 28.31
+      },
+      "hvg_selection": {
+        "cpu_seconds": 0.5924,
+        "gpu_seconds": 0.5527,
+        "speedup": 1.07
+      },
+      "pca": {
+        "cpu_seconds": 0.4697,
+        "gpu_seconds": 0.6834,
+        "speedup": 0.69
+      },
+      "expression_neighbors": {
+        "cpu_seconds": 9.0646,
+        "gpu_seconds": 2.232,
+        "speedup": 4.06
+      },
+      "leiden": {
+        "cpu_seconds": 0.0637,
+        "gpu_seconds": 0.4927,
+        "speedup": 0.13
+      },
+      "umap": {
+        "cpu_seconds": 2.436,
+        "gpu_seconds": 0.1618,
+        "speedup": 15.06
+      },
+      "spatial_neighbors": {
+        "cpu_seconds": 0.3742,
+        "gpu_seconds": 0.3861,
+        "speedup": 0.97
+      },
+      "spatial_autocorr_moran": {
+        "cpu_seconds": 1.5801,
+        "gpu_seconds": 3.214,
+        "speedup": 0.49
+      },
+      "spatial_autocorr_geary": {
+        "cpu_seconds": 1.6252,
+        "gpu_seconds": 0.2173,
+        "speedup": 7.48
+      },
+      "co_occurrence": {
+        "cpu_seconds": 8.0317,
+        "gpu_seconds": 1.4445,
+        "speedup": 5.56
+      },
+      "nhood_enrichment": {
+        "cpu_seconds": 1.376,
+        "gpu_seconds": 1.6852,
+        "speedup": 0.82
+      },
+      "ligrec": {
+        "cpu_seconds": 9.4074,
+        "gpu_seconds": 8.9972,
+        "speedup": 1.05
+      },
+      "total": {
+        "cpu_seconds": 38.3054,
+        "gpu_seconds": 23.711,
+        "speedup": 1.62
+      }
+    }
+  }
+]

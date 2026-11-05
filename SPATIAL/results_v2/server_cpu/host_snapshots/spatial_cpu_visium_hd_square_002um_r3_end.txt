@@ -1,0 +1,20 @@
+utc: 2026-11-03T16:36:23Z
+loadavg: 71.38 41.34 46.80
+tctl: +63.5°C
+gpu: 0 %, 313 MiB, 38, 210 MHz
+top_processes:
+2084322 user      20   0   15404   6920   3808 R   1.5   0.0   0:00.08 top
+   3551 root      20   0 1003824  71684  29256 S   1.0   0.0  59:59.56 mongod
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  36:53.61 rserver
+   7492 user      20   0 1530200  25172  22080 S   0.5   0.0   5:33.53 fortitray
+   8890 user      20   0  621744  40052  31044 S   0.5   0.0   0:33.27 update-notifier
+ 225482 riccardo  20   0   21964  13172   9616 S   0.5   0.0   4:47.21 systemd
+ 766829 root      20   0 1371876  41476  17608 S   0.5   0.0   5:47.60 tailscaled
+1126386 user      20   0 5738720 355548  79644 S   0.5   0.1  43:44.55 claude
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:43.56 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.07 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns

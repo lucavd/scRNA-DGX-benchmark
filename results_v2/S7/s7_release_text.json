@@ -1,0 +1,23 @@
+{
+ "doi": "10.5281/zenodo.23984290",
+ "edits": [
+  {
+   "file": "manuscript/full_paper_LNBI.md",
+   "old": "are available at <https://github.com/lucavd/2026.scRNA_DGX>. The Supplementary Material (extended methods, results and discussion, Supplementary Tables S1-S8 and Figures S1-S3) is archived with the code.",
+   "new": "are available at <https://github.com/lucavd/scRNA-DGX-benchmark> (release v1.0.0) and archived on Zenodo (<https://doi.org/10.5281/zenodo.23984290>). The Supplementary Material (extended methods, results and discussion, Supplementary Tables S1-S8 and Figures S1-S3) is included in the archive.",
+   "md5": [
+    "4f565458f500d6355ffef8f6eb5c1567",
+    "44cda299743155db10b92a1a4cc0cc3d"
+   ]
+  },
+  {
+   "file": "manuscript/supplementary_LNBI.md",
+   "old": "result JSON files are available at <https://github.com/lucavd/2026.scRNA_DGX>.",
+   "new": "result JSON files are available at <https://github.com/lucavd/scRNA-DGX-benchmark> (release v1.0.0) and archived on Zenodo (<https://doi.org/10.5281/zenodo.23984290>).",
+   "md5": [
+    "5c995b115134dc41dc46f17d64be7823",
+    "b4ee580b0c7b6116b4a7b558b5bda965"
+   ]
+  }
+ ]
+}

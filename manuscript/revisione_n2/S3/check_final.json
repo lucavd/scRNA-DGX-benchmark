@@ -1,0 +1,38 @@
+{
+ "ms": "manuscript/full_paper_LNBI.md",
+ "ms_md5": "09df07d2b8713da7385612991fb1d7df",
+ "G2": {
+  "n_primary": 190,
+  "missing": [],
+  "duplicated": [],
+  "not_s3_primary": [],
+  "bad_esito": [],
+  "rimandato_without_reason": [],
+  "esiti": {
+   "fatto": 183,
+   "deciso-diversamente": 5,
+   "rimandato": 2
+  },
+  "pass": true
+ },
+ "G3": {
+  "n_receipts": 483,
+  "n_recomputed": 483,
+  "script_errors": [],
+  "mismatches": [],
+  "pass": true
+ },
+ "G4": {
+  "dash_lines": [],
+  "cited_keys": 34,
+  "missing_keys": [],
+  "pandoc_ok": true,
+  "pandoc_warnings": "",
+  "pass": true
+ },
+ "P5": {
+  "body_words": 11518,
+  "file_words": 12066
+ },
+ "P1_abstract_words": 247
+}

@@ -1,0 +1,8 @@
+# Pin RAPIDS 24.06 base packages — do NOT let pip upgrade these
+dask==2024.5.1
+distributed==2024.5.1
+dask-expr==1.1.1
+numpy==1.26.4
+scipy==1.14.0
+pandas==2.2.2
+numba==0.60.0

@@ -1,0 +1,5 @@
+cpu10k neighbors per repeat [19.9029, 1.115, 1.1288, 1.1243, 1.1182]
+cpu10k umap per repeat [9.9455, 9.9472, 9.5373, 9.5456, 9.5289]
+DE+UMAP share 10k: point 79.46475887652359 2.5% 65.61110800343526 min 60.44015112478501 neighbours>umap frac 0.053
+gpu100k de per repeat [7.5024, 6.1102, 6.386, 6.0699, 6.0229] max 7.5024
+gpu100k data_loading per repeat [6.4241, 4.9668, 5.1447, 6.2683, 5.462]

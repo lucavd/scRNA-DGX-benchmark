@@ -1,0 +1,20 @@
+utc: 2026-11-03T18:35:39Z
+loadavg: 0.91 0.55 0.60
+tctl: +62.1°C
+gpu: 100 %, 313 MiB, 51
+top_processes:
+1126386 user      20   0 5738720 358276  79672 S   2.0   0.1  45:00.06 claude
+2121127 user      20   0   15688   7120   3816 R   1.5   0.0   0:00.08 top
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:53.71 nvidia-modeset/kthread_q
+   2444 message+  20   0   24532  12216   6824 S   0.5   0.0  11:57.08 dbus-daemon
+   2456 polkitd   20   0  409504  30700  10592 S   0.5   0.0   2:05.38 polkitd
+   2518 root      20   0 2667104  11800  10208 S   0.5   0.0  39:56.79 fctsched
+   3551 root      20   0 1003824  71624  29256 S   0.5   0.0  60:37.09 mongod
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  37:22.21 rserver
+   5773 rstudio+  20   0   98764   9888   8512 S   0.5   0.0  25:12.09 rserver-monitor
+   7492 user      20   0 1530200  25172  22080 S   0.5   0.0   5:37.36 fortitray
+   8279 user      20   0  811660  13012  11404 S   0.5   0.0  15:24.83 cloud-drive-dae
+1843744 user      20   0   71.3g  70084  18580 S   0.5   0.0   3:58.81 bun
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:52.89 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.10 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release

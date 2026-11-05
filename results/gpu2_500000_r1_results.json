@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "pipeline": "gpu_rapids_2gpu",
+    "n_cells_input": 500000,
+    "n_cpus": 224,
+    "n_gpus": 2,
+    "random_seed": 42,
+    "timestamp": "2026-03-15T22:04:09.116233+00:00",
+    "software_versions": {
+      "scanpy": "1.12",
+      "rapids_singlecell": "0.14.1",
+      "cupy": "13.6.0",
+      "rmm": "26.2.0",
+      "dask": "2026.1.1",
+      "dask_cuda": "26.2.0",
+      "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+      "numpy": "2.2.6"
+    },
+    "configuration": {
+      "dask_cluster": {
+        "n_workers": 2,
+        "rmm_pool_size": "10GB",
+        "rmm_maximum_pool_size": "70GB"
+      },
+      "gpu_warmup": true,
+      "leiden_backend": "cugraph",
+      "cpu_steps": [
+        "data_loading",
+        "qc_filtering",
+        "normalization",
+        "hvg_selection"
+      ],
+      "multi_gpu_steps": [
+        "pca",
+        "neighbors"
+      ],
+      "single_gpu_steps": [
+        "gpu_transfer",
+        "scale",
+        "leiden",
+        "umap",
+        "de_testing"
+      ]
+    },
+    "gpu_info": {
+      "gpus": [
+        {
+          "device_index": 0,
+          "gpu_name": "NVIDIA H100 80GB HBM3",
+          "gpu_vram_total_gb": 79.6
+        },
+        {
+          "device_index": 1,
+          "gpu_name": "NVIDIA H100 80GB HBM3",
+          "gpu_vram_total_gb": 79.6
+        }
+      ],
+      "driver_version": "535.247.01"
+    },
+    "input_file": "/home/u0044/sc-gpu-benchmark/data/brain_500000.h5ad",
+    "repeat_id": 1
+  },
+  "timings": {
+    "data_loading": 24.9114,
+    "qc_filtering": 47.9369,
+    "normalization": 6.5824,
+    "hvg_selection": 11.493,
+    "gpu_transfer": 0.1877,
+    "scale": 0.145,
+    "pca": 0.5248,
+    "neighbors": 2.9615,
+    "leiden_0.5": 2.0955,
+    "leiden_1.0": 0.8221,
+    "leiden_1.5": 0.8219,
+    "umap": 3.6883,
+    "de_testing": 27.1819,
+    "total": 129.3524
+  },
+  "memory": {
+    "peak_ram_gb": 15.47,
+    "peak_vram_gb": 43.06,
+    "detailed": {
+      "data_loading_ram_before_gb": 0.63,
+      "data_loading_ram_after_gb": 12.79,
+      "data_loading_vram_before_gb": 1.08,
+      "data_loading_vram_after_gb": 1.59,
+      "qc_filtering_ram_before_gb": 12.79,
+      "qc_filtering_ram_after_gb": 12.86,
+      "qc_filtering_vram_before_gb": 1.59,
+      "qc_filtering_vram_after_gb": 1.59,
+      "normalization_ram_before_gb": 12.84,
+      "normalization_ram_after_gb": 12.85,
+      "normalization_vram_before_gb": 1.59,
+      "normalization_vram_after_gb": 1.59,
+      "hvg_selection_ram_before_gb": 12.85,
+      "hvg_selection_ram_after_gb": 12.85,
+      "hvg_selection_vram_before_gb": 1.59,
+      "hvg_selection_vram_after_gb": 1.59,
+      "gpu_transfer_ram_before_gb": 13.27,
+      "gpu_transfer_ram_after_gb": 13.44,
+      "gpu_transfer_vram_before_gb": 1.66,
+      "gpu_transfer_vram_after_gb": 2.0,
+      "scale_ram_before_gb": 13.44,
+      "scale_ram_after_gb": 13.45,
+      "scale_vram_before_gb": 2.0,
+      "scale_vram_after_gb": 5.39,
+      "pca_ram_before_gb": 13.5,
+      "pca_ram_after_gb": 13.69,
+      "pca_vram_before_gb": 25.03,
+      "pca_vram_after_gb": 25.38,
+      "neighbors_ram_before_gb": 13.69,
+      "neighbors_ram_after_gb": 14.05,
+      "neighbors_vram_before_gb": 25.38,
+      "neighbors_vram_after_gb": 25.52,
+      "leiden_0.5_ram_before_gb": 14.05,
+      "leiden_0.5_ram_after_gb": 14.51,
+      "leiden_0.5_vram_before_gb": 43.03,
+      "leiden_0.5_vram_after_gb": 43.05,
+      "leiden_1.0_ram_before_gb": 14.51,
+      "leiden_1.0_ram_after_gb": 14.5,
+      "leiden_1.0_vram_before_gb": 43.05,
+      "leiden_1.0_vram_after_gb": 43.05,
+      "leiden_1.5_ram_before_gb": 14.5,
+      "leiden_1.5_ram_after_gb": 14.5,
+      "leiden_1.5_vram_before_gb": 43.05,
+      "leiden_1.5_vram_after_gb": 43.05,
+      "umap_ram_before_gb": 14.5,
+      "umap_ram_after_gb": 14.67,
+      "umap_vram_before_gb": 43.05,
+      "umap_vram_after_gb": 43.06,
+      "de_testing_ram_before_gb": 14.67,
+      "de_testing_ram_after_gb": 15.47,
+      "de_testing_vram_before_gb": 43.06,
+      "de_testing_vram_after_gb": 43.06
+    }
+  },
+  "results_summary": {
+    "n_cells_after_qc": 499983,
+    "n_genes_after_qc": 36864,
+    "n_hvgs": 2000,
+    "hvg_list_hash": "60c479e8ee79e208",
+    "n_clusters_0.5": 51,
+    "n_clusters_1.0": 66,
+    "n_clusters_1.5": 80,
+    "cluster_labels_hash_0.5": "a1e78f0b677598a3",
+    "cluster_labels_hash_1.0": "fa1cd6f10099caae",
+    "cluster_labels_hash_1.5": "3a496c787350a691"
+  }
+}

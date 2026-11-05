@@ -1,0 +1,116 @@
+---
+title: "Step S6: taglio e revisione di stile"
+subtitle: "Capitolo LNBI scRNA DGX, 4 novembre 2026"
+lang: it
+format:
+  html:
+    embed-resources: true
+    toc: true
+---
+
+## In breve: il capitolo sta in 15 pagine senza perdere numeri?
+
+**A cosa serviva.** Il capitolo compilato nel formato Springer misurava 38 pagine, contro le circa 15 decise. Questo passo lo porta a 15 pagine, sposta il dettaglio in un documento supplementare da pubblicare su Zenodo con il codice, come hai scelto, e rivede lo stile del testo nuovo.
+
+**Cosa abbiamo trovato.**
+
+1. **Il capitolo misura ora 15 pagine Springer, con i riferimenti da pagina 13.** La compilazione con la classe Springer non dà errori né citazioni mancanti. L'abstract (247 parole) non è cambiato. La prosa scende da circa 9.700 a 3.100 parole. Restano due tabelle (i riassunti single-cell e spatial) e quattro figure (speedup per step e concordanza, single-cell e spatial).
+2. **Nessun numero è nuovo e nessuno si è perso.** Un controllo scritto a parte ritrova ogni numero del capitolo e del supplemento nel testo di prima del taglio, e ogni numero e ogni riga di tabella di prima nel capitolo o nel supplemento. Una sola riga di tabella cambia, e solo nel rimando rinumerato. Delle 34 fonti citate prima, 31 restano nel capitolo e 3 (due sul non determinismo dei calcoli su GPU, una su spatialdata) solo nel supplemento.
+3. **Il supplemento è di 26 pagine, una più del previsto.** Contiene i Metodi completi, otto tabelle, tre figure, i risultati estesi e la parte della Discussione che il capitolo non riprende. Ho già tolto i paragrafi che ripetevano il capitolo (la prima versione era di 29 pagine); quello che resta non compare altrove.
+4. **Lo stile è più asciutto del previsto: la frase mediana è di 15 parole.** Avevo previsto 16-21 parole, come nei vostri articoli; il 90% delle frasi sta entro 24 parole. Nessuna apertura di comodo, nessuna lineetta, nessuna delle parole enfatiche segnalate dalla revisione.
+5. **Le nove correzioni di stile del piano sono fatte.** Le spiegazioni su memoria, driver del cluster e fallimento a 13,7 milioni di cellule compaiono una volta sola; le Conclusioni non ripetono le cifre dell'abstract; l'ateneo è «University of Padova» ovunque. Le citazioni delle librerie software e della scheda tecnica del DGX, che il piano lasciava in sospeso, non entrano: non c'è spazio e le fonti non sono state lette.
+
+**Cosa devi decidere.**
+
+1. **Approvi il testo del capitolo tagliato? Raccomando di sì, dopo aver letto il PDF provvisorio di 15 pagine.** Il taglio cambia quanto il capitolo racconta per esteso: stress test, espressione differenziale e dettagli spatial restano con i loro numeri principali, mentre spiegazioni e tabelle complete passano nel supplemento. Se vuoi riportare nel capitolo una parte, dimmi quale: una tabella in più costa una o due pagine, e c'è spazio fino a 17.
+
+**Comunque.**
+
+- Nel LaTeX finale riconto le pagine, sostituisco le celle vuote delle tabelle che la conversione trasformerebbe in lineette, controllo la larghezza delle due tabelle e rinomino i file delle figure con i numeri nuovi (1-4).
+- Preparo il PDF del supplemento per Zenodo e scrivo il DOI nel capitolo appena crei la release.
+
+Appena decidi questo punto, lo step è chiuso.
+
+**Sui tempi di calcolo.** Questo passo ha richiesto circa cinquanta minuti (22:11-23:00), senza calcoli pesanti sul server. Resta il LaTeX con la verifica finale, circa un giorno: il pacchetto per la sottomissione è pronto il 6 novembre, con quattro giorni di margine sul 10.
+
+# Dubbi rinviati
+
+- A [LaTeX e pacchetto METEOR (S7)](S7.md): riconteggio delle pagine con il LaTeX definitivo (oggi 15 con la compilazione provvisoria di `tools/lncs_pages.py`; intervallo 13-17).
+- A [LaTeX e pacchetto METEOR (S7)](S7.md): le celle `---` di Table 1 del capitolo e delle Tables S1 e S4 diventano lineette nella conversione: scrivere `n.a.` nel sorgente (lasciate invariate qui per il cancello G2).
+- A [LaTeX e pacchetto METEOR (S7)](S7.md): 14 righe troppo larghe nella compilazione del capitolo, quasi tutte nelle due tabelle; Table 2 ha 8 colonne.
+- A [LaTeX e pacchetto METEOR (S7)](S7.md): i file delle figure del capitolo hanno i nomi vecchi (`fig1_speedup_heatmap`, `fig3_concordance`, `fig8_spatial_perstep`, `fig9_spatial_concordance`) per le figure 1-4; quelli del supplemento (`fig5_timing_breakdown`, `fig4_memory_profile`, `fig7_spatial_speedup`) per le figure S1-S3 (voce R0735).
+- A [LaTeX e pacchetto METEOR (S7)](S7.md): PDF del supplemento da `manuscript/supplementary_LNBI.md` per la release Zenodo, e DOI nel capitolo (scelta REPO_DOI); il supplemento riprende il testo già corretto in S3-S5, con le sole modifiche di questo step.
+
+# Cancelli e previsioni
+
+| id | atteso | osservato | esito |
+|---|---|---|---|
+| G1 | manifest dei grezzi con 0 differenze all'inizio e alla fine | 921 file, 0 differenze, 0 file nuovi all'inizio (22:38) e alla fine (22:49) (`results_v2/S6/manifest_check_*.json`) | superato |
+| G2 | nessun numero nuovo; ogni riga di tabella di prima nel capitolo o nel supplemento | 0 numeri del capitolo e 0 del supplemento assenti dal testo di prima; 120 righe di tabella su 120 presenti, una (Table S3, «As in Table 1» diventato «As in Table S1») solo con il rimando rinumerato; 0 numeri di prima assenti da entrambi (`results_v2/S6/s6_check.json`) | superato, con la precisazione sulla riga rinumerata spiegata sotto |
+| G3 | ogni chiave citata prima ancora citata; `.bib` invariato; 0 citazioni non risolte | 34 chiavi prima, 0 perse (31 nel capitolo, 3 solo nel supplemento); md5 del `.bib` uguale a quello del commit `5ef3c73`; 0 citazioni non risolte in entrambe le compilazioni | superato |
+| G4 | capitolo fra 13 e 17 pagine, 0 errori LaTeX, abstract fra 150 e 250 parole | 15 pagine, riferimenti da pagina 13, 0 errori, abstract 247 parole (`results_v2/S6/pages/main/pages.json`) | superato |
+| G5 | niente lineette, aperture di comodo e parole della lista nel capitolo; 9 righe di diario; OKF | 0 lineette (capitolo e supplemento), 0 aperture, 0 parole della lista; 9 voci con una riga ciascuna in `IMPL_diario.csv`; `tools/okf.py check` superato | superato |
+| P1 | 15 pagine | 15 | confermata |
+| P2 | da 25 a 34 chiavi citate nel capitolo | 31 | confermata |
+| P3 | mediana delle frasi del capitolo fra 16 e 21 parole | 15 (194 frasi; 90° percentile 24; massimo 59, l'elenco dei passi della pipeline) | smentita di una parola, sotto l'intervallo; detto nel riassunto |
+| P4 | supplemento fra 15 e 25 pagine | 29 nella prima versione, 26 dopo aver tolto le ripetizioni (conseguenza pre-registrata) | smentita; spiegata sotto |
+
+Criteri completi, scritti prima di ogni modifica al testo: `docs/steps/S6.md`, sezione «Attese pre-registrate» (commit `5ef3c73`, 22:38).
+
+# Dubbi e come si sono chiusi
+
+- **Riga di tabella rinumerata (spiegato, cancello G2).** La prima esecuzione a secco del controllo, prima del commit, segnalava come persa la riga «1-8» di Table S3, perché il suo rimando «As in Table 1» punta ora a Table S1. Il controllo è stato precisato prima dell'esecuzione sul server: una riga che manca è accettata solo se, rimettendo i vecchi numeri di tabella con la mappa inversa, torna identica all'originale. Una riga sola è in questo caso.
+- **Supplemento sopra 25 pagine (spiegato, previsione P4).** La prima versione (29 pagine, `manuscript/revisione_n2/S6/supplementary_LNBI_v1.md`, ricevuta `results_v2/S6/pages/supplement_v1/pages.json`) riportava quasi tutto il testo di prima. Come previsto dalla conseguenza, sono stati tolti 3 paragrafi dei Risultati e 8 della Discussione già coperti dal capitolo (`results_v2/S6/s6_sup_edits.json`), con un controllo che nessun numero si perdesse: 26 pagine. Ciò che resta (Metodi completi, 8 tabelle, 3 figure, dettagli dei risultati, tre paragrafi della Discussione) non compare nel capitolo. Il supplemento non ha un limite di pagine.
+- **Frase mediana di 15 parole (spiegato, previsione P3).** Dopo la prima stesura la mediana era 28 parole, sopra il registro degli autori; la riscrittura a una idea per frase l'ha portata a 15. Il testo non è stato ritoccato per centrare l'intervallo.
+- **Orari della pre-registrazione (corretto).** Il file dello step diceva «alle 22:50» e il frontmatter di [Taglio a 15 pagine LNCS con un documento supplementare su Zenodo (D-21)](../decisions/D-21.md) «22:45»: erano stime sbagliate. Il commit delle attese è delle 22:38:47 (`5ef3c73`), la misura delle 38 pagine delle 22:16, il primo testo nuovo compilato delle 22:46. Corretti gli orari; il testo delle attese è quello del commit.
+- **Misure prima delle attese (dichiarato).** Conteggio di partenza e simulazioni sono stati fatti prima della pre-registrazione, perché servivano alla scelta del PI; nessuna attesa riguarda quelle misure.
+- **Citazioni rimaste in sospeso da S3 (deciso).** R0554 (CuPy, cuML, igraph, NumPy, SciPy) e R0549 (scheda NVIDIA DGX H100): non citate, decisione tecnica [Citazioni di librerie e scheda DGX non aggiunte dopo il taglio (D-22)](../decisions/D-22.md).
+- **`aliascnt.sty` assente nella TinyTeX del server (corretto).** TinyTeX è TeX Live 2025 e `tlmgr` non installa più dal mirror 2026. Il file viene dall'archivio `oberdiek` di TeX Live 2025 (md5 dell'archivio `a348337c891284a448675f17546251f5`) ed è in `tools/lncs_support/`; la TinyTeX non è stata modificata.
+- **Copia di stile di settembre (superata).** `manuscript/revisione_n2/stile/` si riferisce al testo del 3 novembre; la revisione di stile di questo step è stata fatta sul testo nuovo.
+
+# Dove è finito ogni elemento
+
+| contenuto | prima del taglio | ora |
+|---|---|---|
+| Riassunto scRNA-seq (tempi, memoria) | Table 4 | Table 1 del capitolo |
+| Riassunto spatial | Table 8 | Table 2 del capitolo |
+| Speedup per step scRNA-seq | Figure 1 | Figure 1 del capitolo |
+| Concordanza scRNA-seq | Figure 5 | Figure 2 del capitolo |
+| Speedup per step a Visium HD 8 µm | Figure 8 | Figure 3 del capitolo |
+| Concordanza spatial | Figure 9 | Figure 4 del capitolo |
+| Passi e parametri scRNA-seq, metriche di concordanza, passi spatial | Tables 1, 2, 3 | Tables S1, S2, S3 |
+| Stress test, bilancio di memoria, espressione differenziale | Tables 5, 6, 7 | Tables S4, S5, S6 |
+| Tempi per step e concordanza spatial | Tables 9, 10 | Tables S7, S8 |
+| Tempi assoluti per step, memoria, tempi totali spatial | Figures 2, 6, 7 | Figures S1, S2, S3 |
+| Metodi completi | Metodi, circa 3.800 parole con le tabelle | capitolo: sintesi; supplemento: testo completo |
+
+Il manoscritto prima del taglio è in `manuscript/revisione_n2/S6/full_paper_LNBI_preS6.md` (md5 `2e6c57413bcfd70ef152a7fbbb5982bf`). Le modifiche al testo spostato nel supplemento, voce per voce, sono in `results_v2/S6/s6_sup_edits.json`; il diario delle 9 voci in `manuscript/revisione_n2/piano/IMPL_diario.csv`.
+
+# Cosa è girato
+
+| cosa | file | esito |
+|---|---|---|
+| Conteggio delle pagine (pandoc 3.1.3, `llncs.cls` del repo, pdflatex e BibTeX `splncs04` di TinyTeX 2025) | `tools/lncs_pages.py` | ricevute `results_v2/S6/pages/*/pages.json`, con md5 di sorgente, `.bib` e classe |
+| Bilancio di pagina e simulazioni delle composizioni (testo troncato, solo misura di lunghezza) | `tools/s6_page_budget.py`, `tools/s6_cut_simulator.py` | `results_v2/S6/pages/budget/`, `options/`, `dropone/` |
+| Controllo indipendente | `tools/s6_check.py` | `results_v2/S6/s6_check.json` |
+| Manifest dei grezzi | `tools/check_manifest.py` | `results_v2/S6/manifest_check_start.json`, `manifest_check_end.json` |
+
+Testi: capitolo `manuscript/full_paper_LNBI.md` (md5 `50049fe0e4b13f2039cda7b23537aea9`), supplemento `manuscript/supplementary_LNBI.md` (md5 `0a43c9ae60825c688f79ada121ebb70f`). Compilazioni: capitolo alle 22:46, supplemento alle 22:48, ciascuna in pochi secondi. Nessun calcolo pesante sul server (load average 33-40 per altri progetti, ininfluente: nessun tempo misurato).
+
+# Appendice: da dove vengono i numeri del riassunto
+
+| frase | file | valore letto |
+|---|---|---|
+| 38 pagine all'apertura | `results_v2/S6/pages/baseline/pages.json` | `pages_total` 38 |
+| 15 pagine, riferimenti da pagina 13 | `results_v2/S6/pages/main/pages.json` | `pages_total` 15, `refs_start_page` 13 |
+| nessun errore, nessuna citazione mancante | `results_v2/S6/pages/main/pages.json` | `latex_errors` 0, `undefined_citations` [] |
+| abstract di 247 parole | `results_v2/S6/pages/main/pages.json` | `abstract_words` 247 |
+| prosa da circa 9.700 a 3.100 parole | `results_v2/S6/s6_summary_numbers.json`; `results_v2/S6/s6_check.json` | `prose_words_pre` 9699; `prose_words_main` 3099 |
+| nessun numero nuovo e nessuno perso | `results_v2/S6/s6_check.json` | `G2_numbers_not_in_pre_main` [], `G2_numbers_not_in_pre_sup` [], `info_pre_numbers_absent_from_both` [] |
+| una sola riga di tabella cambia nel rimando | `results_v2/S6/s6_check.json` | `G2_table_rows_relabelled_only`: 1 riga; `G2_table_rows_missing` [] |
+| 34 fonti, 31 nel capitolo, 3 solo nel supplemento | `results_v2/S6/s6_check.json` | `G3_keys_pre` 34, `G3_keys_main` 31, `G3_keys_only_in_sup` Collange2015, Marconato2024, Shanmugavelu2024 |
+| supplemento di 26 pagine, prima versione di 29 | `results_v2/S6/pages/supplement/pages.json`; `results_v2/S6/pages/supplement_v1/pages.json` | `pages_total` 26; `pages_total` 29 |
+| frase mediana di 15 parole, 90% entro 24 | `results_v2/S6/s6_check.json` | `P3_median_words` 15, `P3_p90_words` 24 |
+| nessuna apertura di comodo, lineetta o parola della lista | `results_v2/S6/s6_check.json` | `G5_openers_main` [], `G5_dash_lines` vuote, `G5_listed_words_main` {} |
+| nove correzioni del piano | `manuscript/revisione_n2/piano/IMPL_diario.csv` | righe R0716, R0717, R0722, R0723, R0724, R0725, R0727, R0728, R0733 |
+| una tabella in più costa una o due pagine | `results_v2/S6/pages/dropone/drop_T*/pages.json` | 36 o 37 pagine contro 38 |

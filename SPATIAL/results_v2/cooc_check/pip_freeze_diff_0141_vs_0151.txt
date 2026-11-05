@@ -1,0 +1,4 @@
+208c208
+< rapids_singlecell==0.14.1
+---
+> rapids-singlecell-cu12==0.15.1

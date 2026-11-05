@@ -1,0 +1,9 @@
+# grep -n -i -e pass -e fail -e container -e driver -e node slurm-test_driver_16944.out (DGX logs), read 2026-11-04
+1:=== Driver test with full RAPIDS 24.06 container ===
+2:Container: /home/u0044/sc-gpu-benchmark/sc-benchmark-2406.sif
+4:Node: poddgx02
+8:| NVIDIA-SMI 535.183.01             Driver Version: 535.183.01   CUDA Version: 12.2     |
+63:  CuPy: PASS
+64:  RMM: PASS
+65:  rapids-singlecell: PASS
+67:Overall: ALL PASS — container is compatible!

@@ -1,0 +1,417 @@
+2026-03-20 05:56:52 | [INFO] State start
+2026-03-20 05:56:52 | [INFO]   Scheduler at:     tcp://127.0.0.1:36507
+2026-03-20 05:56:52 | [INFO]   dashboard at:  http://127.0.0.1:8787/status
+2026-03-20 05:56:52 | [INFO] Registering Worker plugin shuffle
+2026-03-20 05:56:52 | [INFO]         Start Nanny at: 'tcp://127.0.0.1:44179'
+2026-03-20 05:56:52 | [INFO]         Start Nanny at: 'tcp://127.0.0.1:39017'
+2026-03-20 05:56:52 | [INFO]         Start Nanny at: 'tcp://127.0.0.1:39269'
+2026-03-20 05:56:52 | [INFO]         Start Nanny at: 'tcp://127.0.0.1:36587'
+2026-03-20 05:56:52 | [INFO]         Start Nanny at: 'tcp://127.0.0.1:36967'
+2026-03-20 05:56:52 | [INFO]         Start Nanny at: 'tcp://127.0.0.1:39295'
+2026-03-20 05:56:52 | [INFO]         Start Nanny at: 'tcp://127.0.0.1:33419'
+2026-03-20 05:56:52 | [INFO]         Start Nanny at: 'tcp://127.0.0.1:45445'
+2026-03-20 05:56:57 | [INFO] Creating preload: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Import preload module: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Run preload setup: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Creating preload: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Import preload module: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Creating preload: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Import preload module: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Run preload setup: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Creating preload: dask_cuda.initialize
+2026-03-20 05:56:57 | [INFO] Import preload module: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Creating preload: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Import preload module: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Run preload setup: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Creating preload: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Import preload module: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Creating preload: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Import preload module: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Creating preload: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Import preload module: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Run preload setup: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Run preload setup: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Run preload setup: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Run preload setup: dask_cuda.initialize
+2026-03-20 05:56:58 | [INFO] Run preload setup: dask_cuda.initialize
+2026-03-20 05:57:03 | [INFO]       Start worker at:      tcp://127.0.0.1:34263
+2026-03-20 05:57:03 | [INFO]          Listening to:      tcp://127.0.0.1:34263
+2026-03-20 05:57:03 | [INFO]           Worker name:                          4
+2026-03-20 05:57:03 | [INFO]          dashboard at:            127.0.0.1:35169
+2026-03-20 05:57:03 | [INFO] Waiting to connect to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO]               Threads:                          1
+2026-03-20 05:57:03 | [INFO]                Memory:                 251.95 GiB
+2026-03-20 05:57:03 | [INFO]       Local Directory: /tmp/dask-scratch-space/worker-eudas50f
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CUDFSetup-d0fa43d3-ec42-4f63-a73e-c93b46a9a198
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin PreImport-1ed92c79-4194-4bb6-8c4a-c833dc0fc7ff
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CPUAffinity-1977cb0a-4a5d-49f9-af08-4df835e045df
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin RMMSetup-d857e41f-8c88-4ee4-a05e-82bb32611808
+2026-03-20 05:57:03 | [INFO]       Start worker at:      tcp://127.0.0.1:32837
+2026-03-20 05:57:03 | [INFO]          Listening to:      tcp://127.0.0.1:32837
+2026-03-20 05:57:03 | [INFO]           Worker name:                          1
+2026-03-20 05:57:03 | [INFO]          dashboard at:            127.0.0.1:43473
+2026-03-20 05:57:03 | [INFO] Waiting to connect to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO]               Threads:                          1
+2026-03-20 05:57:03 | [INFO]                Memory:                 251.95 GiB
+2026-03-20 05:57:03 | [INFO]       Local Directory: /tmp/dask-scratch-space/worker-nh3msbdy
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin PreImport-b5ec53d7-2526-49a9-b295-4f2a28635b1b
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CPUAffinity-e81a2c15-0f94-40eb-99c9-ddb1f62c6f22
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CUDFSetup-efc960a9-b46c-4a87-a7f6-41b56479dbf9
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin RMMSetup-50e4e450-c750-4fbe-8678-b96817880d1b
+2026-03-20 05:57:03 | [INFO]       Start worker at:      tcp://127.0.0.1:34307
+2026-03-20 05:57:03 | [INFO]          Listening to:      tcp://127.0.0.1:34307
+2026-03-20 05:57:03 | [INFO]           Worker name:                          0
+2026-03-20 05:57:03 | [INFO]          dashboard at:            127.0.0.1:33105
+2026-03-20 05:57:03 | [INFO] Waiting to connect to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO]               Threads:                          1
+2026-03-20 05:57:03 | [INFO]                Memory:                 251.95 GiB
+2026-03-20 05:57:03 | [INFO]       Local Directory: /tmp/dask-scratch-space/worker-j4iiigb_
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CPUAffinity-2d3f6c8e-a6d9-47e9-97ae-e412ac827ac9
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin RMMSetup-2bada2fd-530b-4e39-bfef-8d3e0a422595
+2026-03-20 05:57:03 | [INFO]       Start worker at:      tcp://127.0.0.1:36995
+2026-03-20 05:57:03 | [INFO]          Listening to:      tcp://127.0.0.1:36995
+2026-03-20 05:57:03 | [INFO]           Worker name:                          3
+2026-03-20 05:57:03 | [INFO]          dashboard at:            127.0.0.1:41695
+2026-03-20 05:57:03 | [INFO] Waiting to connect to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO]               Threads:                          1
+2026-03-20 05:57:03 | [INFO]                Memory:                 251.95 GiB
+2026-03-20 05:57:03 | [INFO]       Local Directory: /tmp/dask-scratch-space/worker-dkyk_nc1
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CPUAffinity-02b8830f-6790-4092-83fe-6ebd25794dbe
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin RMMSetup-19de85df-841b-420b-83b8-f1072f306a42
+2026-03-20 05:57:03 | [INFO]       Start worker at:      tcp://127.0.0.1:44385
+2026-03-20 05:57:03 | [INFO]          Listening to:      tcp://127.0.0.1:44385
+2026-03-20 05:57:03 | [INFO]           Worker name:                          2
+2026-03-20 05:57:03 | [INFO]          dashboard at:            127.0.0.1:36891
+2026-03-20 05:57:03 | [INFO] Waiting to connect to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO]               Threads:                          1
+2026-03-20 05:57:03 | [INFO]                Memory:                 251.95 GiB
+2026-03-20 05:57:03 | [INFO]       Local Directory: /tmp/dask-scratch-space/worker-0cx223lt
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin PreImport-aba5e284-cd66-4806-ac5e-9ef57faaf67c
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin RMMSetup-bbb35955-040c-4cf0-8b37-7c8190632bab
+2026-03-20 05:57:03 | [INFO]       Start worker at:      tcp://127.0.0.1:35225
+2026-03-20 05:57:03 | [INFO]          Listening to:      tcp://127.0.0.1:35225
+2026-03-20 05:57:03 | [INFO]           Worker name:                          5
+2026-03-20 05:57:03 | [INFO]          dashboard at:            127.0.0.1:45687
+2026-03-20 05:57:03 | [INFO] Waiting to connect to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO]               Threads:                          1
+2026-03-20 05:57:03 | [INFO]                Memory:                 251.95 GiB
+2026-03-20 05:57:03 | [INFO]       Local Directory: /tmp/dask-scratch-space/worker-ysvu17v8
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CUDFSetup-b353b124-91bc-47ff-bec2-1f0521947a62
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin PreImport-21f4af00-7b15-461b-9039-79373b21a14d
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CPUAffinity-2aef69c6-51af-4363-a59a-1e8028f76834
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin RMMSetup-64fdca7f-bccb-4336-b4e7-c470a18ace83
+2026-03-20 05:57:03 | [INFO]       Start worker at:      tcp://127.0.0.1:39297
+2026-03-20 05:57:03 | [INFO]          Listening to:      tcp://127.0.0.1:39297
+2026-03-20 05:57:03 | [INFO]           Worker name:                          7
+2026-03-20 05:57:03 | [INFO]          dashboard at:            127.0.0.1:38365
+2026-03-20 05:57:03 | [INFO] Waiting to connect to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO]               Threads:                          1
+2026-03-20 05:57:03 | [INFO]                Memory:                 251.95 GiB
+2026-03-20 05:57:03 | [INFO]       Local Directory: /tmp/dask-scratch-space/worker-cdm4thma
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CPUAffinity-a590ebd1-b054-44d4-9a28-f0e995f11991
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin RMMSetup-0d93b843-7382-4ff7-a467-3954abb6e841
+2026-03-20 05:57:03 | [INFO]       Start worker at:      tcp://127.0.0.1:40791
+2026-03-20 05:57:03 | [INFO]          Listening to:      tcp://127.0.0.1:40791
+2026-03-20 05:57:03 | [INFO]           Worker name:                          6
+2026-03-20 05:57:03 | [INFO]          dashboard at:            127.0.0.1:42163
+2026-03-20 05:57:03 | [INFO] Waiting to connect to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO]               Threads:                          1
+2026-03-20 05:57:03 | [INFO]                Memory:                 251.95 GiB
+2026-03-20 05:57:03 | [INFO]       Local Directory: /tmp/dask-scratch-space/worker-3za77n98
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin RMMSetup-35e1e3ef-047f-4ad7-b5eb-fe1b42a0e754
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CPUAffinity-bc0f3c62-23c0-4b6a-ab54-e5faf0936bdd
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin PreImport-91015d6d-4df4-4387-804e-fa37b315f0f4
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CPUAffinity-bca69cb0-6ee1-41d1-98d9-0cd88f1714a3
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CUDFSetup-76156a1d-1b01-4e2a-8a3a-e094d031cc7e
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CUDFSetup-dbc755ad-e238-457b-8de8-1927428444a1
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin PreImport-5acfe174-b9f6-42e5-a4a4-eb754e180d29
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CUDFSetup-65f3d535-31e0-4ee0-8475-0f6828553109
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CUDFSetup-02ed8324-4fdd-4dfc-8fb2-d3bdf28222a7
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin PreImport-eba3a381-6145-45f7-a530-1ba09fd2d4a6
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin PreImport-d5292854-9054-4342-ab65-a055177ae7d9
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin CUDFSetup-a4152bda-e04e-4deb-9c45-e9e6970d066d
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Register worker addr: tcp://127.0.0.1:34263 name: 4
+2026-03-20 05:57:03 | [INFO] Starting worker compute stream, tcp://127.0.0.1:34263
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46244
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin shuffle
+2026-03-20 05:57:03 | [INFO]         Registered to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Register worker addr: tcp://127.0.0.1:40791 name: 6
+2026-03-20 05:57:03 | [INFO] Starting worker compute stream, tcp://127.0.0.1:40791
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46260
+2026-03-20 05:57:03 | [INFO] Register worker addr: tcp://127.0.0.1:35225 name: 5
+2026-03-20 05:57:03 | [INFO] Starting worker compute stream, tcp://127.0.0.1:35225
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46266
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin shuffle
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] Register worker addr: tcp://127.0.0.1:36995 name: 3
+2026-03-20 05:57:03 | [INFO] Starting worker compute stream, tcp://127.0.0.1:36995
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46276
+2026-03-20 05:57:03 | [INFO]         Registered to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin shuffle
+2026-03-20 05:57:03 | [INFO] Register worker addr: tcp://127.0.0.1:44385 name: 2
+2026-03-20 05:57:03 | [INFO] Starting worker compute stream, tcp://127.0.0.1:44385
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46284
+2026-03-20 05:57:03 | [INFO]         Registered to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Register worker addr: tcp://127.0.0.1:39297 name: 7
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin shuffle
+2026-03-20 05:57:03 | [INFO] Starting worker compute stream, tcp://127.0.0.1:39297
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46294
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin shuffle
+2026-03-20 05:57:03 | [INFO] Register worker addr: tcp://127.0.0.1:34307 name: 0
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] Starting worker compute stream, tcp://127.0.0.1:34307
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46304
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin shuffle
+2026-03-20 05:57:03 | [INFO]         Registered to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Register worker addr: tcp://127.0.0.1:32837 name: 1
+2026-03-20 05:57:03 | [INFO]         Registered to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting worker compute stream, tcp://127.0.0.1:32837
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46320
+2026-03-20 05:57:03 | [INFO]         Registered to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin shuffle
+2026-03-20 05:57:03 | [INFO]         Registered to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting Worker plugin shuffle
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO]         Registered to:      tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] -------------------------------------------------
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:36507
+2026-03-20 05:57:03 | [INFO] Receive client connection: Client-3ca426cf-2419-11f1-9c49-5cff35fe19a6
+2026-03-20 05:57:03 | [INFO] Starting established connection to tcp://127.0.0.1:46332
+2026-03-20 05:57:03 | [INFO] Run out-of-band function '_inspect_scheduler'
+2026-03-20 05:57:04 | [INFO] Run out-of-band function '_inspect_scheduler'
+2026-03-20 05:57:05 | [INFO] Run out-of-band function '_inspect_scheduler'
+2026-03-20 05:57:05 | [INFO] Run out-of-band function '_inspect_scheduler'
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Nanny for 6.27s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Nanny for 6.27s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Nanny for 6.27s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Nanny for 6.27s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Nanny for 6.27s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Nanny for 6.27s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Scheduler for 6.25s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Nanny for 6.25s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:33 | [INFO] Event loop was unresponsive in Nanny for 6.25s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2026-03-20 06:19:35 | [INFO] Remove client Client-3ca426cf-2419-11f1-9c49-5cff35fe19a6
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46332; closing.
+2026-03-20 06:19:35 | [INFO] Remove client Client-3ca426cf-2419-11f1-9c49-5cff35fe19a6
+2026-03-20 06:19:35 | [INFO] Close client connection: Client-3ca426cf-2419-11f1-9c49-5cff35fe19a6
+2026-03-20 06:19:35 | [INFO] Retire worker addresses (stimulus_id='retire-workers-1773983975.5732803') (0, 1, 2, 3, 4, 5, 6, 7)
+2026-03-20 06:19:35 | [INFO] Closing Nanny at 'tcp://127.0.0.1:44179'. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Nanny asking worker to close. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Closing Nanny at 'tcp://127.0.0.1:39017'. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Nanny asking worker to close. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Closing Nanny at 'tcp://127.0.0.1:39269'. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Nanny asking worker to close. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Closing Nanny at 'tcp://127.0.0.1:36587'. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Nanny asking worker to close. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Closing Nanny at 'tcp://127.0.0.1:36967'. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Stopping worker at tcp://127.0.0.1:34307. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Nanny asking worker to close. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Closing Nanny at 'tcp://127.0.0.1:39295'. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Nanny asking worker to close. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Closing Nanny at 'tcp://127.0.0.1:33419'. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CPUAffinity-2d3f6c8e-a6d9-47e9-97ae-e412ac827ac9
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin RMMSetup-2bada2fd-530b-4e39-bfef-8d3e0a422595
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin PreImport-d5292854-9054-4342-ab65-a055177ae7d9
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CUDFSetup-a4152bda-e04e-4deb-9c45-e9e6970d066d
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin shuffle
+2026-03-20 06:19:35 | [INFO] Nanny asking worker to close. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Closing Nanny at 'tcp://127.0.0.1:45445'. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Nanny asking worker to close. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Stopping worker at tcp://127.0.0.1:34263. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Stopping worker at tcp://127.0.0.1:32837. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Stopping worker at tcp://127.0.0.1:36995. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Stopping worker at tcp://127.0.0.1:35225. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CUDFSetup-d0fa43d3-ec42-4f63-a73e-c93b46a9a198
+2026-03-20 06:19:35 | [INFO] Stopping worker at tcp://127.0.0.1:44385. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin PreImport-1ed92c79-4194-4bb6-8c4a-c833dc0fc7ff
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CPUAffinity-1977cb0a-4a5d-49f9-af08-4df835e045df
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin RMMSetup-d857e41f-8c88-4ee4-a05e-82bb32611808
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin shuffle
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CUDFSetup-b353b124-91bc-47ff-bec2-1f0521947a62
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin PreImport-21f4af00-7b15-461b-9039-79373b21a14d
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CPUAffinity-2aef69c6-51af-4363-a59a-1e8028f76834
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin RMMSetup-64fdca7f-bccb-4336-b4e7-c470a18ace83
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin shuffle
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin PreImport-b5ec53d7-2526-49a9-b295-4f2a28635b1b
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CPUAffinity-e81a2c15-0f94-40eb-99c9-ddb1f62c6f22
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CPUAffinity-02b8830f-6790-4092-83fe-6ebd25794dbe
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CUDFSetup-efc960a9-b46c-4a87-a7f6-41b56479dbf9
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin RMMSetup-50e4e450-c750-4fbe-8678-b96817880d1b
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin shuffle
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin PreImport-aba5e284-cd66-4806-ac5e-9ef57faaf67c
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin RMMSetup-19de85df-841b-420b-83b8-f1072f306a42
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CUDFSetup-dbc755ad-e238-457b-8de8-1927428444a1
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin PreImport-5acfe174-b9f6-42e5-a4a4-eb754e180d29
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin RMMSetup-bbb35955-040c-4cf0-8b37-7c8190632bab
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin shuffle
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CPUAffinity-bca69cb0-6ee1-41d1-98d9-0cd88f1714a3
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CUDFSetup-65f3d535-31e0-4ee0-8475-0f6828553109
+2026-03-20 06:19:35 | [INFO] Connection to tcp://127.0.0.1:36507 has been closed.
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin shuffle
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46304; closing.
+2026-03-20 06:19:35 | [INFO] Stopping worker at tcp://127.0.0.1:39297. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Connection to tcp://127.0.0.1:36507 has been closed.
+2026-03-20 06:19:35 | [INFO] Remove worker addr: tcp://127.0.0.1:34307 name: 0 (stimulus_id='handle-worker-cleanup-1773983975.577802')
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CPUAffinity-a590ebd1-b054-44d4-9a28-f0e995f11991
+2026-03-20 06:19:35 | [INFO] Stopping worker at tcp://127.0.0.1:40791. Reason: nanny-close
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin RMMSetup-0d93b843-7382-4ff7-a467-3954abb6e841
+2026-03-20 06:19:35 | [INFO] Connection to tcp://127.0.0.1:36507 has been closed.
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CUDFSetup-02ed8324-4fdd-4dfc-8fb2-d3bdf28222a7
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin PreImport-eba3a381-6145-45f7-a530-1ba09fd2d4a6
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin shuffle
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin RMMSetup-35e1e3ef-047f-4ad7-b5eb-fe1b42a0e754
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CPUAffinity-bc0f3c62-23c0-4b6a-ab54-e5faf0936bdd
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin PreImport-91015d6d-4df4-4387-804e-fa37b315f0f4
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin CUDFSetup-76156a1d-1b01-4e2a-8a3a-e094d031cc7e
+2026-03-20 06:19:35 | [INFO] Removing Worker plugin shuffle
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46244; closing.
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46266; closing.
+2026-03-20 06:19:35 | [INFO] Remove worker addr: tcp://127.0.0.1:34263 name: 4 (stimulus_id='handle-worker-cleanup-1773983975.5789957')
+2026-03-20 06:19:35 | [INFO] Connection to tcp://127.0.0.1:36507 has been closed.
+2026-03-20 06:19:35 | [INFO] Remove worker addr: tcp://127.0.0.1:35225 name: 5 (stimulus_id='handle-worker-cleanup-1773983975.579185')
+2026-03-20 06:19:35 | [INFO] Connection to tcp://127.0.0.1:36507 has been closed.
+2026-03-20 06:19:35 | [INFO] Connection to tcp://127.0.0.1:36507 has been closed.
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46294; closing.
+2026-03-20 06:19:35 | [INFO] Remove worker addr: tcp://127.0.0.1:39297 name: 7 (stimulus_id='handle-worker-cleanup-1773983975.579948')
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46260; closing.
+2026-03-20 06:19:35 | [INFO] Connection to tcp://127.0.0.1:36507 has been closed.
+2026-03-20 06:19:35 | [INFO] Connection to tcp://127.0.0.1:36507 has been closed.
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46320; closing.
+2026-03-20 06:19:35 | [INFO] Remove worker addr: tcp://127.0.0.1:40791 name: 6 (stimulus_id='handle-worker-cleanup-1773983975.5802774')
+2026-03-20 06:19:35 | [INFO] Remove worker addr: tcp://127.0.0.1:32837 name: 1 (stimulus_id='handle-worker-cleanup-1773983975.5804045')
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46276; closing.
+2026-03-20 06:19:35 | [INFO] Received 'close-stream' from tcp://127.0.0.1:46284; closing.
+2026-03-20 06:19:35 | [INFO] Remove worker addr: tcp://127.0.0.1:36995 name: 3 (stimulus_id='handle-worker-cleanup-1773983975.580656')
+2026-03-20 06:19:35 | [INFO] Remove worker addr: tcp://127.0.0.1:44385 name: 2 (stimulus_id='handle-worker-cleanup-1773983975.580778')
+2026-03-20 06:19:35 | [INFO] Lost all workers
+2026-03-20 06:19:39 | [WARNING] Worker process still alive after 4.0 seconds, killing
+2026-03-20 06:19:39 | [WARNING] Worker process still alive after 4.0 seconds, killing
+2026-03-20 06:19:39 | [WARNING] Worker process still alive after 4.0 seconds, killing
+2026-03-20 06:19:39 | [WARNING] Worker process still alive after 4.0 seconds, killing
+2026-03-20 06:19:39 | [WARNING] Worker process still alive after 4.0 seconds, killing
+2026-03-20 06:19:39 | [WARNING] Worker process still alive after 4.0 seconds, killing
+2026-03-20 06:19:39 | [WARNING] Worker process still alive after 4.0 seconds, killing
+2026-03-20 06:19:39 | [WARNING] Worker process still alive after 4.0 seconds, killing
+2026-03-20 06:19:39 | [INFO] Worker process 2070469 was killed by signal 9
+2026-03-20 06:19:39 | [INFO] Nanny at 'tcp://127.0.0.1:39269' closed.
+2026-03-20 06:19:40 | [INFO] Worker process 2070485 was killed by signal 9
+2026-03-20 06:19:40 | [INFO] Worker process 2070481 was killed by signal 9
+2026-03-20 06:19:40 | [INFO] Nanny at 'tcp://127.0.0.1:33419' closed.
+2026-03-20 06:19:40 | [INFO] Nanny at 'tcp://127.0.0.1:39295' closed.
+2026-03-20 06:19:40 | [INFO] Worker process 2070473 was killed by signal 9
+2026-03-20 06:19:40 | [INFO] Worker process 2070489 was killed by signal 9
+2026-03-20 06:19:40 | [INFO] Worker process 2070460 was killed by signal 9
+2026-03-20 06:19:40 | [INFO] Worker process 2070464 was killed by signal 9
+2026-03-20 06:19:40 | [INFO] Nanny at 'tcp://127.0.0.1:36587' closed.
+2026-03-20 06:19:40 | [INFO] Nanny at 'tcp://127.0.0.1:45445' closed.
+2026-03-20 06:19:40 | [INFO] Nanny at 'tcp://127.0.0.1:44179' closed.
+2026-03-20 06:19:40 | [INFO] Nanny at 'tcp://127.0.0.1:39017' closed.
+2026-03-20 06:19:40 | [INFO] Worker process 2070476 was killed by signal 9
+2026-03-20 06:19:40 | [ERROR] Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOMainLoop object at 0x152eea0e3ce0>>, <Task finished name='Task-767197' coro=<SpecCluster._correct_state_internal() done, defined at /opt/conda/lib/python3.12/site-packages/distributed/deploy/spec.py:352> exception=TimeoutError()>)
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.12/site-packages/distributed/utils.py", line 1928, in wait_for
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.12/site-packages/tornado/ioloop.py", line 758, in _run_callback
+    ret = callback()
+          ^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/tornado/ioloop.py", line 782, in _discard_future_result
+    future.result()
+TimeoutError
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.12/site-packages/distributed/utils.py", line 1928, in wait_for
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 1158, in <module>
+    main()
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 914, in main
+    result = run_single(adata_path, n_gpus, args.target_cells, output_dir, args.skip_de)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 947, in run_single
+    result, adata, hvg_list = run_pipeline(adata_path, n_gpus, target_cells, skip_de)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 673, in run_pipeline
+    cluster_obj.close()
+  File "/opt/conda/lib/python3.12/site-packages/distributed/deploy/spec.py", line 299, in close
+    aw = super().close(timeout)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/distributed/deploy/cluster.py", line 224, in close
+    return self.sync(self._close, callback_timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/distributed/utils.py", line 381, in sync
+    return sync(
+           ^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/distributed/utils.py", line 457, in sync
+    raise error
+  File "/opt/conda/lib/python3.12/site-packages/distributed/utils.py", line 431, in f
+    result = yield future
+             ^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/tornado/gen.py", line 783, in run
+    value = future.result()
+            ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/distributed/deploy/spec.py", line 454, in _close
+    await self._correct_state()
+  File "/opt/conda/lib/python3.12/site-packages/distributed/deploy/spec.py", line 365, in _correct_state_internal
+    await asyncio.gather(*tasks)
+  File "/opt/conda/lib/python3.12/site-packages/distributed/nanny.py", line 619, in close
+    await self.kill(timeout=timeout, reason=reason)
+  File "/opt/conda/lib/python3.12/site-packages/distributed/nanny.py", line 400, in kill
+    await self.process.kill(reason=reason, timeout=timeout)
+  File "/opt/conda/lib/python3.12/site-packages/distributed/nanny.py", line 883, in kill
+    await process.join(max(0, deadline - time()))
+  File "/opt/conda/lib/python3.12/site-packages/distributed/process.py", line 330, in join
+    await wait_for(asyncio.shield(self._exit_future), timeout)
+  File "/opt/conda/lib/python3.12/site-packages/distributed/utils.py", line 1927, in wait_for
+    async with asyncio.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+Traceback (most recent call last):
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 1158, in <module>
+    main()
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 899, in main
+    run_find_limit(adata_path, n_gpus, output_dir, args.fine_low, args.fine_high)
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 1121, in run_find_limit
+    success = _run_in_subprocess(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 1043, in _run_in_subprocess
+    raise RuntimeError(
+RuntimeError: Benchmark subprocess failed with exit code 1 for target=12,000,000 cells

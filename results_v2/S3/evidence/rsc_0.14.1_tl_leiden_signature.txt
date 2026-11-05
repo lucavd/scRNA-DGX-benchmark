@@ -1,0 +1,3 @@
+Command: docker run --rm lucavd/sc-benchmark-spatial:latest python -c 'import inspect, rapids_singlecell as rsc; print(inspect.signature(rsc.tl.leiden))' (server, 2026-11-04)
+rapids_singlecell 0.14.1
+tl.leiden (adata: 'AnnData', resolution: 'float | list[float]' = 1.0, *, random_state: 'int | None' = 0, theta: 'float' = 1.0, restrict_to: 'tuple[str, Sequence[str]] | None' = None, key_added: 'str' = 'leiden', adjacency: 'sparse.spmatrix | None' = None, n_iterations: 'int' = 100, use_weights: 'bool' = True, neighbors_key: 'str | None' = None, obsp: 'str | None' = None, dtype: 'str | np.dtype | cp.dtype' = <class 'numpy.float32'>, use_dask: 'bool' = False, copy: 'bool' = False) -> 'AnnData | None'

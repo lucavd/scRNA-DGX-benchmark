@@ -1,0 +1,108 @@
+==================================================================
+CHUNKED MAX-POWER BENCHMARK — push beyond 11.9M cells
+==================================================================
+Date: Tue Mar 24 13:51:46 CET 2026
+Node: poddgx02
+Job ID: 16696
+Workdir: /home/u0044/sc-gpu-benchmark
+Tue Mar 24 13:51:46 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.183.01             Driver Version: 535.183.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  | 00000000:1B:00.0 Off |                    0 |
+| N/A   26C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA H100 80GB HBM3          On  | 00000000:43:00.0 Off |                    0 |
+| N/A   27C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA H100 80GB HBM3          On  | 00000000:52:00.0 Off |                    0 |
+| N/A   31C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA H100 80GB HBM3          On  | 00000000:61:00.0 Off |                    0 |
+| N/A   31C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA H100 80GB HBM3          On  | 00000000:9D:00.0 Off |                    0 |
+| N/A   27C    P0              68W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA H100 80GB HBM3          On  | 00000000:C3:00.0 Off |                    0 |
+| N/A   25C    P0              67W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA H100 80GB HBM3          On  | 00000000:D1:00.0 Off |                    0 |
+| N/A   29C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA H100 80GB HBM3          On  | 00000000:DF:00.0 Off |                    0 |
+| N/A   32C    P0              70W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+
+Data file: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+File size: 123G
+
+Clustering: leiden
+
+Found full dataset: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+
+System RAM: 2016 GB
+
+================================================================================
+CHUNKED FIND-LIMIT MODE — subprocess isolation
+Source dataset: 3,436,470 cells
+Previous limit (standard pipeline): 11,900,000 cells
+================================================================================
+
+--- Phase 1: Coarse search (start at 12M, step ~3,436,470) ---
+
+>>> Trying 12,000,000 cells...
+  Launching subprocess: target=12,000,000 cells, 8 GPUs
+Found full dataset: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+
+DGX Configuration:
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  System RAM: 2016 GB
+
+================================================================================
+CHUNKED MAX-POWER BENCHMARK — target 12,000,000 cells — 8 GPUs
+  Batch size: 100,000 cells
+  Dense matrix is NEVER created in full
+================================================================================
+  Step                           |     Time |                  RAM |         VRAM (total)
+  -------------------------------+----------+----------------------+---------------------
+  data_loading                   |   208.02s | RAM: 0.6->123.8 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 3,436,470 cells x 53,384 genes
+  Resizing: 3,436,470 x 3 + 1,690,590 = 12,000,000 cells...
+  Done: 12,000,000 cells x 53,384 genes (406.9s)
+  qc_filtering                   |  2623.92s | RAM: 429.7->431.7 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 11,999,618 cells x 44,158 genes
+  normalization                  |   126.22s | RAM: 430.4->430.5 GB | VRAM(total): 4.8->4.8 GB
+    Chunked HVG: 11,999,618 cells x 44,158 genes, batch=100,000
+    Selected 2000 HVGs (chunked Seurat v1)
+  hvg_selection_chunked          |  1826.69s | RAM: 857.8->857.8 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+  GPU warmup (8 GPUs)... done
+    Converting to CSC for column slicing...

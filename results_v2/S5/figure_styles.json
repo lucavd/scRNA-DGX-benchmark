@@ -1,0 +1,117 @@
+{
+ "fig7_spatial_speedup": {
+  "series": [
+   {
+    "name": "CPU",
+    "color": "#4477AA",
+    "hatch": null
+   },
+   {
+    "name": "GPU",
+    "color": "#EE6677",
+    "hatch": "//////"
+   }
+  ]
+ },
+ "fig8_spatial_perstep": {
+  "points": [
+   {
+    "step": "data_loading",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "qc_filtering",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "normalization",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "hvg_selection",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "pca",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "expression_neighbors",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "leiden",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "umap",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "spatial_neighbors",
+    "series": "CPU in both pipelines",
+    "marker": "o",
+    "fill": "white"
+   },
+   {
+    "step": "spatial_autocorr_moran",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "spatial_autocorr_geary",
+    "series": "GPU step",
+    "marker": "o",
+    "fill": "black"
+   },
+   {
+    "step": "co_occurrence",
+    "series": "separate check, rapids-singlecell 0.15.1",
+    "marker": "D",
+    "fill": "white"
+   },
+   {
+    "step": "nhood_enrichment",
+    "series": "CPU in both pipelines",
+    "marker": "o",
+    "fill": "white"
+   }
+  ]
+ },
+ "fig9_spatial_concordance": {
+  "platforms": {
+   "visium": {
+    "marker": "o",
+    "fill": "black",
+    "color": "black"
+   },
+   "visium_hd_square_008um": {
+    "marker": "s",
+    "fill": "white",
+    "color": "black"
+   },
+   "visium_hd_square_002um": {
+    "marker": "^",
+    "fill": "0.6",
+    "color": "black"
+   }
+  }
+ }
+}

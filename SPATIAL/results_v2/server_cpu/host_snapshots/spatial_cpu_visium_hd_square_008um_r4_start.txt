@@ -1,0 +1,20 @@
+utc: 2026-11-03T15:09:57Z
+loadavg: 2.71 27.53 33.15
+tctl: +40.5°C
+gpu: 0 %, 313 MiB, 40, 210 MHz
+top_processes:
+2069336 user      20   0   15404   6940   3832 R   1.5   0.0   0:00.08 top
+   6591 user      20   0   11.8g 344840 157112 S   1.0   0.1  20:33.85 TeamViewer
+   2443 avahi     20   0   19000   7900   6208 S   0.5   0.0   1:10.85 avahi-daemon
+   2518 root      20   0 2667104  11800  10208 S   0.5   0.0  39:08.23 fctsched
+   3873 root      20   0   41.0g   1.1g  36264 S   0.5   0.4  21:37.60 java
+   4032 root      20   0   19.0g  93256  18608 S   0.5   0.0  35:26.50 teamviewerd
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  36:27.73 rserver
+ 226224 riccardo  20   0   11.5g 269216 114688 S   0.5   0.1  18:02.49 TeamViewer
+1843744 user      20   0   71.3g  68908  18136 S   0.5   0.0   2:43.43 bun
+1862231 root      20   0       0      0      0 I   0.5   0.0   0:03.62 kworker/67:1-events
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:35.29 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.06 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p

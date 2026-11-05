@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software or these results, please cite them as below."
+title: "scRNA-DGX-benchmark: code, results and Supplementary Material of a GPU versus CPU benchmark of single-cell and spatial transcriptomics"
+version: 1.0.0
+doi: 10.5281/zenodo.23984290
+license: MIT
+repository-code: "https://github.com/lucavd/scRNA-DGX-benchmark"
+type: software
+authors:
+  - family-names: "Vedovelli"
+    given-names: "Luca"
+    affiliation: "Unit of Biostatistics, Epidemiology and Public Health, Department of Cardiac, Thoracic, Vascular Sciences and Public Health, University of Padova, Padova, Italy"
+    orcid: "https://orcid.org/0000-0003-4847-2333"
+  - family-names: "Lanera"
+    given-names: "Corrado"
+    affiliation: "Unit of Biostatistics, Epidemiology and Public Health, Department of Cardiac, Thoracic, Vascular Sciences and Public Health, University of Padova, Padova, Italy"
+  - family-names: "Sabbatini"
+    given-names: "Daniele"
+    affiliation: "Unit of Biostatistics, Epidemiology and Public Health, Department of Cardiac, Thoracic, Vascular Sciences and Public Health, University of Padova, Padova, Italy"
+  - family-names: "Gregori"
+    given-names: "Dario"
+    affiliation: "Unit of Biostatistics, Epidemiology and Public Health, Department of Cardiac, Thoracic, Vascular Sciences and Public Health, University of Padova, Padova, Italy"
+keywords:
+  - GPU computing
+  - single-cell RNA-seq
+  - spatial transcriptomics
+  - benchmarking
+  - rapids-singlecell

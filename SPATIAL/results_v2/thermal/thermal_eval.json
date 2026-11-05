@@ -1,0 +1,11 @@
+{
+  "n_samples": 150,
+  "n_batches": 1756,
+  "tctl_max": 81.6,
+  "freq_mean_min1_2_mhz": 3219.5,
+  "freq_mean_last2_mhz": 3154.4583333333335,
+  "freq_ratio_last_over_first": 0.9797975876171249,
+  "batch_time_ratio_last_over_first": 1.0232611690769609,
+  "load_window_s": 599.486799955368,
+  "keep_128_threads": true
+}

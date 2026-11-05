@@ -1,0 +1,35 @@
+{
+ "no_tables": {
+  "tag": "no_tables",
+  "src_md5": "467e11f6f5d29894f3351d8350e18d38",
+  "pages_total": 29,
+  "refs_start_page": 26,
+  "latex_errors": 0,
+  "undefined_citations": [],
+  "overfull_hbox": 10,
+  "abstract_words": 247,
+  "body_words_intro_to_end": 10690
+ },
+ "no_figures": {
+  "tag": "no_figures",
+  "src_md5": "0317a323ae4445467f647b7050a17d90",
+  "pages_total": 33,
+  "refs_start_page": 30,
+  "latex_errors": 0,
+  "undefined_citations": [],
+  "overfull_hbox": 23,
+  "abstract_words": 247,
+  "body_words_intro_to_end": 12589
+ },
+ "no_tables_no_figures": {
+  "tag": "no_tables_no_figures",
+  "src_md5": "7e9ef50cf172dbbd6279e63e6b752f50",
+  "pages_total": 24,
+  "refs_start_page": 21,
+  "latex_errors": 0,
+  "undefined_citations": [],
+  "overfull_hbox": 10,
+  "abstract_words": 247,
+  "body_words_intro_to_end": 10085
+ }
+}

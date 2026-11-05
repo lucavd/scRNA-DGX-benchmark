@@ -1,0 +1,41 @@
+{
+ "P1": {
+  "n": 39,
+  "esiti": {
+   "confermata": 37,
+   "indeterminata": 2,
+   "smentita": 0
+  },
+  "R_max": 1.23
+ },
+ "P3": {
+  "n_judged": 10,
+  "esiti": {
+   "confermata": 10,
+   "indeterminata": 0,
+   "smentita": 0
+  },
+  "ratio_range_ge_100k": [
+   0.9403,
+   1.0141
+  ],
+  "ratio_range_lt_100k": [
+   0.8578,
+   0.9497
+  ],
+  "speedup_8gpu_1.3M": {
+   "n": 1300000,
+   "gpu": "gpu8",
+   "speedup_r1_5": 119.621,
+   "speedup_r2_5": 121.876,
+   "ratio": 0.9815,
+   "lo": 0.9794,
+   "hi": 0.9834,
+   "esito": "confermata"
+  }
+ },
+ "P3b": {
+  "n": 198,
+  "differ_over_10pct": 67
+ }
+}

@@ -1,0 +1,102 @@
+[
+ {
+  "plan": "R0728",
+  "old": "These results reveal several important insights about GPU-accelerated single-cell analysis that merit detailed discussion.",
+  "new": "(line 399 not carried over)"
+ },
+ {
+  "plan": "R0728",
+  "old": "The fundamental constraint underlying our results is that GPU speedup is inherently operation-specific and highly dependent on the computational structure of each step. ",
+  "new": "GPU speedup was operation-specific. "
+ },
+ {
+  "plan": "R0728",
+  "old": "reveal that GPU advantage varies dramatically by operation type",
+  "new": "(paragraph not carried over)"
+ },
+ {
+  "plan": "R0728",
+  "old": "A notable finding from spatial analysis concerns clustering on the Visium HD 2 um subsample.",
+  "new": "(paragraph not carried over)"
+ },
+ {
+  "plan": "R0723",
+  "old": " This variant moves scaling to CPU (exploiting the 2 TB system RAM), distributes PCA across all 8 GPUs via a covariance-matrix method, and replaces the full data matrix on GPU with an empty sparse placeholder after PCA so that only the low-dimensional embedding (n x 50 floats) resides on any GPU.",
+  "new": ""
+ },
+ {
+  "plan": "R0727",
+  "old": "it completed at 3.4M, 6.9M and 10.3M cells and, like Leiden, was killed at 13.7M cells during CPU preprocessing, before clustering was invoked.",
+  "new": "it completed at 3.4M, 6.9M and 10.3M cells."
+ },
+ {
+  "plan": "R0724",
+  "old": "A second limitation concerns the memory instrumentation of the stress test itself: CPU memory was sampled between pipeline steps and for the parent process only, so the reported peaks are lower bounds and the attribution in Table 6 is indicative rather than measured. Resolving it would require continuous sampling of the whole process tree, or the peak usage recorded by the scheduler's cgroup, neither of which we collected.",
+  "new": "The memory peaks of the stress test are lower bounds and the attribution in Table 6 is indicative (Supplementary Methods, \"Stress test: maximum capacity\")."
+ },
+ {
+  "plan": "R0725",
+  "old": "This was not a design choice: the cluster nodes we used ran drivers 535.247.01 (1-, 2- and 4-GPU runs) and 535.183.01 (8-GPU runs and stress test), which cap the CUDA runtime at 12.2, and while the scRNA-seq pipeline ran there through forward compatibility, the GPU components of the spatial stack did not; a container rebuilt on RAPIDS 24.06 with CUDA 12.2 passed basic GPU tests on a node with driver 535.183.01 but failed the spatial smoke test at the initialisation of CUDA libraries, and was not pursued (Methods). Driver versions on shared production hardware thus constrain which GPU software stack can be deployed.",
+  "new": "The drivers of the cluster nodes (535.247.01 and 535.183.01) cap the CUDA runtime at 12.2, and the GPU components of the spatial stack did not run with them (Supplementary Methods, \"Hardware and software environment\")."
+ },
+ {
+  "plan": "R0728",
+  "old": "However, not all operations benefited equally from GPU acceleration.",
+  "new": "(opening sentence removed)"
+ },
+ {
+  "plan": "R0733",
+  "old": "The per-step speedup heatmap (Fig. 1) and the corresponding absolute wall-time breakdown (Fig. 2) reveal that GPU advant...",
+  "new": "(paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "Clustering concordance was high but not perfect. Leiden clustering at different resolutions yielded adjusted Rand indice...",
+  "new": "(paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "At 10,000 cells the two pipelines therefore agreed closely. This does not establish interchangeability at atlas scale: f...",
+  "new": "(paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "Our benchmark demonstrates that rapids-singlecell on NVIDIA H100 GPUs shortened the standard Scanpy pipeline by about on...",
+  "new": "(discussion paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "The spatial benchmark, repeated with a fresh process per repeat and the same cell groups on CPU and GPU, gave end-to-end...",
+  "new": "(discussion paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "In our multi-GPU configuration the expression matrix stayed on one device, so PCA and neighbour search ran on a single G...",
+  "new": "(discussion paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "Because only one GPU computed in our multi-GPU configuration, we expect most of the benefit to be available on a single ...",
+  "new": "(discussion paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "At 10,000 cells, the only size at which we measured concordance, the biological outputs of the GPU and CPU pipelines agr...",
+  "new": "(discussion paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "In the memory-optimised pipeline we tested, GPU VRAM did not limit the number of cells; ScaleSC [@Hu2025] and Dicks et a...",
+  "new": "(discussion paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "In our timing comparison, pseudo-bulk aggregation was the fastest route to a differential expression result (Table 7). P...",
+  "new": "(discussion paragraph covered by the chapter, not carried over)"
+ },
+ {
+  "plan": "R0733",
+  "old": "A notable finding from spatial analysis concerns clustering on the Visium HD 2 um subsample. At 389,492 spatial bins and...",
+  "new": "(discussion paragraph covered by the chapter, not carried over)"
+ }
+]

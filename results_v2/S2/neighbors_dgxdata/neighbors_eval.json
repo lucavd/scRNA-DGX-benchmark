@@ -1,0 +1,137 @@
+{
+ "runs": 30,
+ "per_size": {
+  "10000": {
+   "warm_nj1_mean": 1.4103657603729516,
+   "warm_nj1_sd": 0.004555339407303246,
+   "warm_nj100_mean": 1.2125941306119785,
+   "warm_nj100_sd": 0.00414359107191975,
+   "cold_nj1_mean": 30.13736748001538,
+   "cold_nj100_mean": 29.855282109603287,
+   "NP1_ratio_warm": 1.163097960618662,
+   "NP1_ci": [
+    1.1591282499463014,
+    1.1675517462683822
+   ],
+   "NP1_esito": "confermata",
+   "dgx_neighbors_r1": 19.9029,
+   "dgx_neighbors_mean_r2_5": 1.121575,
+   "NP2_dgx_over_server_nj1": 0.7952369743458712,
+   "NP2_esito": "confermata",
+   "dgx_over_server_nj100": 0.924938503070238,
+   "calls_nj1": [
+    [
+     1,
+     100,
+     1,
+     100
+    ]
+   ],
+   "calls_nj100": [
+    [
+     100,
+     100,
+     100,
+     100
+    ]
+   ],
+   "knn_md5_distinct": {
+    "1": 1,
+    "100": 1
+   },
+   "start_threads": [
+    100
+   ]
+  },
+  "50000": {
+   "warm_nj1_mean": 3.090266167372465,
+   "warm_nj1_sd": 0.007426631998668431,
+   "warm_nj100_mean": 1.6206447505857795,
+   "warm_nj100_sd": 0.011400941451893453,
+   "cold_nj1_mean": 31.510245464579203,
+   "cold_nj100_mean": 30.41451156241819,
+   "NP1_ratio_warm": 1.906812807838049,
+   "NP1_ci": [
+    1.8955224654811904,
+    1.9168425136322447
+   ],
+   "NP1_esito": "confermata",
+   "dgx_neighbors_r1": 21.3812,
+   "dgx_neighbors_mean_r2_5": 2.8227249999999997,
+   "NP2_dgx_over_server_nj1": 0.9134245554000465,
+   "NP2_esito": "confermata",
+   "dgx_over_server_nj100": 1.7417296412305845,
+   "calls_nj1": [
+    [
+     1,
+     100,
+     1,
+     100
+    ]
+   ],
+   "calls_nj100": [
+    [
+     100,
+     100,
+     100,
+     100
+    ]
+   ],
+   "knn_md5_distinct": {
+    "1": 1,
+    "100": 1
+   },
+   "start_threads": [
+    100
+   ]
+  },
+  "100000": {
+   "warm_nj1_mean": 5.739248856017366,
+   "warm_nj1_sd": 0.028986643396341976,
+   "warm_nj100_mean": 2.314837247412652,
+   "warm_nj100_sd": 0.02171478892115524,
+   "cold_nj1_mean": 34.33601827383973,
+   "cold_nj100_mean": 31.17339290298987,
+   "NP1_ratio_warm": 2.479331478890043,
+   "NP1_ci": [
+    2.458955498720089,
+    2.4993469657731255
+   ],
+   "NP1_esito": "confermata",
+   "dgx_neighbors_r1": 24.2352,
+   "dgx_neighbors_mean_r2_5": 5.43585,
+   "NP2_dgx_over_server_nj1": 0.9471361386082319,
+   "NP2_esito": "confermata",
+   "dgx_over_server_nj100": 2.348264443245752,
+   "calls_nj1": [
+    [
+     1,
+     100,
+     1,
+     100
+    ]
+   ],
+   "calls_nj100": [
+    [
+     100,
+     100,
+     100,
+     100
+    ]
+   ],
+   "knn_md5_distinct": {
+    "1": 1,
+    "100": 1
+   },
+   "start_threads": [
+    100
+   ]
+  }
+ },
+ "N1_free": {
+  "first_load1": 1.0,
+  "max_foreign_start": 0,
+  "max_foreign_end": 0,
+  "tctl_max": 71.1
+ }
+}

@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:12:29Z
+loadavg: 1.16 1.14 2.63
+tctl: +62.6°C
+gpu: 0 %, 313 MiB, 44, 2700 MHz
+top_processes:
+2046886 user      20   0   15404   6940   3832 R   1.5   0.0   0:00.08 top
+1843744 user      20   0   71.3g  68408  17864 S   1.0   0.0   2:20.84 bun
+     17 root      20   0       0      0      0 I   0.5   0.0  16:58.22 rcu_preempt
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  38:54.40 fctsched
+   3559 root      20   0 4170116  54864  35452 S   0.5   0.0  10:51.75 containerd
+   3854 rstudio+  20   0   18.0g  44992  12972 S   0.5   0.0   6:45.27 rstudio-launche
+   4032 root      20   0   19.0g  93256  18608 S   0.5   0.0  35:12.98 teamviewerd
+   7445 user      20   0  767412  15264  12320 S   0.5   0.0   0:23.23 xdg-desktop-por
+ 766829 root      20   0 1371876  37988  12276 S   0.5   0.0   5:33.50 tailscaled
+1126386 user      20   0 5738720 353220  79028 S   0.5   0.1  41:59.58 claude
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:30.27 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.05 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p

@@ -1,0 +1,370 @@
+==================================================================
+MAX-POWER BENCHMARK — find maximum cell count on 8× H100
+==================================================================
+Date: Sun Mar 22 08:25:39 CET 2026
+Node: poddgx02
+Job ID: 16662
+Workdir: /home/u0044/sc-gpu-benchmark
+Sun Mar 22 08:25:39 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.183.01             Driver Version: 535.183.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  | 00000000:1B:00.0 Off |                    0 |
+| N/A   20C    P0              68W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA H100 80GB HBM3          On  | 00000000:43:00.0 Off |                    0 |
+| N/A   21C    P0              68W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA H100 80GB HBM3          On  | 00000000:52:00.0 Off |                    0 |
+| N/A   26C    P0              68W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA H100 80GB HBM3          On  | 00000000:61:00.0 Off |                    0 |
+| N/A   25C    P0              68W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA H100 80GB HBM3          On  | 00000000:9D:00.0 Off |                    0 |
+| N/A   21C    P0              67W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA H100 80GB HBM3          On  | 00000000:C3:00.0 Off |                    0 |
+| N/A   20C    P0              67W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA H100 80GB HBM3          On  | 00000000:D1:00.0 Off |                    0 |
+| N/A   23C    P0              68W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA H100 80GB HBM3          On  | 00000000:DF:00.0 Off |                    0 |
+| N/A   26C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+
+Data file: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+File size: 123G
+
+Clustering: kmeans
+Found full dataset: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+
+System RAM: 2016 GB
+
+================================================================================
+FIND-LIMIT MODE: subprocess isolation for clean GPU memory
+Source dataset: 3,436,470 cells
+================================================================================
+
+--- Phase 1: Coarse search (step ~3,436,470) ---
+
+>>> Trying 3,436,470 cells...
+  Launching subprocess: target=3,436,470 cells, 8 GPUs
+Found full dataset: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+
+DGX Configuration:
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+  Total VRAM: 637 GB
+  System RAM: 2016 GB
+
+================================================================================
+MAX-POWER BENCHMARK — 3,436,470 cells — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |   210.56s | RAM: 0.6->123.8 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 3,436,470 cells x 53,384 genes
+  qc_filtering              |   501.79s | RAM: 123.8->124.3 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 3,436,361 cells x 41,344 genes
+  normalization             |    36.42s | RAM: 123.9->124.0 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |   135.93s | RAM: 124.0->124.0 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+    After HVG subset: 3,436,361 cells x 2,000 genes
+  scale                     |    42.48s | RAM: 126.0->149.6 GB | VRAM(total): 4.8->4.8 GB
+
+  Starting Dask CUDA cluster for multi-GPU PCA...
+  CUDA_VISIBLE_DEVICES env: 0,1,2,3,4,5,6,7
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 8
+  Worker addresses: ['tcp://127.0.0.1:33001', 'tcp://127.0.0.1:36637', 'tcp://127.0.0.1:36687', 'tcp://127.0.0.1:37271', 'tcp://127.0.0.1:38051', 'tcp://127.0.0.1:40085', 'tcp://127.0.0.1:45193', 'tcp://127.0.0.1:46579']
+  GPU VRAM after Dask startup: GPU 0: 3.4 GB, GPU 1: 2.9 GB, GPU 2: 2.9 GB, GPU 3: 2.9 GB, GPU 4: 2.9 GB, GPU 5: 2.9 GB, GPU 6: 2.9 GB, GPU 7: 2.9 GB
+    Scatter: 8 chunks, ~429,545 rows each, 3.20 GB/chunk
+    Explained variance (50 PCs): 0.4438
+    PCA stored: (3436361, 50) (655 MB)
+  pca                       |     8.53s | RAM: 149.7->155.0 GB | VRAM(total): 23.9->28.3 GB
+    Dropping adata.X (25.6 GB) — not needed after PCA
+  gpu_transfer              |     0.03s | RAM: 129.3->129.4 GB | VRAM(total): 28.3->28.3 GB
+  neighbors                 |   111.37s | RAM: 129.4->131.5 GB | VRAM(total): 28.3->28.5 GB
+
+  Shutting down Dask cluster...
+  kmeans_0.5                |     1.86s | RAM: 131.5->131.7 GB | VRAM(total): 48.5->48.5 GB
+    kmeans_0.5: 50 clusters (k=50)
+  kmeans_1.0                |     1.88s | RAM: 131.7->131.9 GB | VRAM(total): 48.5->48.5 GB
+    kmeans_1.0: 100 clusters (k=100)
+  kmeans_1.5                |     2.44s | RAM: 131.9->132.0 GB | VRAM(total): 48.5->48.5 GB
+    kmeans_1.5: 200 clusters (k=200)
+  umap                      |     4.53s | RAM: 132.1->133.1 GB | VRAM(total): 48.5->48.5 GB
+
+  Transferring data back to CPU...
+  DE skipped (--skip-de)
+
+  TOTAL                     |  1057.83s | Peak RAM: 154.9 GB | Peak VRAM(total): 48.5 GB
+
+  Resource utilization:
+    RAM:  155 / 2048 GB (7.6%)
+    VRAM: 49 / 640 GB (7.6%)
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/maxpower_3436470_8gpu_results.json
+
+================================================================================
+MAX-POWER SUMMARY
+================================================================================
+  Cells processed:  3,436,361
+  GPUs used:        8× H100 80GB
+  Total time:       1057.8s (17.6 min)
+  RAM used:         155 / 2048 GB (7.6%)
+  VRAM used:        48 / 640 GB (7.6%)
+  Throughput:       3,249 cells/second
+  Clusters found:   100 (kmeans res=1.0)
+
+Done!
+  >>> SUCCESS at 3,436,470 cells
+
+>>> Trying 6,872,940 cells...
+  Launching subprocess: target=6,872,940 cells, 8 GPUs
+Found full dataset: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+
+DGX Configuration:
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+  Total VRAM: 637 GB
+  System RAM: 2016 GB
+
+================================================================================
+MAX-POWER BENCHMARK — target 6,872,940 cells (from 3,436,470) — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |   225.18s | RAM: 0.6->123.8 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 3,436,470 cells x 53,384 genes
+  Resizing: 3,436,470 × 2 + 0 = 6,872,940 cells...
+  Done: 6,872,940 cells x 53,384 genes (203.4s)
+  qc_filtering              |  1118.05s | RAM: 246.5->247.7 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 6,872,722 cells x 42,394 genes
+  normalization             |    72.63s | RAM: 246.9->246.9 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |   319.86s | RAM: 246.9->246.9 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+    After HVG subset: 6,872,722 cells x 2,000 genes
+  scale                     |    94.92s | RAM: 251.0->298.1 GB | VRAM(total): 4.8->4.8 GB
+
+  Starting Dask CUDA cluster for multi-GPU PCA...
+  CUDA_VISIBLE_DEVICES env: 0,1,2,3,4,5,6,7
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 8
+  Worker addresses: ['tcp://127.0.0.1:34883', 'tcp://127.0.0.1:35703', 'tcp://127.0.0.1:37723', 'tcp://127.0.0.1:42093', 'tcp://127.0.0.1:42945', 'tcp://127.0.0.1:43113', 'tcp://127.0.0.1:44931', 'tcp://127.0.0.1:45951']
+  GPU VRAM after Dask startup: GPU 0: 3.4 GB, GPU 1: 2.9 GB, GPU 2: 2.9 GB, GPU 3: 2.9 GB, GPU 4: 2.9 GB, GPU 5: 2.9 GB, GPU 6: 2.9 GB, GPU 7: 2.9 GB
+    Scatter: 8 chunks, ~859,090 rows each, 6.40 GB/chunk
+    Explained variance (50 PCs): 0.4454
+    PCA stored: (6872722, 50) (1311 MB)
+  pca                       |    14.63s | RAM: 298.2->308.1 GB | VRAM(total): 23.9->28.4 GB
+    Dropping adata.X (51.2 GB) — not needed after PCA
+  gpu_transfer              |     0.05s | RAM: 256.9->256.9 GB | VRAM(total): 28.4->28.4 GB
+  neighbors                 |   437.96s | RAM: 256.9->261.1 GB | VRAM(total): 28.4->28.6 GB
+
+  Shutting down Dask cluster...
+  kmeans_0.5                |     2.88s | RAM: 261.1->261.4 GB | VRAM(total): 48.6->48.6 GB
+    kmeans_0.5: 50 clusters (k=50)
+  kmeans_1.0                |     3.65s | RAM: 261.4->261.8 GB | VRAM(total): 48.6->48.6 GB
+    kmeans_1.0: 100 clusters (k=100)
+  kmeans_1.5                |     3.90s | RAM: 261.8->262.1 GB | VRAM(total): 48.6->48.6 GB
+    kmeans_1.5: 200 clusters (k=200)
+  umap                      |    11.14s | RAM: 262.1->264.2 GB | VRAM(total): 48.6->48.6 GB
+
+  Transferring data back to CPU...
+  DE skipped (--skip-de)
+
+  TOTAL                     |  2304.85s | Peak RAM: 308.1 GB | Peak VRAM(total): 48.6 GB
+
+  Resource utilization:
+    RAM:  308 / 2048 GB (15.0%)
+    VRAM: 49 / 640 GB (7.6%)
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/maxpower_6872940_8gpu_results.json
+
+================================================================================
+MAX-POWER SUMMARY
+================================================================================
+  Cells processed:  6,872,722
+  GPUs used:        8× H100 80GB
+  Total time:       2304.9s (38.4 min)
+  RAM used:         308 / 2048 GB (15.0%)
+  VRAM used:        49 / 640 GB (7.6%)
+  Throughput:       2,982 cells/second
+  Clusters found:   100 (kmeans res=1.0)
+
+Done!
+  >>> SUCCESS at 6,872,940 cells
+
+>>> Trying 10,309,410 cells...
+  Launching subprocess: target=10,309,410 cells, 8 GPUs
+Found full dataset: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+
+DGX Configuration:
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+  Total VRAM: 637 GB
+  System RAM: 2016 GB
+
+================================================================================
+MAX-POWER BENCHMARK — target 10,309,410 cells (from 3,436,470) — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |   229.94s | RAM: 0.6->123.8 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 3,436,470 cells x 53,384 genes
+  Resizing: 3,436,470 × 3 + 0 = 10,309,410 cells...
+  Done: 10,309,410 cells x 53,384 genes (625.0s)
+  qc_filtering              |  3156.44s | RAM: 369.2->371.0 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 10,309,083 cells x 44,158 genes
+  normalization             |   108.81s | RAM: 369.8->369.9 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |   815.93s | RAM: 369.9->369.9 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+    After HVG subset: 10,309,083 cells x 2,000 genes
+  scale                     |   142.11s | RAM: 376.0->446.8 GB | VRAM(total): 4.8->4.8 GB
+
+  Starting Dask CUDA cluster for multi-GPU PCA...
+  CUDA_VISIBLE_DEVICES env: 0,1,2,3,4,5,6,7
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 8
+  Worker addresses: ['tcp://127.0.0.1:35941', 'tcp://127.0.0.1:37845', 'tcp://127.0.0.1:37873', 'tcp://127.0.0.1:38227', 'tcp://127.0.0.1:40119', 'tcp://127.0.0.1:42613', 'tcp://127.0.0.1:45827', 'tcp://127.0.0.1:45981']
+  GPU VRAM after Dask startup: GPU 0: 3.4 GB, GPU 1: 2.9 GB, GPU 2: 2.9 GB, GPU 3: 2.9 GB, GPU 4: 2.9 GB, GPU 5: 2.9 GB, GPU 6: 2.9 GB, GPU 7: 2.9 GB
+    Scatter: 8 chunks, ~1,288,635 rows each, 9.60 GB/chunk
+    Explained variance (50 PCs): 0.4467
+    PCA stored: (10309083, 50) (1966 MB)
+  pca                       |    18.23s | RAM: 446.8->465.4 GB | VRAM(total): 23.9->28.5 GB
+    Dropping adata.X (76.8 GB) — not needed after PCA
+  gpu_transfer              |     0.17s | RAM: 388.6->388.6 GB | VRAM(total): 28.5->28.6 GB
+  neighbors                 |   979.03s | RAM: 388.6->393.6 GB | VRAM(total): 28.6->28.7 GB
+
+  Shutting down Dask cluster...
+  kmeans_0.5                |     3.98s | RAM: 393.6->393.9 GB | VRAM(total): 48.7->48.7 GB
+    kmeans_0.5: 50 clusters (k=50)
+  kmeans_1.0                |     9.28s | RAM: 394.0->394.4 GB | VRAM(total): 48.7->48.7 GB
+    kmeans_1.0: 100 clusters (k=100)
+  kmeans_1.5                |     5.41s | RAM: 394.4->394.9 GB | VRAM(total): 48.7->48.7 GB
+    kmeans_1.5: 200 clusters (k=200)
+  umap                      |    19.19s | RAM: 394.9->397.0 GB | VRAM(total): 48.7->48.8 GB
+
+  Transferring data back to CPU...
+  DE skipped (--skip-de)
+
+  TOTAL                     |  5488.53s | Peak RAM: 465.4 GB | Peak VRAM(total): 48.8 GB
+
+  Resource utilization:
+    RAM:  465 / 2048 GB (22.7%)
+    VRAM: 49 / 640 GB (7.6%)
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/maxpower_10309410_8gpu_results.json
+
+================================================================================
+MAX-POWER SUMMARY
+================================================================================
+  Cells processed:  10,309,083
+  GPUs used:        8× H100 80GB
+  Total time:       5488.5s (91.5 min)
+  RAM used:         465 / 2048 GB (22.7%)
+  VRAM used:        49 / 640 GB (7.6%)
+  Throughput:       1,878 cells/second
+  Clusters found:   100 (kmeans res=1.0)
+
+Done!
+  >>> SUCCESS at 10,309,410 cells
+
+>>> Trying 13,745,880 cells...
+  Launching subprocess: target=13,745,880 cells, 8 GPUs
+Found full dataset: /home/u0044/sc-gpu-benchmark/data/brain_full_3436470.h5ad
+
+DGX Configuration:
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+  Total VRAM: 637 GB
+  System RAM: 2016 GB
+
+================================================================================
+MAX-POWER BENCHMARK — target 13,745,880 cells (from 3,436,470) — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |   234.58s | RAM: 0.6->123.8 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 3,436,470 cells x 53,384 genes
+  Resizing: 3,436,470 × 4 + 0 = 13,745,880 cells...
+  Done: 13,745,880 cells x 53,384 genes (1247.9s)
+  qc_filtering              |  5406.68s | RAM: 491.9->494.2 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 13,745,444 cells x 44,158 genes
+  normalization             |   150.59s | RAM: 492.7->492.7 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |  1127.88s | RAM: 492.7->492.7 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+
+=== Results ===
+-rw-r----- 1 u0044 gprojects 5.7K Mar 17 18:56 /home/u0044/sc-gpu-benchmark/results/maxpower_10000000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 17 20:45 /home/u0044/sc-gpu-benchmark/results/maxpower_10100000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 17 22:39 /home/u0044/sc-gpu-benchmark/results/maxpower_10200000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 22 11:51 /home/u0044/sc-gpu-benchmark/results/maxpower_10309410_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 20 13:39 /home/u0044/sc-gpu-benchmark/results/maxpower_11100000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 20 16:03 /home/u0044/sc-gpu-benchmark/results/maxpower_11500000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 20 18:43 /home/u0044/sc-gpu-benchmark/results/maxpower_11700000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 20 21:07 /home/u0044/sc-gpu-benchmark/results/maxpower_11800000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 20 23:41 /home/u0044/sc-gpu-benchmark/results/maxpower_11900000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.4K Mar 16 10:36 /home/u0044/sc-gpu-benchmark/results/maxpower_1700000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.8K Mar 16 23:07 /home/u0044/sc-gpu-benchmark/results/maxpower_3400000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 22 08:42 /home/u0044/sc-gpu-benchmark/results/maxpower_3436470_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 22 09:41 /home/u0044/sc-gpu-benchmark/results/maxpower_6872940_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 17 13:10 /home/u0044/sc-gpu-benchmark/results/maxpower_8500000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 17 15:33 /home/u0044/sc-gpu-benchmark/results/maxpower_9400000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects 5.7K Mar 17 17:10 /home/u0044/sc-gpu-benchmark/results/maxpower_9800000_8gpu_results.json
+-rw-r----- 1 u0044 gprojects  216 Mar 20 23:41 /home/u0044/sc-gpu-benchmark/results/maxpower_limit_8gpu.json
+
+End: Sun Mar 22 15:31:02 CET 2026

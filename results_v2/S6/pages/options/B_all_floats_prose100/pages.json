@@ -1,0 +1,50 @@
+{
+ "tag": "B_all_floats_prose100",
+ "at": "2026-11-04T22:19:01+01:00",
+ "src": "manuscript/_s6_option_B_all_floats_prose100.md",
+ "src_md5": "2e6c57413bcfd70ef152a7fbbb5982bf",
+ "bib_md5": "0545ef29119d63866360fb950ce29c11",
+ "llncs_md5": "543b73320c367b0229b3cdfcddaedc46",
+ "support_md5": {
+  "aliascnt.sty": "813491e2bc95c1dafbb39cd7c54b380b"
+ },
+ "pandoc": "pandoc 3.1.3",
+ "pages_total": 38,
+ "refs_start_page": 35,
+ "pages_before_refs": 35,
+ "latex_errors": 0,
+ "undefined_citations": [],
+ "overfull_hbox": 23,
+ "abstract_words": 247,
+ "body_words_intro_to_end": 13194,
+ "section_words": {
+  "Introduction": 631,
+  "Data and Methods": 3858,
+  "Results": 6045,
+  "Discussion": 2207,
+  "Conclusions": 245,
+  "Conflict of Interest": 11,
+  "Acknowledgements": 112,
+  "Funding": 57,
+  "Availability of Data and Software Code": 28
+ },
+ "commands": [
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ],
+  [
+   "bibtex paper",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ]
+ ],
+ "pdf": "results_v2/S6/pages/options/B_all_floats_prose100/paper.pdf"
+}

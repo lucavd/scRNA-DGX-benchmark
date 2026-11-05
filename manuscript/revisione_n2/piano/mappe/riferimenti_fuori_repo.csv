@@ -1,0 +1,49 @@
+ref,classe,ids
+0.15.1/0.14.1,non e' un percorso (rapporto o elenco scritto con la barra),R0362
+10GB/70GB,non e' un percorso (rapporto o elenco scritto con la barra),R0407
+120x/14.5,non e' un percorso (rapporto o elenco scritto con la barra),R0722
+12M/11.9M,non e' un percorso (rapporto o elenco scritto con la barra),R0167
+15/16,non e' un percorso (rapporto o elenco scritto con la barra),R0371;R0489
+17.23/16.99/17.01,non e' un percorso (rapporto o elenco scritto con la barra),R0240
+2/4/8,non e' un percorso (rapporto o elenco scritto con la barra),R0240
+27/03/2026,non e' un percorso (rapporto o elenco scritto con la barra),R0279
+"3.573/73,5",non e' un percorso (rapporto o elenco scritto con la barra),R0453
+3027/538,non e' un percorso (rapporto o elenco scritto con la barra),R0694
+32/56/200,non e' un percorso (rapporto o elenco scritto con la barra),R0368
+"400,000/6,296,688",non e' un percorso (rapporto o elenco scritto con la barra),R0465
+50/100/200,non e' un percorso (rapporto o elenco scritto con la barra),R0243
+50000/100000,non e' un percorso (rapporto o elenco scritto con la barra),R0082
+535/1800,non e' un percorso (rapporto o elenco scritto con la barra),R0598
+58/66/87,non e' un percorso (rapporto o elenco scritto con la barra),R0243
+CPU/GPU,non e' un percorso (rapporto o elenco scritto con la barra),R0381
+GB/s,non e' un percorso (rapporto o elenco scritto con la barra),R0548
+GPU/CPU,non e' un percorso (rapporto o elenco scritto con la barra),R0114
+GPU/Dask,non e' un percorso (rapporto o elenco scritto con la barra),R0639
+I/O,non e' un percorso (rapporto o elenco scritto con la barra),R0558;R0584;R0605
+JIT/warmup,non e' un percorso (rapporto o elenco scritto con la barra),R0453
+LNBI/CIBB,non e' un percorso (rapporto o elenco scritto con la barra),R0735
+Metodi/Risultati,non e' un percorso (rapporto o elenco scritto con la barra),R0240
+RAM/VRAM,non e' un percorso (rapporto o elenco scritto con la barra),R0286
+UPSCALE/CONVECS,non e' un percorso (rapporto o elenco scritto con la barra),R0237;R0445
+USD/GPU-h,non e' un percorso (rapporto o elenco scritto con la barra),R0588
+api.crossref.org/works/10.1038/s41592-024-02212-x,servizio esterno,R0536
+api.crossref.org/works/10.1109/SCW63240.2024.00028,servizio esterno,R0518
+cpu_/gpu*_,non e' un percorso (rapporto o elenco scritto con la barra),R0382
+cpu_timestamp/gpu_timestamp,non e' un percorso (rapporto o elenco scritto con la barra),R0244
+h/7.3,non e' un percorso (rapporto o elenco scritto con la barra),R0722
+lucavd/sc-benchmark,immagine container,R0455
+lucavd/sc-benchmark-spatial,immagine container,R0455
+max/min,non e' un percorso (rapporto o elenco scritto con la barra),R0646
+n_clusters_0.5/1.0/1.5,non e' un percorso (rapporto o elenco scritto con la barra),R0462
+nvcr.io/nvidia/rapidsai/base,immagine container,R0455
+rapids_singlecell/tools/_clustering.py,file di un pacchetto o dell'ambiente (non del repo),R0400
+raw/X/data,non e' un percorso (rapporto o elenco scritto con la barra),R0422
+rss/1024**3,non e' un percorso (rapporto o elenco scritto con la barra),R0167
+runtime/memory,non e' un percorso (rapporto o elenco scritto con la barra),R0166
+script/log,non e' un percorso (rapporto o elenco scritto con la barra),R0686
+scrna_json/results,non e' un percorso (rapporto o elenco scritto con la barra),R0167;R0171;R0462;R0649;R0653
+spatial_autocorr_moran/geary,non e' un percorso (rapporto o elenco scritto con la barra),R0713
+squidpy/gr/_ppatterns.py,file di un pacchetto o dell'ambiente (non del repo),R0290
+used/1024**3,non e' un percorso (rapporto o elenco scritto con la barra),R0697
+verde/rosso,non e' un percorso (rapporto o elenco scritto con la barra),R0363
+works/doi,non e' un percorso (rapporto o elenco scritto con la barra),R0535

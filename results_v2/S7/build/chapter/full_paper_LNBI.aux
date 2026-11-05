@@ -1,0 +1,137 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Heumos2023}
+\citation{TabulaSapiens2022}
+\citation{Yao2023}
+\citation{Regev2017}
+\citation{Wolf2018}
+\citation{Traag2019}
+\citation{McInnes2018}
+\citation{Palla2022}
+\@writefile{toc}{\contentsline {title}{GPU-accelerated single-cell (NVIDIA DGX H100) and spatial (RTX 4090) transcriptomics: per-step speedups, capacity and concordance against a 100-CPU reference}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\authcount {4}}
+\@writefile{toc}{\contentsline {author}{Luca Vedovelli \and Corrado Lanera \and Daniele Sabbatini \and Dario Gregori}{1}{chapter.1}\protected@file@percent }
+\citation{RAPIDS2024}
+\citation{Dicks2026}
+\citation{TaylorWeiner2019}
+\citation{Nolet2022}
+\citation{Hu2025}
+\citation{Dicks2026}
+\citation{Gardner2025}
+\citation{CZCellxGene2025}
+\citation{Luecken2019,Heumos2023}
+\citation{Satija2015,Yip2019}
+\citation{Traag2019}
+\citation{McInnes2018}
+\citation{Soneson2018}
+\citation{Wolf2018}
+\citation{Dicks2026}
+\citation{Virshup2024}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
+\newlabel{introduction}{{1}{2}{Introduction}{section.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Data and Methods}{2}{section.2}\protected@file@percent }
+\newlabel{data-and-methods}{{2}{2}{Data and Methods}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Single-cell RNA-seq}{2}{subsection.2.1}\protected@file@percent }
+\newlabel{single-cell-rna-seq}{{2.1}{2}{Single-cell RNA-seq}{subsection.2.1}{}}
+\citation{Rocklin2015}
+\citation{RAPIDS2024}
+\citation{Gardner2025}
+\citation{Hubert1985}
+\citation{Vinh2010}
+\citation{Tian2019,Duo2020,Luecken2022}
+\citation{Palla2022}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Spatial transcriptomics}{3}{subsection.2.2}\protected@file@percent }
+\newlabel{spatial-transcriptomics}{{2.2}{3}{Spatial transcriptomics}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Hardware, software and repeats}{4}{subsection.2.3}\protected@file@percent }
+\newlabel{hardware-software-and-repeats}{{2.3}{4}{Hardware, software and repeats}{subsection.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{4}{section.3}\protected@file@percent }
+\newlabel{results}{{3}{4}{Results}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Single-cell RNA-seq}{4}{subsection.3.1}\protected@file@percent }
+\newlabel{single-cell-rna-seq-1}{{3.1}{4}{Single-cell RNA-seq}{subsection.3.1}{}}
+\gdef \LT@i {\LT@entry 
+    {1}{71.85988pt}\LT@entry 
+    {1}{30.20546pt}\LT@entry 
+    {1}{30.20546pt}\LT@entry 
+    {1}{60.7744pt}\LT@entry 
+    {1}{38.92747pt}\LT@entry 
+    {1}{56.41093pt}\LT@entry 
+    {1}{58.7744pt}}
+\newlabel{tab:1}{{1}{5}{Single-cell RNA-seq}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{scRNA-seq benchmark: total time, mean and SD over five repeats (first repeat included), and peak memory. Single-GPU results at 500k and 1.3M cells are absent because the single-GPU pipeline failed during QC.}}{5}{table.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Per-step speedup of single-GPU rapids-singlecell (1$\times $H100 80 GB) over CPU Scanpy (100 logical CPUs) at 10k, 50k and 100k cells: ratio of mean times over five repeats (first repeat included); logarithmic colour scale centred on 1. The PCA row includes scaling.}}{6}{figure.1}\protected@file@percent }
+\newlabel{fig:1}{{1}{6}{Per-step speedup of single-GPU rapids-singlecell (1$\times $H100 80 GB) over CPU Scanpy (100 logical CPUs) at 10k, 50k and 100k cells: ratio of mean times over five repeats (first repeat included); logarithmic colour scale centred on 1. The PCA row includes scaling}{figure.1}{}}
+\citation{Hu2025}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces CPU-GPU concordance at 10,000 cells, from the separate concordance run. Left: ARI and NMI of Leiden clustering at three resolutions. Right: HVG Jaccard, PCA Spearman $|\rho |$, kNN Jaccard (bounded at 0.9375 by construction) and mean Spearman $\rho $ of DE log-fold-changes over 40 matched cluster pairs.}}{7}{figure.2}\protected@file@percent }
+\newlabel{fig:2}{{2}{7}{CPU-GPU concordance at 10,000 cells, from the separate concordance run. Left: ARI and NMI of Leiden clustering at three resolutions. Right: HVG Jaccard, PCA Spearman $|\rho |$, kNN Jaccard (bounded at 0.9375 by construction) and mean Spearman $\rho $ of DE log-fold-changes over 40 matched cluster pairs}{figure.2}{}}
+\gdef \LT@ii {\LT@entry 
+    {1}{48.78555pt}\LT@entry 
+    {1}{43.31584pt}\LT@entry 
+    {1}{46.1255pt}\LT@entry 
+    {1}{50.78555pt}\LT@entry 
+    {1}{55.47482pt}\LT@entry 
+    {1}{46.1255pt}\LT@entry 
+    {1}{26.46758pt}\LT@entry 
+    {1}{30.08205pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Spatial transcriptomics}{8}{subsection.3.2}\protected@file@percent }
+\newlabel{spatial-transcriptomics-1}{{3.2}{8}{Spatial transcriptomics}{subsection.3.2}{}}
+\newlabel{tab:2}{{2}{8}{Spatial transcriptomics}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{Spatial benchmark: mean~$\pm $~SD of five repeats, each in a fresh process. CPU: one DGX H100 node (\texttt  {poddgx02}, 100 CPUs), the reference; GPU: one RTX 4090. Speedup: ratio of mean totals with 95\% bootstrap interval; the next column uses the 128-thread workstation CPU as reference. At Visium HD 8~\textmu {}m the totals include co-occurrence, whose GPU result with rapids-singlecell 0.14.1 was incorrect; without it the totals are 616 s (CPU) and 89.7 s (GPU) and the speedup is 6.9$\times $ (6.8-6.9) (6.1$\times $ with the workstation CPU). Memory: mean of the per-repeat peaks (GiB); GPU VRAM includes the RMM pool.}}{8}{table.2}\protected@file@percent }
+\citation{Dicks2026}
+\citation{Nolet2022}
+\citation{Dicks2026}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Per-step GPU speedup on Visium HD 8~\textmu {}m (393,543 bins) against the DGX CPU reference: ratio of means over five repeats; error bars: 95\% bootstrap interval. Open circles: steps run in Squidpy on the CPU in both pipelines. Open diamond: co-occurrence from the separate check with rapids-singlecell 0.15.1.}}{9}{figure.3}\protected@file@percent }
+\newlabel{fig:3}{{3}{9}{Per-step GPU speedup on Visium HD 8~\textmu {}m (393,543 bins) against the DGX CPU reference: ratio of means over five repeats; error bars: 95\% bootstrap interval. Open circles: steps run in Squidpy on the CPU in both pipelines. Open diamond: co-occurrence from the separate check with rapids-singlecell 0.15.1}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{9}{section.4}\protected@file@percent }
+\newlabel{discussion}{{4}{9}{Discussion}{section.4}{}}
+\citation{Nolet2022,Gardner2025}
+\citation{Hu2025}
+\citation{Dicks2026}
+\citation{Love2014}
+\citation{Robinson2010}
+\citation{Squair2021}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces CPU-GPU spatial concordance on three Visium platforms, CPU repeat k against GPU repeat k (k = 1-5); points: mean of the five pairs, bars: range where the pairs differ. Left: Spearman $\rho $ of per-gene Moran's I and Geary's C over 2,000 HVGs, and Jaccard index of SVG sets ranked by Moran's I. Right: ARI and NMI of the Leiden partitions.}}{10}{figure.4}\protected@file@percent }
+\newlabel{fig:4}{{4}{10}{CPU-GPU spatial concordance on three Visium platforms, CPU repeat k against GPU repeat k (k = 1-5); points: mean of the five pairs, bars: range where the pairs differ. Left: Spearman $\rho $ of per-gene Moran's I and Geary's C over 2,000 HVGs, and Jaccard index of SVG sets ranked by Moran's I. Right: ARI and NMI of the Leiden partitions}{figure.4}{}}
+\citation{Korsunsky2019}
+\citation{Lopez2018}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{11}{section.5}\protected@file@percent }
+\newlabel{conclusions}{{5}{11}{Conclusions}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Availability of Data and Software Code}{11}{section.6}\protected@file@percent }
+\newlabel{availability-of-data-and-software-code}{{6}{11}{Availability of Data and Software Code}{section.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Acknowledgments.}{11}{section*.2}\protected@file@percent }
+\bibstyle{splncs04}
+\bibdata{cibb2026_references}
+\bibcite{CZCellxGene2025}{1}
+\bibcite{Dicks2026}{2}
+\bibcite{Duo2020}{3}
+\bibcite{Gardner2025}{4}
+\bibcite{Heumos2023}{5}
+\bibcite{Hu2025}{6}
+\bibcite{Hubert1985}{7}
+\bibcite{Korsunsky2019}{8}
+\@writefile{toc}{\contentsline {subsubsection}{Disclosure of Interests.}{12}{section*.3}\protected@file@percent }
+\bibcite{Lopez2018}{9}
+\bibcite{Love2014}{10}
+\bibcite{Luecken2022}{11}
+\bibcite{Luecken2019}{12}
+\bibcite{McInnes2018}{13}
+\bibcite{Nolet2022}{14}
+\bibcite{Palla2022}{15}
+\bibcite{RAPIDS2024}{16}
+\bibcite{Regev2017}{17}
+\bibcite{Robinson2010}{18}
+\bibcite{Rocklin2015}{19}
+\bibcite{Satija2015}{20}
+\bibcite{Soneson2018}{21}
+\bibcite{Squair2021}{22}
+\bibcite{TaylorWeiner2019}{23}
+\bibcite{TabulaSapiens2022}{24}
+\bibcite{Tian2019}{25}
+\bibcite{Traag2019}{26}
+\bibcite{Vinh2010}{27}
+\bibcite{Virshup2024}{28}
+\bibcite{Wolf2018}{29}
+\bibcite{Yao2023}{30}
+\bibcite{Yip2019}{31}
+\gdef \@abspage@last{14}

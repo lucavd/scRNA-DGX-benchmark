@@ -1,0 +1,3 @@
+settings.n_jobs 1
+set_num_threads calls during neighbors: [] after: 8
+  _autosave: bool |     _autoshow: bool |     _writedir: Path |     _cachedir: Path |     _datasetdir: Path |     _figdir: Path |     _cache_compression: Literal["lzf", "gzip"] | None |     _max_memory: float |     _n_jobs: int |     _categories_to_ignore: list[str] |     _frameon: bool |     """See set_figure_params.""" |     _vector_friendly: bool |     """Set to true if you want to include pngs in svgs and pdfs.""" |     _low_resolution_warning: bool |     """Print warning when saving a figure with low resolution.""" |     _start: float |     """Time when the settings module is first imported.""" |     _previous_time: float |  

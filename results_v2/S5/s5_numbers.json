@@ -1,0 +1,5579 @@
+{
+ "conc.control.visium.clusters.ari": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].clusters.ari",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   0.8561,
+   0.8561,
+   0.8561,
+   0.8561,
+   0.8561
+  ]
+ },
+ "conc.control.visium.clusters.n_clusters_cpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].clusters.n_clusters_cpu",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   16,
+   16,
+   16,
+   16,
+   16
+  ]
+ },
+ "conc.control.visium.clusters.n_clusters_gpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].clusters.n_clusters_gpu",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   15,
+   15,
+   15,
+   15,
+   15
+  ]
+ },
+ "conc.control.visium.clusters.nmi": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].clusters.nmi",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   0.8915,
+   0.8915,
+   0.8915,
+   0.8915,
+   0.8915
+  ]
+ },
+ "conc.control.visium.co_occurrence.max_abs_diff": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].co_occurrence.max_abs_diff",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1e-05,
+   1e-05,
+   1e-05,
+   1e-05,
+   1e-05
+  ]
+ },
+ "conc.control.visium.co_occurrence.spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].co_occurrence.spearman_rho",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.gearyC.C_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].gearyC.C_spearman_rho",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.gearyC.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_fdr005",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.gearyC.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_top50",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.moranI.I_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.I_spearman_rho",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.moranI.n_svg_cpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.n_svg_cpu",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1434,
+   1434,
+   1434,
+   1434,
+   1434
+  ]
+ },
+ "conc.control.visium.moranI.n_svg_shared": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.n_svg_shared",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1434,
+   1434,
+   1434,
+   1434,
+   1434
+  ]
+ },
+ "conc.control.visium.moranI.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_fdr005",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.moranI.svg_jaccard_top100": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top100",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.moranI.svg_jaccard_top200": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top200",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.moranI.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top50",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium.nhood_enrichment.spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].nhood_enrichment.spearman_rho",
+  "md5": "57b91bfcb99b3cec13d3c18a94dc0deb",
+  "value": [
+   0.9982,
+   0.998245,
+   0.998087,
+   0.998137,
+   0.998408
+  ]
+ },
+ "conc.control.visium_hd_square_002um.clusters.ari": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].clusters.ari",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   0.0843,
+   0.0843,
+   0.0843,
+   0.0843,
+   0.0843
+  ]
+ },
+ "conc.control.visium_hd_square_002um.clusters.n_clusters_cpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].clusters.n_clusters_cpu",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   2559,
+   2559,
+   2559,
+   2559,
+   2559
+  ]
+ },
+ "conc.control.visium_hd_square_002um.clusters.n_clusters_gpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].clusters.n_clusters_gpu",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   538,
+   538,
+   538,
+   538,
+   538
+  ]
+ },
+ "conc.control.visium_hd_square_002um.clusters.nmi": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].clusters.nmi",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   0.6693,
+   0.6693,
+   0.6693,
+   0.6693,
+   0.6693
+  ]
+ },
+ "conc.control.visium_hd_square_002um.gearyC.C_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].gearyC.C_spearman_rho",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   0.999912,
+   0.999912,
+   0.999912,
+   0.999912,
+   0.999912
+  ]
+ },
+ "conc.control.visium_hd_square_002um.gearyC.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_fdr005",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   0.9856,
+   0.9856,
+   0.9856,
+   0.9856,
+   0.9856
+  ]
+ },
+ "conc.control.visium_hd_square_002um.gearyC.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_top50",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium_hd_square_002um.moranI.I_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.I_spearman_rho",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   0.999982,
+   0.999982,
+   0.999982,
+   0.999982,
+   0.999982
+  ]
+ },
+ "conc.control.visium_hd_square_002um.moranI.n_svg_cpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.n_svg_cpu",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   484,
+   484,
+   484,
+   484,
+   484
+  ]
+ },
+ "conc.control.visium_hd_square_002um.moranI.n_svg_shared": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.n_svg_shared",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   478,
+   478,
+   478,
+   478,
+   478
+  ]
+ },
+ "conc.control.visium_hd_square_002um.moranI.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_fdr005",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   0.9815,
+   0.9815,
+   0.9815,
+   0.9815,
+   0.9815
+  ]
+ },
+ "conc.control.visium_hd_square_002um.moranI.svg_jaccard_top100": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top100",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802
+  ]
+ },
+ "conc.control.visium_hd_square_002um.moranI.svg_jaccard_top200": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top200",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802
+  ]
+ },
+ "conc.control.visium_hd_square_002um.moranI.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top50",
+  "md5": "7ffcfd52529bb7a27e8064c374abbdef",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium_hd_square_008um.clusters.ari": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].clusters.ari",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.973,
+   0.9717,
+   0.973,
+   0.9747,
+   0.973
+  ]
+ },
+ "conc.control.visium_hd_square_008um.clusters.n_clusters_cpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].clusters.n_clusters_cpu",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   7,
+   7,
+   7,
+   7,
+   7
+  ]
+ },
+ "conc.control.visium_hd_square_008um.clusters.n_clusters_gpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].clusters.n_clusters_gpu",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   3,
+   4,
+   3,
+   3,
+   3
+  ]
+ },
+ "conc.control.visium_hd_square_008um.clusters.nmi": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].clusters.nmi",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.9386,
+   0.9359,
+   0.9386,
+   0.9419,
+   0.9386
+  ]
+ },
+ "conc.control.visium_hd_square_008um.co_occurrence.max_abs_diff": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].co_occurrence.max_abs_diff",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   61.493267,
+   61.493267,
+   61.493267,
+   61.493267,
+   61.493267
+  ]
+ },
+ "conc.control.visium_hd_square_008um.co_occurrence.spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].co_occurrence.spearman_rho",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.11181,
+   0.11181,
+   0.11181,
+   0.11181,
+   0.11181
+  ]
+ },
+ "conc.control.visium_hd_square_008um.gearyC.C_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].gearyC.C_spearman_rho",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.999526,
+   0.999526,
+   0.999526,
+   0.999526,
+   0.999526
+  ]
+ },
+ "conc.control.visium_hd_square_008um.gearyC.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_fdr005",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.9975,
+   0.9975,
+   0.9975,
+   0.9975,
+   0.9975
+  ]
+ },
+ "conc.control.visium_hd_square_008um.gearyC.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_top50",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium_hd_square_008um.moranI.I_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.I_spearman_rho",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.999877,
+   0.999877,
+   0.999877,
+   0.999877,
+   0.999877
+  ]
+ },
+ "conc.control.visium_hd_square_008um.moranI.n_svg_cpu": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.n_svg_cpu",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   1384,
+   1384,
+   1384,
+   1384,
+   1384
+  ]
+ },
+ "conc.control.visium_hd_square_008um.moranI.n_svg_shared": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.n_svg_shared",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   1383,
+   1383,
+   1383,
+   1383,
+   1383
+  ]
+ },
+ "conc.control.visium_hd_square_008um.moranI.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_fdr005",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.9986,
+   0.9986,
+   0.9986,
+   0.9986,
+   0.9986
+  ]
+ },
+ "conc.control.visium_hd_square_008um.moranI.svg_jaccard_top100": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top100",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802
+  ]
+ },
+ "conc.control.visium_hd_square_008um.moranI.svg_jaccard_top200": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top200",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802
+  ]
+ },
+ "conc.control.visium_hd_square_008um.moranI.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top50",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.control.visium_hd_square_008um.nhood_enrichment.spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_server_control/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].nhood_enrichment.spearman_rho",
+  "md5": "ec276bf06196127f71d4ea1d54d714b0",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.clusters.ari": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].clusters.ari",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   0.8561,
+   0.8561,
+   0.8561,
+   0.8561,
+   0.8561
+  ]
+ },
+ "conc.reference.visium.clusters.n_clusters_cpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].clusters.n_clusters_cpu",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   16,
+   16,
+   16,
+   16,
+   16
+  ]
+ },
+ "conc.reference.visium.clusters.n_clusters_gpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].clusters.n_clusters_gpu",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   15,
+   15,
+   15,
+   15,
+   15
+  ]
+ },
+ "conc.reference.visium.clusters.nmi": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].clusters.nmi",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   0.8915,
+   0.8915,
+   0.8915,
+   0.8915,
+   0.8915
+  ]
+ },
+ "conc.reference.visium.co_occurrence.max_abs_diff": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].co_occurrence.max_abs_diff",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1e-05,
+   1e-05,
+   1e-05,
+   1e-05,
+   1e-05
+  ]
+ },
+ "conc.reference.visium.co_occurrence.spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].co_occurrence.spearman_rho",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.gearyC.C_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].gearyC.C_spearman_rho",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.gearyC.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_fdr005",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.gearyC.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_top50",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.moranI.I_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.I_spearman_rho",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.moranI.n_svg_cpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.n_svg_cpu",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1434,
+   1434,
+   1434,
+   1434,
+   1434
+  ]
+ },
+ "conc.reference.visium.moranI.n_svg_shared": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.n_svg_shared",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1434,
+   1434,
+   1434,
+   1434,
+   1434
+  ]
+ },
+ "conc.reference.visium.moranI.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_fdr005",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.moranI.svg_jaccard_top100": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top100",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.moranI.svg_jaccard_top200": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top200",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.moranI.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top50",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium.nhood_enrichment.spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium.json",
+  "key": "[repeat 1..5].nhood_enrichment.spearman_rho",
+  "md5": "85f672ab1a631bc564afb434b6e7a383",
+  "value": [
+   0.998177,
+   0.998079,
+   0.997932,
+   0.99767,
+   0.99799
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.clusters.ari": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].clusters.ari",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   0.0708,
+   0.0708,
+   0.0708,
+   0.0708,
+   0.0708
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.clusters.n_clusters_cpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].clusters.n_clusters_cpu",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   3027,
+   3027,
+   3027,
+   3027,
+   3027
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.clusters.n_clusters_gpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].clusters.n_clusters_gpu",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   538,
+   538,
+   538,
+   538,
+   538
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.clusters.nmi": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].clusters.nmi",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   0.6362,
+   0.6362,
+   0.6362,
+   0.6362,
+   0.6362
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.gearyC.C_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].gearyC.C_spearman_rho",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   0.999912,
+   0.999912,
+   0.999912,
+   0.999912,
+   0.999912
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.gearyC.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_fdr005",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   0.9856,
+   0.9856,
+   0.9856,
+   0.9856,
+   0.9856
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.gearyC.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_top50",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.moranI.I_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.I_spearman_rho",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   0.999982,
+   0.999982,
+   0.999982,
+   0.999982,
+   0.999982
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.moranI.n_svg_cpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.n_svg_cpu",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   484,
+   484,
+   484,
+   484,
+   484
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.moranI.n_svg_shared": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.n_svg_shared",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   478,
+   478,
+   478,
+   478,
+   478
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.moranI.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_fdr005",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   0.9815,
+   0.9815,
+   0.9815,
+   0.9815,
+   0.9815
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.moranI.svg_jaccard_top100": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top100",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.moranI.svg_jaccard_top200": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top200",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802
+  ]
+ },
+ "conc.reference.visium_hd_square_002um.moranI.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_002um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top50",
+  "md5": "b02a9fd06608fd0deebee7903856ce0b",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.clusters.ari": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].clusters.ari",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.9724,
+   0.971,
+   0.9724,
+   0.974,
+   0.9724
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.clusters.n_clusters_cpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].clusters.n_clusters_cpu",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   4,
+   4,
+   4,
+   4,
+   4
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.clusters.n_clusters_gpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].clusters.n_clusters_gpu",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   3,
+   4,
+   3,
+   3,
+   3
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.clusters.nmi": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].clusters.nmi",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.9386,
+   0.9356,
+   0.9386,
+   0.9417,
+   0.9386
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.co_occurrence.max_abs_diff": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].co_occurrence.max_abs_diff",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   61.493267,
+   61.493267,
+   61.493267,
+   61.493267,
+   61.493267
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.co_occurrence.spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].co_occurrence.spearman_rho",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.11181,
+   0.11181,
+   0.11181,
+   0.11181,
+   0.11181
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.gearyC.C_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].gearyC.C_spearman_rho",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.999526,
+   0.999526,
+   0.999526,
+   0.999526,
+   0.999526
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.gearyC.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_fdr005",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.9975,
+   0.9975,
+   0.9975,
+   0.9975,
+   0.9975
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.gearyC.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].gearyC.svg_jaccard_top50",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.moranI.I_spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.I_spearman_rho",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.999878,
+   0.999877,
+   0.999877,
+   0.999877,
+   0.999878
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.moranI.n_svg_cpu": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.n_svg_cpu",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   1384,
+   1384,
+   1384,
+   1384,
+   1384
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.moranI.n_svg_shared": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.n_svg_shared",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   1383,
+   1383,
+   1383,
+   1383,
+   1383
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.moranI.svg_jaccard_fdr005": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_fdr005",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.9986,
+   0.9986,
+   0.9986,
+   0.9986,
+   0.9986
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.moranI.svg_jaccard_top100": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top100",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.moranI.svg_jaccard_top200": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top200",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802,
+   0.9802
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.moranI.svg_jaccard_top50": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].moranI.svg_jaccard_top50",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "conc.reference.visium_hd_square_008um.nhood_enrichment.spearman_rho": {
+  "file": "SPATIAL/results_v2/concordance_reference/spatial_concordance_visium_hd_square_008um.json",
+  "key": "[repeat 1..5].nhood_enrichment.spearman_rho",
+  "md5": "8650ebd9c6deed060161f2e5dc9f500b",
+  "value": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "cooc.Q1_hd8_rsc0151_equal_intervals": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "Q1_hd8_rsc0151_equal_intervals",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": [
+   49,
+   49,
+   49,
+   49,
+   49
+  ]
+ },
+ "cooc.Q1_hd8_rsc0151_max_abs_diff": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "Q1_hd8_rsc0151_max_abs_diff",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": [
+   0.00022028734855439325,
+   0.00022028734855439325,
+   0.00022028734855439325,
+   0.00022028734855439325,
+   0.00022028734855439325
+  ]
+ },
+ "cooc.Q2_visium_rsc0151_equal_intervals": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "Q2_visium_rsc0151_equal_intervals",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": [
+   49,
+   49,
+   49,
+   49,
+   49
+  ]
+ },
+ "cooc.Q3_ci": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "Q3_ci",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": [
+   0.9512110082296242,
+   1.0038022401843067
+  ]
+ },
+ "cooc.Q3_ratio": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "Q3_ratio",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": 0.9829900284836788
+ },
+ "cooc.check_speedup_dgx_rsc0151": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "file2": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "mean(dgx_cpu co_occurrence r1-5 from s1_step_stats.csv) / mean(t_hd8_rsc0151); bootstrap B=2000 seed 20261104",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": [
+   23.40904123379421,
+   23.267800061751114,
+   23.56087247798819
+  ]
+ },
+ "cooc.hd8_rsc0141_equal_intervals": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "hd8_rsc0141_equal_intervals",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": [
+   8,
+   8,
+   8,
+   8,
+   8
+  ]
+ },
+ "cooc.n_unequal_1e-4": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "hd8_cpu_gpu_same_groups.n_unequal",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": 41
+ },
+ "cooc.rsc0151_identical_across_reps": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "rsc0151_identical_across_reps",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": true
+ },
+ "cooc.speedup_cooc_hd8_dgx_over_rsc0151": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "speedup_cooc_hd8_dgx_over_rsc0151",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": 23.40904123379421
+ },
+ "cooc.speedup_cooc_hd8_server_over_rsc0151": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "speedup_cooc_hd8_server_over_rsc0151",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": 16.37705817533772
+ },
+ "cooc.t_hd8_rsc0141": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "t_hd8_rsc0141",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": [
+   4.4362,
+   4.4196,
+   4.4006,
+   4.4,
+   4.7775
+  ]
+ },
+ "cooc.t_hd8_rsc0151": {
+  "file": "SPATIAL/results_v2/cooc_check/cooc_check_eval.json",
+  "key": "t_hd8_rsc0151",
+  "md5": "eeba7c21549c8769725720b638777329",
+  "value": [
+   4.3831,
+   4.438,
+   4.4328,
+   4.4314,
+   4.367
+  ]
+ },
+ "leiden_groups.dgx_cpu.visium": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium.dgx_cpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   16,
+   16,
+   16,
+   16,
+   16
+  ]
+ },
+ "leiden_groups.dgx_cpu.visium_hd_square_002um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium_hd_square_002um.dgx_cpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   3027,
+   3027,
+   3027,
+   3027,
+   3027
+  ]
+ },
+ "leiden_groups.dgx_cpu.visium_hd_square_008um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium_hd_square_008um.dgx_cpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   4,
+   4,
+   4,
+   4,
+   4
+  ]
+ },
+ "leiden_groups.server_cpu.visium": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium.server_cpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   16,
+   16,
+   16,
+   16,
+   16
+  ]
+ },
+ "leiden_groups.server_cpu.visium_hd_square_002um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium_hd_square_002um.server_cpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   2559,
+   2559,
+   2559,
+   2559,
+   2559
+  ]
+ },
+ "leiden_groups.server_cpu.visium_hd_square_008um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium_hd_square_008um.server_cpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   7,
+   7,
+   7,
+   7,
+   7
+  ]
+ },
+ "leiden_groups.server_gpu.visium": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium.server_gpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   15,
+   15,
+   15,
+   15,
+   15
+  ]
+ },
+ "leiden_groups.server_gpu.visium_hd_square_002um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium_hd_square_002um.server_gpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   538,
+   538,
+   538,
+   538,
+   538
+  ]
+ },
+ "leiden_groups.server_gpu.visium_hd_square_008um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "own_leiden_clusters.visium_hd_square_008um.server_gpu",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   3,
+   4,
+   3,
+   3,
+   3
+  ]
+ },
+ "run.dgx_cpu.visium.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "57f7793aa7ed1541f3353485161d6018",
+   "9e959a676046eeb10de05da3a2079aa3",
+   "11a90cf4d0a616f3e2a73410066eedb6",
+   "a9cba7d7300de093b721336a8e14690f",
+   "4297dfac1c512472638a074b17e46a4d"
+  ],
+  "value": [
+   32285,
+   32285,
+   32285,
+   32285,
+   32285
+  ]
+ },
+ "run.dgx_cpu.visium.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "57f7793aa7ed1541f3353485161d6018",
+   "9e959a676046eeb10de05da3a2079aa3",
+   "11a90cf4d0a616f3e2a73410066eedb6",
+   "a9cba7d7300de093b721336a8e14690f",
+   "4297dfac1c512472638a074b17e46a4d"
+  ],
+  "value": [
+   2695,
+   2695,
+   2695,
+   2695,
+   2695
+  ]
+ },
+ "run.dgx_cpu.visium.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "57f7793aa7ed1541f3353485161d6018",
+   "9e959a676046eeb10de05da3a2079aa3",
+   "11a90cf4d0a616f3e2a73410066eedb6",
+   "a9cba7d7300de093b721336a8e14690f",
+   "4297dfac1c512472638a074b17e46a4d"
+  ],
+  "value": [
+   2695,
+   2695,
+   2695,
+   2695,
+   2695
+  ]
+ },
+ "run.dgx_cpu.visium.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "57f7793aa7ed1541f3353485161d6018",
+   "9e959a676046eeb10de05da3a2079aa3",
+   "11a90cf4d0a616f3e2a73410066eedb6",
+   "a9cba7d7300de093b721336a8e14690f",
+   "4297dfac1c512472638a074b17e46a4d"
+  ],
+  "value": [
+   0.96,
+   0.96,
+   0.96,
+   1.01,
+   0.96
+  ]
+ },
+ "run.dgx_cpu.visium.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "57f7793aa7ed1541f3353485161d6018",
+   "9e959a676046eeb10de05da3a2079aa3",
+   "11a90cf4d0a616f3e2a73410066eedb6",
+   "a9cba7d7300de093b721336a8e14690f",
+   "4297dfac1c512472638a074b17e46a4d"
+  ],
+  "value": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_002um.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "f49362d53e73fc77b00e60a35c4d01ec",
+   "b56542c70d45f033adb8fd0d8336f1d5",
+   "4d5589624bdd23eb03139d25927b5634",
+   "e35e5d99186ac602cd3f46d452f9f66d",
+   "1feb3d4661ddd5a246d3e980dffc665f"
+  ],
+  "value": [
+   19059,
+   19059,
+   19059,
+   19059,
+   19059
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_002um.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "f49362d53e73fc77b00e60a35c4d01ec",
+   "b56542c70d45f033adb8fd0d8336f1d5",
+   "4d5589624bdd23eb03139d25927b5634",
+   "e35e5d99186ac602cd3f46d452f9f66d",
+   "1feb3d4661ddd5a246d3e980dffc665f"
+  ],
+  "value": [
+   389492,
+   389492,
+   389492,
+   389492,
+   389492
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_002um.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "f49362d53e73fc77b00e60a35c4d01ec",
+   "b56542c70d45f033adb8fd0d8336f1d5",
+   "4d5589624bdd23eb03139d25927b5634",
+   "e35e5d99186ac602cd3f46d452f9f66d",
+   "1feb3d4661ddd5a246d3e980dffc665f"
+  ],
+  "value": [
+   6296688,
+   6296688,
+   6296688,
+   6296688,
+   6296688
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_002um.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "f49362d53e73fc77b00e60a35c4d01ec",
+   "b56542c70d45f033adb8fd0d8336f1d5",
+   "4d5589624bdd23eb03139d25927b5634",
+   "e35e5d99186ac602cd3f46d452f9f66d",
+   "1feb3d4661ddd5a246d3e980dffc665f"
+  ],
+  "value": [
+   7.85,
+   7.98,
+   7.96,
+   8.0,
+   7.96
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_002um.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "f49362d53e73fc77b00e60a35c4d01ec",
+   "b56542c70d45f033adb8fd0d8336f1d5",
+   "4d5589624bdd23eb03139d25927b5634",
+   "e35e5d99186ac602cd3f46d452f9f66d",
+   "1feb3d4661ddd5a246d3e980dffc665f"
+  ],
+  "value": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_008um.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "1cc779b767896e2492c9185e7f409dd7",
+   "cd73590afd60e7c8209da23536dfbdd8",
+   "440c1064704482876ad0bdc52234a65c",
+   "ad6e53aebc668107592e2c0cdbd3a5b2",
+   "eb45bf7d9f18cd4d1a63762384984c44"
+  ],
+  "value": [
+   19059,
+   19059,
+   19059,
+   19059,
+   19059
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_008um.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "1cc779b767896e2492c9185e7f409dd7",
+   "cd73590afd60e7c8209da23536dfbdd8",
+   "440c1064704482876ad0bdc52234a65c",
+   "ad6e53aebc668107592e2c0cdbd3a5b2",
+   "eb45bf7d9f18cd4d1a63762384984c44"
+  ],
+  "value": [
+   393543,
+   393543,
+   393543,
+   393543,
+   393543
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_008um.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "1cc779b767896e2492c9185e7f409dd7",
+   "cd73590afd60e7c8209da23536dfbdd8",
+   "440c1064704482876ad0bdc52234a65c",
+   "ad6e53aebc668107592e2c0cdbd3a5b2",
+   "eb45bf7d9f18cd4d1a63762384984c44"
+  ],
+  "value": [
+   393543,
+   393543,
+   393543,
+   393543,
+   393543
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_008um.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "1cc779b767896e2492c9185e7f409dd7",
+   "cd73590afd60e7c8209da23536dfbdd8",
+   "440c1064704482876ad0bdc52234a65c",
+   "ad6e53aebc668107592e2c0cdbd3a5b2",
+   "eb45bf7d9f18cd4d1a63762384984c44"
+  ],
+  "value": [
+   6.95,
+   6.95,
+   6.95,
+   6.96,
+   6.95
+  ]
+ },
+ "run.dgx_cpu.visium_hd_square_008um.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "1cc779b767896e2492c9185e7f409dd7",
+   "cd73590afd60e7c8209da23536dfbdd8",
+   "440c1064704482876ad0bdc52234a65c",
+   "ad6e53aebc668107592e2c0cdbd3a5b2",
+   "eb45bf7d9f18cd4d1a63762384984c44"
+  ],
+  "value": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "run.server_cpu.visium.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "00fb3d216ef15be8ac83ee63d67c9d79",
+   "4c61bdcea0abb2887ba0088837f636c4",
+   "e1e83740ffe3e537d6accb5bb10fe73e",
+   "5e4411d70b339da56ac5effde8b651db",
+   "c80a7933172f96dab8da2a33b1af44c6"
+  ],
+  "value": [
+   32285,
+   32285,
+   32285,
+   32285,
+   32285
+  ]
+ },
+ "run.server_cpu.visium.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "00fb3d216ef15be8ac83ee63d67c9d79",
+   "4c61bdcea0abb2887ba0088837f636c4",
+   "e1e83740ffe3e537d6accb5bb10fe73e",
+   "5e4411d70b339da56ac5effde8b651db",
+   "c80a7933172f96dab8da2a33b1af44c6"
+  ],
+  "value": [
+   2695,
+   2695,
+   2695,
+   2695,
+   2695
+  ]
+ },
+ "run.server_cpu.visium.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "00fb3d216ef15be8ac83ee63d67c9d79",
+   "4c61bdcea0abb2887ba0088837f636c4",
+   "e1e83740ffe3e537d6accb5bb10fe73e",
+   "5e4411d70b339da56ac5effde8b651db",
+   "c80a7933172f96dab8da2a33b1af44c6"
+  ],
+  "value": [
+   2695,
+   2695,
+   2695,
+   2695,
+   2695
+  ]
+ },
+ "run.server_cpu.visium.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "00fb3d216ef15be8ac83ee63d67c9d79",
+   "4c61bdcea0abb2887ba0088837f636c4",
+   "e1e83740ffe3e537d6accb5bb10fe73e",
+   "5e4411d70b339da56ac5effde8b651db",
+   "c80a7933172f96dab8da2a33b1af44c6"
+  ],
+  "value": [
+   1.11,
+   1.06,
+   1.06,
+   1.06,
+   1.06
+  ]
+ },
+ "run.server_cpu.visium.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "00fb3d216ef15be8ac83ee63d67c9d79",
+   "4c61bdcea0abb2887ba0088837f636c4",
+   "e1e83740ffe3e537d6accb5bb10fe73e",
+   "5e4411d70b339da56ac5effde8b651db",
+   "c80a7933172f96dab8da2a33b1af44c6"
+  ],
+  "value": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "run.server_cpu.visium_hd_square_002um.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "c978053eecbc1c969d7ff38f1b688f8e",
+   "7eb37cb2c3d87bc17b96412e2e47e82f",
+   "cb256a11c2b591b2f9a54629968dba6f",
+   "490b342918136fed13d9c5731b345f46",
+   "40befe53a662552002501c3b1dfd1211"
+  ],
+  "value": [
+   19059,
+   19059,
+   19059,
+   19059,
+   19059
+  ]
+ },
+ "run.server_cpu.visium_hd_square_002um.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "c978053eecbc1c969d7ff38f1b688f8e",
+   "7eb37cb2c3d87bc17b96412e2e47e82f",
+   "cb256a11c2b591b2f9a54629968dba6f",
+   "490b342918136fed13d9c5731b345f46",
+   "40befe53a662552002501c3b1dfd1211"
+  ],
+  "value": [
+   389492,
+   389492,
+   389492,
+   389492,
+   389492
+  ]
+ },
+ "run.server_cpu.visium_hd_square_002um.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "c978053eecbc1c969d7ff38f1b688f8e",
+   "7eb37cb2c3d87bc17b96412e2e47e82f",
+   "cb256a11c2b591b2f9a54629968dba6f",
+   "490b342918136fed13d9c5731b345f46",
+   "40befe53a662552002501c3b1dfd1211"
+  ],
+  "value": [
+   6296688,
+   6296688,
+   6296688,
+   6296688,
+   6296688
+  ]
+ },
+ "run.server_cpu.visium_hd_square_002um.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "c978053eecbc1c969d7ff38f1b688f8e",
+   "7eb37cb2c3d87bc17b96412e2e47e82f",
+   "cb256a11c2b591b2f9a54629968dba6f",
+   "490b342918136fed13d9c5731b345f46",
+   "40befe53a662552002501c3b1dfd1211"
+  ],
+  "value": [
+   7.81,
+   8.19,
+   8.16,
+   8.14,
+   8.17
+  ]
+ },
+ "run.server_cpu.visium_hd_square_002um.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "c978053eecbc1c969d7ff38f1b688f8e",
+   "7eb37cb2c3d87bc17b96412e2e47e82f",
+   "cb256a11c2b591b2f9a54629968dba6f",
+   "490b342918136fed13d9c5731b345f46",
+   "40befe53a662552002501c3b1dfd1211"
+  ],
+  "value": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "run.server_cpu.visium_hd_square_008um.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "60c18c160ed755aff0a197c92b0301b9",
+   "66a6dad82d0b909c93e8680bee369475",
+   "6b2f5fc2385cf8afce51cf184f9d595d",
+   "bde47ab9f41dac6dd10231db40510ec6",
+   "76bf983da8d7613fbcc10951876b30da"
+  ],
+  "value": [
+   19059,
+   19059,
+   19059,
+   19059,
+   19059
+  ]
+ },
+ "run.server_cpu.visium_hd_square_008um.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "60c18c160ed755aff0a197c92b0301b9",
+   "66a6dad82d0b909c93e8680bee369475",
+   "6b2f5fc2385cf8afce51cf184f9d595d",
+   "bde47ab9f41dac6dd10231db40510ec6",
+   "76bf983da8d7613fbcc10951876b30da"
+  ],
+  "value": [
+   393543,
+   393543,
+   393543,
+   393543,
+   393543
+  ]
+ },
+ "run.server_cpu.visium_hd_square_008um.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "60c18c160ed755aff0a197c92b0301b9",
+   "66a6dad82d0b909c93e8680bee369475",
+   "6b2f5fc2385cf8afce51cf184f9d595d",
+   "bde47ab9f41dac6dd10231db40510ec6",
+   "76bf983da8d7613fbcc10951876b30da"
+  ],
+  "value": [
+   393543,
+   393543,
+   393543,
+   393543,
+   393543
+  ]
+ },
+ "run.server_cpu.visium_hd_square_008um.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "60c18c160ed755aff0a197c92b0301b9",
+   "66a6dad82d0b909c93e8680bee369475",
+   "6b2f5fc2385cf8afce51cf184f9d595d",
+   "bde47ab9f41dac6dd10231db40510ec6",
+   "76bf983da8d7613fbcc10951876b30da"
+  ],
+  "value": [
+   7.19,
+   7.19,
+   7.19,
+   7.18,
+   7.27
+  ]
+ },
+ "run.server_cpu.visium_hd_square_008um.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_cpu/spatial_cpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "60c18c160ed755aff0a197c92b0301b9",
+   "66a6dad82d0b909c93e8680bee369475",
+   "6b2f5fc2385cf8afce51cf184f9d595d",
+   "bde47ab9f41dac6dd10231db40510ec6",
+   "76bf983da8d7613fbcc10951876b30da"
+  ],
+  "value": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "run.server_gpu.visium.gpu_info": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r5_results.json"
+  ],
+  "key": "metadata.gpu_info",
+  "md5": [
+   "77469a36ba29728e95d7494f02eb357e",
+   "a10e522293139dab6995c5ece18df352",
+   "41f032a57ee009db422637b027dbce46",
+   "b20b5f28a7bcaff2b339332fa38fbbc0",
+   "e81e341009f46cb6dc5bac6f3d7f278d"
+  ],
+  "value": [
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   }
+  ]
+ },
+ "run.server_gpu.visium.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "77469a36ba29728e95d7494f02eb357e",
+   "a10e522293139dab6995c5ece18df352",
+   "41f032a57ee009db422637b027dbce46",
+   "b20b5f28a7bcaff2b339332fa38fbbc0",
+   "e81e341009f46cb6dc5bac6f3d7f278d"
+  ],
+  "value": [
+   32285,
+   32285,
+   32285,
+   32285,
+   32285
+  ]
+ },
+ "run.server_gpu.visium.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "77469a36ba29728e95d7494f02eb357e",
+   "a10e522293139dab6995c5ece18df352",
+   "41f032a57ee009db422637b027dbce46",
+   "b20b5f28a7bcaff2b339332fa38fbbc0",
+   "e81e341009f46cb6dc5bac6f3d7f278d"
+  ],
+  "value": [
+   2695,
+   2695,
+   2695,
+   2695,
+   2695
+  ]
+ },
+ "run.server_gpu.visium.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "77469a36ba29728e95d7494f02eb357e",
+   "a10e522293139dab6995c5ece18df352",
+   "41f032a57ee009db422637b027dbce46",
+   "b20b5f28a7bcaff2b339332fa38fbbc0",
+   "e81e341009f46cb6dc5bac6f3d7f278d"
+  ],
+  "value": [
+   2695,
+   2695,
+   2695,
+   2695,
+   2695
+  ]
+ },
+ "run.server_gpu.visium.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "77469a36ba29728e95d7494f02eb357e",
+   "a10e522293139dab6995c5ece18df352",
+   "41f032a57ee009db422637b027dbce46",
+   "b20b5f28a7bcaff2b339332fa38fbbc0",
+   "e81e341009f46cb6dc5bac6f3d7f278d"
+  ],
+  "value": [
+   2.5,
+   2.52,
+   2.47,
+   2.51,
+   2.52
+  ]
+ },
+ "run.server_gpu.visium.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "77469a36ba29728e95d7494f02eb357e",
+   "a10e522293139dab6995c5ece18df352",
+   "41f032a57ee009db422637b027dbce46",
+   "b20b5f28a7bcaff2b339332fa38fbbc0",
+   "e81e341009f46cb6dc5bac6f3d7f278d"
+  ],
+  "value": [
+   12.74,
+   12.74,
+   12.74,
+   12.74,
+   12.74
+  ]
+ },
+ "run.server_gpu.visium.software": {
+  "file": "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json",
+  "key": "metadata.software_versions",
+  "md5": "77469a36ba29728e95d7494f02eb357e",
+  "value": {
+   "cupy": "13.6.0",
+   "numba": "0.61.2",
+   "numpy": "2.2.6",
+   "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+   "rapids_singlecell": "0.14.1",
+   "scanpy": "1.12",
+   "squidpy": "1.8.1",
+   "threadpoolctl": "3.6.0"
+  }
+ },
+ "run.server_gpu.visium.vram_before_loading_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r5_results.json"
+  ],
+  "key": "vram_before_loading_gb",
+  "md5": [
+   "77469a36ba29728e95d7494f02eb357e",
+   "a10e522293139dab6995c5ece18df352",
+   "41f032a57ee009db422637b027dbce46",
+   "b20b5f28a7bcaff2b339332fa38fbbc0",
+   "e81e341009f46cb6dc5bac6f3d7f278d"
+  ],
+  "value": [
+   12.59,
+   12.59,
+   12.59,
+   12.59,
+   12.59
+  ]
+ },
+ "run.server_gpu.visium_hd_square_002um.gpu_info": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "metadata.gpu_info",
+  "md5": [
+   "a5a530513794beeaf562dec8e5575ee2",
+   "ab959ca1599aa902f6b2a6efdd727733",
+   "84e0feeb5d6b9117ac44b6971c514aeb",
+   "eca30308bc06723b5858c199c0829500",
+   "50224eab1e31e38388f952c001ca7fc3"
+  ],
+  "value": [
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   }
+  ]
+ },
+ "run.server_gpu.visium_hd_square_002um.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "a5a530513794beeaf562dec8e5575ee2",
+   "ab959ca1599aa902f6b2a6efdd727733",
+   "84e0feeb5d6b9117ac44b6971c514aeb",
+   "eca30308bc06723b5858c199c0829500",
+   "50224eab1e31e38388f952c001ca7fc3"
+  ],
+  "value": [
+   19059,
+   19059,
+   19059,
+   19059,
+   19059
+  ]
+ },
+ "run.server_gpu.visium_hd_square_002um.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "a5a530513794beeaf562dec8e5575ee2",
+   "ab959ca1599aa902f6b2a6efdd727733",
+   "84e0feeb5d6b9117ac44b6971c514aeb",
+   "eca30308bc06723b5858c199c0829500",
+   "50224eab1e31e38388f952c001ca7fc3"
+  ],
+  "value": [
+   389492,
+   389492,
+   389492,
+   389492,
+   389492
+  ]
+ },
+ "run.server_gpu.visium_hd_square_002um.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "a5a530513794beeaf562dec8e5575ee2",
+   "ab959ca1599aa902f6b2a6efdd727733",
+   "84e0feeb5d6b9117ac44b6971c514aeb",
+   "eca30308bc06723b5858c199c0829500",
+   "50224eab1e31e38388f952c001ca7fc3"
+  ],
+  "value": [
+   6296688,
+   6296688,
+   6296688,
+   6296688,
+   6296688
+  ]
+ },
+ "run.server_gpu.visium_hd_square_002um.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "a5a530513794beeaf562dec8e5575ee2",
+   "ab959ca1599aa902f6b2a6efdd727733",
+   "84e0feeb5d6b9117ac44b6971c514aeb",
+   "eca30308bc06723b5858c199c0829500",
+   "50224eab1e31e38388f952c001ca7fc3"
+  ],
+  "value": [
+   10.04,
+   10.16,
+   10.2,
+   10.04,
+   10.02
+  ]
+ },
+ "run.server_gpu.visium_hd_square_002um.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "a5a530513794beeaf562dec8e5575ee2",
+   "ab959ca1599aa902f6b2a6efdd727733",
+   "84e0feeb5d6b9117ac44b6971c514aeb",
+   "eca30308bc06723b5858c199c0829500",
+   "50224eab1e31e38388f952c001ca7fc3"
+  ],
+  "value": [
+   22.73,
+   22.73,
+   22.73,
+   22.73,
+   22.73
+  ]
+ },
+ "run.server_gpu.visium_hd_square_002um.software": {
+  "file": "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json",
+  "key": "metadata.software_versions",
+  "md5": "a5a530513794beeaf562dec8e5575ee2",
+  "value": {
+   "cupy": "13.6.0",
+   "numba": "0.61.2",
+   "numpy": "2.2.6",
+   "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+   "rapids_singlecell": "0.14.1",
+   "scanpy": "1.12",
+   "squidpy": "1.8.1",
+   "threadpoolctl": "3.6.0"
+  }
+ },
+ "run.server_gpu.visium_hd_square_002um.vram_before_loading_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r5_results.json"
+  ],
+  "key": "vram_before_loading_gb",
+  "md5": [
+   "a5a530513794beeaf562dec8e5575ee2",
+   "ab959ca1599aa902f6b2a6efdd727733",
+   "84e0feeb5d6b9117ac44b6971c514aeb",
+   "eca30308bc06723b5858c199c0829500",
+   "50224eab1e31e38388f952c001ca7fc3"
+  ],
+  "value": [
+   12.59,
+   12.59,
+   12.59,
+   12.59,
+   12.59
+  ]
+ },
+ "run.server_gpu.visium_hd_square_008um.gpu_info": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "metadata.gpu_info",
+  "md5": [
+   "b137c4be7de504eff3c85f4202e8b993",
+   "6fbbbc29da6e0715ff3167cd545af89b",
+   "314375e5e0d36fe9a30d6948a81528b6",
+   "1c6f11dff091f290d5eef647efea3622",
+   "13b8fb37cc78497236568ac73383f601"
+  ],
+  "value": [
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   },
+   {
+    "driver_version": "595.99.02",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_vram_total_gb": 24.0
+   }
+  ]
+ },
+ "run.server_gpu.visium_hd_square_008um.n_genes_input": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_genes_input",
+  "md5": [
+   "b137c4be7de504eff3c85f4202e8b993",
+   "6fbbbc29da6e0715ff3167cd545af89b",
+   "314375e5e0d36fe9a30d6948a81528b6",
+   "1c6f11dff091f290d5eef647efea3622",
+   "13b8fb37cc78497236568ac73383f601"
+  ],
+  "value": [
+   19059,
+   19059,
+   19059,
+   19059,
+   19059
+  ]
+ },
+ "run.server_gpu.visium_hd_square_008um.n_spots_after_qc": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_spots_after_qc",
+  "md5": [
+   "b137c4be7de504eff3c85f4202e8b993",
+   "6fbbbc29da6e0715ff3167cd545af89b",
+   "314375e5e0d36fe9a30d6948a81528b6",
+   "1c6f11dff091f290d5eef647efea3622",
+   "13b8fb37cc78497236568ac73383f601"
+  ],
+  "value": [
+   393543,
+   393543,
+   393543,
+   393543,
+   393543
+  ]
+ },
+ "run.server_gpu.visium_hd_square_008um.n_spots_input": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "n_spots_input",
+  "md5": [
+   "b137c4be7de504eff3c85f4202e8b993",
+   "6fbbbc29da6e0715ff3167cd545af89b",
+   "314375e5e0d36fe9a30d6948a81528b6",
+   "1c6f11dff091f290d5eef647efea3622",
+   "13b8fb37cc78497236568ac73383f601"
+  ],
+  "value": [
+   393543,
+   393543,
+   393543,
+   393543,
+   393543
+  ]
+ },
+ "run.server_gpu.visium_hd_square_008um.peak_ram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "peak_ram_gb",
+  "md5": [
+   "b137c4be7de504eff3c85f4202e8b993",
+   "6fbbbc29da6e0715ff3167cd545af89b",
+   "314375e5e0d36fe9a30d6948a81528b6",
+   "1c6f11dff091f290d5eef647efea3622",
+   "13b8fb37cc78497236568ac73383f601"
+  ],
+  "value": [
+   11.29,
+   11.39,
+   11.18,
+   11.3,
+   11.33
+  ]
+ },
+ "run.server_gpu.visium_hd_square_008um.peak_vram_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "peak_vram_gb",
+  "md5": [
+   "b137c4be7de504eff3c85f4202e8b993",
+   "6fbbbc29da6e0715ff3167cd545af89b",
+   "314375e5e0d36fe9a30d6948a81528b6",
+   "1c6f11dff091f290d5eef647efea3622",
+   "13b8fb37cc78497236568ac73383f601"
+  ],
+  "value": [
+   22.74,
+   22.74,
+   22.74,
+   22.74,
+   22.74
+  ]
+ },
+ "run.server_gpu.visium_hd_square_008um.software": {
+  "file": "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json",
+  "key": "metadata.software_versions",
+  "md5": "b137c4be7de504eff3c85f4202e8b993",
+  "value": {
+   "cupy": "13.6.0",
+   "numba": "0.61.2",
+   "numpy": "2.2.6",
+   "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+   "rapids_singlecell": "0.14.1",
+   "scanpy": "1.12",
+   "squidpy": "1.8.1",
+   "threadpoolctl": "3.6.0"
+  }
+ },
+ "run.server_gpu.visium_hd_square_008um.vram_before_loading_gb": {
+  "file": [
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r2_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r3_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r4_results.json",
+   "SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r5_results.json"
+  ],
+  "key": "vram_before_loading_gb",
+  "md5": [
+   "b137c4be7de504eff3c85f4202e8b993",
+   "6fbbbc29da6e0715ff3167cd545af89b",
+   "314375e5e0d36fe9a30d6948a81528b6",
+   "1c6f11dff091f290d5eef647efea3622",
+   "13b8fb37cc78497236568ac73383f601"
+  ],
+  "value": [
+   12.59,
+   12.59,
+   12.59,
+   12.59,
+   12.59
+  ]
+ },
+ "speedup.control_server.visium.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=co_occurrence cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   5.400536408743463,
+   5.131272241662541,
+   5.565631971451205
+  ]
+ },
+ "speedup.control_server.visium.data_loading": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=data_loading cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.8768858208539775,
+   0.8705396192638569,
+   0.8832076272631253
+  ]
+ },
+ "speedup.control_server.visium.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=expression_neighbors cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   4.038093957324727,
+   3.984260255711811,
+   4.094579654759052
+  ]
+ },
+ "speedup.control_server.visium.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=hvg_selection cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   1.0830198234698305,
+   1.0706982944366694,
+   1.1030896192555475
+  ]
+ },
+ "speedup.control_server.visium.leiden": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=leiden cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.13092168868836607,
+   0.12340496207542574,
+   0.1401039417420409
+  ]
+ },
+ "speedup.control_server.visium.ligrec": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=ligrec cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   1.0302086291643913,
+   1.0157553214755959,
+   1.0450356878897125
+  ]
+ },
+ "speedup.control_server.visium.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=nhood_enrichment cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.8194213304170035,
+   0.8129886288022886,
+   0.8264997111463863
+  ]
+ },
+ "speedup.control_server.visium.normalization": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=normalization cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   28.354545454545452,
+   28.14492911546678,
+   28.564620125562183
+  ]
+ },
+ "speedup.control_server.visium.pca": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=pca cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9495412844036697,
+   0.6899011029032721,
+   1.3607308779641252
+  ]
+ },
+ "speedup.control_server.visium.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=qc_filtering cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.10405901980936827,
+   0.10253316081386499,
+   0.105680121713894
+  ]
+ },
+ "speedup.control_server.visium.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=spatial_autocorr_geary cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   7.540083604273107,
+   7.376056719813278,
+   7.713180470975708
+  ]
+ },
+ "speedup.control_server.visium.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=spatial_autocorr_moran cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.4890779164025137,
+   0.48378061552318985,
+   0.49440258852983754
+  ]
+ },
+ "speedup.control_server.visium.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=spatial_neighbors cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9517276166456496,
+   0.8971259992386754,
+   0.985369649963146
+  ]
+ },
+ "speedup.control_server.visium.total": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=total cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   1.6072574291799362,
+   1.5924587589582089,
+   1.623400792074813
+  ]
+ },
+ "speedup.control_server.visium.umap": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=umap cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   14.640522093162497,
+   13.695796917561026,
+   15.232156159994913
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=data_loading cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9716142557103662,
+   0.9412627213797555,
+   0.9988617949378992
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=expression_neighbors cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   14.896716533171352,
+   14.73362095382107,
+   15.059049541456986
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=hvg_selection cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.8723527285869171,
+   0.8630129706621499,
+   0.8806034276625476
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.leiden": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=leiden cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   8.363586725717408,
+   8.1451279132604,
+   8.71764329752103
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.normalization": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=normalization cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   26.786776859504133,
+   26.318036600407087,
+   27.38011580743613
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.pca": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=pca cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   27.17145515613653,
+   26.673186134645057,
+   27.68790921164606
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=qc_filtering cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.1548773980742645,
+   0.14723157513620092,
+   0.163266082071147
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=spatial_autocorr_geary cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   55.14374173379825,
+   48.96467271793998,
+   61.905005080200354
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=spatial_autocorr_moran cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   9.2712706791247,
+   8.516580971461396,
+   9.922804159085501
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=spatial_neighbors cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9901806361770212,
+   0.9764602435623759,
+   1.001040737996667
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.total": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=total cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   9.391911325890455,
+   9.209067083952661,
+   9.58584377869555
+  ]
+ },
+ "speedup.control_server.visium_hd_square_002um.umap": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=umap cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   84.10377229601518,
+   79.31953885739043,
+   88.38875709427181
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=co_occurrence cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   28.29788834476004,
+   27.26567944293637,
+   28.898921995966308
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=data_loading cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.8449366443937417,
+   0.8296528583000179,
+   0.8593456120996436
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=expression_neighbors cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   16.35563097924398,
+   15.967148164077427,
+   16.646219506094127
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=hvg_selection cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   2.3546449407946977,
+   2.1579979141481833,
+   2.4802737406428603
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.leiden": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=leiden cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   11.760918423130658,
+   11.414935056298075,
+   12.101257769613003
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=nhood_enrichment cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9470168005432249,
+   0.9168047847843935,
+   0.977139660419938
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.normalization": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=normalization cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   32.71312427409989,
+   31.68674309819032,
+   33.433309790608405
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.pca": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=pca cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   85.2326901498317,
+   81.53505074832275,
+   88.73926824474532
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=qc_filtering cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.5143199567502784,
+   0.50128036718577,
+   0.5268801439342797
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=spatial_autocorr_geary cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   75.6173752310536,
+   69.8957096247705,
+   79.06739969465757
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=spatial_autocorr_moran cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   13.05210835804393,
+   12.061503773917545,
+   14.005369651447454
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=spatial_neighbors cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9900561279488649,
+   0.9686243465038857,
+   1.0103413647856625
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.total": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=total cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   6.694191308512433,
+   6.597942219996554,
+   6.797887917560304
+  ]
+ },
+ "speedup.control_server.visium_hd_square_008um.umap": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=umap cpu=control_server convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   145.2721600562423,
+   142.95893126190154,
+   147.40217546474352
+  ]
+ },
+ "speedup.reference_dgx.visium.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=co_occurrence cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   2.280407670645032,
+   2.166345438815553,
+   2.349531315830536
+  ]
+ },
+ "speedup.reference_dgx.visium.data_loading": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=data_loading cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   1.1233925290875688,
+   1.0204814350941287,
+   1.30741744432537
+  ]
+ },
+ "speedup.reference_dgx.visium.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=expression_neighbors cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   3.96174466559082,
+   3.8036951840339355,
+   4.074162054114099
+  ]
+ },
+ "speedup.reference_dgx.visium.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=hvg_selection cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9690710461582982,
+   0.9250315387540027,
+   1.0483725409810714
+  ]
+ },
+ "speedup.reference_dgx.visium.leiden": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=leiden cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.2691749919432807,
+   0.2492825468035377,
+   0.2946340687081668
+  ]
+ },
+ "speedup.reference_dgx.visium.ligrec": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=ligrec cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9639890770071001,
+   0.9498591738895887,
+   0.9799598342341482
+  ]
+ },
+ "speedup.reference_dgx.visium.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=nhood_enrichment cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.6654700204460082,
+   0.6614450279305433,
+   0.6692659696327837
+  ]
+ },
+ "speedup.reference_dgx.visium.normalization": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=normalization cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   35.640669856459326,
+   28.50203592814371,
+   42.96766434344894
+  ]
+ },
+ "speedup.reference_dgx.visium.pca": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=pca cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.6737567930812832,
+   0.6609867206611927,
+   0.6873744710500798
+  ]
+ },
+ "speedup.reference_dgx.visium.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=qc_filtering cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.1845143396173286,
+   0.1753023670951385,
+   0.1935477061638052
+  ]
+ },
+ "speedup.reference_dgx.visium.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=spatial_autocorr_geary cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   6.558197863446354,
+   6.413544976991887,
+   6.707511799630029
+  ]
+ },
+ "speedup.reference_dgx.visium.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=spatial_autocorr_moran cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.5077768682025493,
+   0.5012968983748606,
+   0.5152959411250273
+  ]
+ },
+ "speedup.reference_dgx.visium.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=spatial_neighbors cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.7891046658259774,
+   0.7438185031564711,
+   0.8186833620950821
+  ]
+ },
+ "speedup.reference_dgx.visium.total": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=total cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   1.4138500544127761,
+   1.380102186374668,
+   1.4451950615373266
+  ]
+ },
+ "speedup.reference_dgx.visium.umap": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium step=umap cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   17.259250389174948,
+   16.13242478865509,
+   18.019735609484563
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=data_loading cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.8642870967826307,
+   0.8390535152093503,
+   0.8968020901701399
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=expression_neighbors cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   12.04310933431277,
+   11.94354953223349,
+   12.153017840802066
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=hvg_selection cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.808745934224792,
+   0.7926455937388002,
+   0.8253653893145316
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.leiden": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=leiden cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   9.338186818742543,
+   9.16627455618565,
+   9.612285932046838
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.normalization": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=normalization cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   28.002597402597402,
+   27.370056159052158,
+   28.854268957894217
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.pca": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=pca cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   19.813407770515614,
+   19.653519672561938,
+   19.99136290839685
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=qc_filtering cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.16026775969537482,
+   0.15553942693446252,
+   0.16510912450756252
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=spatial_autocorr_geary cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   128.93200673319706,
+   114.29743116100289,
+   144.96742674750837
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=spatial_autocorr_moran cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   20.95277676657363,
+   19.345698681669614,
+   22.135361409185364
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=spatial_neighbors cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.8115214638493148,
+   0.8042862279435469,
+   0.8178946063738026
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.total": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=total cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   10.426139539453574,
+   10.151126163417148,
+   10.822760575105871
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_002um.umap": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_002um step=umap cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   89.43014150176201,
+   83.77447933472351,
+   95.40892904071185
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=co_occurrence cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   40.448438785504415,
+   38.95294832310123,
+   41.32676312385942
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=data_loading cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.9866515237940026,
+   0.9587113208930897,
+   1.0234377888311925
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=expression_neighbors cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   13.533870727113367,
+   13.225873867542878,
+   13.729749257402036
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=hvg_selection cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   1.7693582352331967,
+   1.601533201977537,
+   1.9180813065317888
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.leiden": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=leiden cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   12.906991435339854,
+   12.734954020924386,
+   13.089698788760577
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=nhood_enrichment cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   1.0559152368942308,
+   1.026139241678039,
+   1.0840437049587333
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.normalization": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=normalization cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   30.441811846689895,
+   29.05611910953251,
+   32.124477370038115
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.pca": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=pca cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   37.0181294140943,
+   36.121876880270214,
+   37.89426090493319
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=qc_filtering cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.887264129436516,
+   0.8629983174654804,
+   0.9102799736601362
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=spatial_autocorr_geary cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   122.35513684336057,
+   120.0269380739572,
+   124.92218775419738
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=spatial_autocorr_moran cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   20.769131024777607,
+   19.40898355000704,
+   21.916980371521372
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=spatial_neighbors cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   0.8026325083510424,
+   0.7921784061240381,
+   0.8138664777370633
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.total": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=total cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   7.798128790848107,
+   7.7479969244179685,
+   7.8530984488696935
+  ]
+ },
+ "speedup.reference_dgx.visium_hd_square_008um.umap": {
+  "file": "SPATIAL/results_v2/s1_speedups.csv",
+  "key": "platform=visium_hd_square_008um step=umap cpu=reference_dgx convention=1_5 [speedup, ci_lo, ci_hi]",
+  "md5": "ab1db1bab958d393cb92fbdd0c070d0e",
+  "value": [
+   197.0912179975394,
+   194.39302020881414,
+   200.4529964519963
+  ]
+ },
+ "speedup_wo_cooc.control_server.visium": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "speedup_total_without_co_occurrence.visium.control_server",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   1.3555262272643942,
+   1.3433584386923638,
+   1.3712826821714996
+  ]
+ },
+ "speedup_wo_cooc.control_server.visium_hd_square_002um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "speedup_total_without_co_occurrence.visium_hd_square_002um.control_server",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   9.391911325890455,
+   9.200672112602431,
+   9.585426505570775
+  ]
+ },
+ "speedup_wo_cooc.control_server.visium_hd_square_008um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "speedup_total_without_co_occurrence.visium_hd_square_008um.control_server",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   6.079115818835975,
+   5.973627588359695,
+   6.181382418385459
+  ]
+ },
+ "speedup_wo_cooc.reference_dgx.visium": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "speedup_total_without_co_occurrence.visium.reference_dgx",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   1.3563431872831895,
+   1.3187135232058016,
+   1.390935390794379
+  ]
+ },
+ "speedup_wo_cooc.reference_dgx.visium_hd_square_002um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "speedup_total_without_co_occurrence.visium_hd_square_002um.reference_dgx",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   10.426139539453574,
+   10.13886935980764,
+   10.84496555820504
+  ]
+ },
+ "speedup_wo_cooc.reference_dgx.visium_hd_square_008um": {
+  "file": "SPATIAL/results_v2/s1_extra_numbers.json",
+  "key": "speedup_total_without_co_occurrence.visium_hd_square_008um.reference_dgx",
+  "md5": "bbacec7315ae5e9d5676a9d5d00f65c0",
+  "value": [
+   6.868546906119942,
+   6.820580351241604,
+   6.9235541787050225
+  ]
+ },
+ "time.dgx_cpu.visium.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=co_occurrence mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.401,
+   "reps": [
+    3.4068,
+    3.3938,
+    3.3932,
+    3.3957,
+    3.4155
+   ],
+   "sd": 0.009806375477208681
+  }
+ },
+ "time.dgx_cpu.visium.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.80718,
+   "reps": [
+    1.0668,
+    0.7369,
+    0.7242,
+    0.7509,
+    0.7571
+   ],
+   "sd": 0.14569055219882995
+  }
+ },
+ "time.dgx_cpu.visium.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 8.837860000000001,
+   "reps": [
+    8.9486,
+    8.9347,
+    9.0593,
+    9.0566,
+    8.1901
+   ],
+   "sd": 0.36678236462512787
+  }
+ },
+ "time.dgx_cpu.visium.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.5357799999999999,
+   "reps": [
+    0.5175,
+    0.5189,
+    0.6224,
+    0.5107,
+    0.5094
+   ],
+   "sd": 0.04859791147775795
+  }
+ },
+ "time.dgx_cpu.visium.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.13364,
+   "reps": [
+    0.1561,
+    0.1229,
+    0.1353,
+    0.1236,
+    0.1303
+   ],
+   "sd": 0.013550940926740102
+  }
+ },
+ "time.dgx_cpu.visium.ligrec": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=ligrec mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 8.825320000000001,
+   "reps": [
+    9.036,
+    8.8253,
+    8.7862,
+    8.7379,
+    8.7412
+   ],
+   "sd": 0.12312074155072336
+  }
+ },
+ "time.dgx_cpu.visium.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=nhood_enrichment mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.11964,
+   "reps": [
+    1.1267,
+    1.1173,
+    1.115,
+    1.117,
+    1.1222
+   ],
+   "sd": 0.00475320944205074
+  }
+ },
+ "time.dgx_cpu.visium.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.9795599999999998,
+   "reps": [
+    2.4388,
+    2.3598,
+    3.7992,
+    3.9294,
+    2.3706
+   ],
+   "sd": 0.8095310173180518
+  }
+ },
+ "time.dgx_cpu.visium.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.4612,
+   "reps": [
+    0.4689,
+    0.4637,
+    0.4493,
+    0.4495,
+    0.4746
+   ],
+   "sd": 0.011441153787970868
+  }
+ },
+ "time.dgx_cpu.visium.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.52422,
+   "reps": [
+    0.5597,
+    0.5165,
+    0.4835,
+    0.5574,
+    0.504
+   ],
+   "sd": 0.03348995371749564
+  }
+ },
+ "time.dgx_cpu.visium.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.41198,
+   "reps": [
+    1.3933,
+    1.4259,
+    1.4233,
+    1.4069,
+    1.4105
+   ],
+   "sd": 0.013217866696256233
+  }
+ },
+ "time.dgx_cpu.visium.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.6499599999999996,
+   "reps": [
+    1.629,
+    1.6299,
+    1.6362,
+    1.6633,
+    1.6914
+   ],
+   "sd": 0.02704760617873605
+  }
+ },
+ "time.dgx_cpu.visium.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.31288,
+   "reps": [
+    0.3146,
+    0.3117,
+    0.3073,
+    0.3149,
+    0.3159
+   ],
+   "sd": 0.003488839348551319
+  }
+ },
+ "time.dgx_cpu.visium.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 33.88286,
+   "reps": [
+    33.9583,
+    33.2118,
+    34.7967,
+    34.8719,
+    32.5756
+   ],
+   "sd": 0.9972769289420061
+  }
+ },
+ "time.dgx_cpu.visium.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.88264,
+   "reps": [
+    2.8955,
+    2.8545,
+    2.8623,
+    2.8581,
+    2.9428
+   ],
+   "sd": 0.03739114868521706
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 26.4355,
+   "reps": [
+    26.2666,
+    25.6134,
+    25.8021,
+    28.2082,
+    26.2872
+   ],
+   "sd": 1.033202468057448
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 51.15118,
+   "reps": [
+    51.1157,
+    50.8678,
+    51.3755,
+    51.4617,
+    50.9352
+   ],
+   "sd": 0.2621795892131953
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.44756,
+   "reps": [
+    0.4552,
+    0.4363,
+    0.4606,
+    0.4338,
+    0.4519
+   ],
+   "sd": 0.011867729353166082
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 9.23528,
+   "reps": [
+    9.7449,
+    9.1298,
+    9.1585,
+    9.1068,
+    9.0364
+   ],
+   "sd": 0.2884415486714767
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.37182,
+   "reps": [
+    2.3608,
+    2.3108,
+    2.3487,
+    2.509,
+    2.3298
+   ],
+   "sd": 0.07899912657745016
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 17.46116,
+   "reps": [
+    17.6314,
+    17.3417,
+    17.416,
+    17.4216,
+    17.4951
+   ],
+   "sd": 0.10955442939470748
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.52864,
+   "reps": [
+    0.5514,
+    0.5075,
+    0.5469,
+    0.5204,
+    0.517
+   ],
+   "sd": 0.01937609351752827
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 85.7862,
+   "reps": [
+    85.097,
+    82.1486,
+    87.8931,
+    83.1985,
+    90.5938
+   ],
+   "sd": 3.462490688074123
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 82.88247999999999,
+   "reps": [
+    81.8601,
+    82.3374,
+    80.9557,
+    83.142,
+    86.1172
+   ],
+   "sd": 1.9739312518423733
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 44.988640000000004,
+   "reps": [
+    45.0492,
+    45.38,
+    45.1004,
+    44.7319,
+    44.6817
+   ],
+   "sd": 0.28698782726798744
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1146.05794,
+   "reps": [
+    1105.8014,
+    1137.6643,
+    1135.3519,
+    1119.363,
+    1232.1091
+   ],
+   "sd": 49.807337453060015
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_002um.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_002um step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 824.7694800000002,
+   "reps": [
+    785.6691,
+    821.591,
+    814.2944,
+    798.6291,
+    903.6638
+   ],
+   "sd": 46.25014309996243
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=co_occurrence mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 103.24464,
+   "reps": [
+    102.9906,
+    102.8054,
+    103.5889,
+    103.3106,
+    103.5277
+   ],
+   "sd": 0.3392848110363873
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.87462,
+   "reps": [
+    3.7646,
+    3.7763,
+    3.8711,
+    4.1316,
+    3.8295
+   ],
+   "sd": 0.14988174338457622
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 58.05814,
+   "reps": [
+    57.8138,
+    58.3224,
+    58.1431,
+    58.1024,
+    57.909
+   ],
+   "sd": 0.20059615649358836
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.02506,
+   "reps": [
+    1.0842,
+    1.0157,
+    0.9703,
+    0.9705,
+    1.0846
+   ],
+   "sd": 0.05723987246666435
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 21.248780000000004,
+   "reps": [
+    21.4329,
+    20.9933,
+    21.4965,
+    21.194,
+    21.1272
+   ],
+   "sd": 0.2111385492987959
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=nhood_enrichment mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 13.497679999999999,
+   "reps": [
+    13.5997,
+    13.3019,
+    13.4368,
+    13.4583,
+    13.6917
+   ],
+   "sd": 0.15135951241993392
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.62104,
+   "reps": [
+    2.5843,
+    2.5656,
+    2.5072,
+    2.8568,
+    2.5913
+   ],
+   "sd": 0.13587697744651217
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 33.65022,
+   "reps": [
+    33.5476,
+    33.5224,
+    33.792,
+    33.5853,
+    33.8038
+   ],
+   "sd": 0.13672217084291938
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.72438,
+   "reps": [
+    2.5922,
+    2.7003,
+    2.8301,
+    2.7572,
+    2.7421
+   ],
+   "sd": 0.08749181104537722
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 82.08072,
+   "reps": [
+    80.613,
+    80.0109,
+    82.3619,
+    82.1409,
+    85.2769
+   ],
+   "sd": 2.0455199368375734
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 82.64868,
+   "reps": [
+    83.4506,
+    82.0034,
+    83.6077,
+    83.7551,
+    80.4266
+   ],
+   "sd": 1.4266206633159362
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 45.22534,
+   "reps": [
+    45.7268,
+    44.7661,
+    45.1893,
+    45.1569,
+    45.2876
+   ],
+   "sd": 0.34359232092699454
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 719.0313,
+   "reps": [
+    716.3481,
+    723.1,
+    716.1706,
+    721.6347,
+    717.9031
+   ],
+   "sd": 3.161803805583116
+  }
+ },
+ "time.dgx_cpu.visium_hd_square_008um.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=dgx_cpu platform=visium_hd_square_008um step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 269.132,
+   "reps": [
+    267.1478,
+    277.3163,
+    264.3757,
+    270.2151,
+    266.6051
+   ],
+   "sd": 5.027438091115599
+  }
+ },
+ "time.server_cpu.visium.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=co_occurrence mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 8.054359999999999,
+   "reps": [
+    8.0891,
+    8.0314,
+    8.0232,
+    8.0964,
+    8.0317
+   ],
+   "sd": 0.03530514126865934
+  }
+ },
+ "time.server_cpu.visium.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.63006,
+   "reps": [
+    0.6326,
+    0.6234,
+    0.6343,
+    0.6286,
+    0.6314
+   ],
+   "sd": 0.004263566582100027
+  }
+ },
+ "time.server_cpu.visium.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 9.008180000000001,
+   "reps": [
+    9.0213,
+    8.97,
+    9.0097,
+    8.9753,
+    9.0646
+   ],
+   "sd": 0.03839423133753284
+  }
+ },
+ "time.server_cpu.visium.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.59878,
+   "reps": [
+    0.6203,
+    0.5957,
+    0.5935,
+    0.592,
+    0.5924
+   ],
+   "sd": 0.012115568496773046
+  }
+ },
+ "time.server_cpu.visium.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.06499999999999999,
+   "reps": [
+    0.0726,
+    0.0628,
+    0.0631,
+    0.0628,
+    0.0637
+   ],
+   "sd": 0.004264387412044079
+  }
+ },
+ "time.server_cpu.visium.ligrec": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=ligrec mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 9.431560000000001,
+   "reps": [
+    9.4878,
+    9.504,
+    9.4583,
+    9.3003,
+    9.4074
+   ],
+   "sd": 0.08206462697167377
+  }
+ },
+ "time.server_cpu.visium.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=nhood_enrichment mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.37866,
+   "reps": [
+    1.3988,
+    1.3788,
+    1.3706,
+    1.3691,
+    1.376
+   ],
+   "sd": 0.011927615017261436
+  }
+ },
+ "time.server_cpu.visium.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.37044,
+   "reps": [
+    2.394,
+    2.3536,
+    2.3728,
+    2.3678,
+    2.364
+   ],
+   "sd": 0.014938808520092915
+  }
+ },
+ "time.server_cpu.visium.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.64998,
+   "reps": [
+    0.469,
+    0.4822,
+    1.1811,
+    0.6479,
+    0.4697
+   ],
+   "sd": 0.30638927363731255
+  }
+ },
+ "time.server_cpu.visium.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.29564,
+   "reps": [
+    0.3002,
+    0.2914,
+    0.2947,
+    0.3029,
+    0.289
+   ],
+   "sd": 0.0058406335272811055
+  }
+ },
+ "time.server_cpu.visium.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.6233799999999998,
+   "reps": [
+    1.6337,
+    1.6175,
+    1.6347,
+    1.6058,
+    1.6252
+   ],
+   "sd": 0.012058067838588442
+  }
+ },
+ "time.server_cpu.visium.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.5892,
+   "reps": [
+    1.6065,
+    1.5906,
+    1.6074,
+    1.5614,
+    1.5801
+   ],
+   "sd": 0.019288208833377996
+  }
+ },
+ "time.server_cpu.visium.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.37736000000000003,
+   "reps": [
+    0.3789,
+    0.3756,
+    0.3801,
+    0.378,
+    0.3742
+   ],
+   "sd": 0.002417229819442092
+  }
+ },
+ "time.server_cpu.visium.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 38.51786,
+   "reps": [
+    38.5362,
+    38.3249,
+    39.0877,
+    38.3351,
+    38.3054
+   ],
+   "sd": 0.3319744011215321
+  }
+ },
+ "time.server_cpu.visium.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.44526,
+   "reps": [
+    2.4314,
+    2.4479,
+    2.4642,
+    2.4468,
+    2.436
+   ],
+   "sd": 0.012707399419236022
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 29.718260000000004,
+   "reps": [
+    29.9784,
+    28.2601,
+    30.504,
+    29.137,
+    30.7118
+   ],
+   "sd": 1.0168917926701935
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 63.27142,
+   "reps": [
+    63.9228,
+    62.6771,
+    63.8417,
+    62.6111,
+    63.3044
+   ],
+   "sd": 0.6204517765306186
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.48276,
+   "reps": [
+    0.4891,
+    0.4805,
+    0.4849,
+    0.475,
+    0.4843
+   ],
+   "sd": 0.00530264085150032
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 8.27142,
+   "reps": [
+    8.9738,
+    8.0756,
+    8.0644,
+    8.1525,
+    8.0908
+   ],
+   "sd": 0.3941148208327116
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.26884,
+   "reps": [
+    2.268,
+    2.2311,
+    2.3541,
+    2.2326,
+    2.2584
+   ],
+   "sd": 0.050290685022178705
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 23.94566,
+   "reps": [
+    24.5613,
+    23.5125,
+    23.7596,
+    23.4123,
+    24.4826
+   ],
+   "sd": 0.5417647026154444
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.51086,
+   "reps": [
+    0.5131,
+    0.4802,
+    0.5582,
+    0.4778,
+    0.525
+   ],
+   "sd": 0.033462785299493536
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 36.69044,
+   "reps": [
+    35.6973,
+    38.4975,
+    36.1453,
+    36.6338,
+    36.4783
+   ],
+   "sd": 1.0720520034028216
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 36.67418,
+   "reps": [
+    35.936,
+    39.3128,
+    35.7393,
+    36.7438,
+    35.639
+   ],
+   "sd": 1.5376662843413076
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 54.89304,
+   "reps": [
+    55.4412,
+    55.2617,
+    53.5704,
+    55.2413,
+    54.9506
+   ],
+   "sd": 0.7599941335299905
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1032.37392,
+   "reps": [
+    1061.1436,
+    1014.8354,
+    1007.0631,
+    1060.0604,
+    1018.7671
+   ],
+   "sd": 26.113303627978638
+  }
+ },
+ "time.server_cpu.visium_hd_square_002um.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_002um step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 775.6470400000001,
+   "reps": [
+    803.3626,
+    756.0463,
+    752.0412,
+    804.9432,
+    761.8419
+   ],
+   "sd": 26.260349568941415
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=co_occurrence mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 72.23035999999999,
+   "reps": [
+    72.352,
+    72.2882,
+    72.206,
+    72.1566,
+    72.149
+   ],
+   "sd": 0.08774273759121237
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.3181,
+   "reps": [
+    3.3394,
+    3.3547,
+    3.277,
+    3.3324,
+    3.287
+   ],
+   "sd": 0.03411070213290827
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 70.16304,
+   "reps": [
+    70.9921,
+    70.0607,
+    69.7808,
+    70.7302,
+    69.2514
+   ],
+   "sd": 0.7065195206078845
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.3641400000000001,
+   "reps": [
+    1.378,
+    1.371,
+    1.3551,
+    1.3647,
+    1.3519
+   ],
+   "sd": 0.010851405438928118
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 19.362000000000002,
+   "reps": [
+    18.8651,
+    18.7907,
+    18.9493,
+    20.0263,
+    20.1786
+   ],
+   "sd": 0.6803941210798331
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=nhood_enrichment mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 12.10564,
+   "reps": [
+    12.3194,
+    12.495,
+    11.8314,
+    11.9675,
+    11.9149
+   ],
+   "sd": 0.2863418114771224
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.8166,
+   "reps": [
+    2.8155,
+    2.8202,
+    2.8061,
+    2.8001,
+    2.8411
+   ],
+   "sd": 0.01578701998478496
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 77.47822000000001,
+   "reps": [
+    81.196,
+    75.8585,
+    73.1288,
+    76.9441,
+    80.2637
+   ],
+   "sd": 3.294200143737474
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.57924,
+   "reps": [
+    1.579,
+    1.6178,
+    1.5301,
+    1.6339,
+    1.5354
+   ],
+   "sd": 0.04693434776365805
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 50.72716,
+   "reps": [
+    53.5943,
+    52.6072,
+    52.4489,
+    51.7532,
+    43.2322
+   ],
+   "sd": 4.241067503942846
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 51.93956000000001,
+   "reps": [
+    55.619,
+    51.5322,
+    51.4627,
+    53.3075,
+    47.7764
+   ],
+   "sd": 2.8781407788709696
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 55.78596,
+   "reps": [
+    56.1862,
+    57.1182,
+    53.6667,
+    55.9074,
+    56.0513
+   ],
+   "sd": 1.27587924702928
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 617.2420600000002,
+   "reps": [
+    631.4757,
+    622.1797,
+    606.3501,
+    621.3162,
+    604.8886
+   ],
+   "sd": 11.344802551961836
+  }
+ },
+ "time.server_cpu.visium_hd_square_008um.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_cpu platform=visium_hd_square_008um step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 198.37204,
+   "reps": [
+    201.2397,
+    202.2653,
+    193.9072,
+    199.3923,
+    195.0557
+   ],
+   "sd": 3.72003981806647
+  }
+ },
+ "time.server_gpu.visium.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=co_occurrence mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.4913999999999998,
+   "reps": [
+    1.6449,
+    1.4473,
+    1.4578,
+    1.4625,
+    1.4445
+   ],
+   "sd": 0.0861261284396321
+  }
+ },
+ "time.server_gpu.visium.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.71852,
+   "reps": [
+    0.7182,
+    0.7155,
+    0.7233,
+    0.7127,
+    0.7229
+   ],
+   "sd": 0.00461324181026749
+  }
+ },
+ "time.server_gpu.visium.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.2308,
+   "reps": [
+    2.1829,
+    2.2047,
+    2.2682,
+    2.2662,
+    2.232
+   ],
+   "sd": 0.037513264320770644
+  }
+ },
+ "time.server_gpu.visium.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.55288,
+   "reps": [
+    0.5514,
+    0.5517,
+    0.5561,
+    0.5525,
+    0.5527
+   ],
+   "sd": 0.0018793615937333838
+  }
+ },
+ "time.server_gpu.visium.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.49648000000000003,
+   "reps": [
+    0.4821,
+    0.5112,
+    0.4661,
+    0.5303,
+    0.4927
+   ],
+   "sd": 0.02502242993795766
+  }
+ },
+ "time.server_gpu.visium.ligrec": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=ligrec mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 9.155,
+   "reps": [
+    9.3189,
+    9.0268,
+    9.1664,
+    9.2657,
+    8.9972
+   ],
+   "sd": 0.1419363765917675
+  }
+ },
+ "time.server_gpu.visium.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=nhood_enrichment mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.68248,
+   "reps": [
+    1.6777,
+    1.6762,
+    1.6733,
+    1.7,
+    1.6852
+   ],
+   "sd": 0.010734384006546437
+  }
+ },
+ "time.server_gpu.visium.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.08360000000000001,
+   "reps": [
+    0.083,
+    0.0835,
+    0.0845,
+    0.0835,
+    0.0835
+   ],
+   "sd": 0.0005477225575051665
+  }
+ },
+ "time.server_gpu.visium.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.68452,
+   "reps": [
+    0.6847,
+    0.6861,
+    0.6869,
+    0.6815,
+    0.6834
+   ],
+   "sd": 0.002154530111184335
+  }
+ },
+ "time.server_gpu.visium.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.8410800000000003,
+   "reps": [
+    2.8327,
+    2.8455,
+    2.8521,
+    2.8374,
+    2.8377
+   ],
+   "sd": 0.007683879228618849
+  }
+ },
+ "time.server_gpu.visium.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.2153,
+   "reps": [
+    0.2225,
+    0.2082,
+    0.2181,
+    0.2104,
+    0.2173
+   ],
+   "sd": 0.0058757978181690354
+  }
+ },
+ "time.server_gpu.visium.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.24938,
+   "reps": [
+    3.2708,
+    3.2512,
+    3.2426,
+    3.2683,
+    3.214
+   ],
+   "sd": 0.023009823988896564
+  }
+ },
+ "time.server_gpu.visium.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.39649999999999996,
+   "reps": [
+    0.383,
+    0.4441,
+    0.3853,
+    0.384,
+    0.3861
+   ],
+   "sd": 0.026635784200957927
+  }
+ },
+ "time.server_gpu.visium.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 23.964959999999998,
+   "reps": [
+    24.2126,
+    23.8417,
+    23.9431,
+    24.1164,
+    23.711
+   ],
+   "sd": 0.20274751046560327
+  }
+ },
+ "time.server_gpu.visium.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.16702,
+   "reps": [
+    0.1598,
+    0.1897,
+    0.1624,
+    0.1614,
+    0.1618
+   ],
+   "sd": 0.012715030475779448
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 30.58648,
+   "reps": [
+    30.5159,
+    29.7755,
+    31.309,
+    30.3753,
+    30.9567
+   ],
+   "sd": 0.584458101150117
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 4.2473399999999994,
+   "reps": [
+    4.1856,
+    4.2447,
+    4.2546,
+    4.2481,
+    4.3037
+   ],
+   "sd": 0.04197776792541503
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.5534000000000001,
+   "reps": [
+    0.5505,
+    0.552,
+    0.555,
+    0.5509,
+    0.5586
+   ],
+   "sd": 0.0033992646263567143
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.98898,
+   "reps": [
+    0.9783,
+    0.9947,
+    0.9926,
+    0.9933,
+    0.986
+   ],
+   "sd": 0.006845217308457078
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.0847,
+   "reps": [
+    0.0836,
+    0.0841,
+    0.0858,
+    0.0843,
+    0.0857
+   ],
+   "sd": 0.000992471662063963
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.88128,
+   "reps": [
+    0.8747,
+    0.8858,
+    0.8829,
+    0.8725,
+    0.8905
+   ],
+   "sd": 0.007557248176419744
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.29848,
+   "reps": [
+    3.2699,
+    3.2754,
+    3.3312,
+    3.2655,
+    3.3504
+   ],
+   "sd": 0.039381048741748956
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.66536,
+   "reps": [
+    0.5956,
+    0.8166,
+    0.7228,
+    0.5951,
+    0.5967
+   ],
+   "sd": 0.1008588270802313
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.95568,
+   "reps": [
+    3.7997,
+    4.5875,
+    3.7875,
+    3.7528,
+    3.8509
+   ],
+   "sd": 0.35494715381307124
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 55.437400000000004,
+   "reps": [
+    55.5014,
+    55.0091,
+    55.0297,
+    56.163,
+    55.4838
+   ],
+   "sd": 0.4696819402531886
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 109.92159999999998,
+   "reps": [
+    109.4006,
+    109.1122,
+    111.2378,
+    109.765,
+    110.0924
+   ],
+   "sd": 0.8235059198329999
+  }
+ },
+ "time.server_gpu.visium_hd_square_002um.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_002um step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 9.2225,
+   "reps": [
+    9.0454,
+    8.8868,
+    10.2867,
+    8.8642,
+    9.0294
+   ],
+   "sd": 0.6004679508516668
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.co_occurrence": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=co_occurrence mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 2.5524999999999998,
+   "reps": [
+    2.5164,
+    2.5017,
+    2.7443,
+    2.5046,
+    2.4955
+   ],
+   "sd": 0.1074877900042605
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.data_loading": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=data_loading mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.9270400000000003,
+   "reps": [
+    3.9705,
+    4.0369,
+    3.863,
+    3.849,
+    3.9158
+   ],
+   "sd": 0.07790329261334208
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.expression_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=expression_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 4.28984,
+   "reps": [
+    4.2435,
+    4.2407,
+    4.4803,
+    4.2183,
+    4.2664
+   ],
+   "sd": 0.10782457048372582
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.hvg_selection": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=hvg_selection mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.57934,
+   "reps": [
+    0.5541,
+    0.5569,
+    0.5494,
+    0.6843,
+    0.552
+   ],
+   "sd": 0.05873902450671104
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.leiden": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=leiden mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.6463,
+   "reps": [
+    1.6416,
+    1.6733,
+    1.6123,
+    1.6645,
+    1.6398
+   ],
+   "sd": 0.02387770927036344
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.nhood_enrichment": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=nhood_enrichment mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 12.782919999999999,
+   "reps": [
+    12.5236,
+    12.7615,
+    12.3171,
+    13.4225,
+    12.8899
+   ],
+   "sd": 0.4198813070380722
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.normalization": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=normalization mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.0861,
+   "reps": [
+    0.085,
+    0.0858,
+    0.0839,
+    0.0914,
+    0.0844
+   ],
+   "sd": 0.0030463092423455595
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.pca": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=pca mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.9090199999999999,
+   "reps": [
+    0.888,
+    0.8932,
+    0.8853,
+    0.9343,
+    0.9443
+   ],
+   "sd": 0.028011194190894487
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.qc_filtering": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=qc_filtering mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.0705400000000003,
+   "reps": [
+    3.1076,
+    3.1092,
+    3.0797,
+    3.0339,
+    3.0223
+   ],
+   "sd": 0.04068639821856932
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.spatial_autocorr_geary": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=spatial_autocorr_geary mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 0.67084,
+   "reps": [
+    0.6747,
+    0.6693,
+    0.6731,
+    0.6684,
+    0.6687
+   ],
+   "sd": 0.0028684490582891685
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.spatial_autocorr_moran": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=spatial_autocorr_moran mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 3.9793999999999996,
+   "reps": [
+    3.8353,
+    3.7817,
+    4.0187,
+    4.5135,
+    3.7478
+   ],
+   "sd": 0.316344732846937
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.spatial_neighbors": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=spatial_neighbors mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 56.346259999999994,
+   "reps": [
+    56.9052,
+    57.323,
+    56.65,
+    55.3384,
+    55.5147
+   ],
+   "sd": 0.8754951102090753
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.total": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=total mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 92.20562,
+   "reps": [
+    92.3234,
+    92.9965,
+    92.319,
+    92.2849,
+    91.1043
+   ],
+   "sd": 0.6839973296731516
+  }
+ },
+ "time.server_gpu.visium_hd_square_008um.umap": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "run=server_gpu platform=visium_hd_square_008um step=umap mean_1_5 sd_1_5 r1-r5",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": {
+   "mean": 1.36552,
+   "reps": [
+    1.3779,
+    1.3633,
+    1.3619,
+    1.3618,
+    1.3627
+   ],
+   "sd": 0.006947805408904268
+  }
+ },
+ "total_wo_cooc.dgx_cpu.visium_hd_square_008um": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "mean_1_5(total) - mean_1_5(co_occurrence)",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": 615.78666
+ },
+ "total_wo_cooc.server_cpu.visium_hd_square_008um": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "mean_1_5(total) - mean_1_5(co_occurrence)",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": 545.0117000000001
+ },
+ "total_wo_cooc.server_gpu.visium_hd_square_008um": {
+  "file": "SPATIAL/results_v2/s1_step_stats.csv",
+  "key": "mean_1_5(total) - mean_1_5(co_occurrence)",
+  "md5": "87d55545171f96d8e63be81291f1f1c7",
+  "value": 89.65312
+ }
+}

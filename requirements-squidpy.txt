@@ -1,0 +1,16 @@
+dask-image==2024.5.1
+datashader==0.15.0
+matplotlib-scalebar>=0.8.0
+multiscale-spatial-image==2.0.2
+numcodecs==0.15.1
+ome-zarr==0.9.0
+omnipath>=1.0.7
+pooch>=1.6
+spatial-image==1.1.0
+spatialdata==0.3.0
+validators>=0.18.2
+xarray==2024.10.0
+xarray-dataclasses==1.8.0
+xarray-schema==0.0.3
+xarray-spatial==0.4.0
+zarr==2.18.7

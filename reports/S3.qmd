@@ -1,0 +1,155 @@
+---
+title: "Step S3: correzioni di sostanza"
+subtitle: "Capitolo LNBI scRNA DGX, 4 novembre 2026"
+lang: it
+format:
+  html:
+    embed-resources: true
+    toc: true
+---
+
+# In breve: le correzioni di sostanza sono pronte, e cosa devi scegliere perché entrino nel testo?
+
+**A cosa serviva.** La revisione n.2 aveva lasciato 190 correzioni di sostanza sul capitolo. Questo passo le ha preparate tutte, rileggendo ogni numero dai file dei risultati e, dove serviva, dai log del cluster DGX. Serviva anche a portarti le scelte che cambiano ciò che il capitolo afferma, a cominciare da titolo e abstract.
+
+**Cosa abbiamo trovato.**
+
+1. **Le 190 correzioni sono pronte e controllate: 81 modifiche al testo non dipendono da te, 46 aspettano una tua scelta.** I 483 numeri e riferimenti inseriti sono stati riletti da script dai file e ricontrollati, senza discordanze. Dopo le tue scelte le modifiche sono entrate tutte insieme nel manoscritto ufficiale, identico all'anteprima che hai letto.
+2. **Il limite di 11,9 milioni di cellule non è un limite di memoria dimostrato.** Il run a 12 milioni si è fermato per un errore alla chiusura del cluster Dask, dopo la ricerca dei vicini; i run da 13,7 milioni in su sono stati terminati dal sistema durante la pre-elaborazione su CPU, senza un messaggio di memoria esaurita. Una variante a blocchi ha completato 12 milioni. Il testo ora dice questo, e non più che la RAM della CPU è il vincolo.
+3. **Alcuni dettagli dei Metodi non corrispondevano a ciò che ha girato, e ora corrispondono.** Il run a 8 GPU aveva 100 CPU, non 200; con una sola GPU la pipeline a 500 mila e 1,3 milioni di cellule si è fermata nel controllo di qualità per un errore di allocazione, non per gli 80 GB della scheda. La ricerca dei vicini su CPU a un solo thread è dichiarata: contro una CPU a 100 thread il vantaggio della GPU sui vicini scenderebbe, a 100 mila cellule, da 44 a circa 18 volte. Il dataset Visium HD analizzato è quello dichiarato nei Metodi; è lo script di download del repository a scaricarne un altro.
+4. **Il testo è cresciuto di circa 2.250 parole, quasi tutte nei Metodi.** Descrivere esattamente il codice che ha girato costa spazio: il corpo del capitolo passa da 9.263 a 11.518 parole. Il taglio verso le 15 pagine sarà più pesante del previsto.
+
+**Cosa hai deciso** (il 4 novembre: titolo A, abstract A, tutte le altre raccomandazioni).
+
+1. **Quale titolo? Consiglio: A, «GPU-accelerated single-cell (NVIDIA DGX H100) and spatial (RTX 4090) transcriptomics: per-step speedups, capacity and concordance against a 100-CPU reference».** Dice l'hardware di ciascuna modalità, non usa «systematic» e «scalability» e resta riconoscibile rispetto allo short paper senza coincidere. Alternative: B, a domanda e senza hardware («How much do GPUs accelerate single-cell and spatial transcriptomics? Benchmarking rapids-singlecell against Scanpy and Squidpy on a common CPU reference»), più lontano dallo short paper; C, come A ma con «common 100-CPU reference», un po' più forte del vero, perché i nodi di riferimento sono due.
+2. **Quale abstract? Consiglio: A, di 247 parole.** Tiene tutti i risultati corretti: la scomposizione del 119,6x (il test di Wilcoxon è il 93,5% del tempo CPU; senza di esso lo speedup è 7,9-9,2x), lo stress test descritto come nei log e lo spatial con il nuovo riferimento. B (230 parole) apre con una domanda e toglie il confronto dell'espressione differenziale; C (228) apre dichiarando l'estensione rispetto allo short paper. I tre testi sono nel report.
+3. **Approvi le altre 21 raccomandazioni? Consiglio: sì.** Sono nella tabella del report, una riga per scelta: per esempio riportare il 119,6x insieme al run a 2 GPU e alla quota del Wilcoxon, indebolire «interchangeable» perché la concordanza è misurata solo a 10 mila cellule, tenere Table 6 ricostruita dalla traccia, togliere la frase sul costo cloud. Tre di queste chiedono un tuo dato: quali strumenti di intelligenza artificiale dichiarare e per quali usi (lo chiede Springer), la conferma della formula di ringraziamento CONVECS con il referente HPC, e il DOI d'archivio del repository, da creare prima della sottomissione. L'alternativa più rilevante è ricalcolare la concordanza a tutte le dimensioni dalle uscite esistenti invece di indebolire la frase: meno di mezz'ora di CPU, senza misure di tempo.
+
+**Comunque.**
+
+- Le 127 modifiche sono state applicate al manoscritto in un solo passaggio e i controlli rifatti sul testo finale sono tutti superati.
+- Lo script di download dei dati spatial e lo script SLURM a 8 GPU, cambiato dopo i run, si correggono nel repository quando preparo il pacchetto finale.
+- Il taglio a 15 pagine partirà dal conteggio di oggi.
+
+Hai deciso i 3 punti: lo step è chiuso.
+
+**Sui tempi di calcolo.** Restano il passaggio finale di questo step (mezza giornata, dopo le tue scelte) e quattro passi: figure scRNA 1 giorno, integrazione dello spatial 1 giorno, taglio e stile 1 giorno invece di mezzo (il testo è più lungo di circa un quarto), LaTeX e verifica finale 1 giorno. Sono 4,5 giorni da domani: la sottomissione cade il 9 o il 10 novembre, senza margine. La stima si basa sul numero di correzioni per passo e sul ritmo di oggi. Resta valido il consiglio di chiedere qualche giorno di proroga.
+
+
+# Le scelte
+
+## Titolo
+
+| opzione | titolo |
+|---|---|
+| A (raccomandata) | GPU-accelerated single-cell (NVIDIA DGX H100) and spatial (RTX 4090) transcriptomics: per-step speedups, capacity and concordance against a 100-CPU reference |
+| B | How much do GPUs accelerate single-cell and spatial transcriptomics? Benchmarking rapids-singlecell against Scanpy and Squidpy on a common CPU reference |
+| C | GPU acceleration of single-cell (NVIDIA DGX H100) and spatial (RTX 4090) transcriptomics against a common 100-CPU reference: speed, capacity and concordance |
+
+## Abstract
+
+**A (raccomandato, 247 parole).** Single-cell and spatial transcriptomics now yield millions of cells or bins, yet standard frameworks run on CPUs. We compared rapids-singlecell on NVIDIA H100 GPUs with Scanpy on 100 logical CPUs of a DGX H100 node, on 10,000 to 1.3 million mouse brain cells sampled from CELLxGENE Census, five repeats each. At 1.3 million cells the GPU pipeline took 435 s against 52,056 s on CPU (119.6-fold; 105.5-fold with two GPUs allocated, a difference due to data loading alone). Wilcoxon differential expression accounted for 93.5% of the CPU time; without it the speedup was 7.9-9.2-fold. Additional GPUs did no computation in this configuration. At 10,000 cells, HVG selection was identical and Leiden clusterings agreed with ARI 0.908-0.963. A memory-optimised pipeline completed 11.9 million cells, built from copies of a 3,436,470-cell dataset; larger runs stopped at a Dask time-out or were killed in CPU preprocessing. At 3.4 million cells, pseudo-bulk differential expression took 127 s against 5,598 s for a cell-level t-test. For spatial data we rebuilt the CPU reference: one fresh process per repeat, the same cell groups for CPU and GPU. Against 100 CPUs of a DGX H100 node, an RTX 4090 accelerated end-to-end analysis 1.4-fold on Visium v1, 6.9-fold on Visium HD 8 um (without co-occurrence) and 10.4-fold on Visium HD 2 um. At Visium HD 8 um, GPU co-occurrence in rapids-singlecell 0.14.1 was wrong at 41 of 49 distances through 32-bit integer overflow; version 0.15.1 matched the CPU at all 49 in the same time.
+
+**B (230 parole).** How much of a GPU speedup in single-cell analysis comes from the GPU itself, and how much from the steps that stay on the CPU? We timed Scanpy on 100 logical CPUs and rapids-singlecell on NVIDIA H100 GPUs of a DGX H100 node, from 10,000 to 1.3 million mouse brain cells sampled from CELLxGENE Census, with five repeats per configuration. At 1.3 million cells the CPU took 52,056 s and the GPU 435 s, a 119.6-fold speedup, but Wilcoxon differential expression was 93.5% of the CPU time: without it the speedup fell to 7.9-9.2-fold. Data-loading time, not the number of GPUs allocated, separated the two- and eight-GPU runs (105.5-fold and 119.6-fold). At 10,000 cells HVG selection was identical and Leiden clusterings agreed with ARI 0.908-0.963. A memory-optimised pipeline completed 11.9 million cells, built from copies of a 3,436,470-cell dataset; larger runs stopped at a Dask time-out or were killed during CPU-side preprocessing. For spatial transcriptomics we rebuilt the CPU reference so that every repeat runs in a fresh process with the same cell groups as the GPU. Against 100 CPUs of a DGX H100 node, an RTX 4090 was 1.4-fold faster on Visium v1, 6.9-fold on Visium HD 8 um without co-occurrence and 10.4-fold on Visium HD 2 um, and GPU co-occurrence in rapids-singlecell 0.14.1 proved wrong at Visium HD 8 um through 32-bit integer overflow, which version 0.15.1 corrects.
+
+**C (228 parole).** This chapter extends a GPU benchmark of single-cell and spatial transcriptomics with a rebuilt spatial CPU reference and a decomposition of the single-cell speedup. On a DGX H100 node we compared Scanpy on 100 logical CPUs with rapids-singlecell on H100 GPUs, on 10,000 to 1.3 million mouse brain cells from CELLxGENE Census, five repeats each. The full pipeline ran 119.6 times faster on GPU at 1.3 million cells (435 s against 52,056 s), but 93.5% of the CPU time was Wilcoxon differential expression, and the speedup without it was 7.9-9.2-fold. Allocating eight rather than two GPUs changed only data loading. At 10,000 cells, HVG sets were identical and Leiden clusterings agreed with ARI 0.908-0.963. Pseudo-bulk differential expression at 3.4 million cells finished 44 times sooner than a cell-level t-test, and a memory-optimised pipeline completed 11.9 million partly duplicated cells on one node, while larger runs stopped before clustering. For spatial data, every CPU and GPU repeat ran in a fresh process with shared cell groups, against 100 CPUs of a DGX H100 node. An RTX 4090 accelerated the analysis 1.4-fold on Visium v1, 6.9-fold on Visium HD 8 um without co-occurrence and 10.4-fold on Visium HD 2 um. GPU co-occurrence in rapids-singlecell 0.14.1 was wrong at 41 of 49 distances at Visium HD 8 um because of integer overflow; version 0.15.1 fixed it at no cost in time.
+
+Nessuna frase dei tre abstract coincide con lo short paper (somiglianza massima per frase 0,536, 0,443, 0,434 con difflib). In tutti e tre la piattaforma «Visium HD 2 um» si rinomina se approvi la scelta HD2UM.
+
+## Le altre scelte (punto 3)
+
+Raccomandazioni e alternative con il testo pronto: `manuscript/revisione_n2/S3/scelte_R1.md` ... `scelte_R4.md`; tabella in `scelte_PI_S3.csv`. Il confronto parola per parola fra testo attuale e anteprima con tutte le raccomandazioni è nel file `S3_anteprima_modifiche.html`.
+
+| codice | scelta | raccomandazione | alternative | modifiche |
+|---|---|---|---|---|
+| TITOLO | Titolo nuovo | A: «GPU-accelerated single-cell (NVIDIA DGX H100) and spatial (RTX 4090) transcriptomics: per-step speedups, capacity and concordance against a 100-CPU reference» | B: a domanda, senza hardware; C: come A con «common 100-CPU reference» (un po' più forte del vero) | R1-001 |
+| ABSTRACT | Abstract nuovo | A (247 parole): tutti i risultati corretti, scomposizione del 119,6x, stress test come nei log, spatial con il nuovo riferimento | B (230): apre con una domanda, senza il confronto del DE; C (228): apre con l'estensione rispetto allo short paper | R1-002 |
+| CIFRA | Come si riporta lo speedup a 1,3 milioni di cellule | 119,6x con 8 GPU insieme a 105,5x con 2 GPU (differenza solo nel caricamento dati), Wilcoxon 93,5% del tempo CPU, 7,9-9,2x senza DE | 119,6x da solo con la quota del Wilcoxon; oppure in testa 7,9-9,2x senza DE (cambia l'enfasi del capitolo) | R3-001, R4-009 |
+| NOVITA | Cosa il capitolo dichiara come nuovo | Elenco dei lavori precedenti e contributo come complemento, senza affermare lacune; frase di estensione rispetto allo short paper limitata allo spatial | Gap statement del piano («less is known»); oppure nessuna dichiarazione di novità | R1-007, R1-008, R1-015 |
+| DOMANDE | Domande di ricerca dopo D-02 | Quattro domande (tolta quella multi-GPU) | Cinque, con la seconda riscritta sulla sola allocazione di GPU | R1-009, R1-011, R1-012, R1-013, R1-014 |
+| HCA | Human Cell Atlas nell'introduzione | Come obiettivo («aims to define all human cell types») | Toglierlo | R1-004 |
+| PADOVA | Padova o Padua | «University of Padova, Padova» ovunque | «Padua» ovunque; oppure lasciare le forme come sono | R4-015, R4-016 |
+| CENSUS_CIT | Citazione di CELLxGENE Census | Articolo NAR 2025 (CZ CELLxGENE Discover) con la release 2025-11-08 nel testo | Solo URL e release, senza articolo | R2-001 |
+| CONC_11MARZO | La concordanza a 10.000 cellule viene da un run di prova dell'11 marzo | Dichiararlo (data e job) in Metodi e Risultati | Ricalcolarla sulla prima ripetizione cronometrata (economico) | R2-019, R3-012 |
+| HD2UM | Visium HD 2 µm: il sottocampione casuale tiene il 6,35% dei bin | Dichiararlo e chiamare la piattaforma «random 400k-bin subsample» (nomi applicati in S5) | Togliere la piattaforma; oppure un nuovo run su un ritaglio contiguo (misura di tempi a server libero) | R2-026 |
+| RAPIDS_DGX | Perché la GPU spatial non è girata sul DGX | Dire ciò che mostrano i log: RAPIDS 24.06 passa i test di base ma lo smoke test spatial fallisce all'avvio delle librerie CUDA; togliere la frase su RAPIDS 25.02 | Una sola frase senza spiegazione | R2-034, R2-035, R2-036 |
+| REPO_DOI | Release e DOI d'archivio del repository | Release, commit e DOI Zenodo nei Metodi e in Availability, compilati in S7 (li crei tu prima della sottomissione) | Solo l'URL del repository | R2-039 |
+| T5_PUNTI | Table 5 dello stress test | Selezione dichiarata in didascalia (tabella completa pronta) | Tutti i 16 punti completati | R3-022 |
+| T6 | Table 6 (bilancio di memoria) | Ricostruita dalla traccia a 11,9M, tutta in GiB, con il residuo per differenza (19,8 GiB) | Toglierla (risparmia spazio per il taglio di S6) | R3-028, R3-029, R3-030, R3-031, R3-032, R3-033, R3-034, R3-035, R3-036, R3-037, R3-038, R3-039, R3-040 |
+| KMEANS | Righe KMeans in Table 5 | Tenerle, con la frase che le due serie non hanno tempi confrontabili | Toglierle | R3-027 |
+| CONC_INTERCAMB | «interchangeable for biological interpretation» | Indebolire: accordo stretto a 10.000 cellule, non dimostrato a scala di atlante (etichette GPU variabili da 50.000 cellule; ARI circa 0,5 in Gardner 2025) | Ricalcolare la concordanza a tutte le dimensioni dalle uscite esistenti (meno di 30 min di CPU, nessuna misura di tempi) | R3-014, R3-102 |
+| JACCARD | Jaccard dei vicini (0,930) | Spiegare il tetto 15/16 e aggiungere l'inclusione: per il 95,0% delle cellule ogni vicino GPU è anche vicino CPU | Riportare anche la Jaccard senza la cella stessa (0,926) | R3-012 |
+| HVG_CAP | Stima della capacità in funzione degli HVG | Toglierla (estrapolazione non misurata) | Tenerla corretta a bilancio fisso (13M e 9,5M) | R4-006 (riga 424, applicata insieme a DICKS) |
+| DICKS | Confronto con Dicks et al. 2026 | Tre confronti puntuali nella Discussione (piccoli dataset, Dask su 8 B300, capacità) | Nessun confronto | R4-002, R4-003, R4-006, R4-008 |
+| CLOUD | Paragrafo sul costo cloud | Toglierlo (nessuna fonte di prezzo verificabile e coerente) | Tenerlo con la fascia 2-4 USD per H100-ora e la data della fonte | R4-004 |
+| LLM | Dichiarazione sull'uso di LLM (Springer) | Una frase nei Ringraziamenti: servono da te strumenti e usi | Nessuna dichiarazione (non conforme alla politica Springer) | R4-015 |
+| POW | Analisi proposte dalla revisione e non fatte (H, J, K, L, M, O) | Nessuna frase nuova: H, J, K già coperte nelle Limitazioni; L solo con CLOUD = B; M nei Risultati; O in S5 | Una frase per ciascuna nelle Limitazioni | R4-008 |
+| CLUSTER_ACK | Ringraziamento del cluster | Frase attuale estesa più la formula ufficiale CONVECS (PR Veneto FESR 2021-2027, Azione 1.1.2), da confermare con il referente HPC | Solo la frase attuale | R4-014, R4-015 |
+
+
+# Cancelli e previsioni
+
+| id | atteso | osservato | esito |
+|---|---|---|---|
+| G1 | manifest dei grezzi con 0 differenze all'inizio e alla fine | inizio e fine: 921 file, 0 differenze (`results_v2/S3/manifest_check_start.json`, `manifest_check_end.json`) | superato |
+| G2 | una riga di diario per ognuna delle 190 voci primarie, con esito valido | 190 righe in `IMPL_diario.csv`, nessuna mancante o doppia: 183 fatte (74 dopo le scelte del PI), 5 decise diversamente, 2 rimandate con step e motivo | superato |
+| G3 | ogni numero inserito con ricevuta riletta da script, 0 discordanze | 483 ricevute in quattro regioni; tutte ricalcolate da `valori_R0.py` ... `valori_R4.py` sul server (14 dalle prove copiate in `results_v2/S3/evidence/`); 0 discordanze (`manuscript/revisione_n2/S3/check_preview.json`) | superato sul manoscritto finale (`manuscript/revisione_n2/S3/check_final.json`) |
+| G4 | ancore univoche, nessuna sovrapposizione, niente U+2013/U+2014, chiavi in bibliografia, pandoc | 127 modifiche, 0 errori di ancora o di sovrapposizione; 0 lineette; tutte le chiavi presenti; pandoc senza errori | superato sul manoscritto finale |
+| G5 | nessuna voce che dipende da una scelta del PI entra prima della decisione | le scelte sono registrate in Titolo e abstract nuovi del capitolo: opzione A (D-18) e Scelte di contenuto di S3: approvate le 21 raccomandazioni (D-19) prima dell'applicazione; manoscritto da 4587032be8d2905007687e0bb50d848e a 09df07d2b8713da7385612991fb1d7df, identico all'anteprima letta dal PI | superato |
+| P1 | abstract fra 150 e 250 parole | A 247, B 230, C 228 | confermata |
+| P2 | 0 valori del piano non riprodotti rileggendo i grezzi | nessuna discordanza nelle cifre ricalcolate dalle formule del piano, ma 6 valori del piano non reggono alla rilettura dei file: Leiden a 10.000 cellule nelle ripetizioni 2-5, 0,09-0,23 s e non 0,09 s (R0116); transitorio della densificazione, +88,66 GiB e non +200 (R0178); memoria a 14M, 629,0 GiB dal log e non 1.100 GB stimati (R0185); quota della matrice HVG densa, 16,6% e non 17,8% (unità miste); CPU del run a 8 GPU, 100 e non 200 (R0448); 12,0M fermato da un errore di Dask e non per memoria (R0142) | smentita; ogni discordanza è corretta nel testo con il valore riletto |
+| P3 | speedup dei vicini contro una CPU a 100 thread: a 100.000 cellule fra 15x e 22x, a 10.000 almeno 60x | 17,9x [8,6; 33,1] a 100.000; 75,8x [9,8; 604,5] a 10.000 (`results_v2/S3/p3_neighbors.json`) | indeterminata: gli intervalli sono larghi perché la ripetizione 1 della CPU contiene la compilazione; non tocca una conclusione, perché a 100.000 cellule l'intervallo sta tutto sotto 36,5x e la frase dice che il vantaggio dei vicini si riduce |
+| P4 | residuo di Table 6 = 19,79 GiB entro 0,1 | 19,79 GiB (ricevuta R3-V134, `results/maxpower_11900000_8gpu_results.json`) | confermata |
+| P5 | corpo del manoscritto non oltre 9.719 parole | 11.518 parole (9.263 all'apertura con lo stesso conteggio) | smentita; spiegata: +1.451 parole dalle modifiche dei Metodi, +577 dai Risultati; rinviata al taglio di S6 |
+
+# Dubbi e come si sono chiusi
+
+- **12,0 milioni di cellule (spiegato e corretto).** Il job 16531 ha finito la ricerca dei vicini ed è uscito per un `TimeoutError` alla chiusura del cluster Dask; sacct dà COMPLETED. Il campo `first_oom_at` di `results/maxpower_limit_8gpu.json` è il limite superiore passato al job, non un out-of-memory osservato. A 13,7M i job 16463 e 16662 sono finiti con «exit code -9» dopo la selezione HVG (`results_v2/S3/evidence/*.err.tail25`). Il testo ora riporta solo questo.
+- **Origine del JSON chunked a 12,0M (spiegato).** Il job 16696 è stato rimesso in coda due volte dopo guasti del nodo (`sacct -D`, `results_v2/S3/evidence/sacct_16696_D.txt`): il JSON (24 marzo, 04:08) viene dalla seconda esecuzione (01:38-13:28), il cui log è stato sovrascritto dalla terza (13:51-15:36, cancellata a 12,0M durante la conversione CSC).
+- **Dataset Visium HD (spiegato; difetto del repository rinviato a S7).** Gli attributi HDF5 dei file analizzati dicono Visium HD Mouse Brain FFPE, Space Ranger 3.0.0, come i Metodi; `SPATIAL/scripts/download_spatial_data.py` scarica invece `Visium_HD_Tiny_3prime_Dataset`. Il testo non cambia; lo script va corretto nel pacchetto finale.
+- **CPU dei run ibridi (corretto).** sacct: 16 CPU con 1 GPU, 32 con 2, 56 con 4, 100 con 8 (job 16314-16317); `slurm/gpu_8.sh` chiede 200 CPU ma è stato cambiato dopo i run (rinvio a S7: annotarlo nel repository). La frase delle Limitazioni che diceva 200 è corretta in 100.
+- **Rilievi del revisore automatico (corretti).** Lo scarto «2 SD = 41,6 s» nelle prove della cifra di testa non aveva ricevuta: ricalcolato, 41,5 s (SD 20,77 s; `results_v2/S3/evidence/data_loading_1300000_gpu2_gpu8_sd.txt`). Il valore «up to 100» iterazioni di cuGraph Leiden era una costante nello script: ora si rilegge dalla firma di `rsc.tl.leiden` 0.14.1 presa dal container.
+- **Frasi non coperte da voci (corrette in integrazione).** Didascalia di Table 4 (1 GPU fallita nel QC, non per gli 80 GB), frase «CPU RAM becomes the binding constraint», titolo «CPU and GPU produce biologically concordant results» (legato alla scelta sulla concordanza), rimando alla sottosezione multi-GPU rinominata. Elenco completo in `manuscript/revisione_n2/S3/integrazione.csv`.
+- **Altre osservazioni senza effetto sul testo (spiegate).** Hostname `poddgx03` nei log di `poddgx01` (il testo usa i nomi SLURM); campo `multi_gpu_steps` dei JSON che descrive l'intenzione e non l'esecuzione; JSON di Leiden a 3,44-10,31M sovrascritti dai run KMeans (gestito nella scelta su Table 5); JSON a 1,7M e 3,4M con un pool RMM diverso (gestito nella selezione di Table 5); immagine `sc-benchmark.sif` datata dopo i run (il testo non dichiara un digest per lo scRNA).
+
+# Dubbi rinviati
+
+- A figure scRNA (S4): le didascalie di Fig. 2, 5 e 6 citate dalla regione Risultati (vicini CPU a 1 thread per D-16 nella Fig. 2).
+- Al taglio e stile (S6): il corpo del capitolo è di 11.518 parole dopo le correzioni (previsione P5 smentita); servono circa 15 pagine LNCS. Cosa serve per chiuderlo: il taglio pianificato in S6, partendo dai Metodi (+1.451 parole in S3).
+- Alla preparazione per Springer (S7): conferma con il referente HPC della formula CONVECS per i run su UPSCALE; eventuale nome dello strumento nella frase sull'uso di LLM (la frase approvata non nomina un prodotto); correggere `SPATIAL/scripts/download_spatial_data.py` (dataset FFPE, Space Ranger 3.0.0) e annotare che `slurm/gpu_8.sh` è stato portato a 200 CPU dopo i run a 8 GPU (eseguiti con 100); release, commit e DOI d'archivio (scelta REPO_DOI).
+
+
+# Decisioni del PI
+
+Il 4 novembre 2026 il PI ha scelto titolo A e abstract A (Titolo e abstract nuovi del capitolo: opzione A (D-18)) e ha approvato le altre 21 raccomandazioni (Scelte di contenuto di S3: approvate le 21 raccomandazioni (D-19)). Le 127 modifiche sono state applicate in un solo passaggio con `tools/s3_apply.py`; il manoscritto risultante (md5 09df07d2b8713da7385612991fb1d7df) è identico all'anteprima del report, e la bibliografia passa a md5 0545ef29119d63866360fb950ce29c11.
+
+# Stato
+
+Chiuso. Cancelli G1-G5 superati sul manoscritto finale; P1 e P4 confermate; P2 e P5 smentite, con ogni discordanza corretta e la lunghezza rinviata al taglio; P3 indeterminata senza effetto su conclusioni. Nessun dubbio aperto: i rinvii sono scritti nei file di figure scRNA (S4), taglio e stile (S6) e preparazione per Springer (S7).
+
+# Cosa è girato
+
+- Commit di partenza: `fc9c11c` (pre-registrazione). Manoscritto all'apertura: md5 4587032be8d2905007687e0bb50d848e, invariato.
+- Preparazione per regione del testo (fronte e introduzione; Metodi; Risultati scRNA; Discussione, parti finali e bibliografia) secondo D-17 (Correzioni di S3 preparate per regione e applicate da script): file `edits_R*.csv`, `ricevute_R*.csv`, `valori_R*.py`, `diario_R*.csv`, `scelte_R*.md`, `arbitrati_R*.csv` in `manuscript/revisione_n2/S3/`; 15 correzioni di integrazione registrate in `integrazione.csv`.
+- Script: `tools/s3_p3_neighbors.py` (previsione P3), `tools/s3_apply.py` (applicazione in un passaggio, ancore univoche, confini di regione), `tools/s3_check.py` (G2-G4, P1, P5). Anteprima e manoscritto finale: md5 09df07d2b8713da7385612991fb1d7df (identici).
+- Prove copiate dal DGX e dal web in `results_v2/S3/evidence/` e `results_v2/S3/R2_dgx_evidence/` (log SLURM, sacct, record Crossref, passaggio CONVECS, firma di `rsc.tl.leiden`), con `MD5SUMS.txt`.
+- Nessuna misura di tempi in questo step. Durante la preparazione il server era condiviso con le metanalisi di simulomicsr (load average circa 32 alle 18:02, Tctl 69,6 °C): non tocca nessun risultato di S3.
+
+# Appendice: da dove vengono i numeri del riassunto
+
+| frase del riassunto | file o tabella | valore letto |
+|---|---|---|
+| 190 correzioni | `manuscript/revisione_n2/piano/ledger.csv`, voci primarie con step S3 (`check_preview.json`, G2 `n_primary`) | 190 |
+| 81 modifiche senza scelta, 46 con scelta, 127 in tutto | `tools/s3_apply.py --dry-run` senza scelte e con `--approved ALL` (`apply_log_preview.json`) | 81 applicate (75 nel manoscritto, 6 nella bibliografia) su 127; 46 in attesa |
+| 483 numeri e riferimenti, nessuna discordanza | `manuscript/revisione_n2/S3/ricevute_R1..R4.csv`; `check_preview.json` G3 | 483 ricevute; 0 discordanze |
+| 12 milioni: errore alla chiusura di Dask dopo i vicini | `results_v2/S3/R2_dgx_evidence/slurm-maxpower_8gpu_16531.err` | TimeoutError alla chiusura del cluster |
+| da 13,7 milioni: terminati dal sistema | `results_v2/S3/evidence/slurm-maxpower_8gpu_16463.err.tail25`, `..._16662.err.tail25` | exit code -9 a 13.745.880 cellule |
+| variante a blocchi a 12 milioni | `results/maxpower_chunked_12000000_8gpu_results.json`; `results_v2/S3/evidence/sacct_16696_D.txt` | 7.891 s cronometrati; job 16696, seconda esecuzione |
+| 8 GPU con 100 CPU | `results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt`, job 16317 | cpu=100 |
+| 1 GPU fermata nel QC | `results_v2/S3/R2_dgx_evidence/slurm-gpu_bench_1_16314.err` | allocazione di 23,79 GiB oltre il pool RMM a 500k; illegal address a 1,3M |
+| vicini da 44 a circa 18 volte a 100 mila cellule | `results_v2/S3/p3_neighbors.json` | 44,3x; 17,9x |
+| corpo da 9.263 a 11.518 parole | conteggio di `tools/s3_check.py` (P5) all'apertura e sull'anteprima | 9.263; 11.518 |
+| abstract A 247, B 230, C 228 parole | `manuscript/revisione_n2/S3/scelte_R1.md`; `check_preview.json` P1 (A) | 247; 230; 228 |
+| Wilcoxon 93,5%; 7,9-9,2x senza DE; 119,6x | ricevute R1 (`ricevute_R1.csv`, R1-V005...R1-V012) da `results/*_1300000_r1..5_results.json` | 93,53%; 7,92x e 9,23x; 119,62x |
+| ricalcolo della concordanza sotto mezz'ora | stima della regione Risultati (`scelte_R3.md`, CONC_INTERCAMB) | meno di 30 min di CPU |
+

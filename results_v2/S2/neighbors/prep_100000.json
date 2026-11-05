@@ -1,0 +1,11 @@
+{
+ "size": 100000,
+ "n_cells_after_qc": 99998,
+ "n_genes_after_qc": 32826,
+ "pca_shape": [
+  99998,
+  50
+ ],
+ "pca_md5": "998b73e761bf7fe6829bc46d33ec72c0",
+ "scanpy": "1.12"
+}

@@ -1,0 +1,21 @@
+id,file,oggetto,campo,vecchio,nuovo,motivo
+I-01,edits_R3.csv,R3-002,nuovo,"(Section ""Multi-GPU pipeline"")","(Section ""Multi-GPU configuration"")",La sottosezione dei Metodi è rinominata da R2-013 (voce R0407).
+I-02,edits_R4.csv,R4-008,nuovo,186.6 s with 200,186.6 s with 100,"sacct (job 16317, gpu_bench_8, AllocTRES cpu=100): slurm/gpu_8.sh chiede 200 CPU ma è stato cambiato dopo i run (R2, voce R0448)."
+I-03,edits_R3.csv,R3-015,nuovo,"At these scales, therefore, end-to-end throughput is set by compute and I/O, not memory; CPU RAM becomes the binding constraint only in the extreme stress-test regime discussed in the next subsection.",At these scales neither memory tier limited the runs; CPU memory was pushed further only in the stress test described in the next subsection.,"I log SLURM dello stress test non mostrano un out-of-memory (job 16531, 16463, 16662): 'binding constraint' non è dimostrato; 'set by compute and I/O' non è misurato."
+I-04,edits_R3.csv,R3-101,nuova modifica,Single-GPU results for 500k and 1.3M cells are absent because the standard pipeline exceeded 80 GB VRAM on a single H100.,"Single-GPU results for 500k and 1.3M cells are absent because the single-GPU pipeline failed during QC (Methods, Multi-GPU configuration).","La didascalia attribuiva l'assenza a 80 GB di VRAM superati; il log 16314 mostra un'allocazione oltre il pool RMM a 500k e un errore CUDA illegal address a 1,3M (voce R0044, R2)."
+I-05,ricevute_R4.csv,R4-V119,fonte e valore,200 da slurm/gpu_8.sh,100 da sacct (job 16317),come I-02
+I-06,valori_R4.py,R4-V119,lettura,slurm/gpu_8.sh,sacct job 16317,come I-02
+I-07,edits_R4.csv,R4-101,nuova modifica,"@inproceedings{Shanmugavelu2024,
+  author    = {Shanmugavelu, Sanjif and Taillefumier, Mathieu and Culver, Christopher and Hernandez, Oscar and Coletti, Mark and Sedova, Ada},
+  title     = {Impacts o","@article{CZCellxGene2025,
+  author    = {{CZI Cell Science Program} and Abdulla, Shibla and Aevermann, Brian and Assis, Pedro and Badajoz, Seve and Bell, Sidney M and Bezzi, Emanuele and Cakir, Batuha","Le voci .bib verificate da R2 su Crossref (crossref_R2.json) entrano tramite la regione R4, che sola modifica il .bib."
+I-08,edits_R4.csv,R4-102,nuova modifica,"@article{Marconato2024,
+  author    = {Marconato, Luca and Palla, Giovanni and Yaber, Kevin A. and Chierici, Andrea and Puente-Lelievre, Corentin and Nabavi, Sheila and Rattray, Magnus and Stegle, Oli","@article{Marconato2024,
+  author    = {Marconato, Luca and Palla, Giovanni and Yamauchi, Kevin A. and Virshup, Isaac and Heidari, Elyas and Treis, Tim and Vierdag, Wouter-Michiel and Toth, Marcella an",come la precedente
+I-09,diario_R2.csv,R0518;R0536,esito,rimandato,fatto,"applicate come R4-101, R4-102"
+I-10,diario_R3.csv,R0710,riga,rimandato,(tolta: la voce è chiusa in diario_R2.csv),"una sola riga per voce (G2); R2-024 scrive la parte dei Metodi, R3-021 i numeri dei Risultati"
+I-11,ricevute_R4.csv;valori_R0.py,"R4-V045,V092-V094,X01-X09",file,(fuori dal repo),prove in results_v2/S3/evidence/ rilette da valori_R0.py,cancello G3: ogni ricevuta si rilegge da un file del repo
+I-12,diario_R2.csv,R0539,esito,rimandato (senza step),"in-attesa-PI (R4-003, scelta DICKS)",la frase è già scritta in R4-003
+I-13,edits_R3.csv,R3-102,nuova modifica,### CPU and GPU produce biologically concordant results,"### CPU and GPU outputs agree closely at 10,000 cells","Il titolo affermava una concordanza biologica generale che la frase riscritta (R3, R0498) limita a 10.000 cellule."
+I-14,valori_R4.py;valori_R0.py;ricevute_R4.csv,R4-V075,lettura,costante 100 scritta nello script,firma di rsc.tl.leiden 0.14.1 salvata dal container e riletta,rilievo del revisore e8f…: valore da codice di libreria fuori dal repo
+I-15,scelte_R1.md,"CIFRA, prove",testo,2 SD = 41.6 s,"2 SD = 41.5 s (SD 20.77 s), con prova",rilievo del revisore 8f77…: SD non ricalcolata; ricalcolata ora (dl_sd)

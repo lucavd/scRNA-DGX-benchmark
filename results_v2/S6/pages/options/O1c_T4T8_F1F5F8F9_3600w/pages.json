@@ -1,0 +1,50 @@
+{
+ "tag": "O1c_T4T8_F1F5F8F9_3600w",
+ "at": "2026-11-04T22:20:43+01:00",
+ "src": "manuscript/_s6_option_O1c_T4T8_F1F5F8F9_3600w.md",
+ "src_md5": "8fd33f9d31d1bac76a89492431d0b301",
+ "bib_md5": "0545ef29119d63866360fb950ce29c11",
+ "llncs_md5": "543b73320c367b0229b3cdfcddaedc46",
+ "support_md5": {
+  "aliascnt.sty": "813491e2bc95c1dafbb39cd7c54b380b"
+ },
+ "pandoc": "pandoc 3.1.3",
+ "pages_total": 18,
+ "refs_start_page": 15,
+ "pages_before_refs": 15,
+ "latex_errors": 0,
+ "undefined_citations": [],
+ "overfull_hbox": 13,
+ "abstract_words": 247,
+ "body_words_intro_to_end": 4987,
+ "section_words": {
+  "Introduction": 420,
+  "Data and Methods": 1118,
+  "Results": 2402,
+  "Discussion": 716,
+  "Conclusions": 123,
+  "Conflict of Interest": 11,
+  "Acknowledgements": 112,
+  "Funding": 57,
+  "Availability of Data and Software Code": 28
+ },
+ "commands": [
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ],
+  [
+   "bibtex paper",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ]
+ ],
+ "pdf": "results_v2/S6/pages/options/O1c_T4T8_F1F5F8F9_3600w/paper.pdf"
+}

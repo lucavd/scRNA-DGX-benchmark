@@ -1,0 +1,20 @@
+utc: 2026-11-03T15:23:54Z
+loadavg: 2.78 27.75 34.54
+tctl: +39.6°C
+gpu: 0 %, 313 MiB, 40, 210 MHz
+top_processes:
+1126386 user      20   0 5738720 358344  79256 S   2.0   0.1  42:49.46 claude
+2071869 user      20   0   15404   6936   3828 R   1.5   0.0   0:00.08 top
+   3551 root      20   0 1003824  71628  29256 S   0.5   0.0  59:31.95 mongod
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  36:31.63 rserver
+   8279 user      20   0  811660  13012  11404 S   0.5   0.0  15:01.87 cloud-drive-dae
+ 766829 root      20   0 1371876  41756  17608 S   0.5   0.0   5:40.53 tailscaled
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:36.72 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.06 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     12 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_pe

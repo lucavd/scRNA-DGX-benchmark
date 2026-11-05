@@ -1,0 +1,559 @@
+{
+ "manifest": "SPATIAL/results_v2/manifest_md5.tsv",
+ "n_files": 489,
+ "n_present_checked": 380,
+ "n_failures": 0,
+ "n_missing_never_tracked": 109,
+ "differences": [
+  {
+   "path": "./compare.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0141/host_snapshots/cooc_gpu_visium_hd_square_008um_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0141/host_snapshots/cooc_gpu_visium_hd_square_008um_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0141/host_snapshots/cooc_gpu_visium_hd_square_008um_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0141/host_snapshots/cooc_gpu_visium_hd_square_008um_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0141/host_snapshots/cooc_gpu_visium_hd_square_008um_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_hd_square_008um_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_hd_square_008um_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_hd_square_008um_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_hd_square_008um_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_hd_square_008um_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/rsc0151/host_snapshots/cooc_gpu_visium_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./cooc_check/run.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/host_snapshots/spatial_cpu_visium_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_hd_square_002um_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_hd_square_002um_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_hd_square_002um_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_hd_square_002um_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_hd_square_008um_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_hd_square_008um_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_hd_square_008um_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_hd_square_008um_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./dgx_cpu/spatial_cpu_visium_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./mechanism_dgx.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./mechanism_dgx/orig_outputs/spatial_cpu_visium_r1_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./mechanism_dgx/orig_outputs/spatial_cpu_visium_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_002um_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_hd_square_008um_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/host_snapshots/spatial_cpu_visium_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_002um_r1_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_002um_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_002um_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_002um_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_002um_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_008um_r1_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_008um_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_008um_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_008um_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_hd_square_008um_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_r1_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_cpu/spatial_cpu_visium_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_002um_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_002um_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_002um_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_002um_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_002um_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_008um_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_008um_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_008um_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_008um_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_hd_square_008um_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_r1.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_r2.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_r3.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_r4.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/host_snapshots/spatial_gpu_visium_r5.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_002um_r1_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_002um_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_002um_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_002um_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_002um_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_008um_r1_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_008um_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_008um_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_008um_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_hd_square_008um_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_r1_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_r2_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_r3_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_r4_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./server_gpu/spatial_gpu_visium_r5_clusters.csv",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./thermal/thermal_load.log",
+   "problem": "missing",
+   "ever_tracked": false
+  },
+  {
+   "path": "./window.log",
+   "problem": "missing",
+   "ever_tracked": false
+  }
+ ],
+ "n_unlisted": 1,
+ "unlisted": [
+  ".gitignore"
+ ],
+ "at": "2026-11-04T22:02:01+0100"
+}

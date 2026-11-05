@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:26:02Z
+loadavg: 7.13 3.95 2.83
+tctl: +64.5°C
+gpu: 0 %, 313 MiB, 42, 210 MHz
+top_processes:
+2059112 user      20   0   15688   7136   3832 R   1.5   0.0   0:00.08 top
+ 226224 riccardo  20   0   11.5g 269216 114688 S   1.0   0.1  17:56.66 TeamViewer
+ 766829 root      20   0 1371876  39088  12352 S   1.0   0.0   5:34.36 tailscaled
+     35 root      rt   0       0      0      0 S   0.5   0.0   0:03.51 migration/3
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:16.47 nvidia-modeset/kthread_q
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  38:57.25 fctsched
+   4032 root      20   0   19.0g  93256  18608 S   0.5   0.0  35:14.83 teamviewerd
+1126386 user      20   0 5738720 356444  79192 S   0.5   0.1  42:05.11 claude
+1843744 user      20   0   71.3g  68420  17864 S   0.5   0.0   2:23.94 bun
+2046929 root      20   0       0      0      0 I   0.5   0.0   0:00.01 kworker/u260:4-events_unbound
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:31.30 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.05 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p

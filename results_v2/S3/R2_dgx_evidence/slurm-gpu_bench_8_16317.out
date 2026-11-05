@@ -1,0 +1,1362 @@
+=== GPU BENCHMARK (8 GPUs) START ===
+Date: Sun Mar 15 22:53:39 CET 2026
+Node: poddgx02
+Job ID: 16317
+Sun Mar 15 22:53:39 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.183.01             Driver Version: 535.183.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  | 00000000:1B:00.0 Off |                    0 |
+| N/A   27C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA H100 80GB HBM3          On  | 00000000:43:00.0 Off |                    0 |
+| N/A   28C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA H100 80GB HBM3          On  | 00000000:52:00.0 Off |                    0 |
+| N/A   32C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA H100 80GB HBM3          On  | 00000000:61:00.0 Off |                    0 |
+| N/A   32C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA H100 80GB HBM3          On  | 00000000:9D:00.0 Off |                    0 |
+| N/A   28C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA H100 80GB HBM3          On  | 00000000:C3:00.0 Off |                    0 |
+| N/A   26C    P0              67W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA H100 80GB HBM3          On  | 00000000:D1:00.0 Off |                    0 |
+| N/A   30C    P0              69W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA H100 80GB HBM3          On  | 00000000:DF:00.0 Off |                    0 |
+| N/A   33C    P0              70W / 700W |      0MiB / 81559MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+
+================================================================
+=== 8-GPU benchmark: 10000 cells, 5 repeats ===
+=== Start: Sun Mar 15 22:53:41 CET 2026 ===
+================================================================
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+
+######################################################################
+# REPEAT 1/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_10000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     0.61s | RAM: 0.6->1.0 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 10,000 cells x 53,384 genes
+  qc_filtering              |     1.35s | RAM: 1.0->1.1 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 10,000 cells x 26,228 genes
+  normalization             |     1.40s | RAM: 1.1->1.1 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |     0.65s | RAM: 1.1->1.1 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+    After HVG subset: 10,000 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.01s | RAM: 1.2->1.2 GB | VRAM(total): 4.9->4.9 GB
+  scale                     |     0.12s | RAM: 1.2->1.2 GB | VRAM(total): 4.9->5.0 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.36s | RAM: 1.3->1.4 GB | VRAM(total): 83.6->84.0 GB
+  neighbors                 |     0.30s | RAM: 1.4->1.5 GB | VRAM(total): 84.0->84.1 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     1.34s | RAM: 1.5->1.9 GB | VRAM(total): 44.5->44.5 GB
+    leiden_0.5: 32 clusters
+  leiden_1.0                |     0.09s | RAM: 1.9->1.9 GB | VRAM(total): 44.5->44.5 GB
+    leiden_1.0: 40 clusters
+  leiden_1.5                |     0.10s | RAM: 1.9->1.9 GB | VRAM(total): 44.5->44.5 GB
+    leiden_1.5: 45 clusters
+  umap                      |     0.47s | RAM: 1.9->1.9 GB | VRAM(total): 44.5->44.5 GB
+  de_testing                |     2.18s | RAM: 1.9->2.3 GB | VRAM(total): 44.5->44.5 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |     8.98s | Peak RAM: 2.3 GB | Peak VRAM(total): 84.1 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r1_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r1_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r1_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r1_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r1_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r1_pca_loadings.csv
+
+######################################################################
+# REPEAT 2/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_10000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     0.62s | RAM: 1.8->2.1 GB | VRAM(total): 44.4->44.4 GB
+    Loaded: 10,000 cells x 53,384 genes
+  qc_filtering              |     1.03s | RAM: 2.1->2.1 GB | VRAM(total): 44.4->44.4 GB
+    After QC: 10,000 cells x 26,228 genes
+  normalization             |     0.11s | RAM: 2.1->2.1 GB | VRAM(total): 44.4->44.4 GB
+  hvg_selection             |     0.27s | RAM: 2.1->2.1 GB | VRAM(total): 44.4->44.4 GB
+    HVGs selected: 2000
+    After HVG subset: 10,000 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.00s | RAM: 2.1->2.1 GB | VRAM(total): 44.4->44.4 GB
+  scale                     |     0.00s | RAM: 2.1->2.1 GB | VRAM(total): 44.4->44.4 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.03s | RAM: 2.1->2.1 GB | VRAM(total): 123.0->123.0 GB
+  neighbors                 |     0.01s | RAM: 2.1->2.1 GB | VRAM(total): 123.0->123.0 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.10s | RAM: 2.1->2.1 GB | VRAM(total): 63.9->63.9 GB
+    leiden_0.5: 32 clusters
+  leiden_1.0                |     0.09s | RAM: 2.1->2.1 GB | VRAM(total): 63.9->63.9 GB
+    leiden_1.0: 40 clusters
+  leiden_1.5                |     0.09s | RAM: 2.1->2.1 GB | VRAM(total): 63.9->63.9 GB
+    leiden_1.5: 45 clusters
+  umap                      |     0.29s | RAM: 2.1->2.1 GB | VRAM(total): 63.9->63.9 GB
+  de_testing                |     1.14s | RAM: 2.1->2.3 GB | VRAM(total): 63.9->63.9 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |     3.79s | Peak RAM: 2.3 GB | Peak VRAM(total): 123.0 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r2_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r2_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r2_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r2_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r2_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r2_pca_loadings.csv
+
+######################################################################
+# REPEAT 3/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_10000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     0.64s | RAM: 1.8->2.1 GB | VRAM(total): 24.9->24.9 GB
+    Loaded: 10,000 cells x 53,384 genes
+  qc_filtering              |     1.03s | RAM: 2.1->2.1 GB | VRAM(total): 24.9->24.9 GB
+    After QC: 10,000 cells x 26,228 genes
+  normalization             |     0.12s | RAM: 2.1->2.1 GB | VRAM(total): 24.9->24.9 GB
+  hvg_selection             |     0.30s | RAM: 2.1->2.1 GB | VRAM(total): 24.9->24.9 GB
+    HVGs selected: 2000
+    After HVG subset: 10,000 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.00s | RAM: 2.1->2.1 GB | VRAM(total): 24.9->24.9 GB
+  scale                     |     0.00s | RAM: 2.1->2.1 GB | VRAM(total): 24.9->24.9 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.03s | RAM: 2.1->2.1 GB | VRAM(total): 103.6->103.6 GB
+  neighbors                 |     0.01s | RAM: 2.1->2.1 GB | VRAM(total): 103.6->103.6 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.10s | RAM: 2.1->2.1 GB | VRAM(total): 54.2->54.2 GB
+    leiden_0.5: 32 clusters
+  leiden_1.0                |     0.09s | RAM: 2.1->2.1 GB | VRAM(total): 54.2->54.2 GB
+    leiden_1.0: 40 clusters
+  leiden_1.5                |     0.09s | RAM: 2.1->2.1 GB | VRAM(total): 54.2->54.2 GB
+    leiden_1.5: 45 clusters
+  umap                      |     0.29s | RAM: 2.1->2.1 GB | VRAM(total): 54.2->54.2 GB
+  de_testing                |     1.13s | RAM: 2.1->2.3 GB | VRAM(total): 54.2->54.2 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |     3.85s | Peak RAM: 2.3 GB | Peak VRAM(total): 103.6 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r3_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r3_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r3_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r3_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r3_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r3_pca_loadings.csv
+
+######################################################################
+# REPEAT 4/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_10000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     0.63s | RAM: 1.8->2.1 GB | VRAM(total): 34.7->34.7 GB
+    Loaded: 10,000 cells x 53,384 genes
+  qc_filtering              |     1.03s | RAM: 2.1->2.1 GB | VRAM(total): 34.7->34.7 GB
+    After QC: 10,000 cells x 26,228 genes
+  normalization             |     0.12s | RAM: 2.1->2.1 GB | VRAM(total): 34.7->34.7 GB
+  hvg_selection             |     0.30s | RAM: 2.1->2.1 GB | VRAM(total): 34.7->34.7 GB
+    HVGs selected: 2000
+    After HVG subset: 10,000 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.00s | RAM: 2.1->2.1 GB | VRAM(total): 34.7->34.7 GB
+  scale                     |     0.00s | RAM: 2.1->2.1 GB | VRAM(total): 34.7->34.7 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.03s | RAM: 2.1->2.1 GB | VRAM(total): 113.3->113.3 GB
+  neighbors                 |     0.01s | RAM: 2.1->2.1 GB | VRAM(total): 113.3->113.3 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.10s | RAM: 2.1->2.1 GB | VRAM(total): 59.1->59.1 GB
+    leiden_0.5: 32 clusters
+  leiden_1.0                |     0.09s | RAM: 2.1->2.1 GB | VRAM(total): 59.1->59.1 GB
+    leiden_1.0: 40 clusters
+  leiden_1.5                |     0.09s | RAM: 2.1->2.1 GB | VRAM(total): 59.1->59.1 GB
+    leiden_1.5: 45 clusters
+  umap                      |     0.29s | RAM: 2.1->2.1 GB | VRAM(total): 59.1->59.1 GB
+  de_testing                |     1.12s | RAM: 2.1->2.3 GB | VRAM(total): 59.1->59.1 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |     3.83s | Peak RAM: 2.3 GB | Peak VRAM(total): 113.3 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r4_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r4_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r4_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r4_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r4_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r4_pca_loadings.csv
+
+######################################################################
+# REPEAT 5/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_10000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     0.64s | RAM: 1.8->2.1 GB | VRAM(total): 29.8->29.8 GB
+    Loaded: 10,000 cells x 53,384 genes
+  qc_filtering              |     1.02s | RAM: 2.1->2.1 GB | VRAM(total): 29.8->29.8 GB
+    After QC: 10,000 cells x 26,228 genes
+  normalization             |     0.12s | RAM: 2.1->2.1 GB | VRAM(total): 29.8->29.8 GB
+  hvg_selection             |     0.30s | RAM: 2.1->2.1 GB | VRAM(total): 29.8->29.8 GB
+    HVGs selected: 2000
+    After HVG subset: 10,000 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.00s | RAM: 2.1->2.1 GB | VRAM(total): 29.8->29.8 GB
+  scale                     |     0.00s | RAM: 2.1->2.1 GB | VRAM(total): 29.8->29.8 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.03s | RAM: 2.1->2.1 GB | VRAM(total): 108.4->108.4 GB
+  neighbors                 |     0.01s | RAM: 2.1->2.1 GB | VRAM(total): 108.4->108.4 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.11s | RAM: 2.1->2.1 GB | VRAM(total): 56.6->56.6 GB
+    leiden_0.5: 32 clusters
+  leiden_1.0                |     0.09s | RAM: 2.1->2.1 GB | VRAM(total): 56.6->56.6 GB
+    leiden_1.0: 40 clusters
+  leiden_1.5                |     0.10s | RAM: 2.1->2.1 GB | VRAM(total): 56.6->56.6 GB
+    leiden_1.5: 45 clusters
+  umap                      |     0.29s | RAM: 2.1->2.1 GB | VRAM(total): 56.6->56.6 GB
+  de_testing                |     1.15s | RAM: 2.1->2.3 GB | VRAM(total): 56.6->56.6 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |     3.86s | Peak RAM: 2.3 GB | Peak VRAM(total): 108.4 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r5_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r5_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r5_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r5_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r5_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_10000_r5_pca_loadings.csv
+
+All 5 repeat(s) completed!
+=== 10000 cells finished at Sun Mar 15 22:55:39 CET 2026 with exit code 0 ===
+================================================================
+=== 8-GPU benchmark: 50000 cells, 5 repeats ===
+=== Start: Sun Mar 15 22:55:39 CET 2026 ===
+================================================================
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+
+######################################################################
+# REPEAT 1/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_50000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     2.53s | RAM: 0.6->2.0 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 50,000 cells x 53,384 genes
+  qc_filtering              |     5.23s | RAM: 2.0->2.0 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 49,998 cells x 30,935 genes
+  normalization             |     1.82s | RAM: 2.0->2.0 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |     1.65s | RAM: 2.0->2.0 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+    After HVG subset: 49,998 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.09s | RAM: 2.2->2.2 GB | VRAM(total): 4.9->5.0 GB
+  scale                     |     0.11s | RAM: 2.2->2.2 GB | VRAM(total): 5.0->5.3 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.38s | RAM: 2.3->2.4 GB | VRAM(total): 83.9->84.3 GB
+  neighbors                 |     0.35s | RAM: 2.4->2.5 GB | VRAM(total): 84.3->84.4 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     1.30s | RAM: 2.5->2.9 GB | VRAM(total): 44.6->44.6 GB
+    leiden_0.5: 42 clusters
+  leiden_1.0                |     0.18s | RAM: 2.9->2.9 GB | VRAM(total): 44.6->44.6 GB
+    leiden_1.0: 50 clusters
+  leiden_1.5                |     0.17s | RAM: 2.9->2.9 GB | VRAM(total): 44.6->44.6 GB
+    leiden_1.5: 60 clusters
+  umap                      |     1.06s | RAM: 2.9->2.9 GB | VRAM(total): 44.6->44.6 GB
+  de_testing                |     4.15s | RAM: 2.9->3.4 GB | VRAM(total): 44.6->44.6 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    19.01s | Peak RAM: 3.4 GB | Peak VRAM(total): 84.4 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r1_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r1_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r1_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r1_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r1_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r1_pca_loadings.csv
+
+######################################################################
+# REPEAT 2/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_50000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     2.54s | RAM: 1.9->3.1 GB | VRAM(total): 44.3->44.3 GB
+    Loaded: 50,000 cells x 53,384 genes
+  qc_filtering              |     5.21s | RAM: 3.1->3.1 GB | VRAM(total): 44.3->44.3 GB
+    After QC: 49,998 cells x 30,935 genes
+  normalization             |     0.76s | RAM: 3.1->3.1 GB | VRAM(total): 44.3->44.3 GB
+  hvg_selection             |     1.33s | RAM: 3.1->3.1 GB | VRAM(total): 44.3->44.3 GB
+    HVGs selected: 2000
+    After HVG subset: 49,998 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.02s | RAM: 3.1->3.2 GB | VRAM(total): 44.3->44.3 GB
+  scale                     |     0.01s | RAM: 3.2->3.2 GB | VRAM(total): 44.3->44.3 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.05s | RAM: 3.2->3.2 GB | VRAM(total): 122.9->122.9 GB
+  neighbors                 |     0.06s | RAM: 3.2->3.2 GB | VRAM(total): 122.9->122.9 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.17s | RAM: 3.2->3.2 GB | VRAM(total): 63.8->63.8 GB
+    leiden_0.5: 42 clusters
+  leiden_1.0                |     0.18s | RAM: 3.2->3.2 GB | VRAM(total): 63.8->63.8 GB
+    leiden_1.0: 50 clusters
+  leiden_1.5                |     0.16s | RAM: 3.2->3.2 GB | VRAM(total): 63.8->63.8 GB
+    leiden_1.5: 60 clusters
+  umap                      |     0.86s | RAM: 3.2->3.2 GB | VRAM(total): 63.8->63.8 GB
+  de_testing                |     3.82s | RAM: 3.2->3.4 GB | VRAM(total): 63.8->63.8 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    15.17s | Peak RAM: 3.4 GB | Peak VRAM(total): 122.9 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r2_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r2_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r2_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r2_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r2_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r2_pca_loadings.csv
+
+######################################################################
+# REPEAT 3/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_50000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     2.59s | RAM: 1.9->3.1 GB | VRAM(total): 25.0->25.0 GB
+    Loaded: 50,000 cells x 53,384 genes
+  qc_filtering              |     4.81s | RAM: 3.1->3.1 GB | VRAM(total): 25.0->25.0 GB
+    After QC: 49,998 cells x 30,935 genes
+  normalization             |     0.52s | RAM: 3.1->3.1 GB | VRAM(total): 25.0->25.0 GB
+  hvg_selection             |     1.33s | RAM: 3.1->3.1 GB | VRAM(total): 25.0->25.0 GB
+    HVGs selected: 2000
+    After HVG subset: 49,998 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.01s | RAM: 3.2->3.2 GB | VRAM(total): 25.0->25.0 GB
+  scale                     |     0.01s | RAM: 3.2->3.2 GB | VRAM(total): 25.0->25.0 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.05s | RAM: 3.2->3.2 GB | VRAM(total): 103.6->103.6 GB
+  neighbors                 |     0.06s | RAM: 3.2->3.2 GB | VRAM(total): 103.6->103.6 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.18s | RAM: 3.2->3.2 GB | VRAM(total): 54.2->54.2 GB
+    leiden_0.5: 42 clusters
+  leiden_1.0                |     0.18s | RAM: 3.2->3.2 GB | VRAM(total): 54.2->54.2 GB
+    leiden_1.0: 50 clusters
+  leiden_1.5                |     0.17s | RAM: 3.2->3.2 GB | VRAM(total): 54.2->54.2 GB
+    leiden_1.5: 61 clusters
+  umap                      |     0.86s | RAM: 3.2->3.2 GB | VRAM(total): 54.2->54.2 GB
+  de_testing                |     3.36s | RAM: 3.2->3.4 GB | VRAM(total): 54.2->54.2 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    14.13s | Peak RAM: 3.4 GB | Peak VRAM(total): 103.6 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r3_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r3_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r3_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r3_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r3_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r3_pca_loadings.csv
+
+######################################################################
+# REPEAT 4/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_50000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     2.53s | RAM: 1.9->3.1 GB | VRAM(total): 34.6->34.6 GB
+    Loaded: 50,000 cells x 53,384 genes
+  qc_filtering              |     4.77s | RAM: 3.1->3.1 GB | VRAM(total): 34.6->34.6 GB
+    After QC: 49,998 cells x 30,935 genes
+  normalization             |     0.52s | RAM: 3.1->3.1 GB | VRAM(total): 34.6->34.6 GB
+  hvg_selection             |     1.13s | RAM: 3.1->3.1 GB | VRAM(total): 34.6->34.6 GB
+    HVGs selected: 2000
+    After HVG subset: 49,998 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.01s | RAM: 3.2->3.2 GB | VRAM(total): 34.6->34.6 GB
+  scale                     |     0.01s | RAM: 3.2->3.2 GB | VRAM(total): 34.6->34.6 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.05s | RAM: 3.2->3.2 GB | VRAM(total): 113.3->113.3 GB
+  neighbors                 |     0.06s | RAM: 3.2->3.2 GB | VRAM(total): 113.3->113.3 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.18s | RAM: 3.2->3.2 GB | VRAM(total): 59.0->59.0 GB
+    leiden_0.5: 42 clusters
+  leiden_1.0                |     0.17s | RAM: 3.2->3.2 GB | VRAM(total): 59.0->59.0 GB
+    leiden_1.0: 54 clusters
+  leiden_1.5                |     0.17s | RAM: 3.2->3.2 GB | VRAM(total): 59.0->59.0 GB
+    leiden_1.5: 60 clusters
+  umap                      |     0.86s | RAM: 3.2->3.2 GB | VRAM(total): 59.0->59.0 GB
+  de_testing                |     3.15s | RAM: 3.2->3.5 GB | VRAM(total): 59.0->59.0 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    13.60s | Peak RAM: 3.5 GB | Peak VRAM(total): 113.3 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r4_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r4_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r4_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r4_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r4_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r4_pca_loadings.csv
+
+######################################################################
+# REPEAT 5/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_50000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     2.61s | RAM: 1.9->3.1 GB | VRAM(total): 29.8->29.8 GB
+    Loaded: 50,000 cells x 53,384 genes
+  qc_filtering              |     4.76s | RAM: 3.1->3.1 GB | VRAM(total): 29.8->29.8 GB
+    After QC: 49,998 cells x 30,935 genes
+  normalization             |     0.53s | RAM: 3.1->3.1 GB | VRAM(total): 29.8->29.8 GB
+  hvg_selection             |     1.20s | RAM: 3.1->3.1 GB | VRAM(total): 29.8->29.8 GB
+    HVGs selected: 2000
+    After HVG subset: 49,998 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.01s | RAM: 3.2->3.2 GB | VRAM(total): 29.8->29.8 GB
+  scale                     |     0.01s | RAM: 3.2->3.2 GB | VRAM(total): 29.8->29.8 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.05s | RAM: 3.2->3.2 GB | VRAM(total): 108.4->108.4 GB
+  neighbors                 |     0.06s | RAM: 3.2->3.2 GB | VRAM(total): 108.4->108.4 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.18s | RAM: 3.2->3.2 GB | VRAM(total): 56.6->56.6 GB
+    leiden_0.5: 42 clusters
+  leiden_1.0                |     0.17s | RAM: 3.2->3.2 GB | VRAM(total): 56.6->56.6 GB
+    leiden_1.0: 54 clusters
+  leiden_1.5                |     0.16s | RAM: 3.2->3.2 GB | VRAM(total): 56.6->56.6 GB
+    leiden_1.5: 60 clusters
+  umap                      |     0.86s | RAM: 3.2->3.2 GB | VRAM(total): 56.6->56.6 GB
+  de_testing                |     3.17s | RAM: 3.2->3.5 GB | VRAM(total): 56.6->56.6 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    13.76s | Peak RAM: 3.5 GB | Peak VRAM(total): 108.4 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r5_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r5_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r5_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r5_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r5_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_50000_r5_pca_loadings.csv
+
+All 5 repeat(s) completed!
+=== 50000 cells finished at Sun Mar 15 22:58:47 CET 2026 with exit code 0 ===
+================================================================
+=== 8-GPU benchmark: 100000 cells, 5 repeats ===
+=== Start: Sun Mar 15 22:58:47 CET 2026 ===
+================================================================
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+
+######################################################################
+# REPEAT 1/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_100000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     5.15s | RAM: 0.6->3.2 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 100,000 cells x 53,384 genes
+  qc_filtering              |     9.78s | RAM: 3.2->3.2 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 99,996 cells x 32,869 genes
+  normalization             |     2.35s | RAM: 3.2->3.2 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |     2.83s | RAM: 3.2->3.3 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+    After HVG subset: 99,996 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.04s | RAM: 3.4->3.4 GB | VRAM(total): 4.9->5.0 GB
+  scale                     |     0.14s | RAM: 3.4->3.4 GB | VRAM(total): 5.0->5.7 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.37s | RAM: 3.5->3.6 GB | VRAM(total): 84.3->84.6 GB
+  neighbors                 |     0.47s | RAM: 3.6->3.8 GB | VRAM(total): 84.6->84.8 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     1.49s | RAM: 3.8->4.2 GB | VRAM(total): 44.8->44.8 GB
+    leiden_0.5: 43 clusters
+  leiden_1.0                |     0.24s | RAM: 4.2->4.2 GB | VRAM(total): 44.8->44.8 GB
+    leiden_1.0: 61 clusters
+  leiden_1.5                |     0.25s | RAM: 4.2->4.2 GB | VRAM(total): 44.8->44.8 GB
+    leiden_1.5: 70 clusters
+  umap                      |     1.35s | RAM: 4.2->4.3 GB | VRAM(total): 44.8->44.8 GB
+  de_testing                |     6.65s | RAM: 4.3->4.9 GB | VRAM(total): 44.8->44.8 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    31.11s | Peak RAM: 4.9 GB | Peak VRAM(total): 84.8 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r1_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r1_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r1_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r1_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r1_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r1_pca_loadings.csv
+
+######################################################################
+# REPEAT 2/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_100000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     5.20s | RAM: 2.1->4.4 GB | VRAM(total): 44.1->44.1 GB
+    Loaded: 100,000 cells x 53,384 genes
+  qc_filtering              |     9.26s | RAM: 4.4->4.4 GB | VRAM(total): 44.1->44.1 GB
+    After QC: 99,996 cells x 32,869 genes
+  normalization             |     1.03s | RAM: 4.4->4.4 GB | VRAM(total): 44.1->44.1 GB
+  hvg_selection             |     2.21s | RAM: 4.4->4.4 GB | VRAM(total): 44.1->44.1 GB
+    HVGs selected: 2000
+    After HVG subset: 99,996 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.04s | RAM: 4.5->4.5 GB | VRAM(total): 44.1->44.1 GB
+  scale                     |     0.01s | RAM: 4.5->4.5 GB | VRAM(total): 44.1->44.1 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.06s | RAM: 4.5->4.5 GB | VRAM(total): 122.7->122.7 GB
+  neighbors                 |     0.16s | RAM: 4.5->4.5 GB | VRAM(total): 122.7->122.7 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.24s | RAM: 4.5->4.5 GB | VRAM(total): 63.8->63.8 GB
+    leiden_0.5: 43 clusters
+  leiden_1.0                |     0.24s | RAM: 4.5->4.5 GB | VRAM(total): 63.8->63.8 GB
+    leiden_1.0: 61 clusters
+  leiden_1.5                |     0.22s | RAM: 4.5->4.5 GB | VRAM(total): 63.8->63.8 GB
+    leiden_1.5: 70 clusters
+  umap                      |     1.07s | RAM: 4.5->4.5 GB | VRAM(total): 63.8->63.8 GB
+  de_testing                |     5.59s | RAM: 4.5->4.9 GB | VRAM(total): 63.8->63.8 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    25.33s | Peak RAM: 4.9 GB | Peak VRAM(total): 122.7 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r2_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r2_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r2_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r2_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r2_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r2_pca_loadings.csv
+
+######################################################################
+# REPEAT 3/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_100000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     5.13s | RAM: 2.1->4.5 GB | VRAM(total): 25.1->25.1 GB
+    Loaded: 100,000 cells x 53,384 genes
+  qc_filtering              |     9.33s | RAM: 4.5->4.5 GB | VRAM(total): 25.1->25.1 GB
+    After QC: 99,996 cells x 32,869 genes
+  normalization             |     1.04s | RAM: 4.5->4.5 GB | VRAM(total): 25.1->25.1 GB
+  hvg_selection             |     2.26s | RAM: 4.5->4.5 GB | VRAM(total): 25.1->25.1 GB
+    HVGs selected: 2000
+    After HVG subset: 99,996 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.01s | RAM: 4.6->4.5 GB | VRAM(total): 25.1->25.1 GB
+  scale                     |     0.01s | RAM: 4.5->4.5 GB | VRAM(total): 25.1->25.1 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.06s | RAM: 4.5->4.5 GB | VRAM(total): 103.7->103.7 GB
+  neighbors                 |     0.17s | RAM: 4.5->4.5 GB | VRAM(total): 103.7->103.7 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.25s | RAM: 4.5->4.5 GB | VRAM(total): 54.3->54.3 GB
+    leiden_0.5: 43 clusters
+  leiden_1.0                |     0.23s | RAM: 4.5->4.5 GB | VRAM(total): 54.3->54.3 GB
+    leiden_1.0: 61 clusters
+  leiden_1.5                |     0.22s | RAM: 4.5->4.5 GB | VRAM(total): 54.3->54.3 GB
+    leiden_1.5: 70 clusters
+  umap                      |     1.07s | RAM: 4.5->4.5 GB | VRAM(total): 54.3->54.3 GB
+  de_testing                |     5.58s | RAM: 4.5->4.9 GB | VRAM(total): 54.3->54.3 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    25.38s | Peak RAM: 5.0 GB | Peak VRAM(total): 103.7 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r3_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r3_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r3_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r3_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r3_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r3_pca_loadings.csv
+
+######################################################################
+# REPEAT 4/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_100000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     5.12s | RAM: 2.1->4.5 GB | VRAM(total): 34.6->34.6 GB
+    Loaded: 100,000 cells x 53,384 genes
+  qc_filtering              |     9.28s | RAM: 4.5->4.5 GB | VRAM(total): 34.6->34.6 GB
+    After QC: 99,996 cells x 32,869 genes
+  normalization             |     1.03s | RAM: 4.5->4.5 GB | VRAM(total): 34.6->34.6 GB
+  hvg_selection             |     2.21s | RAM: 4.5->4.5 GB | VRAM(total): 34.6->34.6 GB
+    HVGs selected: 2000
+    After HVG subset: 99,996 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.01s | RAM: 4.6->4.5 GB | VRAM(total): 34.6->34.6 GB
+  scale                     |     0.01s | RAM: 4.5->4.5 GB | VRAM(total): 34.6->34.6 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.06s | RAM: 4.5->4.5 GB | VRAM(total): 113.2->113.2 GB
+  neighbors                 |     0.16s | RAM: 4.5->4.5 GB | VRAM(total): 113.2->113.2 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.24s | RAM: 4.5->4.5 GB | VRAM(total): 59.0->59.0 GB
+    leiden_0.5: 43 clusters
+  leiden_1.0                |     0.23s | RAM: 4.5->4.5 GB | VRAM(total): 59.0->59.0 GB
+    leiden_1.0: 61 clusters
+  leiden_1.5                |     0.23s | RAM: 4.5->4.5 GB | VRAM(total): 59.0->59.0 GB
+    leiden_1.5: 70 clusters
+  umap                      |     1.08s | RAM: 4.5->4.5 GB | VRAM(total): 59.0->59.0 GB
+  de_testing                |     5.54s | RAM: 4.5->5.0 GB | VRAM(total): 59.0->59.0 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    25.21s | Peak RAM: 5.0 GB | Peak VRAM(total): 113.2 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r4_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r4_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r4_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r4_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r4_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r4_pca_loadings.csv
+
+######################################################################
+# REPEAT 5/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_100000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |     4.99s | RAM: 2.1->4.5 GB | VRAM(total): 29.8->29.8 GB
+    Loaded: 100,000 cells x 53,384 genes
+  qc_filtering              |     9.34s | RAM: 4.5->4.5 GB | VRAM(total): 29.8->29.8 GB
+    After QC: 99,996 cells x 32,869 genes
+  normalization             |     1.03s | RAM: 4.5->4.5 GB | VRAM(total): 29.8->29.8 GB
+  hvg_selection             |     2.21s | RAM: 4.5->4.5 GB | VRAM(total): 29.8->29.8 GB
+    HVGs selected: 2000
+    After HVG subset: 99,996 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.01s | RAM: 4.6->4.5 GB | VRAM(total): 29.8->29.8 GB
+  scale                     |     0.01s | RAM: 4.5->4.5 GB | VRAM(total): 29.8->29.8 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.06s | RAM: 4.5->4.5 GB | VRAM(total): 108.5->108.5 GB
+  neighbors                 |     0.16s | RAM: 4.5->4.5 GB | VRAM(total): 108.5->108.5 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.26s | RAM: 4.5->4.5 GB | VRAM(total): 56.6->56.6 GB
+    leiden_0.5: 43 clusters
+  leiden_1.0                |     0.23s | RAM: 4.5->4.5 GB | VRAM(total): 56.6->56.6 GB
+    leiden_1.0: 61 clusters
+  leiden_1.5                |     0.23s | RAM: 4.5->4.5 GB | VRAM(total): 56.6->56.6 GB
+    leiden_1.5: 70 clusters
+  umap                      |     1.11s | RAM: 4.5->4.5 GB | VRAM(total): 56.6->56.6 GB
+  de_testing                |     5.54s | RAM: 4.5->5.0 GB | VRAM(total): 56.6->56.6 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |    25.18s | Peak RAM: 5.0 GB | Peak VRAM(total): 108.5 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r5_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r5_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r5_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r5_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r5_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_100000_r5_pca_loadings.csv
+
+All 5 repeat(s) completed!
+=== 100000 cells finished at Sun Mar 15 23:03:08 CET 2026 with exit code 0 ===
+================================================================
+=== 8-GPU benchmark: 500000 cells, 5 repeats ===
+=== Start: Sun Mar 15 23:03:08 CET 2026 ===
+================================================================
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+
+######################################################################
+# REPEAT 1/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_500000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    23.70s | RAM: 0.6->12.8 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 500,000 cells x 53,384 genes
+  qc_filtering              |    47.07s | RAM: 12.8->12.9 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 499,983 cells x 36,864 genes
+  normalization             |     6.52s | RAM: 12.8->12.8 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |    11.46s | RAM: 12.8->12.8 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+    After HVG subset: 499,983 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.21s | RAM: 13.3->13.4 GB | VRAM(total): 4.9->5.3 GB
+  scale                     |     0.21s | RAM: 13.4->13.5 GB | VRAM(total): 5.3->8.6 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.53s | RAM: 13.5->13.7 GB | VRAM(total): 87.3->87.6 GB
+  neighbors                 |     3.05s | RAM: 13.7->14.0 GB | VRAM(total): 87.6->87.7 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     1.94s | RAM: 14.0->14.5 GB | VRAM(total): 46.3->46.3 GB
+    leiden_0.5: 51 clusters
+  leiden_1.0                |     0.81s | RAM: 14.5->14.5 GB | VRAM(total): 46.3->46.3 GB
+    leiden_1.0: 66 clusters
+  leiden_1.5                |     0.82s | RAM: 14.5->14.5 GB | VRAM(total): 46.3->46.3 GB
+    leiden_1.5: 80 clusters
+  umap                      |     3.67s | RAM: 14.5->14.6 GB | VRAM(total): 46.3->46.3 GB
+  de_testing                |    30.90s | RAM: 14.6->15.4 GB | VRAM(total): 46.3->46.3 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   130.89s | Peak RAM: 15.4 GB | Peak VRAM(total): 87.8 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r1_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r1_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r1_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r1_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r1_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r1_pca_loadings.csv
+
+######################################################################
+# REPEAT 2/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_500000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    24.20s | RAM: 2.8->14.7 GB | VRAM(total): 42.6->42.6 GB
+    Loaded: 500,000 cells x 53,384 genes
+  qc_filtering              |    46.52s | RAM: 14.7->14.7 GB | VRAM(total): 42.6->42.6 GB
+    After QC: 499,983 cells x 36,864 genes
+  normalization             |     5.23s | RAM: 14.7->14.7 GB | VRAM(total): 42.6->42.6 GB
+  hvg_selection             |    11.04s | RAM: 14.7->14.8 GB | VRAM(total): 42.6->42.6 GB
+    HVGs selected: 2000
+    After HVG subset: 499,983 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.04s | RAM: 15.0->14.7 GB | VRAM(total): 42.6->42.6 GB
+  scale                     |     0.05s | RAM: 14.7->14.7 GB | VRAM(total): 42.6->42.6 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.22s | RAM: 14.7->14.8 GB | VRAM(total): 121.2->121.2 GB
+  neighbors                 |     2.63s | RAM: 14.8->14.9 GB | VRAM(total): 121.2->121.2 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.84s | RAM: 14.9->14.9 GB | VRAM(total): 63.0->63.0 GB
+    leiden_0.5: 51 clusters
+  leiden_1.0                |     0.81s | RAM: 14.9->14.9 GB | VRAM(total): 63.0->63.0 GB
+    leiden_1.0: 66 clusters
+  leiden_1.5                |     0.84s | RAM: 14.9->14.9 GB | VRAM(total): 63.0->63.0 GB
+    leiden_1.5: 80 clusters
+  umap                      |     3.51s | RAM: 14.9->14.9 GB | VRAM(total): 63.0->63.0 GB
+  de_testing                |    26.05s | RAM: 14.9->15.5 GB | VRAM(total): 63.0->63.0 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   121.98s | Peak RAM: 15.5 GB | Peak VRAM(total): 121.2 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r2_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r2_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r2_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r2_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r2_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r2_pca_loadings.csv
+
+######################################################################
+# REPEAT 3/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_500000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    24.04s | RAM: 2.8->14.7 GB | VRAM(total): 25.9->25.9 GB
+    Loaded: 500,000 cells x 53,384 genes
+  qc_filtering              |    47.46s | RAM: 14.7->14.7 GB | VRAM(total): 25.9->25.9 GB
+    After QC: 499,983 cells x 36,864 genes
+  normalization             |     5.22s | RAM: 14.7->14.7 GB | VRAM(total): 25.9->25.9 GB
+  hvg_selection             |    10.82s | RAM: 14.7->14.8 GB | VRAM(total): 25.9->25.9 GB
+    HVGs selected: 2000
+    After HVG subset: 499,983 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.03s | RAM: 15.1->14.8 GB | VRAM(total): 25.9->25.9 GB
+  scale                     |     0.05s | RAM: 14.8->14.8 GB | VRAM(total): 25.9->25.9 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.22s | RAM: 14.8->14.9 GB | VRAM(total): 104.5->104.5 GB
+  neighbors                 |     2.62s | RAM: 14.9->15.0 GB | VRAM(total): 104.5->104.5 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.86s | RAM: 15.0->15.0 GB | VRAM(total): 54.6->54.6 GB
+    leiden_0.5: 48 clusters
+  leiden_1.0                |     0.83s | RAM: 15.0->15.0 GB | VRAM(total): 54.6->54.6 GB
+    leiden_1.0: 66 clusters
+  leiden_1.5                |     0.83s | RAM: 15.0->15.0 GB | VRAM(total): 54.6->54.6 GB
+    leiden_1.5: 80 clusters
+  umap                      |     3.45s | RAM: 15.0->15.0 GB | VRAM(total): 54.6->54.6 GB
+  de_testing                |    28.59s | RAM: 15.0->15.6 GB | VRAM(total): 54.6->54.6 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   125.03s | Peak RAM: 15.6 GB | Peak VRAM(total): 104.5 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r3_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r3_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r3_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r3_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r3_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r3_pca_loadings.csv
+
+######################################################################
+# REPEAT 4/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_500000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    25.25s | RAM: 2.8->14.7 GB | VRAM(total): 34.2->34.2 GB
+    Loaded: 500,000 cells x 53,384 genes
+  qc_filtering              |    46.96s | RAM: 14.7->14.7 GB | VRAM(total): 34.2->34.2 GB
+    After QC: 499,983 cells x 36,864 genes
+  normalization             |     5.20s | RAM: 14.7->14.7 GB | VRAM(total): 34.2->34.2 GB
+  hvg_selection             |    10.90s | RAM: 14.7->14.8 GB | VRAM(total): 34.2->34.2 GB
+    HVGs selected: 2000
+    After HVG subset: 499,983 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.03s | RAM: 15.0->14.7 GB | VRAM(total): 34.2->34.2 GB
+  scale                     |     0.05s | RAM: 14.7->14.7 GB | VRAM(total): 34.2->34.2 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.22s | RAM: 14.7->14.8 GB | VRAM(total): 112.8->112.8 GB
+  neighbors                 |     2.64s | RAM: 14.8->14.9 GB | VRAM(total): 112.8->112.8 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.85s | RAM: 14.9->15.0 GB | VRAM(total): 58.8->58.8 GB
+    leiden_0.5: 51 clusters
+  leiden_1.0                |     0.83s | RAM: 15.0->15.0 GB | VRAM(total): 58.8->58.8 GB
+    leiden_1.0: 66 clusters
+  leiden_1.5                |     0.83s | RAM: 15.0->15.0 GB | VRAM(total): 58.8->58.8 GB
+    leiden_1.5: 78 clusters
+  umap                      |     3.47s | RAM: 15.0->15.0 GB | VRAM(total): 58.8->58.8 GB
+  de_testing                |    25.66s | RAM: 15.0->15.6 GB | VRAM(total): 58.8->58.8 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   122.90s | Peak RAM: 15.6 GB | Peak VRAM(total): 112.8 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r4_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r4_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r4_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r4_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r4_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r4_pca_loadings.csv
+
+######################################################################
+# REPEAT 5/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_500000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    24.40s | RAM: 2.8->14.7 GB | VRAM(total): 30.0->30.0 GB
+    Loaded: 500,000 cells x 53,384 genes
+  qc_filtering              |    46.51s | RAM: 14.7->14.7 GB | VRAM(total): 30.0->30.0 GB
+    After QC: 499,983 cells x 36,864 genes
+  normalization             |     5.14s | RAM: 14.7->14.7 GB | VRAM(total): 30.0->30.0 GB
+  hvg_selection             |    10.81s | RAM: 14.7->14.8 GB | VRAM(total): 30.0->30.0 GB
+    HVGs selected: 2000
+    After HVG subset: 499,983 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.03s | RAM: 15.0->14.7 GB | VRAM(total): 30.0->30.0 GB
+  scale                     |     0.05s | RAM: 14.7->14.7 GB | VRAM(total): 30.0->30.0 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.23s | RAM: 14.7->14.8 GB | VRAM(total): 108.7->108.7 GB
+  neighbors                 |     2.63s | RAM: 14.8->14.9 GB | VRAM(total): 108.7->108.7 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     0.84s | RAM: 14.9->15.0 GB | VRAM(total): 56.7->56.7 GB
+    leiden_0.5: 51 clusters
+  leiden_1.0                |     0.81s | RAM: 15.0->15.0 GB | VRAM(total): 56.7->56.7 GB
+    leiden_1.0: 66 clusters
+  leiden_1.5                |     0.83s | RAM: 15.0->15.0 GB | VRAM(total): 56.7->56.7 GB
+    leiden_1.5: 80 clusters
+  umap                      |     3.44s | RAM: 15.0->15.0 GB | VRAM(total): 56.7->56.7 GB
+  de_testing                |    26.46s | RAM: 15.0->15.6 GB | VRAM(total): 56.7->56.7 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   122.19s | Peak RAM: 15.6 GB | Peak VRAM(total): 108.7 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r5_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r5_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r5_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r5_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r5_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_500000_r5_pca_loadings.csv
+
+All 5 repeat(s) completed!
+=== 500000 cells finished at Sun Mar 15 23:16:48 CET 2026 with exit code 0 ===
+================================================================
+=== 8-GPU benchmark: 1300000 cells, 5 repeats ===
+=== Start: Sun Mar 15 23:16:48 CET 2026 ===
+================================================================
+  GPU 0: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 1: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 2: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 3: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 4: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 5: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 6: NVIDIA H100 80GB HBM3 (79.6 GB)
+  GPU 7: NVIDIA H100 80GB HBM3 (79.6 GB)
+  Driver: 535.183.01
+
+######################################################################
+# REPEAT 1/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_1300000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    97.10s | RAM: 0.6->47.4 GB | VRAM(total): 4.3->4.8 GB
+    Loaded: 1,300,000 cells x 53,384 genes
+  qc_filtering              |   187.89s | RAM: 47.4->47.6 GB | VRAM(total): 4.8->4.8 GB
+    After QC: 1,299,956 cells x 39,182 genes
+  normalization             |    14.53s | RAM: 47.5->47.5 GB | VRAM(total): 4.8->4.8 GB
+  hvg_selection             |    49.16s | RAM: 47.5->47.5 GB | VRAM(total): 4.8->4.8 GB
+    HVGs selected: 2000
+    After HVG subset: 1,299,956 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.43s | RAM: 48.4->48.6 GB | VRAM(total): 4.9->5.7 GB
+  scale                     |     0.24s | RAM: 48.6->48.6 GB | VRAM(total): 5.7->14.6 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.86s | RAM: 48.7->48.9 GB | VRAM(total): 93.2->93.6 GB
+  neighbors                 |    16.66s | RAM: 48.9->49.7 GB | VRAM(total): 93.6->93.7 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     3.30s | RAM: 49.7->50.0 GB | VRAM(total): 49.3->49.3 GB
+    leiden_0.5: 52 clusters
+  leiden_1.0                |     2.21s | RAM: 50.1->50.1 GB | VRAM(total): 49.3->49.3 GB
+    leiden_1.0: 68 clusters
+  leiden_1.5                |     2.36s | RAM: 50.1->50.0 GB | VRAM(total): 49.3->49.3 GB
+    leiden_1.5: 84 clusters
+  umap                      |     1.31s | RAM: 50.1->50.3 GB | VRAM(total): 49.3->49.3 GB
+  de_testing                |    87.37s | RAM: 50.3->52.2 GB | VRAM(total): 49.3->49.3 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   463.43s | Peak RAM: 52.2 GB | Peak VRAM(total): 93.7 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r1_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r1_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r1_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r1_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r1_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r1_pca_loadings.csv
+
+######################################################################
+# REPEAT 2/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_1300000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    92.58s | RAM: 4.6->51.0 GB | VRAM(total): 39.6->39.6 GB
+    Loaded: 1,300,000 cells x 53,384 genes
+  qc_filtering              |   184.48s | RAM: 51.0->51.2 GB | VRAM(total): 39.6->39.6 GB
+    After QC: 1,299,956 cells x 39,182 genes
+  normalization             |    13.35s | RAM: 51.1->51.1 GB | VRAM(total): 39.6->39.6 GB
+  hvg_selection             |    48.44s | RAM: 51.1->51.1 GB | VRAM(total): 39.6->39.6 GB
+    HVGs selected: 2000
+    After HVG subset: 1,299,956 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.08s | RAM: 51.9->51.1 GB | VRAM(total): 39.6->39.6 GB
+  scale                     |     0.12s | RAM: 51.1->51.1 GB | VRAM(total): 39.6->39.6 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.55s | RAM: 51.1->51.4 GB | VRAM(total): 118.2->135.3 GB
+  neighbors                 |    16.30s | RAM: 51.4->51.8 GB | VRAM(total): 135.3->135.3 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     2.20s | RAM: 51.8->51.8 GB | VRAM(total): 70.1->70.1 GB
+    leiden_0.5: 52 clusters
+  leiden_1.0                |     2.13s | RAM: 51.8->51.8 GB | VRAM(total): 70.1->70.1 GB
+    leiden_1.0: 69 clusters
+  leiden_1.5                |     2.29s | RAM: 51.8->51.8 GB | VRAM(total): 70.1->70.1 GB
+    leiden_1.5: 84 clusters
+  umap                      |     1.16s | RAM: 51.8->51.8 GB | VRAM(total): 70.1->70.1 GB
+  de_testing                |    68.74s | RAM: 51.8->52.3 GB | VRAM(total): 70.1->76.8 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   432.43s | Peak RAM: 52.3 GB | Peak VRAM(total): 135.3 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r2_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r2_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r2_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r2_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r2_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r2_pca_loadings.csv
+
+######################################################################
+# REPEAT 3/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_1300000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    91.90s | RAM: 4.6->51.0 GB | VRAM(total): 25.5->25.5 GB
+    Loaded: 1,300,000 cells x 53,384 genes
+  qc_filtering              |   183.21s | RAM: 51.0->51.2 GB | VRAM(total): 25.5->25.5 GB
+    After QC: 1,299,956 cells x 39,182 genes
+  normalization             |    13.43s | RAM: 51.1->51.2 GB | VRAM(total): 25.5->25.5 GB
+  hvg_selection             |    48.39s | RAM: 51.2->51.2 GB | VRAM(total): 25.5->25.5 GB
+    HVGs selected: 2000
+    After HVG subset: 1,299,956 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.08s | RAM: 52.0->51.2 GB | VRAM(total): 25.5->25.5 GB
+  scale                     |     0.12s | RAM: 51.2->51.2 GB | VRAM(total): 25.5->25.5 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.54s | RAM: 51.2->51.4 GB | VRAM(total): 104.1->144.2 GB
+  neighbors                 |    16.36s | RAM: 51.4->51.8 GB | VRAM(total): 144.2->144.2 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     2.16s | RAM: 51.8->51.8 GB | VRAM(total): 74.5->74.5 GB
+    leiden_0.5: 52 clusters
+  leiden_1.0                |     2.15s | RAM: 51.8->51.8 GB | VRAM(total): 74.5->74.5 GB
+    leiden_1.0: 68 clusters
+  leiden_1.5                |     2.27s | RAM: 51.8->51.8 GB | VRAM(total): 74.5->74.5 GB
+    leiden_1.5: 84 clusters
+  umap                      |     1.15s | RAM: 51.8->51.8 GB | VRAM(total): 74.5->74.5 GB
+  de_testing                |    68.62s | RAM: 51.8->52.3 GB | VRAM(total): 74.5->79.0 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   430.38s | Peak RAM: 52.3 GB | Peak VRAM(total): 144.2 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r3_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r3_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r3_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r3_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r3_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r3_pca_loadings.csv
+
+######################################################################
+# REPEAT 4/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_1300000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    87.39s | RAM: 4.6->51.0 GB | VRAM(total): 18.8->18.8 GB
+    Loaded: 1,300,000 cells x 53,384 genes
+  qc_filtering              |   193.97s | RAM: 51.0->51.2 GB | VRAM(total): 18.8->18.8 GB
+    After QC: 1,299,956 cells x 39,182 genes
+  normalization             |    13.63s | RAM: 51.2->51.2 GB | VRAM(total): 18.8->18.8 GB
+  hvg_selection             |    48.79s | RAM: 51.2->51.2 GB | VRAM(total): 18.8->18.8 GB
+    HVGs selected: 2000
+    After HVG subset: 1,299,956 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.08s | RAM: 51.8->51.1 GB | VRAM(total): 18.8->18.8 GB
+  scale                     |     0.15s | RAM: 51.1->51.1 GB | VRAM(total): 18.8->32.2 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.55s | RAM: 51.1->51.3 GB | VRAM(total): 110.8->150.9 GB
+  neighbors                 |    16.38s | RAM: 51.3->51.7 GB | VRAM(total): 150.9->150.9 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     2.20s | RAM: 51.7->51.7 GB | VRAM(total): 77.9->77.9 GB
+    leiden_0.5: 52 clusters
+  leiden_1.0                |     2.15s | RAM: 51.7->51.7 GB | VRAM(total): 77.9->77.9 GB
+    leiden_1.0: 68 clusters
+  leiden_1.5                |     2.29s | RAM: 51.7->51.7 GB | VRAM(total): 77.9->77.9 GB
+    leiden_1.5: 79 clusters
+  umap                      |     1.15s | RAM: 51.7->51.7 GB | VRAM(total): 77.9->77.9 GB
+  de_testing                |    58.22s | RAM: 51.7->52.3 GB | VRAM(total): 77.9->82.7 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   426.97s | Peak RAM: 52.3 GB | Peak VRAM(total): 150.9 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r4_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r4_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r4_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r4_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r4_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r4_pca_loadings.csv
+
+######################################################################
+# REPEAT 5/5 — 8 GPUs
+######################################################################
+
+================================================================================
+MULTI-GPU BENCHMARK — brain_1300000.h5ad — 8 GPUs
+================================================================================
+  Step                      |     Time |                  RAM |         VRAM (total)
+  --------------------------+----------+----------------------+---------------------
+  data_loading              |    84.07s | RAM: 4.6->51.0 GB | VRAM(total): 15.9->15.9 GB
+    Loaded: 1,300,000 cells x 53,384 genes
+  qc_filtering              |   183.30s | RAM: 51.0->51.2 GB | VRAM(total): 15.9->15.9 GB
+    After QC: 1,299,956 cells x 39,182 genes
+  normalization             |    13.28s | RAM: 51.2->51.2 GB | VRAM(total): 15.9->15.9 GB
+  hvg_selection             |    47.92s | RAM: 51.2->51.2 GB | VRAM(total): 15.9->15.9 GB
+    HVGs selected: 2000
+    After HVG subset: 1,299,956 cells x 2,000 genes
+  GPU warmup (1 GPUs)... done
+  gpu_transfer              |     0.08s | RAM: 52.0->51.2 GB | VRAM(total): 15.9->15.9 GB
+  scale                     |     0.14s | RAM: 51.2->51.2 GB | VRAM(total): 15.9->26.3 GB
+
+  Starting Dask CUDA cluster for multi-GPU steps...
+  Setting up Dask CUDA cluster with 8 GPUs (0,1,2,3,4,5,6,7)...
+  Dask dashboard: http://127.0.0.1:8787/status
+  Workers: 5
+  pca                       |     0.55s | RAM: 51.2->51.4 GB | VRAM(total): 104.9->146.7 GB
+  neighbors                 |    16.31s | RAM: 51.4->51.8 GB | VRAM(total): 146.7->146.7 GB
+
+  Shutting down Dask cluster...
+  leiden_0.5                |     2.18s | RAM: 51.8->51.8 GB | VRAM(total): 75.8->75.8 GB
+    leiden_0.5: 50 clusters
+  leiden_1.0                |     2.13s | RAM: 51.8->51.8 GB | VRAM(total): 75.8->75.8 GB
+    leiden_1.0: 68 clusters
+  leiden_1.5                |     2.27s | RAM: 51.8->51.8 GB | VRAM(total): 75.8->75.8 GB
+    leiden_1.5: 79 clusters
+  umap                      |     1.14s | RAM: 51.8->51.8 GB | VRAM(total): 75.8->75.8 GB
+  de_testing                |    69.30s | RAM: 51.8->52.3 GB | VRAM(total): 75.8->83.3 GB
+
+  Transferring data back to CPU...
+
+  TOTAL                     |   422.67s | Peak RAM: 52.3 GB | Peak VRAM(total): 146.7 GB
+
+  Results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r5_results.json
+  Clusters saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r5_clusters.csv
+  HVGs saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r5_hvgs.csv
+  DE results saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r5_de.csv
+  UMAP saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r5_umap.csv
+  PCA loadings saved: /home/u0044/sc-gpu-benchmark/results/gpu8_1300000_r5_pca_loadings.csv
+
+All 5 repeat(s) completed!
+=== 1300000 cells finished at Mon Mar 16 00:01:11 CET 2026 with exit code 0 ===
+
+=== GPU BENCHMARK (8 GPUs) COMPLETE ===
+Date: Mon Mar 16 00:01:11 CET 2026
+Failures: 0

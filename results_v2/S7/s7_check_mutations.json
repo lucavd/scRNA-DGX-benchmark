@@ -1,0 +1,40 @@
+{
+ "number": {
+  "check_failed": true,
+  "number_diffs": 1,
+  "cite_sequence_equal": true,
+  "residual_ascii": {},
+  "figure_mismatches": []
+ },
+ "ascii_um": {
+  "check_failed": true,
+  "number_diffs": 0,
+  "cite_sequence_equal": true,
+  "residual_ascii": {
+   "um": [
+    "8 um"
+   ]
+  },
+  "figure_mismatches": []
+ },
+ "cite": {
+  "check_failed": true,
+  "number_diffs": 0,
+  "cite_sequence_equal": false,
+  "residual_ascii": {},
+  "figure_mismatches": []
+ },
+ "figure": {
+  "check_failed": true,
+  "number_diffs": 0,
+  "cite_sequence_equal": true,
+  "residual_ascii": {},
+  "figure_mismatches": [
+   [
+    "3",
+    "2"
+   ]
+  ]
+ },
+ "all_detected": true
+}

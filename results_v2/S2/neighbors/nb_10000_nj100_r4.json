@@ -1,0 +1,34 @@
+{
+ "size": 10000,
+ "n_jobs": 100,
+ "rep": 4,
+ "numba_threads_at_start": 100,
+ "affinity": 128,
+ "versions": {
+  "scanpy": "1.12",
+  "numba": "0.64.0",
+  "pynndescent": "0.6.0"
+ },
+ "cold": {
+  "seconds": 27.599370038020425,
+  "set_num_threads_calls": [
+   100,
+   100,
+   100,
+   100
+  ],
+  "threads_after": 100,
+  "knn_md5": "dd6df9dc46f90d1ad1bb81d6fc82ee65"
+ },
+ "warm": {
+  "seconds": 1.1197506949538365,
+  "set_num_threads_calls": [
+   100,
+   100,
+   100,
+   100
+  ],
+  "threads_after": 100,
+  "knn_md5": "dd6df9dc46f90d1ad1bb81d6fc82ee65"
+ }
+}

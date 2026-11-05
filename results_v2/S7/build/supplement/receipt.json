@@ -1,0 +1,127 @@
+{
+ "tag": "supplement",
+ "at": "2026-11-05T17:29:10+01:00",
+ "src": "manuscript/supplementary_LNBI.md",
+ "src_md5": "96ad48a485f3b60340fb97ef28e3053e",
+ "bib_md5": "0545ef29119d63866360fb950ce29c11",
+ "llncs_md5": "543b73320c367b0229b3cdfcddaedc46",
+ "bst_md5": "aadf770ded437d161532035219ea6f45",
+ "pandoc": "pandoc 3.1.3",
+ "pdftex": "pdfTeX 3.141592653-2.6-1.40.27 (TeX Live 2025)",
+ "pages_total": 24,
+ "refs_start_page": 22,
+ "latex_errors": 0,
+ "undefined_citations": [],
+ "undefined_references": [],
+ "bibtex_warnings": [],
+ "overfull_hbox": 0,
+ "overfull_over_1pt": [],
+ "abstract_words": 0,
+ "caption_order": [
+  [
+   "Table",
+   "S1"
+  ],
+  [
+   "Table",
+   "S2"
+  ],
+  [
+   "Table",
+   "S3"
+  ],
+  [
+   "Figure",
+   "S1"
+  ],
+  [
+   "Figure",
+   "S2"
+  ],
+  [
+   "Table",
+   "S4"
+  ],
+  [
+   "Table",
+   "S5"
+  ],
+  [
+   "Table",
+   "S6"
+  ],
+  [
+   "Figure",
+   "S3"
+  ],
+  [
+   "Table",
+   "S7"
+  ],
+  [
+   "Table",
+   "S8"
+  ]
+ ],
+ "aux_labels": {
+  "tab:S1": "S1",
+  "tab:S2": "S2",
+  "tab:S3": "S3",
+  "fig:S1": "S1",
+  "fig:S2": "S2",
+  "tab:S4": "S4",
+  "tab:S5": "S5",
+  "tab:S6": "S6",
+  "fig:S3": "S3",
+  "tab:S7": "S7",
+  "tab:S8": "S8"
+ },
+ "figures": [
+  {
+   "number": "S1",
+   "file": "figures/figS1.pdf",
+   "source": "figures/fig5_timing_breakdown.pdf",
+   "md5": "86f64ec2798f5de98e71d26db6aeed74"
+  },
+  {
+   "number": "S2",
+   "file": "figures/figS2.pdf",
+   "source": "figures/fig4_memory_profile.pdf",
+   "md5": "4b1bb326742675d14074fbc7f3af9b44"
+  },
+  {
+   "number": "S3",
+   "file": "figures/figS3.pdf",
+   "source": "figures/fig7_spatial_speedup.pdf",
+   "md5": "cad2a61cf3ec0e94de4a15bc6e2b43ef"
+  }
+ ],
+ "commands": [
+  [
+   "pdflatex -interaction=nonstopmode supplementary_LNBI.tex",
+   0
+  ],
+  [
+   "bibtex supplementary_LNBI",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode supplementary_LNBI.tex",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode supplementary_LNBI.tex",
+   0
+  ]
+ ],
+ "doi": null,
+ "outputs": {
+  "supplementary_LNBI.tex": "68b4e26cbbc949d363d7b3ecec1d9048",
+  "supplementary_LNBI.bbl": "9b8b9bf9e3f4f3ad8b9c92d14a585b0e",
+  "supplementary_LNBI.pdf": "d5fcc999d5cb2bbd7f90533269d7dc64",
+  "cibb2026_references.bib": "0545ef29119d63866360fb950ce29c11",
+  "figures/figS1.pdf": "86f64ec2798f5de98e71d26db6aeed74",
+  "figures/figS2.pdf": "4b1bb326742675d14074fbc7f3af9b44",
+  "figures/figS3.pdf": "cad2a61cf3ec0e94de4a15bc6e2b43ef"
+ }
+}

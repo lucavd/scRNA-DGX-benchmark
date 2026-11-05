@@ -1,0 +1,21 @@
+# Revisione del piano: rilievi, avversariale e ultima passata
+
+Tre revisori indipendenti (eseguibilità, correttezza, completezza) hanno prodotto 109 rilievi (`rilievi_revisori.csv`). L'avversariale li ha ricalcolati uno per uno (`avversariale.csv`): 90 confermati, 16 ridimensionati, 2 rafforzati, 1 ritirato. Le correzioni sulle voci sono in `arbitrati.csv` (una riga per campo, con motivo e prova) e il generatore le applica a ogni rigenerazione.
+
+## Ribaltamenti dell'avversariale sui revisori
+
+1. **Tempo non cronometrato (R0653, E/E21).** Il revisore abbinava la media dei 4 intervalli fra timestamp alla media dei tempi delle ripetizioni 1-5. Gli intervalli contengono solo le ripetizioni 2-5: valgono i valori 2-5, con l'eccezione alla convenzione A dichiarata.
+2. **Unità della memoria (R0697, R0167, R0170; K/C25, C/C04-C07).** Le proposte mescolavano GB e GiB. Il codice calcola byte / 1024^3: le tabelle si scrivono in GiB, la matrice HVG densa a 11,9M vale 88,66 GiB e il residuo di Table 6 è 19,79 GiB, non 13,25.
+3. **Dipendenza ritirata (R0581, K/C17).** La correzione proposta avrebbe cancellato CONV, R0368 e R0353 dalle dipendenze: il revisore aveva letto male il campo.
+4. **Verso delle dipendenze dell'abstract (R0731, K/C21 e K/C09).** L'abstract riscritto in S3 non dipende da voci di S5: le cifre spatial sono già nei file di S1; R0254 e R0711 in S5 verificano l'abstract invece di riscriverlo.
+5. **Dicks 2026 (R0558, K/C01).** Letto in arXiv 2603.02402v1: B200 oltre 120x, H200 110x, CPU di 32 core, senza I/O e senza espressione differenziale. Il numero di cellule è discordante nella fonte (testo e didascalia), quindi la frase corretta non lo attribuisce.
+6. **Conflitto sulla riga 166 (R0646, E/E01)** da bloccante a maggiore: il conflitto era visibile perché R0646 nomina R0453. La voce trasversale ora rimanda al testo unico di R0453.
+
+## Ultima passata del capo (verifiche proprie e ribaltamenti)
+
+1. **Verificati da codice tre verdetti che cambiano numeri del testo:** `get_peak_ram_gb` divide per 1024^3 in `benchmark_cpu.py`, `benchmark_gpu.py` e `benchmark_maxpower.py`; tutti gli otto `de_benchmark_*.json` hanno `n_cells` 3.399.892 e 202 donatori; gli intervalli fra timestamp a 10.000 cellule su 1 GPU sono 8,23, 8,03, 8,44, 8,22 s contro tempi di 6,40, 2,42, 2,40, 2,62, 2,58 s.
+2. **Regola dei gruppi di dipendenze (K/C22), ribaltata in parte.** L'avversariale chiedeva di far fallire il controllo per ogni gruppo di voci mutuamente dipendenti su righe non adiacenti. Dopo le rotture prescritte (R0143 senza R0727; R0354 e R0355 senza R0380, assorbita in R0735; R0694 senza R0329) restano gruppi tutti dentro un solo step (per esempio l'abstract con le sue voci di frase). Due voci dello stesso step che dipendono l'una dall'altra si compongono nella stessa passata: non è un difetto. Il controllo fallisce solo se un gruppo attraversa due step.
+3. **Mappa delle occorrenze estesa (K/C31), ristretta.** Applicata alle riformulazioni con tutti i token numerici, l'estensione produceva 121 occorrenze nuove quasi tutte omografe ("10x Genomics", "100 cores", "50 components"). L'ho ristretta ai valori quantitativi (decimali, migliaia, o seguiti da x, % o -fold) e ho classificato a mano le 72 residue (32 omografi, 38 valori confermati, 2 da propagare alla riga 418, coperta dalle voci della Discussione su D-02).
+4. **Percorsi (E/E08).** I riferimenti relativi (`../figures/`, `lncs_latex/`, `stile/`, `tracks/`) sono risolti e controllati sul server: i 13 file `tracks/` esistono solo dentro `manuscript/revisione_n2/script_e_calcoli.zip`, che non era tracciato da git e ora lo è. `manuscript/meteor/` è dichiarata da creare in S7. Gli altri 48 riferimenti con la barra non sono percorsi del repo (rapporti scritti con la barra, immagini container, file interni ai pacchetti) e sono elencati in `mappe/riferimenti_fuori_repo.csv`.
+5. **Cinque ancore manuali e quattro bersagli trasversali (G4).** R0237, R0649, R0653, R0657, R0732 hanno un'ancora contata (1 occorrenza); R0646, R0655, R0658, R0673 toccano più righe già coperte da voci di riga in S5.
+6. **Valori superati.** Nessuno compare in `value_new`; nelle istruzioni compaiono solo dentro la citazione del testo da sostituire (controllo da script sulle 269 voci primarie).

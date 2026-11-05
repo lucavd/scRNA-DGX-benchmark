@@ -1,0 +1,20 @@
+utc: 2026-11-03T18:33:52Z
+loadavg: 0.82 0.41 0.56
+tctl: +68.5°C
+gpu: 0 %, 313 MiB, 50
+top_processes:
+2118140 user      20   0   15584   7124   3832 R   1.5   0.0   0:00.08 top
+1126386 user      20   0 5738720 358132  79672 S   1.0   0.1  44:59.26 claude
+   3559 root      20   0 4170628  59000  35720 S   0.5   0.0  11:19.01 containerd
+   3854 rstudio+  20   0   18.0g  45084  12972 S   0.5   0.0   6:56.97 rstudio-launche
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  37:21.97 rserver
+   7492 user      20   0 1530200  25172  22080 S   0.5   0.0   5:37.33 fortitray
+  46532 user      20   0 3331348  37740  23716 S   0.5   0.0   1:03.33 snap
+ 225482 riccardo  20   0   21964  13172   9616 S   0.5   0.0   4:52.85 systemd
+ 226224 riccardo  20   0   11.5g 269244 114688 S   0.5   0.1  18:28.43 TeamViewer
+1843744 user      20   0   71.3g  70052  18580 S   0.5   0.0   3:58.26 bun
+2078330 root      20   0       0      0      0 I   0.5   0.0   0:00.02 kworker/114:1-events
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:52.45 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.09 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g

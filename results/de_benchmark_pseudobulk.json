@@ -1,0 +1,19 @@
+{
+  "n_cells": 3399892,
+  "n_genes_raw": 41321,
+  "n_clusters": 81,
+  "gene_chunk_size": 500,
+  "n_gpus": 8,
+  "results": {
+    "pseudobulk": {
+      "time": 127.47376465797424,
+      "time_aggregation": 96.82320547103882,
+      "time_de": 30.650559186935425,
+      "method": "pseudobulk_wilcoxon",
+      "backend": "cpu",
+      "n_pseudobulk_samples": 2431,
+      "n_donors": 202,
+      "n_clusters": 81
+    }
+  }
+}

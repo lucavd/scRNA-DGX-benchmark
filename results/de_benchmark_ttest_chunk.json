@@ -1,0 +1,14 @@
+{
+  "n_cells": 3399892,
+  "n_genes_raw": 41321,
+  "n_clusters": 81,
+  "gene_chunk_size": 500,
+  "n_gpus": 8,
+  "results": {
+    "ttest_chunk": {
+      "time": 1649.4641585350037,
+      "method": "ttest",
+      "backend": "chunk_1gpu"
+    }
+  }
+}

@@ -1,0 +1,266 @@
+---
+title: "Step S2: piano di implementazione della revisione n.2"
+subtitle: "Capitolo LNBI scRNA DGX, 4 novembre 2026"
+lang: it
+format:
+  html:
+    embed-resources: true
+    toc: true
+---
+
+# In breve: il piano delle correzioni è pronto, e su quali regole poggia?
+
+**A cosa serviva.** La revisione n.2 ha lasciato 424 rilievi non confermati sul capitolo. Questo step li ha trasformati in un piano che una sessione futura può eseguire senza altro contesto: per ogni correzione dice in che punto del testo si fa, cosa scrivere, da quale file rileggere il numero e in quale passo farla. Serviva anche a proporre una regola unica sulle ripetizioni e a controllare se i tempi CPU dello scRNA hanno lo stesso difetto dei thread trovato nello spatial.
+
+**Cosa abbiamo trovato.**
+
+1. **Il piano è pronto e verificato: 269 correzioni, ognuna legata a un punto preciso del testo.** Delle 424 righe della revisione, 146 ripetono una correzione già presente e 9 non si applicano. Restano 190 correzioni di sostanza, 11 sulle figure scRNA, 49 sullo spatial, 9 per il taglio e 10 per la preparazione per Springer. Tre revisori indipendenti hanno sollevato 109 rilievi sul piano; un quarto li ha ricontrollati ricalcolando, e 108 sono stati recepiti, in parte ridimensionati.
+2. **I tempi CPU dello scRNA non hanno il difetto dei thread dello spatial.** In 37 step su 39 le ripetizioni dalla seconda in poi non sono più lente della prima (al massimo il 3% in più). Nei due casi incerti, UMAP a 500 mila e a 1,3 milioni di cellule, le ripetizioni lente sono sparse, mentre un calo di thread resterebbe fino alla fine del processo.
+3. **C'è però un difetto diverso: sulla CPU la ricerca dei vicini girava con ogni probabilità a un solo thread su 100.** Scanpy, con le impostazioni di default, chiede a pynndescent un solo processo di lavoro, e pynndescent abbassa numba a un thread per tutta la durata dello step. Lo abbiamo verificato sulle stesse versioni dei pacchetti; il container originale non è più leggibile. Sul tempo totale della CPU pesa poco (dallo 0,3% a 1,3 milioni di cellule al 2,3% a 50 mila), ma lo speedup dei vicini citato nel testo (da 44 a 88 volte) è misurato contro una CPU che lavorava su un core. Lo stesso vale per i vicini di espressione nello spatial.
+4. **Contare o no la prima ripetizione cambia i risultati solo sotto le 100 mila cellule.** Da 100 mila cellule in su lo speedup end-to-end cambia al massimo del 6%: il 120x a 1,3 milioni vale 119,6x con tutte le ripetizioni e 121,9x senza la prima. A 10 e 50 mila cellule cambia dal 5 al 14%. Nei singoli step cambia in entrambe le direzioni: la normalizzazione a 10 mila cellule fa 329x con la prima ripetizione e 115x senza.
+5. **La revisione del piano ha fermato tre errori che sarebbero finiti nel testo.** Le memorie sono in GiB e non in GB. L'espressione differenziale gira su 3,40 milioni di cellule, non su 3,44. Il campione di Visium HD a 2 µm tiene solo il 6% dei bin, quindi non descrive davvero la risoluzione a 2 µm: questa è una scelta tua, che ti porteremo quando integreremo lo spatial.
+
+**Cosa devi decidere.**
+
+1. **Quale regola usiamo per le ripetizioni? Consiglio: la media di tutte e cinque, sia nello scRNA sia nello spatial.** È la regola che il testo scRNA usa già, quindi le cifre scRNA restano. Sul tempo totale è la scelta meno favorevole alla GPU, e dà sempre una deviazione standard. Nello spatial non cambia nulla. Le alternative: togliere la prima ripetizione nello scRNA (a 10 mila cellule lo speedup sale da 12,0x a 14,0x, con una regola diversa fra scRNA e spatial e più favorevole alla GPU); oppure tenere solo la prima ripetizione (un valore per configurazione, senza deviazione standard).
+2. **Come trattiamo i vicini calcolati a un solo thread? Consiglio: dirlo nei Metodi e misurarne l'effetto, con circa mezz'ora di calcolo a server libero.** Misureremmo sul server la ricerca dei vicini a 10, 50 e 100 mila cellule con 1 e con 100 thread, e scriveremmo di quanto cambierebbe lo speedup dei vicini. I tempi del capitolo restano quelli del DGX. Le alternative: dichiararlo soltanto, senza un numero (il lettore non saprebbe quanto pesa); oppure rifare i vicini CPU sul DGX a tutte le dimensioni (più fedele, ma circa un giorno di lavoro su una macchina che per questo capitolo non usiamo più).
+3. **Approvi il piano? Consiglio: sì.** Le 28 scelte di contenuto che il piano non fa (titolo, abstract, cifra di testa, tabelle da tenere o togliere, campione a 2 µm e altre) te le porteremo nei passi in cui servono, ciascuna con una raccomandazione. In alternativa puoi indicarmi ora le parti del piano da cambiare.
+
+**Comunque.**
+
+- Le correzioni di sostanza seguiranno l'ordine del piano: prima le decisioni, poi le frasi toccate da più correzioni insieme, poi il resto.
+- Ogni numero nuovo si rileggerà con uno script dal file indicato nel piano, e ogni correzione fatta si segnerà in un diario.
+- Il materiale di lavoro della revisione n.2 (script e tabelle) ora è nel repository, perché il piano lo usa come fonte.
+
+Appena decidi questi 3 punti, lo step è chiuso.
+
+**Sui tempi di calcolo.** Restano cinque passi. Stima, basata sul numero di correzioni per passo: correzioni di sostanza 1,5 giorni (190 correzioni e le prime scelte su titolo e abstract), figure scRNA 1 giorno, integrazione dello spatial 1 giorno (49 correzioni e tre figure), taglio e stile mezza giornata, LaTeX e verifica finale 1 giorno. Sono 5 giorni di lavoro: la sottomissione arriverebbe il 9 o il 10 novembre, se le tue decisioni arrivano entro la giornata in cui le chiedo. Non c'è margine: consiglio di chiedere già ora agli organizzatori qualche giorno in più, come precauzione.
+
+
+**Decisioni del PI (4 novembre).** Approvati il piano, la convenzione della media di tutte e 5 le ripetizioni (D-15) e il trattamento dei vicini CPU (D-16). La misura dei vicini fatta subito dopo, a server libero e sui dati del benchmark, dà un rapporto fra 1 e 100 thread di 1,16, 1,91 e 2,48 a 10.000, 50.000 e 100.000 cellule; i tempi del DGX coincidono con quelli a 1 thread. Step chiuso.
+
+# Dubbi rinviati
+
+| a | cosa | perché | cosa serve per chiuderlo |
+|---|---|---|---|
+| Correzioni di sostanza (S3) | Applicare 190 voci del piano; 22 scelte del PI; vicini CPU a 1 thread; trappole su GiB, cellule dell'espressione differenziale e tempo non cronometrato | Sono il lavoro di S3 | Testo approvato dal PI, diario compilato |
+| Integrazione dei risultati spatial (S5) | 49 voci; campione casuale di Visium HD 2 µm; vicini di espressione spatial a 1 thread; 6 scelte del PI | Toccano Risultati e figure spatial | Scelte del PI, numeri riletti da `SPATIAL/results_v2/` |
+
+# Cancelli e previsioni
+
+Pre-registrati nel commit 8b60678, prima di ogni calcolo.
+
+Attese pre-registrate nel commit 8b60678. Numeri da `results_v2/S2/S2_summary.json`, `S2_P1_threads.csv`, `S2_P3_convenzione.csv` (script `tools/s2_repetitions.py`) e da `manuscript/revisione_n2/piano/checks.json` (script `tools/s2_mkplan.py`), rigenerati sul server.
+
+| id | atteso | intervallo | osservato | esito | spiegazione |
+|---|---|---|---|---|---|
+| G1 | 0 differenze, 0 file nuovi | 0 | 0 su 921 file, prima (00:35) e dopo (11:21) | superato | |
+| G2 | md5 4587032b... | uguale | 4587032be8d2905007687e0bb50d848e all'inizio e alla fine | superato | |
+| G3 | 424 righe con esito | 0 senza esito | 424 righe in 424 voci: 269 primarie, 146 assorbite (tutte verso una primaria), 9 non applicabili con motivo | superato | |
+| G4 | ancore univoche contate | 1 occorrenza ciascuna | 391 ancore, tutte con 1 occorrenza e sulla riga dichiarata; nessun valore vecchio lontano dalla sua ancora; bersagli non in prosa espliciti | superato | 5 ancore manuali e 4 bersagli trasversali registrati in `arbitrati.csv` |
+| G5 | percorsi esistenti o da creare | tutti | 71 percorsi: 70 esistono sul server, 1 da creare in S7 (`manuscript/meteor/`) | superato | 13 file stanno nello zip della revisione, ora tracciato |
+| P1 | R al massimo 1 | R al massimo 1,20 | 37 step confermati su 39 (R massimo 1,026); UMAP a 500.000 (R 1,055 [0,855; 1,256]) e a 1.300.000 (1,230 [0,913; 1,547]) indeterminati | confermata in 37, indeterminata in 2 | I due casi sono indeterminati per costruzione (2 SD / r1 = 0,20 e 0,32). Non hanno la firma del difetto dei thread: le ripetizioni lente sono sparse (500.000: solo la 3; 1.300.000: la 4 più lenta della 5), mentre un calo di thread resta nel processo. |
+| P2 | 0 chiamate raggiunte | 0 | 2 coppie di chiamate raggiunte (pynndescent, `set_num_threads(n_jobs)` e ripristino); quelle di umap-learn non sono raggiunte | smentita | Spiegata: vedi anomalia 1. Nessun effetto fra ripetizioni (coerente con P1), ma la ricerca dei vicini CPU gira a 1 thread numba dentro lo step. |
+| P3 | 1 | 0,9-1,1 | da 0,940 a 1,014 nelle 10 configurazioni da 100.000 cellule in su, intervalli tutti dentro | confermata | A 10.000 e 50.000 cellule (informazione): da 0,858 a 0,950. |
+
+
+# Anomalie viste durante il lavoro
+
+1. **Ricerca dei vicini CPU a 1 thread numba (scelta del PI).** Da 8.192 cellule in su `sc.pp.neighbors` usa pynndescent e gli passa `n_jobs = sc.settings.n_jobs`, che per default vale 1 e che `scripts/benchmark_cpu.py` non cambia; pynndescent porta numba a 1 thread per la costruzione e la ricerca e poi lo ripristina. Verificato a runtime con le stesse versioni ricostruite (scanpy 1.12, pynndescent 0.6.0, umap-learn 0.5.11, numba 0.64.0, installate con `uv --exclude-newer 2026-03-12`): a 12.000 cellule le chiamate sono `set_num_threads(1)` e poi `set_num_threads(8)` (`results_v2/S2/p2_pynndescent_12000.txt`). Il container originale non è più raggiungibile (`/mnt/home` non esiste sui nodi DGX allocati). La pipeline spatial usa la stessa chiamata per i vicini di espressione. Peso sul tempo totale CPU (media r1-5): 12,4% a 10.000 cellule, 2,3% a 50.000, 1,4% a 100.000, 0,95% a 500.000, 0,28% a 1.300.000. Speedup dello step dei vicini con 1 GPU: 88,1x, 60,5x, 44,3x a 10.000, 50.000, 100.000 cellule.
+2. **Visium HD 2 µm è un sottocampione casuale (rinviata all'integrazione dello spatial).** 400.000 bin su 6.296.688 (6,35%): le statistiche spaziali non descrivono la risoluzione a 2 µm. Era nel registro (R0465) ma non fra i problemi principali del report.
+3. **Memorie in GiB, espressione differenziale su 3.399.892 cellule (corrette nel piano).** Gli script calcolano byte / 1024^3; tutti gli otto `results/de_benchmark_*.json` hanno `n_cells` 3399892 e 202 donatori.
+4. **Il container CPU dello scRNA non è più leggibile (spiegata).** P2 è stata letta sulle stesse versioni ricostruite, come previsto dal ripiego pre-registrato.
+5. **Lo zip della revisione n.2 non era tracciato (corretta).** Il piano ne usa 13 file; entra in git ([Piano di implementazione generato da codice, con arbitrati (D-14)](../decisions/D-14.md)).
+
+
+# Thread nei run CPU dello scRNA (P1 e P2)
+
+**P1.** Rapporto R = media delle ripetizioni 2-5 / ripetizione 1 per ogni step CPU con media di almeno 1 s (da `results_v2/S2/S2_P1_threads.csv`). Le 5 ripetizioni girano nello stesso processo (`slurm/cpu_benchmark.sh`, `--n-repeats 5`).
+
+| cellule | step | r1 (s) | media r2-5 (s) | R | intervallo | esito |
+|--:|---|--:|--:|--:|---|---|
+| 10.000 | de_testing | 22,46 | 21,47 | 0,956 | [0,936; 0,976] | confermata |
+| 10.000 | neighbors | 19,90 | 1,12 | 0,056 | [0,056; 0,057] | confermata |
+| 10.000 | umap | 9,95 | 9,64 | 0,969 | [0,928; 1,010] | confermata |
+| 50.000 | de_testing | 238,66 | 239,97 | 1,006 | [0,996; 1,015] | confermata |
+| 50.000 | hvg_selection | 1,56 | 1,13 | 0,720 | [0,712; 0,729] | confermata |
+| 50.000 | neighbors | 21,38 | 2,82 | 0,132 | [0,131; 0,133] | confermata |
+| 50.000 | pca | 2,51 | 2,34 | 0,932 | [0,916; 0,948] | confermata |
+| 50.000 | qc_filtering | 4,70 | 4,50 | 0,957 | [0,940; 0,973] | confermata |
+| 50.000 | umap | 22,64 | 22,26 | 0,983 | [0,975; 0,992] | confermata |
+| 100.000 | de_testing | 561,39 | 561,87 | 1,001 | [0,984; 1,018] | confermata |
+| 100.000 | hvg_selection | 2,68 | 2,17 | 0,809 | [0,799; 0,819] | confermata |
+| 100.000 | leiden_0.5 | 2,02 | 1,93 | 0,955 | [0,926; 0,983] | confermata |
+| 100.000 | leiden_1.0 | 1,98 | 1,93 | 0,976 | [0,961; 0,990] | confermata |
+| 100.000 | leiden_1.5 | 1,99 | 1,94 | 0,979 | [0,957; 1,000] | confermata |
+| 100.000 | neighbors | 24,23 | 5,44 | 0,224 | [0,223; 0,225] | confermata |
+| 100.000 | normalization | 2,63 | 1,00 | 0,381 | [0,374; 0,389] | confermata |
+| 100.000 | pca | 4,97 | 4,73 | 0,952 | [0,924; 0,980] | confermata |
+| 100.000 | qc_filtering | 8,90 | 8,91 | 1,001 | [0,986; 1,015] | confermata |
+| 100.000 | umap | 48,68 | 48,24 | 0,991 | [0,981; 1,002] | confermata |
+| 500.000 | de_testing | 3.672,04 | 3.680,59 | 1,002 | [1,002; 1,003] | confermata |
+| 500.000 | hvg_selection | 11,49 | 10,78 | 0,938 | [0,932; 0,943] | confermata |
+| 500.000 | leiden_0.5 | 15,55 | 15,96 | 1,026 | [1,009; 1,044] | confermata |
+| 500.000 | leiden_1.0 | 15,59 | 15,92 | 1,022 | [1,005; 1,038] | confermata |
+| 500.000 | leiden_1.5 | 15,62 | 15,98 | 1,023 | [1,006; 1,040] | confermata |
+| 500.000 | neighbors | 56,56 | 37,50 | 0,663 | [0,652; 0,674] | confermata |
+| 500.000 | normalization | 6,71 | 5,06 | 0,754 | [0,750; 0,757] | confermata |
+| 500.000 | pca | 24,66 | 24,24 | 0,983 | [0,969; 0,997] | confermata |
+| 500.000 | qc_filtering | 44,28 | 44,08 | 0,996 | [0,987; 1,004] | confermata |
+| 500.000 | umap | 453,39 | 478,35 | 1,055 | [0,855; 1,256] | indeterminata |
+| 1.300.000 | de_testing | 48.609,96 | 48.707,86 | 1,002 | [0,997; 1,007] | confermata |
+| 1.300.000 | hvg_selection | 48,32 | 47,61 | 0,985 | [0,967; 1,003] | confermata |
+| 1.300.000 | leiden_0.5 | 51,74 | 50,90 | 0,984 | [0,964; 1,003] | confermata |
+| 1.300.000 | leiden_1.0 | 51,09 | 50,65 | 0,991 | [0,976; 1,007] | confermata |
+| 1.300.000 | leiden_1.5 | 51,47 | 50,78 | 0,987 | [0,966; 1,007] | confermata |
+| 1.300.000 | neighbors | 161,16 | 142,30 | 0,883 | [0,876; 0,890] | confermata |
+| 1.300.000 | normalization | 14,60 | 12,95 | 0,887 | [0,875; 0,899] | confermata |
+| 1.300.000 | pca | 74,37 | 74,11 | 0,997 | [0,966; 1,027] | confermata |
+| 1.300.000 | qc_filtering | 177,30 | 175,88 | 0,992 | [0,976; 1,008] | confermata |
+| 1.300.000 | umap | 2.255,21 | 2.774,00 | 1,230 | [0,913; 1,547] | indeterminata |
+
+**P2.** Il container originale (`sc-benchmark.sif` in `/mnt/home/u0044`) non è più leggibile: `/mnt/home` non esiste sui nodi allocati, `poddgx02` compreso (`results_v2/S2/p2_container_tentativo*.txt`). Ripiego pre-registrato: stesse versioni, ricostruite con `uv --exclude-newer 2026-03-12` (scanpy 1.12, anndata 0.12.10, umap-learn 0.5.11, pynndescent 0.6.0, numba 0.64.0, scikit-learn 1.8.0, igraph 1.0.0, leidenalg 0.11.0). Chiamate trovate (`p2_lettura_codice.txt`): umap-learn 2 (in `UMAP.fit`, che Scanpy non usa: `sc.tl.umap` chiama `simplicial_set_embedding`), pynndescent 4 (due coppie fissa e ripristina, in `NNDescent`). Prova a runtime (`p2_runtime_threads.txt`): pipeline completa, 2 ripetizioni nello stesso processo, 8 thread, 6.000 cellule sintetiche: numba resta a 8 dopo ogni step. Prova sui vicini (`p2_pynndescent_12000.txt`): a 12.000 cellule `sc.settings.n_jobs` = 1, `NNDescent(n_jobs=1)`, chiamate `set_num_threads(1)`, `(8)`, `(1)`, `(8)`. Sotto 8.192 cellule Scanpy usa le distanze dense e pynndescent non entra (`p2_njobs_6000.txt`).
+
+Peso dello step dei vicini sul tempo CPU totale e speedup dei vicini (da `results/cpu_*` e `results/gpu_*`, media r1-5):
+
+| cellule | vicini CPU, media r1-5 (s) | totale CPU (s) | quota | speedup vicini, 1 GPU |
+|--:|--:|--:|--:|--:|
+| 10.000 | 4,88 | 39,5 | 12,36% | 88,1x |
+| 50.000 | 6,53 | 282,5 | 2,31% | 60,5x |
+| 100.000 | 9,20 | 646,7 | 1,42% | 44,3x |
+| 500.000 | 41,31 | 4.346,7 | 0,95% | n.d. (solo 2-8 GPU) |
+| 1.300.000 | 146,07 | 52.056,2 | 0,28% | n.d. (solo 2-8 GPU) |
+
+
+# Convenzione sulle ripetizioni (P3)
+
+Speedup end-to-end dello scRNA con le ripetizioni 1-5 e con le 2-5 (da `results_v2/S2/S2_P3_convenzione.csv`; IC bootstrap percentile al 95%, ripetizioni 2-5 ricampionate con r1 fissa, B = 2000, seme 20261104).
+
+| cellule | GPU | speedup r1-5 | speedup r2-5 | rapporto | IC 95% | esito |
+|--:|---|--:|--:|--:|---|---|
+| 10.000 | gpu | 12,0x | 14,0x | 0,862 | [0,848; 0,875] | informazione |
+| 10.000 | gpu2 | 8,1x | 9,4x | 0,862 | [0,851; 0,875] | informazione |
+| 10.000 | gpu4 | 8,0x | 9,4x | 0,858 | [0,855; 0,860] | informazione |
+| 10.000 | gpu8 | 8,1x | 9,1x | 0,891 | [0,889; 0,894] | informazione |
+| 50.000 | gpu | 33,7x | 37,6x | 0,895 | [0,887; 0,905] | informazione |
+| 50.000 | gpu2 | 19,2x | 20,4x | 0,941 | [0,940; 0,943] | informazione |
+| 50.000 | gpu4 | 19,3x | 20,7x | 0,933 | [0,931; 0,936] | informazione |
+| 50.000 | gpu8 | 18,7x | 19,7x | 0,950 | [0,941; 0,960] | informazione |
+| 100.000 | gpu | 43,8x | 46,6x | 0,940 | [0,934; 0,948] | confermata |
+| 100.000 | gpu2 | 24,1x | 24,9x | 0,967 | [0,964; 0,971] | confermata |
+| 100.000 | gpu4 | 24,0x | 24,8x | 0,969 | [0,966; 0,971] | confermata |
+| 100.000 | gpu8 | 24,5x | 25,4x | 0,962 | [0,961; 0,964] | confermata |
+| 500.000 | gpu2 | 34,9x | 35,3x | 0,990 | [0,987; 0,992] | confermata |
+| 500.000 | gpu4 | 34,8x | 35,2x | 0,988 | [0,981; 0,997] | confermata |
+| 500.000 | gpu8 | 34,9x | 35,4x | 0,987 | [0,984; 0,989] | confermata |
+| 1.300.000 | gpu2 | 105,5x | 105,0x | 1,005 | [1,003; 1,008] | confermata |
+| 1.300.000 | gpu4 | 107,0x | 105,5x | 1,014 | [1,010; 1,018] | confermata |
+| 1.300.000 | gpu8 | 119,6x | 121,9x | 0,982 | [0,979; 0,983] | confermata |
+
+Negli speedup per step (`S2_P3b_per_step.csv`) le due convenzioni differiscono di oltre il 10% in 67 casi su 198, in entrambe le direzioni. Con 1 GPU:
+
+| cellule | step | speedup r1-5 | speedup r2-5 |
+|--:|---|--:|--:|
+| 10.000 | de_testing | 15,59x | 19,30x |
+| 10.000 | leiden_0.5 | 0,36x | 1,12x |
+| 10.000 | normalization | 329,29x | 115,12x |
+| 10.000 | pca | 4,79x | 11,68x |
+| 10.000 | qc_filtering | 8,78x | 14,47x |
+| 10.000 | total | 12,03x | 13,95x |
+| 10.000 | umap | 28,95x | 32,24x |
+| 50.000 | leiden_0.5 | 1,80x | 5,62x |
+| 50.000 | neighbors | 60,50x | 48,01x |
+| 50.000 | normalization | 206,06x | 134,23x |
+| 50.000 | pca | 20,50x | 44,69x |
+| 50.000 | qc_filtering | 27,21x | 38,02x |
+| 50.000 | total | 33,68x | 37,65x |
+| 100.000 | leiden_0.5 | 3,58x | 8,29x |
+| 100.000 | neighbors | 44,31x | 33,71x |
+| 100.000 | normalization | 173,07x | 137,44x |
+| 100.000 | pca | 36,46x | 65,25x |
+| 100.000 | qc_filtering | 33,37x | 40,75x |
+
+Applicazione dei criteri fissati prima di vedere questi numeri: (1) una regola per tutto il capitolo: A e C sì, B no; (2) nessuna esclusione che favorisca la GPU: B esclude la ripetizione 1 e alza lo speedup end-to-end in 16 configurazioni su 18 (tutte tranne 1.300.000 cellule con 2 e 4 GPU), quindi no; A e C sì; (3) una SD per ogni media: C no (un valore per run). Resta A.
+
+# Il piano
+
+Generato da `tools/s2_mkplan.py` in `manuscript/revisione_n2/piano/` ([Piano di implementazione generato da codice, con arbitrati (D-14)](../docs/decisions/D-14.md)).
+
+- Voci: 269 primarie (S3 190, S4 11, S5 49, S6 9, S7 10); per livello L1 35, L2 186, L3 25, L4 9, L5 14; 146 assorbite, 9 non applicabili.
+- Mappe: 81 righe del manoscritto toccate da più voci; 449 altre occorrenze dei valori, tutte classificate; 170 conferme del registro che decadono; 10 gruppi di voci da eseguire insieme, ciascuno dentro un solo step; 71 percorsi controllati sul server.
+- Scrittura delle voci: sei sotto-agenti, uno per regione del manoscritto (apertura, Metodi, risultati scRNA, spatial e coda, Discussione, voci trasversali). Nessuno ha letto dal server: le voci che lo richiedono sono `verificare-in-step` con la fonte da rileggere.
+- Revisione: tre revisori (eseguibilità, correttezza, completezza), 109 rilievi; avversariale sui rilievi: 90 confermati, 16 ridimensionati, 2 rafforzati, 1 ritirato; ultima passata del capo con due ribaltamenti parziali. Dettaglio in `manuscript/revisione_n2/piano/arbitrati_revisione.md`; 118 campi arbitrati in `arbitrati.csv`.
+- Limiti dichiarati dai revisori: i valori che dipendono da file presenti solo sul server (JSON di concordanza e memoria di S1, log SLURM, script del DE) non sono stati ricalcolati in questo step; le voci relative li fanno rileggere nello step che le esegue.
+
+# Cosa è girato
+
+- Pre-registrazione: commit 8b60678. Server condiviso con un job di geo_spatialtrans (load 15-28): nessun tempo è stato misurato in questo step.
+- `tools/check_manifest.py` prima (00:35, 66,6 s) e dopo (11:21, 109,0 s).
+- `tools/s2_repetitions.py` (Python della venv ricostruita, numpy 2.2.6) e `tools/s2_mkplan.py` (solo libreria standard), rigenerati sul server.
+- Sonde dei thread: `tools/s2_p2_runtime.py`, `tools/s2_p2_neighbors_probe.py`; un passo SLURM di 1 CPU per tentativo sul DGX (job 431254 e 431410), solo lettura.
+- md5 dei file prodotti:
+
+```
+4587032be8d2905007687e0bb50d848e  manuscript/full_paper_LNBI.md
+1135043f4a91c2c1a74b4533be43c9ea  manuscript/revisione_n2/piano/PIANO_IMPLEMENTAZIONE.md
+2173150635676ecbd770bd85349423ee  manuscript/revisione_n2/piano/ledger.csv
+8e8be3650f54323455750e39ea4e0e84  manuscript/revisione_n2/piano/checks.json
+8935f438a35071f79baa417209abac83  manuscript/revisione_n2/piano/arbitrati.csv
+0a00306e63c41a4b554ef61caf6e2e06  results_v2/S2/S2_summary.json
+8bee7a162aa3e6159e59f7826ad3b297  results_v2/S2/S2_P1_threads.csv
+6b2da4b6ba5c2e8d39cde084238b587a  results_v2/S2/S2_P3_convenzione.csv
+75ae07d97ff77c82e578d22711a5f601  results_v2/S2/S2_P3b_per_step.csv
+a9d7723e64685046e60abb4c6ba49cd5  results_v2/S2/manifest_check_after.json
+658fb260b7fbca0e214108e459774290  manuscript/revisione_n2/script_e_calcoli.zip
+afea9139dcbe12f8013604d2a800b225  tools/s2_mkplan.py
+b47c8d35009016fcb29951f30625ba7d  tools/s2_repetitions.py
+```
+
+# Appendice: da dove vengono i numeri del riassunto
+
+| frase del riassunto | file o tabella | valore letto |
+|---|---|---|
+| 424 righe, 269 correzioni, 146 ripetute, 9 non applicabili | `piano/checks.json`, `stats` | 424; 269; 146; 9 |
+| 190, 11, 49, 9, 10 correzioni per passo | `piano/checks.json`, `primary_by_step` | S3 190; S4 11; S5 49; S6 9; S7 10 |
+| 109 rilievi, 108 recepiti | `piano/rilievi_revisori.csv`; `piano/avversariale.csv`, `verdetto` | 109; 1 RITIRATO |
+| 37 step su 39, al massimo il 3% | `results_v2/S2/S2_P1_threads.csv` | 37 confermate su 39; R massimo fra le confermate 1,0261 |
+| UMAP a 500 mila e 1,3 milioni incerti | stesso file, righe `umap` | R 1,055 e 1,230, esito indeterminata |
+| vicini a un thread | `results_v2/S2/p2_pynndescent_12000.txt` | `NNDescent n_jobs 1`, `set 1`, `set 8` |
+| dallo 0,3% al 2,3% del tempo CPU | `results/cpu_*_results.json`, `timings.neighbors` / `timings.total`, media r1-5 | 0,28% (1,3M); 2,31% (50k) |
+| speedup dei vicini da 44 a 88 volte | `results_v2/S2/S2_P3b_per_step.csv`, cfg `gpu`, step `neighbors` | 44,308; 60,504; 88,143 |
+| al massimo il 6% da 100 mila in su | `results_v2/S2/S2_P3_convenzione.csv` | rapporti da 0,9403 a 1,0141 |
+| 119,6x e 121,9x | stesso file, 1.300.000, gpu8 | 119,621; 121,876 |
+| dal 5 al 14% a 10 e 50 mila | stesso file | rapporti da 0,8578 a 0,9497 |
+| normalizzazione 329x e 115x | `S2_P3b_per_step.csv`, gpu, 10.000, normalization | 329,292; 115,118 |
+| GiB | `scripts/benchmark_*.py`, `get_peak_ram_gb` | `rss / (1024**3)` |
+| 3,40 milioni di cellule | `results/de_benchmark_*.json`, `n_cells` | 3.399.892 in 8 file su 8 |
+| 6% dei bin a 2 µm | registro R0465; `SPATIAL/scripts/benchmark_spatial_cpu.py` `--max-spots` | 400.000 / 6.296.688 = 6,35% |
+| 12,0x e 14,0x a 10 mila cellule | `S2_P3_convenzione.csv`, 10.000, gpu | 12,026; 13,953 |
+| 28 scelte del PI | `piano/PIANO_testa.md`, sezioni «In S3» e «In S5» | 22 e 6 |
+
+# Misura dei vicini con 1 e 100 thread (D-16)
+
+Riferimento: la ripetizione sui dati del DGX (`results_v2/S2/neighbors_dgxdata/neighbors_eval.json`, script `tools/s2_neighbors_eval.py`). Ambiente con numba 0.61.2 come il container; 30 processi, uno per ripetizione.
+
+| id | atteso | osservato | esito |
+|---|---|---|---|
+| N1 | macchina libera | load1 1,00 prima della prima ripetizione; 0 processi estranei sopra il 50% all'inizio e alla fine di tutte le 30 ripetizioni; Tctl massimo 71,1 °C | superato |
+| N2 | stessi dati del benchmark | md5 dei tre file uguali a quelli sul DGX; dopo il QC 10000/26228, 49998/30935, 99996/32869 cellule/geni, uguali a `results_summary` dei JSON del benchmark | superato |
+| N3 | thread | numba a 100 all'avvio di ogni processo; chiamate [1, 100, 1, 100] con `n_jobs = 1`, [100, 100, 100, 100] con `n_jobs = 100` | superato |
+
+| cellule | caldo, 1 thread (s) | caldo, 100 thread (s) | NP1 rapporto [IC 95%] | esito NP1 | DGX, vicini r2-5 (s) | NP2 DGX / server 1 thread | esito NP2 | freddo 1 / 100 thread (s) |
+|--:|--:|--:|--:|---|--:|--:|---|--:|
+| 10.000 | 1,41 ± 0,005 | 1,21 ± 0,004 | 1,163 [1,159; 1,168] | confermata | 1,12 | 0,795 | confermata | 30,1 / 29,9 |
+| 50.000 | 3,09 ± 0,007 | 1,62 ± 0,011 | 1,907 [1,896; 1,917] | confermata | 2,82 | 0,913 | confermata | 31,5 / 30,4 |
+| 100.000 | 5,74 ± 0,029 | 2,31 ± 0,022 | 2,479 [2,459; 2,499] | confermata | 5,44 | 0,947 | confermata | 34,3 / 31,2 |
+
+Controllo sui dati del server (prima misura, cancello N2 fallito perché i file non sono quelli del benchmark; `results_v2/S2/neighbors/neighbors_eval.json`):
+
+| cellule | caldo, 1 thread (s) | caldo, 100 thread (s) | NP1 rapporto [IC 95%] | esito NP1 | DGX, vicini r2-5 (s) | NP2 DGX / server 1 thread | esito NP2 | freddo 1 / 100 thread (s) |
+|--:|--:|--:|--:|---|--:|--:|---|--:|
+| 10.000 | 1,29 ± 0,009 | 1,13 ± 0,019 | 1,138 [1,122; 1,154] | confermata | 1,12 | 0,869 | confermata | 27,6 / 27,7 |
+| 50.000 | 2,81 ± 0,024 | 1,58 ± 0,008 | 1,777 [1,764; 1,791] | confermata | 2,82 | 1,005 | confermata | 29,0 / 28,2 |
+| 100.000 | 5,10 ± 0,021 | 2,19 ± 0,017 | 2,330 [2,314; 2,346] | confermata | 5,44 | 1,066 | confermata | 31,3 / 28,8 |
+
+Lettura: con `n_jobs = 1` la ricerca dei vicini a caldo è più lenta da 1,16 a 2,48 volte che con 100 thread, e il divario cresce con la dimensione; i tempi del DGX coincidono con quelli del server a 1 thread (rapporto da 0,80 a 0,95), non con quelli a 100. A freddo (prima chiamata) domina la compilazione, circa 30 s con entrambe le impostazioni. Le due misure danno la stessa lettura. La copia dei dati su `/mnt/micron/lnbi_scrna/data_dgx/` è stata cancellata a misura finita (indicazione del PI); restano gli md5 in `results_v2/S2/neighbors_dgxdata/input_md5_dgx.txt`.
+

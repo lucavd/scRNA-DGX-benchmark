@@ -1,0 +1,12 @@
+cad2a61cf3ec0e94de4a15bc6e2b43ef  /tmp/s5_figrun1/fig7_spatial_speedup.pdf
+cad2a61cf3ec0e94de4a15bc6e2b43ef  figures/fig7_spatial_speedup.pdf
+cbe377a5eae949d98893dbb4911b6807  /tmp/s5_figrun1/fig7_spatial_speedup.png
+cbe377a5eae949d98893dbb4911b6807  figures/fig7_spatial_speedup.png
+0ea87f0200b2e1166d0f440ecfe18911  /tmp/s5_figrun1/fig8_spatial_perstep.pdf
+0ea87f0200b2e1166d0f440ecfe18911  figures/fig8_spatial_perstep.pdf
+e0bdeef7363da2d7f3f3d7b3878a52d6  /tmp/s5_figrun1/fig8_spatial_perstep.png
+e0bdeef7363da2d7f3f3d7b3878a52d6  figures/fig8_spatial_perstep.png
+cb87da4824c069dcf644344acb9b4d69  /tmp/s5_figrun1/fig9_spatial_concordance.pdf
+cb87da4824c069dcf644344acb9b4d69  figures/fig9_spatial_concordance.pdf
+87c52199ee8318112903cbfa631fec3e  /tmp/s5_figrun1/fig9_spatial_concordance.png
+87c52199ee8318112903cbfa631fec3e  figures/fig9_spatial_concordance.png

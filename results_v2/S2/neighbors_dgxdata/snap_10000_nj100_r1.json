@@ -1,0 +1,1 @@
+{"size": 10000, "n_jobs": 100, "rep": 1, "start": {"load1": 1.15, "tctl": 61.5, "n_foreign": 0, "foreign": []}, "end": {"load1": 1.08, "tctl": 67.0, "n_foreign": 0, "foreign": []}}

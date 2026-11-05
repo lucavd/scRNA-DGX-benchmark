@@ -1,0 +1,28 @@
+versions 1.12 0.12.10 0.5.11 0.6.0 0.64.0 1.8.0 1.0.0 0.11.0 3.6.0
+## scanpy
+## anndata
+## umap
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/umap/umap_.py:2415:            numba.set_num_threads(self.n_jobs)
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/umap/umap_.py:2856:        numba.set_num_threads(self._original_n_threads)
+## pynndescent
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/pynndescent/pynndescent_.py:1121:            numba.set_num_threads(self.n_jobs)
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/pynndescent/pynndescent_.py:1247:        numba.set_num_threads(self._original_num_threads)
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/pynndescent/pynndescent_.py:1316:            numba.set_num_threads(self.n_jobs)
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/pynndescent/pynndescent_.py:1640:        numba.set_num_threads(self._original_num_threads)
+## leidenalg
+## igraph
+## sklearn
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/sklearn/conftest.py:339:    threadpool_limits(allowed_parallelism)
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/sklearn/utils/parallel.py:192:        _threadpool_controller = ThreadpoolController()
+## scipy
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scipy/io/_fast_matrix_market/__init__.py:63:        def set_num_threads(self, num_threads):
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scipy/io/_fast_matrix_market/__init__.py:356:    >>> with threadpoolctl.threadpool_limits(limits=2):
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scipy/io/_fast_matrix_market/__init__.py:496:    >>> with threadpoolctl.threadpool_limits(limits=2):
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scipy/conftest.py:143:                    threadpool_limits(threads_per_worker, user_api='blas')
+## numpy
+## pandas
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/pandas/core/computation/expressions.py:64:        ne.set_num_threads(n)
+## h5py
+## session_info2
+## legacy_api_wrap
+## statsmodels

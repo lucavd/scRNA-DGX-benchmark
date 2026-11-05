@@ -1,0 +1,99 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{CZCellxGene2025}
+{CZI Cell Science Program}, Abdulla, S., Aevermann, B., Assis, P., Badajoz, S., Bell, S.M., Bezzi, E., Cakir, B., Chaffer, J., Chambers, S., Cherry, J., Chi, T., Chien, J., Dorman, L., Garcia-Nieto, P., Gloria, N., Hastie, M., Hegeman, D., Hilton, J., Huang, T., Infeld, A., Istrate, A.M., Jelic, I., Katsuya, K., Kim, Y.J., Liang, K., Lin, M., Lombardo, M., Marshall, B., Martin, B., McDade, F., Megill, C., Patel, N., Predeus, A., Raymor, B., Robatmili, B., Rogers, D., Rutherford, E., Sadgat, D., Shin, A., Small, C., Smith, T., Sridharan, P., Tarashansky, A., Tavares, N., Thomas, H., Tolopko, A., Urisko, M., Yan, J., Yeretssian, G., Zamanian, J., Mani, A., Cool, J., Carr, A.: {CZ CELLxGENE Discover}: a single-cell data platform for scalable exploration, analysis and modeling of aggregated data. Nucleic Acids Research  \textbf{53}(D1),  D886--D900 (2025). \doi{10.1093/nar/gkae1142}
+
+\bibitem{Dicks2026}
+Dicks, S., Heumos, L., May, L., Jimenez, S., Angerer, P., Gold, I., Virshup, I., Fischer, F., Gill, M., Boerries, M., Nolet, C.J., Chen, T.J., Theis, F.J.: {GPU}-accelerated single-cell analysis at scale with rapids-singlecell. arXiv preprint arXiv:2603.02402  (2026). \doi{10.48550/arXiv.2603.02402}
+
+\bibitem{Duo2020}
+Du{\`o}, A., Robinson, M.D., Soneson, C.: A systematic performance evaluation of clustering methods for single-cell {RNA-seq} data. F1000Research  \textbf{7}, ~1141 (2020). \doi{10.12688/f1000research.15666.3}
+
+\bibitem{Gardner2025}
+Gardner, C., Jeong, S., Khatavkar, O., Moon, A., Cao, Q., Ahn, T.H.: Evaluating accuracy and performance tradeoffs in {GPU} accelerated single cell {RNA}-seq analysis. In: Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis. pp. 349--358. ACM, St. Louis, MO, USA (2025). \doi{10.1145/3731599.3767378}
+
+\bibitem{Heumos2023}
+Heumos, L., Schaar, A.C., Lance, C., Litinetskaya, A., Drost, F., Zappia, L., L{\"u}cken, M.D., Strobl, D.C., Henao, J., Curion, F., {Single-cell Best Practices Consortium}, Schiller, H.B., Theis, F.J.: Best practices for single-cell analysis across modalities. Nature Reviews Genetics  \textbf{24}(8),  550--572 (2023). \doi{10.1038/s41576-023-00586-w}
+
+\bibitem{Hu2025}
+Hu, W., Zhang, H., Sun, Y.H., Cao, S., Gagnon, J., Moroishi, Y., Chen, Y., Ouyang, Z., Zhang, B.: {ScaleSC}: a superfast and scalable single-cell {RNA}-seq data analysis pipeline powered by {GPU}. Bioinformatics Advances  \textbf{5}(1),  vbaf167 (2025). \doi{10.1093/bioadv/vbaf167}
+
+\bibitem{Hubert1985}
+Hubert, L., Arabie, P.: Comparing partitions. Journal of Classification  \textbf{2}(1),  193--218 (1985). \doi{10.1007/BF01908075}
+
+\bibitem{Korsunsky2019}
+Korsunsky, I., Millard, N., Fan, J., Slowikowski, K., Zhang, F., Wei, K., Baglaenko, Y., Brenner, M., Loh, P.r., Raychaudhuri, S.: Fast, sensitive and accurate integration of single-cell data with {Harmony}. Nature Methods  \textbf{16}(12),  1289--1296 (2019). \doi{10.1038/s41592-019-0619-0}
+
+\bibitem{Lopez2018}
+Lopez, R., Regier, J., Cole, M.B., Jordan, M.I., Yosef, N.: Deep generative modeling for single-cell transcriptomics. Nature Methods  \textbf{15}(12),  1053--1058 (2018). \doi{10.1038/s41592-018-0229-2}
+
+\bibitem{Love2014}
+Love, M.I., Huber, W., Anders, S.: Moderated estimation of fold change and dispersion for {RNA-seq} data with {DESeq2}. Genome Biology  \textbf{15}(12), ~550 (2014). \doi{10.1186/s13059-014-0550-8}
+
+\bibitem{Luecken2022}
+Luecken, M.D., B{\"u}ttner, M., Chaichoompu, K., Danese, A., Interlandi, M., Mueller, M.F., Strobl, D.C., Zappia, L., Dugas, M., Colom{\'e}-Tatch{\'e}, M., Theis, F.J.: Benchmarking atlas-level data integration in single-cell genomics. Nature Methods  \textbf{19}(1),  41--50 (2022). \doi{10.1038/s41592-021-01336-8}
+
+\bibitem{Luecken2019}
+Luecken, M.D., Theis, F.J.: Current best practices in single-cell {RNA-seq} analysis: a tutorial. Molecular Systems Biology  \textbf{15}(6),  e8746 (2019). \doi{10.15252/msb.20188746}
+
+\bibitem{McInnes2018}
+McInnes, L., Healy, J., Saul, N., Gro{\ss}berger, L.: {UMAP}: Uniform manifold approximation and projection. Journal of Open Source Software  \textbf{3}(29), ~861 (2018). \doi{10.21105/joss.00861}
+
+\bibitem{Nolet2022}
+Nolet, C., Lal, A., Ilango, R., Dyer, T., Movva, R., Zedlewski, J., Israeli, J.: Accelerating single-cell genomic analysis with {GPUs}. bioRxiv  (2022). \doi{10.1101/2022.05.26.493607}
+
+\bibitem{Palla2022}
+Palla, G., Spitzer, H., Klein, M., Fischer, D.S., Schaar, A.C., Kuemmerle, L.B., Rybakov, S., Ibarra, I.L., Holmberg, O., Virshup, I., Lotfollahi, M., Richter, S., Theis, F.J.: {Squidpy}: a scalable framework for spatial omics analysis. Nature Methods  \textbf{19}(2),  171--178 (2022). \doi{10.1038/s41592-021-01358-2}
+
+\bibitem{RAPIDS2024}
+{RAPIDS Development Team}: {RAPIDS}: Libraries for end to end {GPU} data science (2026), \url{https://rapids.ai}, version 26.02. Software available at \url{https://github.com/rapidsai}, last accessed 3 November 2026
+
+\bibitem{Regev2017}
+Regev, A., Teichmann, S.A., Lander, E.S., Amit, I., Benoist, C., Birney, E., Bodenmiller, B., Campbell, P., Carninci, P., Clatworthy, M., Clevers, H., Deplancke, B., Dunham, I., Eberwine, J., Eils, R., Enard, W., Farmer, A., Fugger, L., G{\"o}ttgens, B., Hacohen, N., Haniffa, M., Hemberg, M., Kim, S., Klenerman, P., Kriegstein, A., Lein, E., Linnarsson, S., Lundberg, E., Lundeberg, J., Majumder, P., Marioni, J.C., Merad, M., Mhlanga, M., Nawijn, M., Netea, M., Nolan, G., Pe'er, D., Phillipakis, A., Ponting, C.P., Quake, S., Reik, W., Rozenblatt-Rosen, O., Sanes, J., Satija, R., Schumacher, T.N., Shalek, A., Shapiro, E., Sharma, P., Shin, J.W., Stegle, O., Stratton, M., Stubbington, M.J.T., Theis, F.J., Uhlen, M., van Oudenaarden, A., Wagner, A., Watt, F., Weissman, J., Wold, B., Xavier, R., Yosef, N.: The {Human Cell Atlas}. eLife  \textbf{6},  e27041 (2017). \doi{10.7554/eLife.27041}
+
+\bibitem{Robinson2010}
+Robinson, M.D., McCarthy, D.J., Smyth, G.K.: {edgeR}: a {Bioconductor} package for differential expression analysis of digital gene expression data. Bioinformatics  \textbf{26}(1),  139--140 (2010). \doi{10.1093/bioinformatics/btp616}
+
+\bibitem{Rocklin2015}
+Rocklin, M.: Dask: Parallel computation with blocked algorithms and task scheduling. In: Huff, K., Bergstra, J. (eds.) Proceedings of the 14th Python in Science Conference. pp. 126--132 (2015). \doi{10.25080/Majora-7b98e3ed-013}
+
+\bibitem{Satija2015}
+Satija, R., Farrell, J.A., Gennert, D., Schier, A.F., Regev, A.: Spatial reconstruction of single-cell gene expression data. Nature Biotechnology  \textbf{33}(5),  495--502 (2015). \doi{10.1038/nbt.3192}
+
+\bibitem{Soneson2018}
+Soneson, C., Robinson, M.D.: Bias, robustness and scalability in single-cell differential expression analysis. Nature Methods  \textbf{15}(4),  255--261 (2018). \doi{10.1038/nmeth.4612}
+
+\bibitem{Squair2021}
+Squair, J.W., Gautier, M., Kathe, C., Anderson, M.A., James, N.D., Hutson, T.H., Hudelle, R., Qaiser, T., Matson, K.J.E., Barraud, Q., Levine, A.J., La~Manno, G., Skinnider, M.A., Courtine, G.: Confronting false discoveries in single-cell differential expression. Nature Communications  \textbf{12}, ~5692 (2021). \doi{10.1038/s41467-021-25960-2}
+
+\bibitem{TaylorWeiner2019}
+Taylor-Weiner, A., Aguet, F., Haradhvala, N.J., Gosai, S., Anand, S., Kim, J., Ardlie, K., Van~Allen, E.M., Getz, G.: Scaling computational genomics to millions of individuals with {GPUs}. Genome Biology  \textbf{20}, ~228 (2019). \doi{10.1186/s13059-019-1836-7}
+
+\bibitem{TabulaSapiens2022}
+{The Tabula Sapiens Consortium}: The {Tabula Sapiens}: A multiple-organ, single-cell transcriptomic atlas of humans. Science  \textbf{376}(6594),  eabl4896 (2022). \doi{10.1126/science.abl4896}
+
+\bibitem{Tian2019}
+Tian, L., Dong, X., Freytag, S., L{\^e}~Cao, K.A., Su, S., JalalAbadi, A., Amann-Zalcenstein, D., Weber, T.S., Seidi, A., Jabbari, J.S., Naik, S.H., Ritchie, M.E.: Benchmarking single cell {RNA}-sequencing analysis pipelines using mixture control experiments. Nature Methods  \textbf{16},  479--487 (2019). \doi{10.1038/s41592-019-0425-8}
+
+\bibitem{Traag2019}
+Traag, V.A., Waltman, L., van Eck, N.J.: From {Louvain} to {Leiden}: guaranteeing well-connected communities. Scientific Reports  \textbf{9}, ~5233 (2019). \doi{10.1038/s41598-019-41695-z}
+
+\bibitem{Vinh2010}
+Vinh, N.X., Epps, J., Bailey, J.: Information theoretic measures for clusterings comparison: Variants, properties, normalization and correction for chance. Journal of Machine Learning Research  \textbf{11},  2837--2854 (2010), \url{https://jmlr.org/papers/v11/vinh10a.html}
+
+\bibitem{Virshup2024}
+Virshup, I., Rybakov, S., Theis, F.J., Angerer, P., Wolf, F.A.: anndata: Access and store annotated data matrices. Journal of Open Source Software  \textbf{9}(101), ~4371 (2024). \doi{10.21105/joss.04371}
+
+\bibitem{Wolf2018}
+Wolf, F.A., Angerer, P., Theis, F.J.: {SCANPY}: large-scale single-cell gene expression data analysis. Genome Biology  \textbf{19}(1), ~15 (2018). \doi{10.1186/s13059-017-1382-0}
+
+\bibitem{Yao2023}
+Yao, Z., van Velthoven, C.T.J., Kunst, M., Zhang, M., McMillen, D., Lee, C., Jung, W., Goldy, J., Abdelhak, A., et~al.: A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain. Nature  \textbf{624}(7991),  317--332 (2023). \doi{10.1038/s41586-023-06812-z}
+
+\bibitem{Yip2019}
+Yip, S.H., Sham, P.C., Wang, J.: Evaluation of tools for highly variable gene discovery from single-cell {RNA}-seq data. Briefings in Bioinformatics  \textbf{20}(4),  1583--1589 (2019). \doi{10.1093/bib/bby011}
+
+\end{thebibliography}

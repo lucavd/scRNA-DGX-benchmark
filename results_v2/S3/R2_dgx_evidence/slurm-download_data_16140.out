@@ -1,0 +1,59 @@
+=== DATA DOWNLOAD START ===
+Date: Thu Mar 12 07:31:58 CET 2026
+Node: poddgx01.cluster.lan
+Job ID: 16140
+Python: /opt/conda/bin/python
+
+Data directory: /home/u0044/sc-gpu-benchmark/data
+
+======================================================================
+Downloading mouse brain cells from CZ CELLxGENE Census
+Target: 1,300,000 cells (10x assays only)
+Census version: 2025-11-08
+======================================================================
+  Opening Census (version: 2025-11-08)...
+  Step 1/2: Fetching cell metadata (lightweight)...
+  Found 3,436,470 matching cells
+  Step 2/2: Downloading expression data for 1,300,000 cells...
+  Downloaded: 1,300,000 cells x 53,384 genes in 475s
+  Saving to: /home/u0044/sc-gpu-benchmark/data/brain_1300000.h5ad
+  Saved: 46.40 GB
+
+Loading full dataset: /home/u0044/sc-gpu-benchmark/data/brain_1300000.h5ad
+  Full dataset: 1,300,000 cells x 53,384 genes
+
+  Subsample 10,000 already exists, skipping
+
+  Creating subsample: 50,000 cells
+  Saving to: /home/u0044/sc-gpu-benchmark/data/brain_50000.h5ad
+  Saved: 50,000 cells x 53,384 genes (1232.3 MB)
+
+  Creating subsample: 100,000 cells
+  Saving to: /home/u0044/sc-gpu-benchmark/data/brain_100000.h5ad
+  Saved: 100,000 cells x 53,384 genes (2448.9 MB)
+
+  Creating subsample: 500,000 cells
+  Saving to: /home/u0044/sc-gpu-benchmark/data/brain_500000.h5ad
+  Saved: 500,000 cells x 53,384 genes (12201.8 MB)
+
+======================================================================
+DATASET VERIFICATION
+======================================================================
+  brain_10000.h5ad                         |     10,000 cells |   53,384 genes |    252.3 MB
+  brain_100000.h5ad                        |    100,000 cells |   53,384 genes |   2448.9 MB
+  brain_1300000.h5ad                       |  1,300,000 cells |   53,384 genes |  47512.1 MB
+  brain_50000.h5ad                         |     50,000 cells |   53,384 genes |   1232.3 MB
+  brain_500000.h5ad                        |    500,000 cells |   53,384 genes |  12201.8 MB
+
+Done!
+
+=== Disk usage ===
+33G	/home/u0044/sc-gpu-benchmark/data/
+-rw-r----- 1 u0044 gprojects 253M Mar 12 00:09 /home/u0044/sc-gpu-benchmark/data/brain_10000.h5ad
+-rw-r----- 1 u0044 gprojects 2.4G Mar 12 07:38 /home/u0044/sc-gpu-benchmark/data/brain_100000.h5ad
+-rw-r----- 1 u0044 gprojects  47G Mar 12 07:36 /home/u0044/sc-gpu-benchmark/data/brain_1300000.h5ad
+-rw-r----- 1 u0044 gprojects 1.3G Mar 12 07:38 /home/u0044/sc-gpu-benchmark/data/brain_50000.h5ad
+-rw-r----- 1 u0044 gprojects  12G Mar 12 07:39 /home/u0044/sc-gpu-benchmark/data/brain_500000.h5ad
+
+=== DATA DOWNLOAD COMPLETE ===
+Date: Thu Mar 12 07:43:36 CET 2026

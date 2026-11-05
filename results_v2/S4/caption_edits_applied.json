@@ -1,0 +1,71 @@
+{
+ "manuscript": "manuscript/full_paper_LNBI.md",
+ "md5_before": "09df07d2b8713da7385612991fb1d7df",
+ "md5_after": "333c0e935307c09db60d716b4a65eaaa",
+ "all_anchors_unique": true,
+ "edits": [
+  {
+   "edit": "E1",
+   "anchor": "![**Figure 1.**",
+   "count_before": 1,
+   "line": 208,
+   "old": "![**Figure 1.** Per-step speedup of single-GPU rapids-singlecell (1xH100 80 GB) relative to CPU Scanpy (100 cores) at 10k, 50k, and 100k cells. Values > 1 indicate GPU is faster. Normalisation achieves up to 329x speedup; data loading shows a modest CPU advantage (0.76-0.85x).](../figures/fig1_speedup_heatmap.png)",
+   "new": "![**Figure 1.** Per-step speedup of single-GPU rapids-singlecell (1xH100 80 GB) relative to CPU Scanpy (100 logical CPUs) at 10k, 50k, and 100k cells: ratio of mean times, mean of five repeats (first repeat included). Values > 1 indicate GPU is faster; the colour scale is logarithmic and centred on 1. Normalisation achieves up to 329x speedup; data loading shows a modest CPU advantage (0.76-0.85x). The PCA row includes scaling (`sc.pp.scale`), which is timed together with PCA.](../figures/fig1_speedup_heatmap.png)",
+   "entries": "R0375;R0377;R0378;R0379;R0383"
+  },
+  {
+   "edit": "E2",
+   "anchor": "![**Figure 2.**",
+   "count_before": 1,
+   "line": 210,
+   "old": "![**Figure 2.** Step-level wall time decomposition for CPU vs single-GPU at 10k, 50k, and 100k cells. On CPU, DE testing and neighbour graph construction dominate; on GPU, all steps complete in seconds.](../figures/fig5_timing_breakdown.png)",
+   "new": "![**Figure 2.** Step-level wall time decomposition for CPU vs single-GPU at 10k, 50k, and 100k cells, mean of five repeats (first repeat included); the CPU and GPU panels have separate time axes. On CPU, DE testing and UMAP dominate; on GPU, the longest step, DE testing at 100k cells, takes 6.4 s on average. CPU neighbour search ran on one Numba thread, the Scanpy default (see Methods).](../figures/fig5_timing_breakdown.png)",
+   "entries": "R0351;R0113;R0383;D-16"
+  },
+  {
+   "edit": "E5",
+   "anchor": "![**Figure 5.**",
+   "count_before": 1,
+   "line": 230,
+   "old": "![**Figure 5.** Concordance between CPU and GPU pipelines on 10,000 cells. Left: ARI and NMI for Leiden clustering at three resolutions. Right: HVG Jaccard (1.000), PCA Spearman |rho| (1.000), and kNN Jaccard (0.930). All metrics indicate near-identical biological outputs.](../figures/fig3_concordance.png)",
+   "new": "![**Figure 5.** Concordance between CPU and GPU pipelines on 10,000 cells, from the separate concordance run (see text). Left: ARI and NMI for Leiden clustering at three resolutions. Right: HVG Jaccard (1.000), PCA Spearman |rho| (1.000), kNN Jaccard (0.930) and mean Spearman rho of DE log-fold-changes over 40 matched cluster pairs (0.946). Both panels share the vertical axis. kNN Jaccard is bounded at 0.9375 by construction (see text).](../figures/fig3_concordance.png)",
+   "entries": "R0376"
+  },
+  {
+   "edit": "E6",
+   "anchor": "![**Figure 6.**",
+   "count_before": 1,
+   "line": 236,
+   "old": "![**Figure 6.** Peak memory usage across dataset sizes. Left: CPU RAM; right: GPU VRAM (per-device maximum). Dashed red line: H100 80 GB VRAM limit. CPU RAM grows super-linearly; GPU VRAM is approximately constant for single-GPU runs due to RMM pool pre-allocation.](../figures/fig4_memory_profile.png)",
+   "new": "![**Figure 6.** Peak memory usage across dataset sizes, mean of five repeats (first repeat included); error bars: SD. Left: CPU RAM; right: aggregate GPU VRAM summed over the allocated devices (for 2, 4 and 8 GPUs dominated by the RMM pools pre-allocated by each Dask worker). CPU RAM grows roughly linearly; GPU VRAM is approximately constant for single-GPU runs due to RMM pool pre-allocation. All repeats of a configuration ran in one process; in the multi-GPU runs VRAM grew from the first to later repeats.](../figures/fig4_memory_profile.png)",
+   "entries": "R0359;R0139;R0373;R0383"
+  },
+  {
+   "edit": "E3",
+   "anchor": "![**Figure 3.**",
+   "count_before": 1,
+   "line": 218,
+   "old": "![**Figure 3.** Total pipeline wall time vs number of GPUs (1, 2, 4, 8 H100), one line per dataset size. Error bars: SD over five repeats. Horizontal dotted lines: CPU baselines. Logarithmic y-axis. Flat GPU curves demonstrate sublinear multi-GPU scaling.](../figures/fig2_scaling_plot.png)",
+   "new": "(line removed with the blank line before it)",
+   "entries": "R0354;R0122"
+  },
+  {
+   "edit": "E4",
+   "anchor": "![**Figure 4.**",
+   "count_before": 1,
+   "line": 218,
+   "old": "![**Figure 4.** Multi-GPU hybrid pipeline breakdown at 500k and 1.3M cells. CPU preprocessing (blue) dominates wall time; the multi-GPU phase (PCA + neighbours, pink) is a small fraction, explaining flat multi-GPU scaling.](../figures/fig6_multigpu_breakdown.png)",
+   "new": "(line removed with the blank line before it)",
+   "entries": "R0355;R0369"
+  },
+  {
+   "edit": "E7",
+   "anchor": "Times are mean +/- SD over five repeats.",
+   "count_before": 1,
+   "line": null,
+   "old": "Times are mean +/- SD over five repeats.",
+   "new": "Times are mean +/- SD over five repeats (first repeat included).",
+   "entries": "R0383"
+  }
+ ]
+}

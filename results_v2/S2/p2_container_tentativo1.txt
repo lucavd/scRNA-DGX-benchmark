@@ -1,0 +1,14 @@
+srun: job 431254 queued and waiting for resources
+srun: job 431254 has been allocated resources
+ls: cannot access '/mnt/home/u0044/sc-gpu-benchmark/*.sif': No such file or directory
+md5sum: /mnt/home/u0044/sc-gpu-benchmark/sc-benchmark.sif: No such file or directory
+FATAL:   While checking container encryption: could not open image /mnt/home/u0044/sc-gpu-benchmark/sc-benchmark.sif: failed to retrieve path for /mnt/home/u0044/sc-gpu-benchmark/sc-benchmark.sif: lstat /mnt/home: no such file or directory
+FATAL:   While checking container encryption: could not open image /mnt/home/u0044/sc-gpu-benchmark/sc-benchmark.sif: failed to retrieve path for /mnt/home/u0044/sc-gpu-benchmark/sc-benchmark.sif: lstat /mnt/home: no such file or directory
+## scanpy
+## anndata
+## umap
+## pynndescent
+## leidenalg
+## igraph
+## sklearn
+## threadpoolctl.py

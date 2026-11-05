@@ -1,0 +1,145 @@
+ricevuta_id,voce,edit_id,valore_scritto,file,md5,chiave,valore_letto,arrotondamento
+R2-R001,R0024,R2-001,2025-11-08,scripts/download_data.py,c1fd454d36b5a5ec110b82e5890891aa,CENSUS_VERSION,2025-11-08,nessun-controllo: identificativo di release
+R2-R002,R0024,R2-001,"3,436,470",results/maxpower_limit_8gpu.json,205ac0394cb1fd2462bb70c58deb78b6,source_cells,3436470,"intero, separatore delle migliaia"
+R2-R003,R0024,R2-001,"1,300,000",results/cpu_1300000_r1_results.json,2f76243604ce891670d0c77deaf75fe3,metadata.n_cells_input,1300000,intero
+R2-R004,R0024,R2-001,42,scripts/download_data.py,c1fd454d36b5a5ec110b82e5890891aa,RANDOM_SEED,42,intero
+R2-R005,R0024,R2-001,v1 to v3,scripts/download_data.py,c1fd454d36b5a5ec110b82e5890891aa,obs_filter assay,"v3,v2,v1",nessun-controllo: elenco di versioni di chimica
+R2-R006,R0386,R2-003,"50,000",results/cpu_50000_r1_results.json,ded1ecf54e3c22d23a0f8070c0d6a639,metadata.n_cells_input,50000,intero
+R2-R007,R0386,R2-003,"100,000",results/cpu_100000_r1_results.json,a10a5afc3361f08c85794849d7f50001,metadata.n_cells_input,100000,intero
+R2-R008,R0386,R2-003,"500,000",results/cpu_500000_r1_results.json,bf43300e8a55e87b9640f7a57699b99a,metadata.n_cells_input,500000,intero
+R2-R009,R0386,R2-003,"10,000",results/cpu_10000_r1_results.json,32a46b6b2f1e173b85bc6fce2c6aee81,metadata.n_cells_input,10000,intero
+R2-R010,R0386,R2-003,42,scripts/download_data.py,c1fd454d36b5a5ec110b82e5890891aa,RANDOM_SEED,42,intero
+R2-R011,R0390,R2-006,three,scripts/benchmark_cpu.py,7804cde9a07a1e1a7de4fcbe40a52dab,len(LEIDEN_RESOLUTIONS),3,nessun-controllo: conteggio scritto in parole (3)
+R2-R012,R0391,R2-009,"8,192","/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scanpy/neighbors/__init__.py (fuori repo, Scanpy 1.12)",db177d5f9c5eeb6a4b65743b811ef443,soglia n_obs < N,8192,"nessun-controllo: sorgente di Scanpy 1.12 nel venv S2, fuori dal repo"
+R2-R013,R0391,R2-009,`n_jobs` = 1,/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scanpy/_settings/__init__.py (fuori repo),9d88c9b64f606384155ea42999c2044f,_n_jobs: ClassVar = 1,1,"nessun-controllo: default di Scanpy 1.12, fuori dal repo"
+R2-R014,R0400,R2-010,2,scripts/benchmark_cpu.py,7804cde9a07a1e1a7de4fcbe40a52dab,sc.tl.leiden n_iterations,2,intero
+R2-R015,R0400,R2-010,100 (GPU,rapids_singlecell/tools/_clustering.py nell immagine lucavd/sc-benchmark-spatial:latest (fuori repo),e92d436a2c7a6189c5ac9ae816c5bb2d,leiden(n_iterations=...) riga 130,100,"nessun-controllo: default del pacchetto 0.14.1 letto nel container, fuori dal repo"
+R2-R016,R0704,R2-011,100,results/cpu_10000_r1_results.json,32a46b6b2f1e173b85bc6fce2c6aee81,metadata.configuration.threading_vars.OMP_NUM_THREADS,100,intero
+R2-R017,R0704,R2-011,"8,192",/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scanpy/neighbors/__init__.py (fuori repo),db177d5f9c5eeb6a4b65743b811ef443,soglia n_obs < N,8192,nessun-controllo: sorgente di Scanpy fuori dal repo
+R2-R018,R0704,R2-011,Scanpy 1.12,results/cpu_10000_r1_results.json,32a46b6b2f1e173b85bc6fce2c6aee81,metadata.software_versions.scanpy,1.12,nessun-controllo: versione
+R2-R019,R0704,R2-011,1.16,results_v2/S2/neighbors_dgxdata/neighbors_eval.json,6544fda8b1b835cff9409f4b2a731f4b,per_size.10000.NP1_ratio_warm,1.163097960618662,2 decimali
+R2-R020,R0704,R2-011,1.91,results_v2/S2/neighbors_dgxdata/neighbors_eval.json,6544fda8b1b835cff9409f4b2a731f4b,per_size.50000.NP1_ratio_warm,1.906812807838049,2 decimali
+R2-R021,R0704,R2-011,2.48,results_v2/S2/neighbors_dgxdata/neighbors_eval.json,6544fda8b1b835cff9409f4b2a731f4b,per_size.100000.NP1_ratio_warm,2.479331478890043,2 decimali
+R2-R022,R0704,R2-011,five repeats,results_v2/S2/neighbors_dgxdata/neighbors_eval.json,6544fda8b1b835cff9409f4b2a731f4b,runs / (3 taglie x 2 impostazioni),5,nessun-controllo: conteggio scritto in parole (5)
+R2-R023,R0704,R2-011,100,results_v2/S2/neighbors_dgxdata/neighbors_eval.json,6544fda8b1b835cff9409f4b2a731f4b,per_size.10000.calls_nj100[0][0],100,intero
+R2-R024,R0459,R2-012,50,results/gpu_10000_r1_results.json,2e110cce9d90f4f67cb1a95485c8fc31,metadata.configuration.rmm_pool.initial_pool,50,intero
+R2-R025,R0459,R2-012,100,results/gpu_10000_r1_results.json,2e110cce9d90f4f67cb1a95485c8fc31,metadata.configuration.rmm_pool.maximum_pool,100,intero
+R2-R026,R0459,R2-012,"500,000",results_v2/S3/R2_dgx_evidence/slurm-gpu_bench_1_16314.err,c50f1358f4de1de9741beb44d1b9d36b,riga MemoryError RMM (rmm_cupy_allocator) durante il run a 500000 cellule,500000,nessun-controllo: dimensione del run fallito; valore = 500000 se il log contiene il traceback rmm_cupy_allocator e il run 500000 è fallito
+R2-R027,R0459,R2-012,100,scripts/benchmark_gpu.py,37133482482d0d5ae796ecb3b68f8320,"gpu_warmup cp.random.random((N, N))",100,intero
+R2-R028,R0653,R2-012,8.2,results/gpu_10000_r{1..5}_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,media dei 4 intervalli fra metadata.timestamp consecutivi,8.229783,1 decimale (secondi)
+R2-R029,R0653,R2-012,2.5,results/gpu_10000_r{2..5}_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,media di timings.total r2-5,2.5027749999999997,1 decimale (secondi)
+R2-R030,R0653,R2-012,repeats 2-5,results/gpu_10000_r{1..5}_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,ripetizioni coperte dagli intervalli,2-5,nessun-controllo: etichetta
+R2-R031,R0407,R2-014,"2, 4 or 8","results/gpu{2,4,8}_10000_r1_results.json",multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,metadata.configuration.dask_cluster.n_workers,"2,4,8","nessun-controllo: elenco di interi (2,4,8)"
+R2-R032,R0407,R2-014,10 GB,results/gpu8_1300000_r1_results.json,4503b0c4d73281d28b7795d7c21b1944,metadata.configuration.dask_cluster.rmm_pool_size,10GB,nessun-controllo: stringa di configurazione (10GB)
+R2-R033,R0407,R2-014,70 GB,results/gpu8_1300000_r1_results.json,4503b0c4d73281d28b7795d7c21b1944,metadata.configuration.dask_cluster.rmm_maximum_pool_size,70GB,nessun-controllo: stringa di configurazione (70GB)
+R2-R034,R0407,R2-014,0.14.1,results/gpu8_1300000_r1_results.json,4503b0c4d73281d28b7795d7c21b1944,metadata.software_versions.rapids_singlecell,0.14.1,nessun-controllo: versione
+R2-R035,R0044,R2-014,500k and 1.3M,results_v2/S3/R2_dgx_evidence/slurm-gpu_bench_1_16314.out,445cd9f1e042dfbd21e86bbe99461c6d,righe ERROR: GPU benchmark failed for N cells,500000;1300000,nessun-controllo: dimensioni dei run falliti (500000;1300000)
+R2-R036,R0705,R2-018,six,manuscript/full_paper_LNBI.md,4587032be8d2905007687e0bb50d848e,righe di Table 2 (100-105),6,nessun-controllo: conteggio in parole (6)
+R2-R037,R0705,R2-018,five,manuscript/full_paper_LNBI.md,4587032be8d2905007687e0bb50d848e,ambiti distinti in Table 2,5,nessun-controllo: conteggio in parole (5)
+R2-R038,R0705,R2-018,two for clustering,manuscript/full_paper_LNBI.md,4587032be8d2905007687e0bb50d848e,righe con ambito Clustering,2,nessun-controllo: conteggio in parole (2)
+R2-R039,CONC_11MARZO,R2-019,"10,000",results/concordance_10000_r1.json,59d2b912f926a827cd7ea35d5c067188,metadata.n_cells,10000,intero
+R2-R040,CONC_11MARZO,R2-019,11 March 2026,results/concordance_10000_r1.json,59d2b912f926a827cd7ea35d5c067188,metadata.cpu_timestamp (data UTC),2026-03-11,nessun-controllo: data
+R2-R041,CONC_11MARZO,R2-019,16,results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt,838f9a9376895d36ea7645e54b21f3c2,job 16139 AllocCPUS,16,intero
+R2-R042,CONC_11MARZO,R2-019,one GPU,results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt,838f9a9376895d36ea7645e54b21f3c2,job 16139 AllocTRES gres/gpu,1,nessun-controllo: conteggio in parole (1)
+R2-R043,CONC_11MARZO,R2-019,40 and 45,results/concordance_10000_r1.json,59d2b912f926a827cd7ea35d5c067188,"cluster_concordance.leiden_{1.0,1.5}.n_clusters_cpu",40;45,nessun-controllo: coppia di conteggi (40;45)
+R2-R044,CONC_11MARZO,R2-019,41 and 46,results/cpu_10000_r{1..5}_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,"results_summary.n_clusters_{1.0,1.5} (uguali nelle 5 ripetizioni)",41;46,"nessun-controllo: coppia di conteggi (41;46), uguale in tutte le ripetizioni"
+R2-R045,R0492,R2-021,100,scripts/compare_results.py,b4193ed1c3b6298462b96f713bb4bfe0,compare_de cpu_g.head(N),100,intero
+R2-R046,R0492,R2-021,r = 1.0,scripts/compare_results.py,b4193ed1c3b6298462b96f713bb4bfe0,"match_clusters(..., ""leiden_X"")",1.0,nessun-controllo: risoluzione
+R2-R047,R0462,R2-022,"3,436,470",results/maxpower_3436470_8gpu_results.json,2d2f88ee24e3c88f9a03079c9962ba1d,metadata.n_cells_source_file,3436470,intero
+R2-R048,R0462,R2-022,1.7,results/maxpower_1700000_8gpu_results.json,248b0cd1264e4aa6a04c68c9a6e60c2e,metadata.n_cells_input / 1e6,1.7,1 decimale (milioni)
+R2-R049,R0462,R2-022,3.4,results/maxpower_3400000_8gpu_results.json,18d9fd6880cf7591c860ad41637f1c92,metadata.n_cells_input / 1e6,3.4,1 decimale (milioni)
+R2-R050,R0462,R2-022,42,scripts/benchmark_maxpower.py,d95e433cbdab0073fab60e55d208ee6f,RANDOM_SEED,42,intero
+R2-R051,R0462,R2-022,6.9,results/maxpower_6872940_8gpu_results.json,aa9c1df1fec84c53d34960fa3dd55069,metadata.n_cells_input / 1e6,6.87294,1 decimale (milioni)
+R2-R052,R0462,R2-022,2,results/maxpower_6872940_8gpu_results.json,aa9c1df1fec84c53d34960fa3dd55069,n_cells_input / n_cells_source_file,2.0,intero (rapporto esatto)
+R2-R053,R0462,R2-022,10.3,results/maxpower_10309410_8gpu_results.json,2805292ba73940a3c65c9cb0715b2d9b,metadata.n_cells_input / 1e6,10.30941,1 decimale (milioni)
+R2-R054,R0462,R2-022,3,results/maxpower_10309410_8gpu_results.json,2805292ba73940a3c65c9cb0715b2d9b,n_cells_input / n_cells_source_file,3.0,intero (rapporto esatto)
+R2-R055,R0462,R2-022,11.9,results/maxpower_11900000_8gpu_results.json,0a424b1622e6f22be8e3729e30aedd0e,metadata.n_cells_input / 1e6,11.9,1 decimale (milioni)
+R2-R056,R0462,R2-022,"1,590,590",results/maxpower_11900000_8gpu_results.json,0a424b1622e6f22be8e3729e30aedd0e,n_cells_input - 3 x n_cells_source_file,1590590,intero
+R2-R057,R0462,R2-022,"41,344",results/maxpower_3436470_8gpu_results.json,2d2f88ee24e3c88f9a03079c9962ba1d,results_summary.n_genes_after_qc,41344,intero
+R2-R058,R0462,R2-022,"42,394",results/maxpower_6872940_8gpu_results.json,aa9c1df1fec84c53d34960fa3dd55069,results_summary.n_genes_after_qc,42394,intero
+R2-R059,R0462,R2-022,"44,158",results/maxpower_10309410_8gpu_results.json,2805292ba73940a3c65c9cb0715b2d9b,results_summary.n_genes_after_qc,44158,intero
+R2-R060,R0462,R2-022,3.44,results/maxpower_3436470_8gpu_results.json,2d2f88ee24e3c88f9a03079c9962ba1d,n_cells_input / 1e6,3.43647,2 decimali (milioni)
+R2-R061,R0462,R2-022,6.87,results/maxpower_6872940_8gpu_results.json,aa9c1df1fec84c53d34960fa3dd55069,n_cells_input / 1e6,6.87294,2 decimali (milioni)
+R2-R062,R0462,R2-022,from 10.3M cells,results/maxpower_*_8gpu_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,numero di valori distinti di n_genes_after_qc fra i run con n_cells_input >= 10309410,1,"nessun-controllo: deve valere 1 (44,158 per tutti)"
+R2-R063,R0462,R2-022,"3,436,470, 6,872,940 and 10,309,410",results/maxpower_*_8gpu_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,n_cells_input dei run con clustering_algorithm = kmeans,3436470;6872940;10309410,nessun-controllo: elenco di dimensioni
+R2-R064,R0462,R2-022,"k = 50, 100 and 200","results/maxpower_{3436470,6872940,10309410}_8gpu_results.json",multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,"results_summary.n_clusters_{0.5,1.0,1.5}","50,100,200","nessun-controllo: terna di k, uguale nei tre run (50,100,200)"
+R2-R065,R0462,R2-022,except 1.7M and 3.4M,results/maxpower_*_8gpu_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,n_cells_input dei run con timings.de_testing > 0,1700000;3400000,nessun-controllo: elenco (1700000;3400000)
+R2-R066,R0420,R2-023,"2,000",results/maxpower_11900000_8gpu_results.json,0a424b1622e6f22be8e3729e30aedd0e,results_summary.n_hvgs,2000,intero
+R2-R067,R0420,R2-023,2 GB,results/maxpower_*_8gpu_results.json (covariance_distributed),multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,valori distinti di configuration.dask_cluster.rmm_pool_size,2GB,nessun-controllo: stringa di configurazione (2GB)
+R2-R068,R0420,R2-023,8,results/maxpower_11900000_8gpu_results.json,0a424b1622e6f22be8e3729e30aedd0e,metadata.n_gpus,8,intero
+R2-R069,R0706,R2-024,15,results/maxpower_*_8gpu_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,numero di run con configuration.pca_method = covariance_distributed,15,intero
+R2-R070,R0706,R2-024,3.4,results/maxpower_*_8gpu_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,min n_cells_input dei run covariance / 1e6,3.4,1 decimale (milioni)
+R2-R071,R0706,R2-024,11.9,results/maxpower_*_8gpu_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,max n_cells_input dei run covariance / 1e6,11.9,1 decimale (milioni)
+R2-R072,R0706,R2-024,12.0,results/maxpower_limit_8gpu.json,205ac0394cb1fd2462bb70c58deb78b6,first_oom_at / 1e6,12.0,1 decimale (milioni)
+R2-R073,R0706,R2-024,13.7,results_v2/S3/R2_dgx_evidence/slurm-maxpower_8gpu_16662.out,be06522f2f17697ac224396728b5d096,"target 13,745,880 cells nel log / 1e6",13.74588,1 decimale (milioni)
+R2-R074,R0706,R2-024,4,results_v2/S3/R2_dgx_evidence/slurm-maxpower_8gpu_16662.out,be06522f2f17697ac224396728b5d096,"Resizing: 3,436,470 x N per 13,745,880",4,intero
+R2-R075,R0461,R2-024,"3,436,470",results/maxpower_limit_8gpu.json,205ac0394cb1fd2462bb70c58deb78b6,source_cells,3436470,intero
+R2-R076,R0461,R2-024,302.34,results/maxpower_11900000_8gpu_results.json,0a424b1622e6f22be8e3729e30aedd0e,memory.detailed.qc_filtering_ram_before_gb - data_loading_ram_after_gb,302.34000000000003,2 decimali (GiB)
+R2-R077,R0461,R2-024,eight GPUs,results/maxpower_11900000_8gpu_results.json,0a424b1622e6f22be8e3729e30aedd0e,metadata.n_gpus,8,nessun-controllo: conteggio in parole (8)
+R2-R078,R0252,R2-024,1024^3,scripts/benchmark_maxpower.py,d95e433cbdab0073fab60e55d208ee6f,get_peak_ram_gb rss / (1024**3),1024**3,nessun-controllo: espressione
+R2-R079,R0687,R2-025,"3,400,000",slurm/de_benchmark.sh,91acf1f61dc9b765afe1b64f6fa07e1e,TARGET_CELLS=3400000 nell uso documentato,3400000,intero
+R2-R080,R0687,R2-025,42,scripts/test_de_benchmark.py,83ae31995f8e7daa8eeaa77958ccdf27,RANDOM_SEED,42,intero
+R2-R081,R0687,R2-025,"3,399,892",results/de_benchmark_pseudobulk.json,cc44aa1151725a4feebfaf1a004ee1a7,n_cells,3399892,intero
+R2-R082,R0687,R2-025,"41,321",results/de_benchmark_pseudobulk.json,cc44aa1151725a4feebfaf1a004ee1a7,n_genes_raw,41321,intero
+R2-R083,R0423,R2-025,six DE configurations,results/de_benchmark_*.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,"configurazioni con time > 0, esclusa la variante ttest_scatter_clean",6,nessun-controllo: conteggio in parole (6)
+R2-R084,R0423,R2-025,8,results/de_benchmark_wilcoxon_scatter.json,5353134e74f85cc00b33017db8fad9b5,n_gpus,8,intero
+R2-R085,R0425,R2-025,202,results/de_benchmark_pseudobulk.json,cc44aa1151725a4feebfaf1a004ee1a7,results.pseudobulk.n_donors,202,intero
+R2-R086,R0425,R2-025,5,scripts/test_de_benchmark.py,83ae31995f8e7daa8eeaa77958ccdf27,n_cells_group < N,5,intero
+R2-R087,R0425,R2-025,"2,431",results/de_benchmark_pseudobulk.json,cc44aa1151725a4feebfaf1a004ee1a7,results.pseudobulk.n_pseudobulk_samples,2431,intero
+R2-R088,R0425,R2-025,81,results/de_benchmark_pseudobulk.json,cc44aa1151725a4feebfaf1a004ee1a7,results.pseudobulk.n_clusters,81,intero
+R2-R089,R0426,R2-026,3.0.0,SPATIAL/data/visium_hd/binned_outputs/square_008um/filtered_feature_bc_matrix.h5,70aa0e8613fad7819ab737e298dd5c69,attributo HDF5 software_version (ricerca di byte),3.0.0,nessun-controllo: versione software
+R2-R090,R0426,R2-026,Probe Set v2.0,SPATIAL/data/visium_hd/binned_outputs/square_002um/raw_probe_bc_matrix.h5,056db321e17d01f85b0f8e7a0d1e242a,nome del target set (ricerca di byte),v2.0,nessun-controllo: versione del probe set
+R2-R091,R0428,R2-026,"393,543",SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_008um_r1_results.json,b137c4be7de504eff3c85f4202e8b993,metadata.n_spots_input,393543,intero
+R2-R092,R0428,R2-026,"6,296,688",SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json,a5a530513794beeaf562dec8e5575ee2,metadata.n_spots_input,6296688,intero
+R2-R093,R0428,R2-026,"400,000",SPATIAL/run_all_benchmarks.sh,c5f844d154761d88931383021fb856e1,--max-spots N,400000,intero
+R2-R094,R0428,R2-026,42,SPATIAL/scripts/benchmark_spatial_gpu.py,118cf2290415ab4f8d510a6b8bea0a7f,RANDOM_SEED,42,intero
+R2-R095,R0428,R2-026,"389,492",SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json,a5a530513794beeaf562dec8e5575ee2,results_summary.n_spots_after_qc,389492,intero
+R2-R096,R0465,R2-026,6.35,SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json,a5a530513794beeaf562dec8e5575ee2,100 x 400000 / n_spots_input,6.352545973375209,2 decimali (percentuale)
+R2-R097,R0465,R2-026,8,SPATIAL/results_v2/server_gpu/spatial_gpu_visium_hd_square_002um_r1_results.json,a5a530513794beeaf562dec8e5575ee2,"2 / sqrt(400000 / n_spots_input) (passo della griglia regolare di pari densità, um)",7.935167295022834,0 decimali (um)
+R2-R098,R0657,R2-028,500,SPATIAL/scripts/benchmark_spatial_cpu.py,40e35738f14583ec7b7b0c4959d138ac,if n_groups <= N,500,intero
+R2-R099,R0657,R2-028,"100,000",SPATIAL/scripts/benchmark_spatial_cpu.py,40e35738f14583ec7b7b0c4959d138ac,if n_after_qc <= N and,100000,intero
+R2-R100,R0657,R2-028,0.1,SPATIAL/scripts/benchmark_spatial_cpu.py,40e35738f14583ec7b7b0c4959d138ac,leiden_res = X se n_after_qc > 100_000,0.1,1 decimale
+R2-R101,R0342,R2-030,"2,000",SPATIAL/results_v2/concordance_reference/*.json,multipli: md5 per file nel manifest di SPATIAL/results_v2,valori distinti di moranI/gearyC.n_common_genes,2000,intero (unico valore)
+R2-R102,R0445,R2-031,224,results/gpu8_1300000_r1_results.json,4503b0c4d73281d28b7795d7c21b1944,metadata.n_cpus (os.cpu_count),224,intero
+R2-R103,R0445,R2-031,8480C,SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r1_results.json,57f7793aa7ed1541f3353485161d6018,metadata.system.cpu_model,Intel(R) Xeon(R) Platinum 8480C,nessun-controllo: modello CPU
+R2-R104,R0448,R2-032,535.247.01,results/gpu_10000_r1_results.json,2e110cce9d90f4f67cb1a95485c8fc31,metadata.gpu_info.driver_version,535.247.01,nessun-controllo: versione driver
+R2-R105,R0448,R2-032,535.183.01,results/gpu8_1300000_r1_results.json,4503b0c4d73281d28b7795d7c21b1944,metadata.gpu_info.driver_version,535.183.01,nessun-controllo: versione driver
+R2-R106,R0448,R2-032,"16, 32 and 56",results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt,838f9a9376895d36ea7645e54b21f3c2,"AllocCPUS dei job 16314, 16315, 16316 (uguali a slurm/gpu_{1,2,4}.sh)",16;32;56,nessun-controllo: terna di interi (16;32;56)
+R2-R107,R0448,R2-032,100,results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt,838f9a9376895d36ea7645e54b21f3c2,job 16317 (gpu_bench_8) AllocCPUS,100,intero
+R2-R108,R0448,R2-032,CPU baseline,results/cpu_10000_r1_results.json,32a46b6b2f1e173b85bc6fce2c6aee81,metadata.n_cpus,100,nessun-controllo: deve valere 100 (uguale al job 8 GPU)
+R2-R109,R0448,R2-032,poddgx01,results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt,838f9a9376895d36ea7645e54b21f3c2,"NodeList dei job 16314,16315,16316,16317,16161",poddgx01;poddgx01;poddgx01;poddgx02;poddgx01,nessun-controllo: nomi di nodo
+R2-R110,R0448,R2-032,200 CPUs,results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt,838f9a9376895d36ea7645e54b21f3c2,"AllocCPUS distinti dei job che contengono i timestamp dei JSON maxpower (escluso 1,7M e chunked) e dei job de_bench completati",200,nessun-controllo: deve valere 200
+R2-R111,R0448,R2-032,100,results_v2/S3/R2_dgx_evidence/sacct_u0044_2026-02-01_2026-11-04.txt,838f9a9376895d36ea7645e54b21f3c2,AllocCPUS del job che contiene il timestamp di maxpower_1700000,100,intero
+R2-R112,R0276,R2-033,64,SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json,77469a36ba29728e95d7494f02eb357e,metadata.system.cpu_model (N-Cores),64,intero
+R2-R113,R0276,R2-033,128,SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json,77469a36ba29728e95d7494f02eb357e,metadata.system.os_cpu_count,128,intero
+R2-R114,R0276,R2-033,100,SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r1_results.json,57f7793aa7ed1541f3353485161d6018,metadata.system.affinity_n_cpus,100,intero
+R2-R115,R0276,R2-033,50,SPATIAL/results_v2/dgx_cpu/spatial_cpu_visium_r1_results.json,57f7793aa7ed1541f3353485161d6018,CPU dell affinità con id < 112 (core fisici; 112-223 sono i fratelli HT),50,intero
+R2-R116,R0276,R2-033,580.126.09,SPATIAL/results/spatial_gpu_visium_r1_results.json,24b8204dd429c148be44d62faaf71e5b,metadata.gpu_info.driver_version (marzo),580.126.09,nessun-controllo: versione driver
+R2-R117,R0276,R2-033,595.99.02,SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json,77469a36ba29728e95d7494f02eb357e,metadata.gpu_info.driver_version,595.99.02,nessun-controllo: versione driver
+R2-R118,R0276,R2-033,0.94,SPATIAL/results_v2/s1_evaluation.json,16ef576748159a31e124b83b96773efd,min predictions.P3.<piattaforma>.ratio,0.9411753202307616,2 decimali
+R2-R119,R0276,R2-033,1.04,SPATIAL/results_v2/s1_evaluation.json,16ef576748159a31e124b83b96773efd,max predictions.P3.<piattaforma>.ratio,1.0410143957813007,2 decimali
+R2-R120,R0451,R2-034,535.183.01,results/gpu8_1300000_r1_results.json,4503b0c4d73281d28b7795d7c21b1944,metadata.gpu_info.driver_version (nodo poddgx02),535.183.01,nessun-controllo: versione driver
+R2-R121,R0451,R2-034,RAPIDS 24.06,results_v2/S3/R2_dgx_evidence/slurm-spatial_smoke_16951.out,a02cf8afdfe2cbc630d16d565e072fea,Container: .../sc-benchmark-2406.sif,2406,nessun-controllo: 2406 = RAPIDS 24.06 (nome del container)
+R2-R122,R0466,R2-037,5,results/cpu_10000_r*_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,numero di ripetizioni,5,intero
+R2-R123,R0466,R2-037,19.90,results/cpu_10000_r1_results.json,32a46b6b2f1e173b85bc6fce2c6aee81,timings.neighbors,19.9029,2 decimali (secondi)
+R2-R124,R0466,R2-037,1.12,results/cpu_10000_r{2..5}_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,media timings.neighbors r2-5,1.121575,2 decimali (secondi)
+R2-R125,R0453,R2-038,Squidpy 1.8.1,SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json,77469a36ba29728e95d7494f02eb357e,metadata.software_versions.squidpy,1.8.1,nessun-controllo: versione
+R2-R126,R0453,R2-038,one Numba thread,SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json,77469a36ba29728e95d7494f02eb357e,metadata.steps_runtime.ligrec.start.numba_num_threads,1,nessun-controllo: conteggio in parole (1)
+R2-R127,R0455,R2-040,sha256:738c8cc7301590c95a3ddc3b7dd74bafeefee1f1ce188063e14a166a707a6ddd,SPATIAL/results_v2/server_gpu/spatial_gpu_visium_r1_results.json,77469a36ba29728e95d7494f02eb357e,metadata.system.image_id,sha256:738c8cc7301590c95a3ddc3b7dd74bafeefee1f1ce188063e14a166a707a6ddd,nessun-controllo: identificativo
+R2-R128,R0455,R2-040,Scanpy 1.12,results/gpu_10000_r1_results.json,2e110cce9d90f4f67cb1a95485c8fc31,metadata.software_versions.scanpy,1.12,nessun-controllo: versione
+R2-R129,R0455,R2-040,rapids-singlecell 0.14.1,results/gpu_10000_r1_results.json,2e110cce9d90f4f67cb1a95485c8fc31,metadata.software_versions.rapids_singlecell,0.14.1,nessun-controllo: versione
+R2-R130,R0455,R2-040,CuPy 13.6.0,results/gpu_10000_r1_results.json,2e110cce9d90f4f67cb1a95485c8fc31,metadata.software_versions.cupy,13.6.0,nessun-controllo: versione
+R2-R131,R0455,R2-040,RMM 26.2.0,results/gpu_10000_r1_results.json,2e110cce9d90f4f67cb1a95485c8fc31,metadata.software_versions.rmm,26.2.0,nessun-controllo: versione
+R2-R132,R0455,R2-040,NumPy 2.2.6,results/gpu_10000_r1_results.json,2e110cce9d90f4f67cb1a95485c8fc31,metadata.software_versions.numpy,2.2.6,nessun-controllo: versione
+R2-R133,R0455,R2-040,igraph 1.0.0,results/cpu_10000_r1_results.json,32a46b6b2f1e173b85bc6fce2c6aee81,metadata.software_versions.igraph,1.0.0,nessun-controllo: versione
+R2-R134,R0496,R2-041,"10,000 cells in every GPU configuration",results/gpu*_10000_r{1..5}_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,configurazioni GPU con hash identici nelle 5 ripetizioni a 10000 / totale,4/4,nessun-controllo: deve valere 4/4
+R2-R135,R0496,R2-041,"from 100,000 cells upward","results/gpu*_{100000,500000,1300000}_r{1..5}_results.json",multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,configurazioni con almeno una risoluzione diversa fra ripetizioni / totale,4/4;3/3;3/3,nessun-controllo: deve valere 4/4;3/3;3/3
+R2-R136,R0496,R2-041,"three of the four at 50,000",results/gpu*_50000_r{1..5}_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,configurazioni con almeno una risoluzione diversa / totale,3/4,nessun-controllo: deve valere 3/4
+R2-R137,R0496,R2-041,CPU labels were identical,results/cpu_*_r{1..5}_results.json,multipli: md5 per file in manifests/raw_results_md5_2026-11-03.tsv,taglie con hash CPU identici nelle 5 ripetizioni / totale,5/5,nessun-controllo: deve valere 5/5
+R2-R138,R0489,R2-020,16,results/cpu_10000_r1_knn.npz,1ce3d93d033ba3ee5f5836e0aa9d3079,lunghezze distinte degli insiemi (tutte le righe) e numero di righe che contengono la cellula stessa,16;10000/10000,nessun-controllo: deve valere '16;10000/10000'
+R2-R139,R0489,R2-020,15,results/gpu_10000_r1_knn.npz,428f966c7ceaa499a6637bebacc56020,lunghezze distinte degli insiemi (tutte le righe) e numero di righe che contengono la cellula stessa,15;10000/10000,nessun-controllo: deve valere '15;10000/10000'
+R2-R140,R0710,R2-024,"100,000",scripts/benchmark_maxpower_chunked.py,cecb7249beacd761f85caacee46721d9,CELL_BATCH_SIZE,100000,intero
+R2-R141,R0710,R2-024,"100,000-cell batches",results/maxpower_chunked_12000000_8gpu_results.json,a742e017ed6176cddd5a6139c779de81,metadata.configuration.cell_batch_size,100000,nessun-controllo: conferma della configurazione del run chunked (100000)
+R2-R142,R0706,R2-024,single attempts at 12.0M,results_v2/S3/R2_dgx_evidence/slurm-maxpower_8gpu_16531.out; results_v2/S3/R2_dgx_evidence/slurm-maxpower_8gpu_16531.err,8dced439391364a99083f5e0617e0053;1c3c10a2717726f535ceda95b601a19e,"conteggio di ""trying 12,000,000 cells"" nel .out e presenza di TimeoutError nel .err",1;True,nessun-controllo: deve valere '1;True'
+R2-R143,R0044,R2-014,23.8,results_v2/S3/R2_dgx_evidence/slurm-gpu_bench_1_16314.err,c50f1358f4de1de9741beb44d1b9d36b,"failed to allocate X GiB (RMM, run a 500000 cellule)",23.79071,1 decimale (GiB)
+R2-R144,R0451,R2-034,"passed basic CuPy, RMM and rapids-singlecell tests",results_v2/S3/R2_dgx_evidence/test_driver_16944_grep.txt,6c4a516b800044694202d2b3cb9999b1,riga Overall del job test_driver 16944,True,nessun-controllo: deve valere True

@@ -1,0 +1,12 @@
+2d70fabac0a7d7e66cb68c7ca65ed8c1  convecs_ack.txt
+c5f5beb870a9b821a6beba5e9976fa51  crossref_R4.json
+61a4bd026e4b29d3b7b69747a2cbd19a  data_loading_1300000_gpu2_gpu8_sd.txt
+1396d1a34443310e30ecdaa6fdecf2ee  rsc_0.14.1_tl_leiden_signature.txt
+7aac1f9772db05541a5b5871102dc97d  sacct_16696_D.txt
+d7223a9c536ba7707f33ce0dfdad5af3  slurm-chunked_single_16825.err
+4a962d76214ee8d629bb96cc5948b6ac  slurm-chunked_single_16825.out
+ebddae9be16dff156aea85d5d362da8a  slurm-maxpower_8gpu_16463.err.tail25
+13490f1d2d98b766da147390cc9c0dc9  slurm-maxpower_8gpu_16463.out
+233e7d324f0e71f45025f2556086f85f  slurm-maxpower_8gpu_16662.err.tail25
+87cefef404caf7f208f2a20ce528bdee  slurm-maxpower_chunked_16696.err
+3c448fc192267e543fca70f47012fc85  slurm-maxpower_chunked_16696.out

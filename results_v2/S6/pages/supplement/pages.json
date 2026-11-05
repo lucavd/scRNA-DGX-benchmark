@@ -1,0 +1,45 @@
+{
+ "tag": "S6_supplement",
+ "at": "2026-11-04T22:48:06+01:00",
+ "src": "manuscript/supplementary_LNBI.md",
+ "src_md5": "0a43c9ae60825c688f79ada121ebb70f",
+ "bib_md5": "0545ef29119d63866360fb950ce29c11",
+ "llncs_md5": "543b73320c367b0229b3cdfcddaedc46",
+ "support_md5": {
+  "aliascnt.sty": "813491e2bc95c1dafbb39cd7c54b380b"
+ },
+ "pandoc": "pandoc 3.1.3",
+ "pages_total": 26,
+ "refs_start_page": 24,
+ "pages_before_refs": 24,
+ "latex_errors": 0,
+ "undefined_citations": [],
+ "overfull_hbox": 12,
+ "abstract_words": 0,
+ "body_words_intro_to_end": 9484,
+ "section_words": {
+  "Overview": 64,
+  "Supplementary Methods": 3852,
+  "Supplementary Results": 4524,
+  "Supplementary Discussion": 1044
+ },
+ "commands": [
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ],
+  [
+   "bibtex paper",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ],
+  [
+   "pdflatex -interaction=nonstopmode paper.tex",
+   0
+  ]
+ ],
+ "pdf": "results_v2/S6/pages/supplement/paper.pdf"
+}

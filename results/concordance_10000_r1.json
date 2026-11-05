@@ -1,0 +1,653 @@
+{
+  "metadata": {
+    "n_cells": 10000,
+    "repeat": 1,
+    "cpu_timestamp": "2026-03-11T23:14:30.843502+00:00",
+    "gpu_timestamp": "2026-03-11T23:15:03.435068+00:00"
+  },
+  "cluster_concordance": {
+    "leiden_0.5": {
+      "ari": 0.931675,
+      "nmi": 0.950564,
+      "n_clusters_cpu": 31,
+      "n_clusters_gpu": 32,
+      "n_cells_compared": 10000
+    },
+    "leiden_1.0": {
+      "ari": 0.907733,
+      "nmi": 0.950967,
+      "n_clusters_cpu": 40,
+      "n_clusters_gpu": 40,
+      "n_cells_compared": 10000
+    },
+    "leiden_1.5": {
+      "ari": 0.963095,
+      "nmi": 0.970895,
+      "n_clusters_cpu": 45,
+      "n_clusters_gpu": 45,
+      "n_cells_compared": 10000
+    }
+  },
+  "hvg_concordance": {
+    "jaccard": 1.0,
+    "n_cpu": 2000,
+    "n_gpu": 2000,
+    "n_intersection": 2000,
+    "n_union": 2000
+  },
+  "pca_concordance": {
+    "per_pc": {
+      "PC1": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC2": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC3": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC4": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC5": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC6": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC7": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC8": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC9": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      },
+      "PC10": {
+        "spearman_rho": 1.0,
+        "abs_spearman_rho": 1.0,
+        "pvalue": 0.0
+      }
+    },
+    "mean_abs_spearman_rho": 1.0,
+    "n_genes_compared": 2000
+  },
+  "de_concordance": {
+    "per_pair": {
+      "cpu0_gpu16": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu1_gpu13": {
+        "spearman_rho": 0.977654,
+        "pvalue": 3.45e-68,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.5986
+      },
+      "cpu2_gpu21": {
+        "spearman_rho": 0.999952,
+        "pvalue": 1.09e-198,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9978
+      },
+      "cpu3_gpu8": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu4_gpu28": {
+        "spearman_rho": 0.999376,
+        "pvalue": 4.13e-144,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu5_gpu32": {
+        "spearman_rho": 0.99988,
+        "pvalue": 3.44e-179,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9953
+      },
+      "cpu6_gpu36": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu7_gpu38": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu8_gpu9": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu9_gpu34": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu10_gpu19": {
+        "spearman_rho": 0.999748,
+        "pvalue": 2.11e-163,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu11_gpu35": {
+        "spearman_rho": 0.9991,
+        "pvalue": 2.55e-136,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu12_gpu18": {
+        "spearman_rho": 0.999592,
+        "pvalue": 3.77e-153,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9679
+      },
+      "cpu13_gpu1": {
+        "spearman_rho": 0.995488,
+        "pvalue": 4.74e-102,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu14_gpu11": {
+        "spearman_rho": 0.997516,
+        "pvalue": 9.88e-115,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.953
+      },
+      "cpu15_gpu12": {
+        "spearman_rho": 0.999712,
+        "pvalue": 1.46e-160,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.993
+      },
+      "cpu16_gpu0": {
+        "spearman_rho": 0.943894,
+        "pvalue": 5.97e-49,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9956
+      },
+      "cpu17_gpu24": {
+        "spearman_rho": -0.156976,
+        "pvalue": 0.119,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.0
+      },
+      "cpu18_gpu27": {
+        "spearman_rho": 0.99922,
+        "pvalue": 2.3e-139,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu19_gpu17": {
+        "spearman_rho": 0.925809,
+        "pvalue": 3.4e-43,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.7892
+      },
+      "cpu20_gpu30": {
+        "spearman_rho": 0.974737,
+        "pvalue": 1.31e-65,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu21_gpu33": {
+        "spearman_rho": 0.978698,
+        "pvalue": 3.39e-69,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.7549
+      },
+      "cpu22_gpu22": {
+        "spearman_rho": 0.981002,
+        "pvalue": 1.31e-71,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu23_gpu15": {
+        "spearman_rho": 0.99976,
+        "pvalue": 1.93e-164,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu24_gpu10": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu25_gpu39": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu26_gpu25": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu27_gpu29": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu28_gpu23": {
+        "spearman_rho": 0.99976,
+        "pvalue": 1.93e-164,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9943
+      },
+      "cpu29_gpu4": {
+        "spearman_rho": 0.90441,
+        "pvalue": 4.97e-38,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9961
+      },
+      "cpu30_gpu26": {
+        "spearman_rho": 0.996388,
+        "pvalue": 8.92e-107,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu31_gpu20": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu32_gpu3": {
+        "spearman_rho": 0.977918,
+        "pvalue": 1.94e-68,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.8631
+      },
+      "cpu33_gpu14": {
+        "spearman_rho": 0.891593,
+        "pvalue": 1.72e-35,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.6242
+      },
+      "cpu34_gpu2": {
+        "spearman_rho": 0.9997,
+        "pvalue": 1.08e-159,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9985
+      },
+      "cpu35_gpu31": {
+        "spearman_rho": 0.999004,
+        "pvalue": 3.65e-134,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9677
+      },
+      "cpu36_gpu7": {
+        "spearman_rho": 0.994011,
+        "pvalue": 4.82e-96,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9307
+      },
+      "cpu37_gpu6": {
+        "spearman_rho": 0.996544,
+        "pvalue": 1.03e-107,
+        "n_genes_compared": 100,
+        "overlap_fraction": 0.9814
+      },
+      "cpu38_gpu5": {
+        "spearman_rho": 0.447957,
+        "pvalue": 2.96e-06,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      },
+      "cpu39_gpu37": {
+        "spearman_rho": 1.0,
+        "pvalue": 0.0,
+        "n_genes_compared": 100,
+        "overlap_fraction": 1.0
+      }
+    },
+    "mean_spearman_rho": 0.945536,
+    "n_pairs_compared": 40,
+    "cluster_matching": {
+      "0": {
+        "gpu_cluster": "16",
+        "overlap": 104,
+        "cpu_cluster_size": 104,
+        "overlap_fraction": 1.0
+      },
+      "1": {
+        "gpu_cluster": "13",
+        "overlap": 167,
+        "cpu_cluster_size": 279,
+        "overlap_fraction": 0.5986
+      },
+      "2": {
+        "gpu_cluster": "21",
+        "overlap": 444,
+        "cpu_cluster_size": 445,
+        "overlap_fraction": 0.9978
+      },
+      "3": {
+        "gpu_cluster": "8",
+        "overlap": 315,
+        "cpu_cluster_size": 315,
+        "overlap_fraction": 1.0
+      },
+      "4": {
+        "gpu_cluster": "28",
+        "overlap": 80,
+        "cpu_cluster_size": 80,
+        "overlap_fraction": 1.0
+      },
+      "5": {
+        "gpu_cluster": "32",
+        "overlap": 210,
+        "cpu_cluster_size": 211,
+        "overlap_fraction": 0.9953
+      },
+      "6": {
+        "gpu_cluster": "36",
+        "overlap": 153,
+        "cpu_cluster_size": 153,
+        "overlap_fraction": 1.0
+      },
+      "7": {
+        "gpu_cluster": "38",
+        "overlap": 48,
+        "cpu_cluster_size": 48,
+        "overlap_fraction": 1.0
+      },
+      "8": {
+        "gpu_cluster": "9",
+        "overlap": 89,
+        "cpu_cluster_size": 89,
+        "overlap_fraction": 1.0
+      },
+      "9": {
+        "gpu_cluster": "34",
+        "overlap": 99,
+        "cpu_cluster_size": 99,
+        "overlap_fraction": 1.0
+      },
+      "10": {
+        "gpu_cluster": "19",
+        "overlap": 102,
+        "cpu_cluster_size": 102,
+        "overlap_fraction": 1.0
+      },
+      "11": {
+        "gpu_cluster": "35",
+        "overlap": 58,
+        "cpu_cluster_size": 58,
+        "overlap_fraction": 1.0
+      },
+      "12": {
+        "gpu_cluster": "18",
+        "overlap": 151,
+        "cpu_cluster_size": 156,
+        "overlap_fraction": 0.9679
+      },
+      "13": {
+        "gpu_cluster": "1",
+        "overlap": 162,
+        "cpu_cluster_size": 162,
+        "overlap_fraction": 1.0
+      },
+      "14": {
+        "gpu_cluster": "11",
+        "overlap": 284,
+        "cpu_cluster_size": 298,
+        "overlap_fraction": 0.953
+      },
+      "15": {
+        "gpu_cluster": "12",
+        "overlap": 141,
+        "cpu_cluster_size": 142,
+        "overlap_fraction": 0.993
+      },
+      "16": {
+        "gpu_cluster": "0",
+        "overlap": 449,
+        "cpu_cluster_size": 451,
+        "overlap_fraction": 0.9956
+      },
+      "17": {
+        "gpu_cluster": "24",
+        "overlap": 0,
+        "cpu_cluster_size": 67,
+        "overlap_fraction": 0.0
+      },
+      "18": {
+        "gpu_cluster": "27",
+        "overlap": 141,
+        "cpu_cluster_size": 141,
+        "overlap_fraction": 1.0
+      },
+      "19": {
+        "gpu_cluster": "17",
+        "overlap": 131,
+        "cpu_cluster_size": 166,
+        "overlap_fraction": 0.7892
+      },
+      "20": {
+        "gpu_cluster": "30",
+        "overlap": 221,
+        "cpu_cluster_size": 221,
+        "overlap_fraction": 1.0
+      },
+      "21": {
+        "gpu_cluster": "33",
+        "overlap": 154,
+        "cpu_cluster_size": 204,
+        "overlap_fraction": 0.7549
+      },
+      "22": {
+        "gpu_cluster": "22",
+        "overlap": 202,
+        "cpu_cluster_size": 202,
+        "overlap_fraction": 1.0
+      },
+      "23": {
+        "gpu_cluster": "15",
+        "overlap": 172,
+        "cpu_cluster_size": 172,
+        "overlap_fraction": 1.0
+      },
+      "24": {
+        "gpu_cluster": "10",
+        "overlap": 45,
+        "cpu_cluster_size": 45,
+        "overlap_fraction": 1.0
+      },
+      "25": {
+        "gpu_cluster": "39",
+        "overlap": 45,
+        "cpu_cluster_size": 45,
+        "overlap_fraction": 1.0
+      },
+      "26": {
+        "gpu_cluster": "25",
+        "overlap": 50,
+        "cpu_cluster_size": 50,
+        "overlap_fraction": 1.0
+      },
+      "27": {
+        "gpu_cluster": "29",
+        "overlap": 1470,
+        "cpu_cluster_size": 1470,
+        "overlap_fraction": 1.0
+      },
+      "28": {
+        "gpu_cluster": "23",
+        "overlap": 175,
+        "cpu_cluster_size": 176,
+        "overlap_fraction": 0.9943
+      },
+      "29": {
+        "gpu_cluster": "4",
+        "overlap": 253,
+        "cpu_cluster_size": 254,
+        "overlap_fraction": 0.9961
+      },
+      "30": {
+        "gpu_cluster": "26",
+        "overlap": 103,
+        "cpu_cluster_size": 103,
+        "overlap_fraction": 1.0
+      },
+      "31": {
+        "gpu_cluster": "20",
+        "overlap": 51,
+        "cpu_cluster_size": 51,
+        "overlap_fraction": 1.0
+      },
+      "32": {
+        "gpu_cluster": "3",
+        "overlap": 1028,
+        "cpu_cluster_size": 1191,
+        "overlap_fraction": 0.8631
+      },
+      "33": {
+        "gpu_cluster": "14",
+        "overlap": 412,
+        "cpu_cluster_size": 660,
+        "overlap_fraction": 0.6242
+      },
+      "34": {
+        "gpu_cluster": "2",
+        "overlap": 687,
+        "cpu_cluster_size": 688,
+        "overlap_fraction": 0.9985
+      },
+      "35": {
+        "gpu_cluster": "31",
+        "overlap": 120,
+        "cpu_cluster_size": 124,
+        "overlap_fraction": 0.9677
+      },
+      "36": {
+        "gpu_cluster": "7",
+        "overlap": 349,
+        "cpu_cluster_size": 375,
+        "overlap_fraction": 0.9307
+      },
+      "37": {
+        "gpu_cluster": "6",
+        "overlap": 158,
+        "cpu_cluster_size": 161,
+        "overlap_fraction": 0.9814
+      },
+      "38": {
+        "gpu_cluster": "5",
+        "overlap": 74,
+        "cpu_cluster_size": 74,
+        "overlap_fraction": 1.0
+      },
+      "39": {
+        "gpu_cluster": "37",
+        "overlap": 168,
+        "cpu_cluster_size": 168,
+        "overlap_fraction": 1.0
+      }
+    }
+  },
+  "knn_concordance": {
+    "mean_jaccard": 0.930422,
+    "median_jaccard": 0.9375,
+    "min_jaccard": 0.409091,
+    "max_jaccard": 0.9375,
+    "std_jaccard": 0.033551,
+    "fraction_perfect": 0.0,
+    "n_cells": 10000
+  },
+  "speedups": {
+    "data_loading": {
+      "cpu_seconds": 0.5127,
+      "gpu_seconds": 0.6193,
+      "speedup": 0.83
+    },
+    "qc_filtering": {
+      "cpu_seconds": 1.0112,
+      "gpu_seconds": 4.1258,
+      "speedup": 0.25
+    },
+    "normalization": {
+      "cpu_seconds": 1.7738,
+      "gpu_seconds": 0.138,
+      "speedup": 12.85
+    },
+    "hvg_selection": {
+      "cpu_seconds": 0.688,
+      "gpu_seconds": 0.8207,
+      "speedup": 0.84
+    },
+    "pca": {
+      "cpu_seconds": 0.9992,
+      "gpu_seconds": 1.4428,
+      "speedup": 0.69
+    },
+    "neighbors": {
+      "cpu_seconds": 23.5715,
+      "gpu_seconds": 2.6165,
+      "speedup": 9.01
+    },
+    "leiden_0.5": {
+      "cpu_seconds": 0.2392,
+      "gpu_seconds": 2.1019,
+      "speedup": 0.11
+    },
+    "leiden_1.0": {
+      "cpu_seconds": 0.1406,
+      "gpu_seconds": 0.0876,
+      "speedup": 1.61
+    },
+    "leiden_1.5": {
+      "cpu_seconds": 0.14,
+      "gpu_seconds": 0.0882,
+      "speedup": 1.59
+    },
+    "umap": {
+      "cpu_seconds": 9.7952,
+      "gpu_seconds": 0.6529,
+      "speedup": 15.0
+    },
+    "de_testing": {
+      "cpu_seconds": 17.7873,
+      "gpu_seconds": 4.2379,
+      "speedup": 4.2
+    },
+    "total": {
+      "cpu_seconds": 56.6587,
+      "gpu_seconds": 16.9316,
+      "speedup": 3.35
+    }
+  }
+}

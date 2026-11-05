@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:14:42Z
+loadavg: 1.07 1.08 2.40
+tctl: +59.9°C
+gpu: 81 %, 313 MiB, 44, 2700 MHz
+top_processes:
+2047707 user      20   0   15404   7004   3896 R   1.5   0.0   0:00.08 top
+      1 root      20   0   24764  15804   9568 S   0.5   0.0  10:30.42 systemd
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:15.67 nvidia-modeset/kthread_q
+   2409 systemd+  20   0   18140   7712   6740 S   0.5   0.0   9:10.58 systemd-oomd
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  38:54.86 fctsched
+   3559 root      20   0 4170116  55112  35452 S   0.5   0.0  10:51.86 containerd
+   4022 rstudio+  20   0 9621404  23740  11176 S   0.5   0.0   3:02.79 rstudio-local-l
+   4032 root      20   0   19.0g  93256  18608 S   0.5   0.0  35:13.26 teamviewerd
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  36:14.10 rserver
+   6923 user      20   0  546820  22848  19156 S   0.5   0.0   0:00.26 goa-daemon
+ 225482 riccardo  20   0   21964  13172   9616 S   0.5   0.0   4:39.18 systemd
+ 228334 riccardo  20   0 1390820  73436  45212 S   0.5   0.0   0:04.06 gnome-calendar
+1126386 user      20   0 5738720 353200  79028 S   0.5   0.1  42:00.45 claude
+1843744 user      20   0   71.3g  68412  17864 S   0.5   0.0   2:21.33 bun
+2028500 root      20   0       0      0      0 I   0.5   0.0   0:00.03 kworker/32:0-events

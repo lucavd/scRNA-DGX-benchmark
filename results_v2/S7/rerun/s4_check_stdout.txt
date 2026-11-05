@@ -1,0 +1,23 @@
+/tmp/lnbi_s7_venv/lib/python3.12/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+{
+ "gates": {
+  "G2": {
+   "ok": true,
+   "values": "198 values, 0 mismatches, 0 missing",
+   "captions": "0/0 caption checks"
+  },
+  "G3": {
+   "ok": false
+  },
+  "G4": {
+   "ok": true
+  }
+ },
+ "predictions": {
+  "P1": "indeterminata",
+  "P2": "indeterminata",
+  "P3": "confermata",
+  "P4": "confermata"
+ }
+}

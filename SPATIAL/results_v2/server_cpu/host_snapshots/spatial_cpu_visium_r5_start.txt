@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:27:14Z
+loadavg: 2.21 3.12 2.62
+tctl: +41.1°C
+gpu: 0 %, 313 MiB, 42, 210 MHz
+top_processes:
+2059297 user      20   0   15404   6936   3828 R   1.5   0.0   0:00.08 top
+   3551 root      20   0 1003824  71608  29256 S   1.0   0.0  59:05.75 mongod
+    797 root      20   0       0      0      0 S   0.5   0.0   0:05.70 khungtaskd
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  38:57.52 fctsched
+   4032 root      20   0   19.0g  93256  18608 S   0.5   0.0  35:15.03 teamviewerd
+   4199 rstudio+  20   0  854192  28952  20072 S   0.5   0.0  36:15.72 rserver
+   5773 rstudio+  20   0   98764   9888   8512 S   0.5   0.0  24:31.07 rserver-monitor
+   6591 user      20   0   11.8g 344840 157112 S   0.5   0.1  20:27.14 TeamViewer
+ 766829 root      20   0 1371876  39408  12352 S   0.5   0.0   5:34.46 tailscaled
+1126386 user      20   0 5738720 356444  79192 S   0.5   0.1  42:05.78 claude
+1970920 root      20   0       0      0      0 I   0.5   0.0   0:00.54 kworker/18:0-events
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:31.35 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.05 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g

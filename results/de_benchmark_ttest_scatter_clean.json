@@ -1,0 +1,14 @@
+{
+  "n_cells": 3399892,
+  "n_genes_raw": 41321,
+  "n_clusters": 81,
+  "gene_chunk_size": 500,
+  "n_gpus": 8,
+  "results": {
+    "ttest_scatter_clean": {
+      "time": 1649.360734462738,
+      "method": "ttest",
+      "backend": "scatter_clean_8gpu"
+    }
+  }
+}

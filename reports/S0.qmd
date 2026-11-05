@@ -1,0 +1,119 @@
+---
+title: "Step S0: basi del lavoro"
+subtitle: "Capitolo LNBI scRNA DGX, 3 novembre 2026"
+lang: it
+format:
+  html:
+    embed-resources: true
+    toc: true
+---
+
+# In breve: possiamo cominciare a correggere il capitolo dal server?
+
+**A cosa serviva.** Prima di toccare il capitolo andavano messe in ordine le basi: una sola copia del progetto su cui lavorare, le regole di lavoro scritte, le tue decisioni del 3 novembre registrate, e una fotografia dei risultati originali per accorgerci se qualcosa li modifica.
+
+**Cosa abbiamo trovato.**
+
+1. **Il server è ora l'unica copia di lavoro ed è completo.** Era indietro di tre aggiornamenti rispetto a GitHub; ora è allineato. Il materiale della revisione è arrivato identico, file per file. Il Mac non ha nulla che il server non abbia.
+2. **I risultati originali sono intatti, ma tre quarti dei file esistono solo sul server.** Su 921 file di risultati, 706 (circa 19 GB: per ogni ripetizione i risultati dell'espressione differenziale, i cluster, i vicini e le coordinate UMAP) non sono su GitHub. Da oggi ne abbiamo l'impronta di ciascuno, così ci accorgiamo di ogni modifica.
+3. **Oggi il server non è adatto a cronometrare il nuovo riferimento CPU dello spatial.** I calcoli di altri due progetti tengono occupati circa 60 dei 128 processori e la CPU è a 80 gradi. Un tempo CPU misurato così sarebbe più lento del vero e gonfierebbe il vantaggio della GPU, cioè lo stesso difetto che la revisione ha contestato al nodo del DGX.
+4. **Il limite di temperatura del server pesa proprio sul calcolo CPU.** A marzo il calcolo CPU aveva a disposizione tutti i 128 processori. Le misure di ottobre dicono che il server arriva vicino alla soglia di rallentamento per calore già con circa 45 processi a pieno carico, e il 18 ottobre si è spento con circa 100. Una CPU che rallenta per il calore produce lo stesso errore del punto 3.
+5. **Il driver della scheda video non è più quello di marzo.** Oggi è 595.99, a marzo era 580.126. Va bene perché rifacciamo sia CPU sia GPU, ma il nuovo run non è confrontabile con i tempi GPU di marzo e i Metodi lo diranno.
+
+**Cosa devi decidere.**
+
+1. **Quando facciamo girare il nuovo riferimento spatial? Consiglio una finestra di circa 4 ore in cui sospendi i calcoli degli altri due progetti, per esempio stanotte.** Il calcolo controlla da solo che il server sia libero prima di partire, e registra carico e temperatura per ogni ripetizione.
+   - Farlo girare subito, con il server occupato: si guadagna mezza giornata, ma i tempi CPU sarebbero contestabili come quelli di marzo.
+   - Aspettare che gli altri due progetti finiscano da soli: tempi puliti, ma non sappiamo quando, e la scadenza è il 10 novembre.
+2. **Con quanti processori misuriamo la CPU? Consiglio una prova di 10 minuti a server libero: se a 128 processori la CPU non rallenta per il calore, teniamo 128 come a marzo; se rallenta, ti porto il numero più alto che regge.**
+   - Fissare subito 128 senza prova: confronto diretto con marzo, ma rischiamo tempi falsati dal calore o un altro spegnimento.
+   - Fissare subito un numero più basso, per esempio 64: run sicuro, ma il capitolo confronterebbe la GPU con una CPU ridotta, e un revisore lo noterebbe.
+
+**Comunque.**
+- Il nuovo riferimento spatial seguirà il brief che hai preparato: un processo per ripetizione, gli stessi gruppi di cellule per CPU e GPU, numero di processori registrato a ogni passo.
+- Intanto prepariamo il piano delle correzioni a partire dal registro della revisione, che non ha bisogno del server libero.
+- La scadenza regge solo con uno step al giorno fino al 9 novembre e il calcolo spatial fatto entro il 5. Se uno step slitta di un giorno, ti chiederò di domandare una proroga.
+
+Appena decidi questi due punti, lo step è chiuso.
+
+**Sui tempi di calcolo.** Le 3 ore del calcolo spatial sono la stima del brief. La finestra di 4 ore aggiunge la prova sul calore e i controlli. Le soglie di temperatura vengono dalle misure di ottobre sul server, prese mentre giravano altri progetti, non da una prova a pieno carico su 128 processori.
+
+
+
+# Risposte del PI e chiusura
+
+- Finestra del calcolo spatial: la indica il PI, con gli altri progetti sospesi (D-09).
+- Macchina della CPU: il DGX (nodo `poddgx02` riservato, 100 CPU come lo scRNA) è il riferimento, il server il controllo (D-11). Accesso dal server al DGX verificato con una chiave dedicata.
+- Driver GPU: si quantifica il confronto con marzo; se coincide, una frase breve nei Metodi (D-10).
+- Temperatura: il PI ha cambiato la pasta termica; alle 10:49-10:55 Tctl era 80-82 °C con load average 45-64, contro 89 °C con circa 45 processi a ottobre. La prova termica a server libero resta il controllo.
+
+Step chiuso il 3 novembre 2026.
+
+# Dubbi rinviati
+
+Al nuovo riferimento spatial (`docs/steps/S1.md`): server occupato, limite termico e driver GPU cambiato. Si leggono prima di lanciare il calcolo.
+
+# Cancelli
+
+| cancello | criterio | osservato | esito |
+|---|---|---|---|
+| allineamento | `main` del server = `origin/main` = clone del Mac | a4b9b9e sui tre; il server era 3 commit indietro (accd430) ed è stato portato avanti con fast-forward | superato |
+| materiale della revisione | md5 identici su server e Mac | 19 file su 19 (`md5sum -c`) | superato |
+| manoscritto | md5 di `manuscript/full_paper_LNBI.md` = valore del prompt | 4587032be8d2905007687e0bb50d848e | superato |
+| grezzi tracciati | `git diff --quiet HEAD -- results SPATIAL/results` | nessuna differenza | superato |
+| documentazione | `python3 -B tools/okf.py check --bundle docs` | 0 file con errori | superato |
+
+# Cosa è girato
+
+- Server `ssh:lesexp-server`, repo `/mnt/wwn-0x5000039d58caca35/2026.scRNA_DGX`, ramo `main`, base a4b9b9e.
+- Confronto Mac/server: elenco di tutti i file fuori da `.git` con dimensione, sui due lati.
+- Manifest md5: `manifests/raw_results_md5_2026-11-03.tsv`, md5 del file 44ae986412c98ba7c48ab369522ce6d8.
+- Skill di progetto `lnbi-scrna-dgx-session` registrata (adattata dalla bozza `manuscript/revisione_n2/SKILL_bozza_lnbi_scrna_dgx.md`).
+- Documentazione: `docs/` (8 decisioni, 2 step, panoramica, registro), `tools/okf.py` adattato da MMM.
+
+# Appendice
+
+## A1. Confronto fra il clone del Mac e il server (prima della copia)
+
+| voce | file |
+|---|---|
+| file sul server, fuori da `.git` | 1393 |
+| file sul Mac, fuori da `.git` | 436 |
+| solo sul Mac | 28: 2 `.DS_Store` e 26 librerie del render delle slide (`manuscript/talk_CIBB2026_files/libs/`), che si rigenerano |
+| solo sul server | 985: dati (`data/`, `SPATIAL/data/`), log, risultati non tracciati, `.venv` |
+| stesso percorso, dimensione diversa | 1: `.claude/settings.local.json` (impostazioni locali, non copiate) |
+
+Il conteggio del server include già i 19 file della revisione copiati dal Mac, che quindi non compaiono fra le differenze.
+
+## A2. Manifest dei risultati grezzi
+
+| cartella | tracciati da git | non tracciati | GB non tracciati |
+|---|---|---|---|
+| `results/` | 142 | 615 | 19,07 |
+| `SPATIAL/results/` | 73 | 91 | 0,20 |
+| totale | 215 | 706 | 19,27 |
+
+I non tracciati sono soprattutto risultati dell'espressione differenziale per ripetizione (115 file, 14,6 GB), grafi dei vicini (40 file, 2,7 GB), coordinate UMAP (115 file, 1,1 GB) e cluster (145 file, 0,8 GB). Esistono solo su questo server.
+
+## A3. Stato del server durante lo step
+
+| ora | load average (1, 5, 15 min) | Tctl |
+|---|---|---|
+| 10:49 | 45,23; 69,78; 72,09 | 82,1 °C |
+| 10:55 | 63,61; 59,89; 65,90 | 80,5 °C |
+
+Processi principali: script R di MMM (`R/s5/s5_build.R`, `analysis/audit/...`) e di geo_spatialtrans (`tools/S2.0_edges.py`).
+
+## A4. Da dove vengono i numeri del riassunto
+
+| nel riassunto | fonte | valore letto |
+|---|---|---|
+| "indietro di tre aggiornamenti" | `git branch -vv` sul server prima del pull | `main accd430 [origin/main: behind 3]` |
+| "identico, file per file" | `md5sum -c` sul manifest del Mac | 19 OK |
+| "Il Mac non ha nulla che il server non abbia" | tabella A1 | 28 file solo sul Mac, tutti di sistema o rigenerabili |
+| "921 file", "706", "circa 19 GB" | tabella A2 | 921; 706; 19,27 GB |
+| "circa 60 dei 128 processori", "80 gradi" | tabella A3; `nproc` = 128 | load 63,61; Tctl 80,5 °C |
+| "circa 45 processi", "il 18 ottobre si è spento con circa 100" | `compute_details` di lesexp-server, sezioni CPU limit e CPU temperature limits | 89 °C a circa 45 processi; crash a circa 100 worker il 2026-10-18 |
+| "tutti i 128 processori" a marzo | `SPATIAL/results/spatial_cpu_visium_hd_square_008um_r1_results.json`, `metadata.n_cpus` | 128 |
+| "595.99", "580.126" | `nvidia-smi` sul server; prompt del PI, punto 10 | 595.99.02; 580.126.09 |
+| "3 ore" | `manuscript/revisione_n2/PROMPT_rerun_spatial.md`, punto 5 | "circa 3 ore" |

@@ -1,0 +1,20 @@
+utc: 2026-11-03T14:05:36Z
+loadavg: 1.04 1.17 3.49
+tctl: +62.1°C
+gpu: 0 %, 313 MiB, 45, 210 MHz
+top_processes:
+1126386 user      20   0 5738720 353620  79028 S   2.0   0.1  41:57.15 claude
+2044381 user      20   0   15404   6928   3816 R   1.0   0.0   0:00.07 top
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:15.16 nvidia-modeset/kthread_q
+   2444 message+  20   0   24532  12216   6824 S   0.5   0.0  11:34.28 dbus-daemon
+   2477 root      20   0   19104  10136   7896 S   0.5   0.0   1:51.22 systemd-logind
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  38:52.98 fctsched
+   3873 root      20   0   41.0g   1.1g  36264 S   0.5   0.4  21:28.87 java
+   4032 root      20   0   19.0g  93256  18608 S   0.5   0.0  35:12.14 teamviewerd
+   5773 rstudio+  20   0   98764   9888   8512 S   0.5   0.0  24:29.18 rserver-monitor
+   6252 user      20   0   22296  13552   9620 S   0.5   0.0   5:58.36 systemd
+   8074 user      20   0 1324228  81496  52008 S   0.5   0.0  10:17.46 cloud-drive-ui
+   8279 user      20   0  811660  13012  11404 S   0.5   0.0  14:53.36 cloud-drive-dae
+1843744 user      20   0   71.3g  68404  17864 S   0.5   0.0   2:19.31 bun
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:29.83 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.04 kthreadd

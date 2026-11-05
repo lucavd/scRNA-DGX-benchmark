@@ -1,0 +1,27 @@
+{
+ "classes": {},
+ "by_doc": {
+  "chapter": {
+   "receipt": 410,
+   "figure": 93,
+   "review": 50,
+   "figure (short token)": 7,
+   "structural: version or hardware model": 2,
+   "structural: date or year": 2,
+   "manual": 1,
+   "structural: identifier or grant code": 1
+  },
+  "supplement": {
+   "receipt": 749,
+   "figure": 177,
+   "review": 29,
+   "figure (short token)": 14,
+   "manual": 5,
+   "structural: version or hardware model": 1,
+   "structural: date or year": 1
+  }
+ },
+ "unresolved": [],
+ "n_unresolved": 0,
+ "pass": true
+}

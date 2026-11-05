@@ -1,0 +1,159 @@
+{
+ "O1_T4T8_F1F5F8F9_3000w": {
+  "tag": "O1_T4T8_F1F5F8F9_3000w",
+  "src_md5": "7f9a7088e01488e871ccf52d952e810e",
+  "pages_total": 17,
+  "refs_start_page": 15,
+  "latex_errors": 0,
+  "undefined_citations": [],
+  "overfull_hbox": 13,
+  "abstract_words": 247,
+  "body_words_intro_to_end": 4419,
+  "keep_tables": [
+   4,
+   8
+  ],
+  "keep_figs": [
+   1,
+   5,
+   8,
+   9
+  ],
+  "budgets": {
+   "Introduction": 350,
+   "Data and Methods": 900,
+   "Results": 1100,
+   "Discussion": 550,
+   "Conclusions": 100
+  },
+  "prose_words_before": {
+   "Introduction": 621,
+   "Data and Methods": 3103,
+   "Results": 3533,
+   "Discussion": 2199,
+   "Conclusions": 243,
+   "Conflict of Interest": 7,
+   "Acknowledgements": 110,
+   "Funding": 55,
+   "Availability of Data and Software Code": 21
+  }
+ },
+ "O1b_T4T5T8_F1F9_3200w": {
+  "tag": "O1b_T4T5T8_F1F9_3200w",
+  "src_md5": "19780bb71d4a8912173ee8e6ddd1e5ac",
+  "pages_total": 17,
+  "refs_start_page": 14,
+  "latex_errors": 0,
+  "undefined_citations": [],
+  "overfull_hbox": 13,
+  "abstract_words": 247,
+  "body_words_intro_to_end": 4655,
+  "keep_tables": [
+   4,
+   5,
+   8
+  ],
+  "keep_figs": [
+   1,
+   9
+  ],
+  "budgets": {
+   "Introduction": 350,
+   "Data and Methods": 950,
+   "Results": 1200,
+   "Discussion": 600,
+   "Conclusions": 100
+  },
+  "prose_words_before": {
+   "Introduction": 621,
+   "Data and Methods": 3103,
+   "Results": 3533,
+   "Discussion": 2199,
+   "Conclusions": 243,
+   "Conflict of Interest": 7,
+   "Acknowledgements": 110,
+   "Funding": 55,
+   "Availability of Data and Software Code": 21
+  }
+ },
+ "O1c_T4T8_F1F5F8F9_3600w": {
+  "tag": "O1c_T4T8_F1F5F8F9_3600w",
+  "src_md5": "8fd33f9d31d1bac76a89492431d0b301",
+  "pages_total": 18,
+  "refs_start_page": 15,
+  "latex_errors": 0,
+  "undefined_citations": [],
+  "overfull_hbox": 13,
+  "abstract_words": 247,
+  "body_words_intro_to_end": 4987,
+  "keep_tables": [
+   4,
+   8
+  ],
+  "keep_figs": [
+   1,
+   5,
+   8,
+   9
+  ],
+  "budgets": {
+   "Introduction": 400,
+   "Data and Methods": 1050,
+   "Results": 1300,
+   "Discussion": 700,
+   "Conclusions": 120
+  },
+  "prose_words_before": {
+   "Introduction": 621,
+   "Data and Methods": 3103,
+   "Results": 3533,
+   "Discussion": 2199,
+   "Conclusions": 243,
+   "Conflict of Interest": 7,
+   "Acknowledgements": 110,
+   "Funding": 55,
+   "Availability of Data and Software Code": 21
+  }
+ },
+ "O2_T1T4T5T8_F1F5F8F9_5000w": {
+  "tag": "O2_T1T4T5T8_F1F5F8F9_5000w",
+  "src_md5": "5e048747a40643cb65eb262cb185a317",
+  "pages_total": 23,
+  "refs_start_page": 20,
+  "latex_errors": 0,
+  "undefined_citations": [],
+  "overfull_hbox": 15,
+  "abstract_words": 247,
+  "body_words_intro_to_end": 6767,
+  "keep_tables": [
+   1,
+   4,
+   5,
+   8
+  ],
+  "keep_figs": [
+   1,
+   5,
+   8,
+   9
+  ],
+  "budgets": {
+   "Introduction": 450,
+   "Data and Methods": 1400,
+   "Results": 1800,
+   "Discussion": 1100,
+   "Conclusions": 150
+  },
+  "prose_words_before": {
+   "Introduction": 621,
+   "Data and Methods": 3103,
+   "Results": 3533,
+   "Discussion": 2199,
+   "Conclusions": 243,
+   "Conflict of Interest": 7,
+   "Acknowledgements": 110,
+   "Funding": 55,
+   "Availability of Data and Software Code": 21
+  }
+ }
+}

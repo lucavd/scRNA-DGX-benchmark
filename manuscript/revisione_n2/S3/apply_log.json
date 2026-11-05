@@ -1,0 +1,786 @@
+{
+ "at": "2026-11-04T18:45:11+01:00",
+ "approved": [
+  "ALL"
+ ],
+ "files": {
+  "manuscript/full_paper_LNBI.md": {
+   "md5_before": "4587032be8d2905007687e0bb50d848e",
+   "md5_after": "09df07d2b8713da7385612991fb1d7df",
+   "n_applied": 121
+  },
+  "manuscript/bibliography/cibb2026_references.bib": {
+   "md5_before": "84b05054fa0ee3a54f8a1594cdd9205c",
+   "md5_after": "0545ef29119d63866360fb950ce29c11",
+   "n_applied": 6
+  }
+ },
+ "applied": [
+  {
+   "edit_id": "R4-016",
+   "voci": "R0238;R0736",
+   "line": 455,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-015",
+   "voci": "(nessuna voce del piano: scelte CLUSTER_ACK e LLM)",
+   "line": 451,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-014",
+   "voci": "R0237",
+   "line": 450,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-013",
+   "voci": "R0505;R0236;R0341;R0637",
+   "line": 441,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-012",
+   "voci": "R0635",
+   "line": 439,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-011",
+   "voci": "R0634;R0233",
+   "line": 438,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-010",
+   "voci": "R0633",
+   "line": 437,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-009",
+   "voci": "R0632",
+   "line": 436,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-008",
+   "voci": "R0619;R0223;R0654;R0649;R0623;R0226;R0339;R0624;R0625;R0227;R0627;R0228;R0229;R0628;R0556",
+   "line": 432,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-007",
+   "voci": "R0216;R0194(coperta);R0197(coperta);R0603;R0605;R0215;R0656;R0714;R0606;R0607;R0217;R0552;R0608;R0218;R0609",
+   "line": 426,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-006",
+   "voci": "R0595;R0596;R0598;R0211;R0599;R0600;R0601;R0212;R0684;R0602;R0213;R0683;R0697(parte riga 424);R0674(parte riga 424)",
+   "line": 424,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-005",
+   "voci": "R0590;R0592;R0502;R0593;R0249;R0542;R0693;R0594;R0650;R0664",
+   "line": 422,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-004",
+   "voci": "R0586;R0587;R0206;R0691;R0588;R0207;R0545;R0663;R0589",
+   "line": 420,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-003",
+   "voci": "R0580;R0581;R0202;R0467;R0692;R0726;R0582;R0203;R0659;R0583;R0584;R0204;R0585;R0205;R0368(propagazione 12);R0539(parte riga 418)",
+   "line": 418,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-002",
+   "voci": "R0199;R0575;R0543;R0679;R0576;R0577;R0200;R0578;R0201;R0500;R0579;R0712;R0548(propagazione 128, frase tolta);D-16",
+   "line": 416,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-001",
+   "voci": "R0571;R0368(propagazione 412, coperta)",
+   "line": 412,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-046",
+   "voci": "R0196;R0469;R0557;R0197",
+   "line": 321,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-045",
+   "voci": "R0195",
+   "line": 319,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-044",
+   "voci": "R0194",
+   "line": 318,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-043",
+   "voci": "R0191",
+   "line": 315,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-042",
+   "voci": "R0688;R0686",
+   "line": 308,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-041",
+   "voci": "R0688",
+   "line": 306,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-040",
+   "voci": "R0185;R0180",
+   "line": 304,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-039",
+   "voci": "R0167",
+   "line": 302,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-038",
+   "voci": "R0182;R0674",
+   "line": 300,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-037",
+   "voci": "R0179",
+   "line": 297,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-036",
+   "voci": "R0178",
+   "line": 296,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-035",
+   "voci": "R0177",
+   "line": 295,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-034",
+   "voci": "R0176",
+   "line": 294,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-033",
+   "voci": "R0173",
+   "line": 291,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-032",
+   "voci": "R0170",
+   "line": 290,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-031",
+   "voci": "R0171",
+   "line": 289,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-030",
+   "voci": "R0170",
+   "line": 288,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-029",
+   "voci": "R0167;R0718",
+   "line": 285,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-028",
+   "voci": "R0167;R0718",
+   "line": 283,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-027",
+   "voci": "R0166;R0682",
+   "line": 281,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-026",
+   "voci": "R0165",
+   "line": 279,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-025",
+   "voci": "R0164;R0674",
+   "line": 278,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-024",
+   "voci": "R0161",
+   "line": 275,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-023",
+   "voci": "R0697",
+   "line": 271,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-022",
+   "voci": "R0161",
+   "line": 269,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-021",
+   "voci": "R0156;R0468;R0710",
+   "line": 267,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-020",
+   "voci": "R0154",
+   "line": 265,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-019",
+   "voci": "R0153",
+   "line": 264,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-018",
+   "voci": "R0145;R0148;R0151;R0152;R0674;R0697",
+   "line": 262,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-017",
+   "voci": "R0142;R0143;R0243",
+   "line": 260,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-016",
+   "voci": "R0641;R0137;R0372;R0681;R0138;R0248;R0550;R0551",
+   "line": 252,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-015",
+   "voci": "R0680;R0641;R0137;R0372;R0681;R0252",
+   "line": 250,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-014",
+   "voci": "R0498;R0130;R0540",
+   "line": 244,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-013",
+   "voci": "R0128;R0129;R0709",
+   "line": 242,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-012",
+   "voci": "R0244;R0371;R0245;R0541;R0652",
+   "line": 240,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-102",
+   "voci": "R0498",
+   "line": 238,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-011",
+   "voci": "R0121",
+   "line": 232,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-010",
+   "voci": "R0353;R0247;R0708",
+   "line": 231,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-009",
+   "voci": "R0368",
+   "line": 229,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-008",
+   "voci": "R0352",
+   "line": 228,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-007",
+   "voci": "R0352;R0117",
+   "line": 227,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-006",
+   "voci": "R0352",
+   "line": 225,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-005",
+   "voci": "R0114;R0677;R0116;R0367;R0548",
+   "line": 223,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-004",
+   "voci": "R0349",
+   "line": 217,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-003",
+   "voci": "R0700",
+   "line": 215,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-047",
+   "voci": "R0252",
+   "line": 189,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-101",
+   "voci": "R0044",
+   "line": 187,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-002",
+   "voci": "R0082;R0640;R0678",
+   "line": 185,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R3-001",
+   "voci": "R0558;R0648;R0661",
+   "line": 183,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-041",
+   "voci": "R0496;R0078",
+   "line": 173,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-040",
+   "voci": "R0455;R0076;R0707",
+   "line": 171,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-039",
+   "voci": "R0454",
+   "line": 170,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-038",
+   "voci": "R0453",
+   "line": 166,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-037",
+   "voci": "R0466;R0246;R0647;R0662;R0703",
+   "line": 165,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-036",
+   "voci": "R0279",
+   "line": 163,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-035",
+   "voci": "R0279;R0073;R0452",
+   "line": 162,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-034",
+   "voci": "R0451;R0072;R0278;R0546",
+   "line": 161,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-033",
+   "voci": "R0276;R0070;R0449;R0643",
+   "line": 159,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-032",
+   "voci": "R0448;R0069;R0242;R0642;R0645",
+   "line": 157,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-031",
+   "voci": "R0445",
+   "line": 154,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-030",
+   "voci": "R0342;R0464",
+   "line": 149,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-029",
+   "voci": "R0657",
+   "line": 145,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-028",
+   "voci": "R0657",
+   "line": 144,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-027",
+   "voci": "R0553",
+   "line": 138,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-026",
+   "voci": "R0259;R0426;R0428;R0465",
+   "line": 122,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-025",
+   "voci": "R0687;R0422;R0062;R0423;R0063;R0685;R0463;R0425;R0493",
+   "line": 115,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-024",
+   "voci": "R0706;R0461;R0252;R0710",
+   "line": 111,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-023",
+   "voci": "R0420",
+   "line": 110,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-022",
+   "voci": "R0462",
+   "line": 109,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-021",
+   "voci": "R0492",
+   "line": 105,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-020",
+   "voci": "R0489",
+   "line": 102,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-019",
+   "voci": "",
+   "line": 96,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-018",
+   "voci": "R0705;R0050;R0410",
+   "line": 94,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-017",
+   "voci": "R0407",
+   "line": 90,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-016",
+   "voci": "R0407",
+   "line": 89,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-015",
+   "voci": "R0407;R0539",
+   "line": 88,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-014",
+   "voci": "R0407;R0044;R0487;R0045;R0047;R0241;R0348;R0370;R0404;R0405;R0406;R0458;R0644;R0676",
+   "line": 87,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-013",
+   "voci": "R0407",
+   "line": 85,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-012",
+   "voci": "R0459;R0653;R0665",
+   "line": 83,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-011",
+   "voci": "R0704;R0460",
+   "line": 82,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-010",
+   "voci": "R0400;R0391;R0040",
+   "line": 78,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-009",
+   "voci": "R0391",
+   "line": 77,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-008",
+   "voci": "R0398;R0387;R0391",
+   "line": 76,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-007",
+   "voci": "R0390",
+   "line": 75,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-006",
+   "voci": "R0390;R0030",
+   "line": 65,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-005",
+   "voci": "R0387;R0480;R0027;R0651",
+   "line": 61,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-004",
+   "voci": "R0386",
+   "line": 57,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-003",
+   "voci": "R0386;R0026",
+   "line": 56,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-002",
+   "voci": "R0025;R0385;R0715",
+   "line": 54,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R2-001",
+   "voci": "R0024;R0479;R0384;R0547",
+   "line": 53,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-015",
+   "voci": "R0256;R0639;R0732",
+   "line": 44,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-014",
+   "voci": "R0240",
+   "line": 42,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-013",
+   "voci": "R0022",
+   "line": 41,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-012",
+   "voci": "R0240",
+   "line": 40,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-011",
+   "voci": "R0240",
+   "line": 39,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-010",
+   "voci": "R0240",
+   "line": 38,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-009",
+   "voci": "R0240;R0538",
+   "line": 37,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-008",
+   "voci": "R0020",
+   "line": 35,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-007",
+   "voci": "R0538",
+   "line": 34,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-006",
+   "voci": "R0544;R0255",
+   "line": 28,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-005",
+   "voci": "R0015",
+   "line": 24,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-004",
+   "voci": "R0472;R0014",
+   "line": 23,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-003",
+   "voci": "R0471;R0013",
+   "line": 22,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-002",
+   "voci": "R0731;R0007;R0240;R0638;R0565;R0566;R0567;R0568;R0639",
+   "line": 14,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R1-001",
+   "voci": "R0730;R0001;R0253;R0559",
+   "line": 2,
+   "file": "manuscript/full_paper_LNBI.md"
+  },
+  {
+   "edit_id": "R4-020",
+   "voci": "R0556;R0608",
+   "line": 382,
+   "file": "manuscript/bibliography/cibb2026_references.bib"
+  },
+  {
+   "edit_id": "R4-102",
+   "voci": "R0536",
+   "line": 366,
+   "file": "manuscript/bibliography/cibb2026_references.bib"
+  },
+  {
+   "edit_id": "R4-019",
+   "voci": "R0535",
+   "line": 356,
+   "file": "manuscript/bibliography/cibb2026_references.bib"
+  },
+  {
+   "edit_id": "R4-101",
+   "voci": "R0518",
+   "line": 144,
+   "file": "manuscript/bibliography/cibb2026_references.bib"
+  },
+  {
+   "edit_id": "R4-018",
+   "voci": "R0515",
+   "line": 112,
+   "file": "manuscript/bibliography/cibb2026_references.bib"
+  },
+  {
+   "edit_id": "R4-017",
+   "voci": "R0512",
+   "line": 76,
+   "file": "manuscript/bibliography/cibb2026_references.bib"
+  }
+ ],
+ "pending": [],
+ "errors": [],
+ "n_diary_rows": 190,
+ "dry_run": false
+}

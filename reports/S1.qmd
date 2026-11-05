@@ -1,0 +1,153 @@
+---
+title: "Step S1: nuovo riferimento per il benchmark spatial"
+subtitle: "Capitolo LNBI scRNA DGX, 3 novembre 2026"
+lang: it
+format:
+  html:
+    embed-resources: true
+    toc: true
+---
+
+# In breve: il benchmark spatial rifatto bene conferma i numeri del capitolo?
+
+**A cosa serviva.** La revisione aveva trovato due difetti nei tempi spatial di marzo: la CPU rallentava dopo la prima ripetizione, e CPU e GPU calcolavano la co-occorrenza su gruppi di cellule diversi. Abbiamo rifatto il benchmark con ogni ripetizione in un processo nuovo e con gli stessi gruppi per CPU e GPU. La CPU di riferimento è il nodo DGX riservato, con 100 CPU come per lo scRNA; la CPU del server fa da controllo; tutte le misure sono state prese a macchine libere.
+
+**Cosa abbiamo trovato.**
+
+1. **Il rallentamento della CPU a marzo era un difetto di Squidpy, non del calcolo.** Dopo l'arricchimento di vicinato, Squidpy lascia numba a un solo thread per il resto del processo: lo abbiamo verificato (da 100 thread a 1). Con un processo per ripetizione, la co-occorrenza CPU a Visium HD 8 µm dura 103 s in ogni ripetizione sul DGX e 72 s sul server, invece di circa 3.570 s.
+2. **Lo speedup a Visium HD 8 µm scende da 51,6x a 7,8x.** La CPU del DGX impiega 719 s e la GPU 92 s; con la CPU del server lo speedup è 6,7x. Sul Visium v1 lo speedup è 1,4x (1,6x con il server), sul Visium HD 2 µm è 10,4x (9,4x). Contare o escludere la prima ripetizione ora dà lo stesso valore.
+3. **La GPU sbagliava la co-occorrenza a Visium HD 8 µm, anche a marzo; la versione corretta di rapids-singlecell la calcola giusta nello stesso tempo.** Con la versione 0.14.1 il risultato GPU coincide con quello CPU solo su 8 delle 49 distanze, perché il numero di coppie di bin supera il limite degli interi a 32 bit. Con la versione 0.15.1 coincide su tutte le 49 (differenza massima 0,0002), e il tempo resta lo stesso (rapporto 0,98).
+4. **Lo speedup dipende dalla CPU di riferimento, dal 10% al 14%, in direzioni diverse.** Sul Visium v1 la CPU del DGX è più veloce di quella del server. A Visium HD è più lenta: perde negli step che usano numba (Moran, Geary, co-occorrenza, UMAP) e guadagna nella PCA.
+5. **Il resto regge.** Il cambio di driver della scheda video non ha effetto: i tempi GPU degli step che non dipendono dai gruppi restano entro il 6% di marzo. Il controllo CPU sul server riproduce la prima ripetizione di marzo entro il 6%. I risultati originali sono intatti, e durante le misure non girava nessun altro calcolo.
+
+**Comunque.**
+
+- Come hai deciso, a Visium HD 8 µm la co-occorrenza esce dagli speedup: senza di essa lo speedup end-to-end è 6,9x (6,1x con la CPU del server). Il difetto si riporta come risultato, insieme alla verifica sulla versione corretta.
+- Nel capitolo la CPU di riferimento resta il DGX, e il server compare come controllo insieme alla differenza che produce.
+- Nei Metodi correggeremo tre cose: il dataset Visium HD è il "Tiny 3'" di 10x e non l'FFPE; la workstation ha 128 thread; il driver della scheda video è cambiato. Diremo anche che ogni ripetizione è un processo nuovo, che quindi include la compilazione iniziale.
+- Il piano delle correzioni terrà conto di due cose: per lo spatial la scelta sulla prima ripetizione non cambia più nulla; i run CPU dello scRNA, fatti anch'essi in un unico processo, vanno controllati per lo stesso difetto dei thread.
+- Quando integreremo i risultati spatial nel testo terremo conto che i gruppi di Leiden cambiano con la macchina: a Visium HD 8 µm sono 4 sul DGX, 7 sul server e 3 o 4 sulla GPU.
+
+Non c'è nulla da decidere: se non hai dubbi, lo step è chiuso.
+
+# Dubbi rinviati
+
+| a | cosa | perché | cosa serve per chiuderlo |
+|---|---|---|---|
+| Piano di implementazione (S2) | Convenzione sulle ripetizioni; controllo dei run CPU dello scRNA in un unico processo; decisione sulla co-occorrenza GPU | Sono scelte del piano, che copre tutto il capitolo | Proposta di convenzione e lettura del codice scRNA |
+| Correzioni di sostanza (S3) | Dataset Visium HD "Tiny 3'", workstation (128 thread, driver), riferimento CPU sul DGX, processi freddi, ligando-recettore a 1 thread | Correggono il testo dei Metodi | Testo approvato dal PI |
+| Integrazione dei risultati spatial (S5) | Tabelle e figure dai nuovi JSON; gruppi di Leiden che cambiano con la macchina; dipendenza dello speedup dalla CPU | Toccano Risultati e Discussione | Numeri riletti dai nuovi JSON |
+
+# Cancelli e previsioni
+
+P1-P6 sono le previsioni di questo step, pre-registrate prima dei calcoli (commit b4b304f). Intervalli: per i rapporti, intervallo bootstrap percentile al 95% sulle ripetizioni (B = 2000).
+
+| id | atteso | intervallo | osservato | esito | spiegazione |
+|---|---|---|---|---|---|
+| G1 risultati grezzi intatti | 0 differenze | 0 | 0 su 921 file, prima e dopo | superato | |
+| G2 run completi | 45 JSON e il resto | completo | 45 JSON, 90 istantanee, 6 concordanze, prova del meccanismo | superato | |
+| G3 macchina libera | load1 ≤ 3, nessun processo estraneo | | server: load1 massimo 2,84; DGX: solo il job 425527 sul nodo | superato | |
+| G4 thread | 100 (DGX), 128 (server) | uguale | 100 e 128 all'inizio di ogni ripetizione; profilo identico | superato | Il ligando-recettore parte sempre a 1 thread numba |
+| G5 stessi gruppi | stesso file, stesse forme | | 16, 4, 3.027 gruppi; co-occorrenza CPU identica fra ripetizioni | superato | |
+| P1 stabilità co-occorrenza CPU, HD 8 µm | circa 1 | ≤ 1,20 | DGX 1,008; server 1,003 | confermata | |
+| P2 thread dopo `nhood_enrichment` | 1 | 1 | da 100 a 1 | confermata | |
+| P3 effetto del driver | 1 | 0,9-1,1 | 0,941; 1,038; 1,041 | confermata | |
+| P4 processo freddo come marzo rip. 1 | 1 | 0,9-1,1 | 0,970; 1,056; 1,022 | confermata | |
+| P5 CPU server / CPU DGX | 1 | 0,9-1,1 | 1,137; 0,858; 0,901 [0,865; 0,932] | smentita (Visium v1, HD 8 µm), indeterminata (HD 2 µm) | Spiegata step per step (tabella HD 8 µm sotto) |
+| P6 speedup HD 8 µm, DGX | 6,4 | 5,75-7,03 | 7,80 [7,75; 7,85] | smentita | Spiegata da P5: con il server 6,69 |
+
+Prova termica sul server: Tctl massimo 81,6 °C; frequenza negli ultimi 2 minuti al 98,0% di quella dei minuti 1-2; si tengono 128 thread.
+
+# Tempi totali e speedup
+
+Media (SD) su 5 ripetizioni, ognuna in un processo nuovo. Speedup = media CPU / media GPU. Le ripetizioni 2-5 danno valori uguali entro l'intervallo (`SPATIAL/results_v2/s1_speedups.csv`).
+
+| piattaforma | CPU DGX (s) | CPU server (s) | GPU (s) | speedup DGX [IC 95%] | speedup server [IC 95%] | marzo (capitolo) |
+|---|---|---|---|---|---|---|
+| Visium v1 | 33,9 (1,0) | 38,5 (0,3) | 24,0 (0,2) | 1,41 [1,38; 1,45] | 1,61 [1,59; 1,62] | 1,7x |
+| Visium HD 8 µm | 719,0 (3,2) | 617,2 (11,3) | 92,2 (0,7) | 7,80 [7,75; 7,85] | 6,69 [6,60; 6,80] | 51,6x |
+| Visium HD 2 µm | 1146,1 (49,8) | 1032,4 (26,1) | 109,9 (0,8) | 10,43 [10,15; 10,82] | 9,39 [9,21; 9,59] | 10,8x |
+
+Senza la co-occorrenza (sbagliata sulla GPU a HD 8 µm): Visium HD 8 µm 6,87x con il DGX [6,82; 6,92], 6,08x con il server; Visium v1 1,36x e 1,36x.
+
+# Visium HD 8 µm step per step
+
+Media su 5 ripetizioni (s).
+
+| step | CPU DGX (s) | CPU server (s) | GPU (s) | speedup DGX | speedup server |
+|---|---|---|---|---|---|
+| data_loading | 3,87 | 3,32 | 3,93 | 0,99 | 0,84 |
+| qc_filtering | 2,72 | 1,58 | 3,07 | 0,89 | 0,51 |
+| normalization | 2,62 | 2,82 | 0,09 | 30,44 | 32,71 |
+| hvg_selection | 1,03 | 1,36 | 0,58 | 1,77 | 2,35 |
+| pca | 33,65 | 77,48 | 0,91 | 37,02 | 85,23 |
+| expression_neighbors | 58,06 | 70,16 | 4,29 | 13,53 | 16,36 |
+| leiden | 21,25 | 19,36 | 1,65 | 12,91 | 11,76 |
+| umap | 269,13 | 198,37 | 1,37 | 197,09 | 145,27 |
+| spatial_neighbors | 45,23 | 55,79 | 56,35 | 0,80 | 0,99 |
+| spatial_autocorr_moran | 82,65 | 51,94 | 3,98 | 20,77 | 13,05 |
+| spatial_autocorr_geary | 82,08 | 50,73 | 0,67 | 122,36 | 75,62 |
+| co_occurrence (risultato GPU errato) | 103,24 | 72,23 | 2,55 | 40,45 | 28,30 |
+| nhood_enrichment | 13,50 | 12,11 | 12,78 | 1,06 | 0,95 |
+| total | 719,03 | 617,24 | 92,21 | 7,80 | 6,69 |
+
+# Concordanza CPU-GPU
+
+Media sulle 5 coppie di ripetizioni. ARI: intervallo sulle 5 coppie.
+
+| piattaforma | confronto | Moran ρ | Geary ρ | ARI cluster | co-occorrenza ρ | arricchimento ρ |
+|---|---|---|---|---|---|---|
+| Visium v1 | DGX contro GPU | 1,0000 | 1,0000 | 0,856-0,856 | 1,000 | 0,998 |
+| Visium v1 | server contro GPU | 1,0000 | 1,0000 | 0,856-0,856 | 1,000 | 0,998 |
+| Visium HD 8 µm | DGX contro GPU | 0,9999 | 0,9995 | 0,971-0,974 | 0,112 | 1,000 |
+| Visium HD 8 µm | server contro GPU | 0,9999 | 0,9995 | 0,972-0,975 | 0,112 | 1,000 |
+| Visium HD 2 µm | DGX contro GPU | 1,0000 | 0,9999 | 0,071-0,071 | non calcolata (>500 gruppi) | non calcolato (>500 gruppi) |
+| Visium HD 2 µm | server contro GPU | 1,0000 | 0,9999 | 0,084-0,084 | non calcolata (>500 gruppi) | non calcolato (>500 gruppi) |
+
+**Co-occorrenza a HD 8 µm.** Con gli stessi 4 gruppi la matrice GPU coincide con la CPU sulle prime 8 delle 49 distanze e differisce sulle altre 41 (massima differenza 61,5). I contatori di rapids-singlecell 0.14.1 sono interi a 32 bit; le coppie ordinate di bin entro la soglia superano 2^31 dalla soglia 6 e 2^32 dalla soglia 8 (4,52 miliardi). Le matrici GPU di marzo a HD 8 µm hanno le stesse 17 distanze tutte a zero. La versione 0.15.1 di rapids-singlecell (20 maggio 2026) dichiara corretto l'overflow.
+
+# Verifica della co-occorrenza con rapids-singlecell 0.15.1
+
+Decisione del PI del 3 novembre (D-13). Attese pre-registrate nel commit 9afea35, prima del run. Stessa pipeline fino ai gruppi, poi la sola co-occorrenza GPU, una ripetizione per processo; immagine derivata che cambia solo rapids-singlecell (`pip freeze`: `rapids_singlecell==0.14.1` sostituito da `rapids-singlecell-cu12==0.15.1`; id `sha256:4fbe1a15d8e2...`). Run dalle 19:31 alle 19:36, load1 massimo 0,87.
+
+| id | atteso | osservato | esito |
+|---|---|---|---|
+| V1 immagine derivata | solo rapids-singlecell diverso | solo rapids-singlecell diverso | superato |
+| V2 macchina libera | load1 ≤ 3 | massimo 0,87 | superato |
+| V3 0.14.1 come la pipeline | identica | identica bit per bit, 5 su 5 (8 distanze su 49 uguali alla CPU) | superato |
+| Q1 0.15.1, HD 8 µm | 49 su 49 | 49 su 49, 5 su 5; differenza massima 0,00022 | confermata |
+| Q2 0.15.1, Visium v1 | 49 su 49 | 49 su 49, 5 su 5; differenza massima 1e-5 | confermata |
+| Q3 tempo 0.15.1 / 0.14.1 | 1 (0,9-1,1) | 0,983 [0,951; 1,004] | confermata |
+
+Nella verifica la sola co-occorrenza GPU a HD 8 µm dura 4,41 s con 0.15.1 e 4,49 s con 0.14.1; dentro la pipeline la stessa chiamata con 0.14.1 durava 2,55 s, perché le librerie CUDA erano già caricate dagli step precedenti. Il rapporto Q3 dice che la correzione non cambia il tempo. Per la decisione del PI la co-occorrenza resta comunque fuori dagli speedup a Visium HD.
+
+# Cosa è girato
+
+- Codice: ramo `rerun-spatial-v2`, commit d516404 (script del benchmark), f04e364 (launcher DGX, script di valutazione), be2f618 e 8dc8daa (finestra sul server); script in `SPATIAL/scripts/` e `SPATIAL/slurm/spatial_cpu_ref_dgx.sh`.
+- Immagine: `lucavd/sc-benchmark-spatial:latest`, id `sha256:738c8cc7301590c95a3ddc3b7dd74bafeefee1f1ce188063e14a166a707a6ddd`; SIF sul DGX sha256 `9f80e5134b74d4fd3c1ca142c9462d7908bdea0129b2c4779dd998d6b252eff8`.
+- DGX: job SLURM 425527 su `poddgx02`, esclusivo, 2 h 44 min 37 s (13:27-16:12), 15 passi da 100 CPU più la prova del meccanismo.
+- Server: finestra dalle 14:07 alle 18:19 (prova termica, attesa dei gruppi dal DGX fino alle 14:53, GPU fino alle 15:21, controllo CPU fino alle 18:18, confronti).
+- Verifica della co-occorrenza: commit 0dcd091 del ramo (script `s1_cooc_check.py`, `s1_cooc_check_eval.py`, `run_cooc_check_s1.sh`, `Dockerfile.spatial_rsc0151`); risultato `SPATIAL/results_v2/cooc_check/cooc_check_eval.json` (md5 eeba7c21549c8769725720b638777329).
+- Dati: 25 file letti, md5 identici su server e DGX.
+- Integrità: `SPATIAL/results_v2/integrity/` (manifest dei grezzi, 921 file, 0 differenze prima e dopo).
+- md5 dei file di risultato usati qui: `s1_evaluation.json` 16ef576748159a31e124b83b96773efd; `s1_step_stats.csv` 87d55545171f96d8e63be81291f1f1c7; `s1_speedups.csv` ab1db1bab958d393cb92fbdd0c070d0e; `s1_extra_numbers.json` bbacec7315ae5e9d5676a9d5d00f65c0; `mechanism_dgx/mechanism_numba_threads.json` 14ce47470efd9a96e2aab25f856cd894; `thermal/thermal_eval.json` 3be5130776e66d64dd1a2fca9e6e983a; `concordance_reference/spatial_concordance_visium_hd_square_008um.json` 8650ebd9c6deed060161f2e5dc9f500b; `integrity/G1_raw_results_md5_after.json` a08774ee7d1fc65196f43fb3ed74f675.
+
+# Appendice: da dove vengono i numeri del riassunto
+
+| frase | file e campo | valore letto |
+|---|---|---|
+| da 100 thread a 1 | `mechanism_dgx/mechanism_numba_threads.json`, `calls_that_lowered_threads` | 100 → 1 |
+| 103 s sul DGX, 72 s sul server | `s1_step_stats.csv`, co_occurrence, HD 8 µm, `mean_1_5` | 103,24; 72,23 |
+| circa 3.570 s | `SPATIAL/results/spatial_cpu_visium_hd_square_008um_r2..r5_results.json`, co_occurrence | 3.570,99-3.574,25 |
+| 51,6x | manoscritto, Tabella 8 | 51,6x |
+| 7,8x; 719 s; 92 s; 6,7x | `s1_speedups.csv` total 1_5; `s1_step_stats.csv` total | 7,80; 719,03; 92,21; 6,69 |
+| 1,4x (1,6x); 10,4x (9,4x) | `s1_speedups.csv` total 1_5 | 1,41 (1,61); 10,43 (9,39) |
+| prime 8 delle 49 distanze | `s1_extra_numbers.json`, `hd8_cpu_gpu_same_groups.first_unequal_interval` | 8 (41 diverse) |
+| limite degli interi a 32 bit | `s1_cooc_overflow_check.json`: coppie entro la soglia 8 | 4.516.749.851 |
+| 49 distanze su 49, differenza 0,0002 | `cooc_check/cooc_check_eval.json`, `Q1_hd8_rsc0151_equal_intervals`, `Q1_hd8_rsc0151_max_abs_diff` | 49 (5 su 5); 0,00022 |
+| rapporto 0,98 | `cooc_check/cooc_check_eval.json`, `Q3_ratio` | 0,983 |
+| dal 10% al 14% | `s1_evaluation.json`, P5 | 1,137; 0,858; 0,901 |
+| entro il 6% (driver) | `s1_evaluation.json`, P3 | 0,941; 1,038; 1,041 |
+| entro il 6% (marzo) | `s1_evaluation.json`, P4 | 0,970; 1,056; 1,022 |
+| 6,9x (6,1x) senza co-occorrenza | `s1_extra_numbers.json`, `speedup_total_without_co_occurrence` | 6,869; 6,079 |
+| 4, 7, 3 o 4 gruppi | `s1_extra_numbers.json`, `own_leiden_clusters` HD 8 µm | 4; 7; 3,4,3,3,3 |

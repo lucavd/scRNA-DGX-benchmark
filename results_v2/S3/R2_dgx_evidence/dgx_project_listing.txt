@@ -1,0 +1,25 @@
+-rwxr-x--- 1 u0044 gprojects 9918935040 Mar 25  2026 /mnt/projects/dctv/dgx/u0044/sc-gpu-benchmark/sc-benchmark.sif
+
+/mnt/projects/dctv/dgx/u0044/sc-gpu-benchmark/:
+total 9811432
+drwxr-x--- 9 u0044 gprojects        228 May  7 09:04 .
+drwxr-s--- 3 u0044 dctv_dgx          34 Jul  6 21:33 ..
+-rw-rw-r-- 1 u0044 gprojects      38378 Mar 17  2026 CLAUDE.md
+drwxr-x--- 2 u0044 gprojects        261 Mar 20  2026 data
+drwxr-x--- 2 u0044 gprojects          0 Mar 11  2026 figures
+drwxr-x--- 2 u0044 gprojects       9520 May  7 09:01 logs
+drwxr-x--- 2 u0044 gprojects      32399 Mar 23  2026 results
+-rwxr-x--- 1 u0044 gprojects 9918935040 Mar 25  2026 sc-benchmark.sif
+drwxrwxr-x 2 u0044 gprojects        432 Mar 26  2026 scripts
+drwxrwxr-x 2 u0044 gprojects        516 Mar 24  2026 slurm
+drwxrwxr-x 8 u0044 gprojects        170 Mar 25  2026 SPATIAL
+total 138132576
+drwxr-x--- 2 u0044 gprojects          261 Mar 20  2026 .
+drwxr-x--- 9 u0044 gprojects          228 May  7 09:04 ..
+-rw-r----- 1 u0044 gprojects   2567876600 Mar 12  2026 brain_100000.h5ad
+-rw-r----- 1 u0044 gprojects    264576224 Mar 12  2026 brain_10000.h5ad
+-rw-r----- 1 u0044 gprojects  49820091312 Mar 12  2026 brain_1300000.h5ad
+-rw-r----- 1 u0044 gprojects  12794537776 Mar 12  2026 brain_500000.h5ad
+-rw-r----- 1 u0044 gprojects   1292143264 Mar 12  2026 brain_50000.h5ad
+-rw-r----- 1 u0044 gprojects 131593926762 Mar 16  2026 brain_full_3436470.h5ad
+-rw-r----- 1 u0044 gprojects 159404717435 Mar 20  2026 de_preprocessed_3400000.h5ad

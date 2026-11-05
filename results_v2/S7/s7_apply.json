@@ -1,0 +1,68 @@
+{
+ "at": "2026-11-05T13:29:00+01:00",
+ "edits": [
+  {
+   "edit": "R0721 chapter Table 1: Peak VRAM of the five CPU rows",
+   "occurrences": 5
+  },
+  {
+   "edit": "R0734 back matter reordered; Conflict of Interest -> Disclosure of Interests",
+   "occurrences": 1
+  },
+  {
+   "edit": "R0721 Table S1 step 1 key parameters",
+   "occurrences": 1
+  },
+  {
+   "edit": "R0721 Table S4 row 12.0M",
+   "occurrences": 1
+  },
+  {
+   "edit": "R0721 Table S4 row 13.7M",
+   "occurrences": 1
+  },
+  {
+   "edit": "R0719 Table S2 row PCA loading (escaped bars)",
+   "occurrences": 1
+  },
+  {
+   "edit": "Table 2 separator row: relative column widths for llncs (layout only, no cell changed)",
+   "occurrences": 1,
+   "old": "|:---------|----------:|---------------:|--------------:|--------:|--------:|-------------:|--------------:|",
+   "new": "|:-------------------------------------------------|-----------------------------------------:|--------------------------------------------:|-------------------------------------------------:|------------------------------------------------------:|--------------------------------------------:|-----------------------:|-----------------------------:|",
+   "md5": [
+    "d2d579a5b97fefa2a811b46c0a88823d",
+    "4f5dc578f2f31524105ba74615d95b4f"
+   ]
+  },
+  {
+   "edit": "Table S7 separator row: relative column widths for llncs (layout only, no cell changed)",
+   "occurrences": 1,
+   "old": "|:-----|--------:|--------:|--------:|",
+   "new": "|:---------------|--------:|--------:|--------:|"
+  },
+  {
+   "edit": "Table S8 separator row: relative column widths for llncs (layout only, no cell changed)",
+   "occurrences": 1,
+   "old": "|:-------|----------:|------------:|------------:|",
+   "new": "|:-------------|----------:|-----------:|-----------:|"
+  },
+  {
+   "edit": "Table 1 separator row: relative column widths for llncs (layout only, no cell changed)",
+   "occurrences": 1,
+   "old": "|:---------|------:|-----:|---------------:|-------:|---------------:|---------------:|",
+   "new": "|:---------------|-----:|-----:|------------:|-------:|-----------:|------------:|"
+  }
+ ],
+ "main_md5": [
+  "50049fe0e4b13f2039cda7b23537aea9",
+  "d2d579a5b97fefa2a811b46c0a88823d"
+ ],
+ "sup_md5": [
+  "0a43c9ae60825c688f79ada121ebb70f",
+  "f96c88d70b9cd857ed0326df12aa8f01"
+ ],
+ "legends_md5": "3608448cc7765900569aec0704095b75",
+ "sup_md5_after_widths": "5c995b115134dc41dc46f17d64be7823",
+ "main_md5_final": "4f565458f500d6355ffef8f6eb5c1567"
+}

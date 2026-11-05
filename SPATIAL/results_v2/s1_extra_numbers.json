@@ -1,0 +1,236 @@
+{
+ "speedup_total_without_co_occurrence": {
+  "visium": {
+   "reference_dgx": [
+    1.3563431872831895,
+    1.3187135232058016,
+    1.390935390794379
+   ],
+   "control_server": [
+    1.3555262272643942,
+    1.3433584386923638,
+    1.3712826821714996
+   ]
+  },
+  "visium_hd_square_008um": {
+   "reference_dgx": [
+    6.868546906119942,
+    6.820580351241604,
+    6.9235541787050225
+   ],
+   "control_server": [
+    6.079115818835975,
+    5.973627588359695,
+    6.181382418385459
+   ]
+  },
+  "visium_hd_square_002um": {
+   "reference_dgx": [
+    10.426139539453574,
+    10.13886935980764,
+    10.84496555820504
+   ],
+   "control_server": [
+    9.391911325890455,
+    9.200672112602431,
+    9.585426505570775
+   ]
+  }
+ },
+ "own_leiden_clusters": {
+  "visium": {
+   "dgx_cpu": [
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "server_cpu": [
+    16,
+    16,
+    16,
+    16,
+    16
+   ],
+   "server_gpu": [
+    15,
+    15,
+    15,
+    15,
+    15
+   ]
+  },
+  "visium_hd_square_008um": {
+   "dgx_cpu": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "server_cpu": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "server_gpu": [
+    3,
+    4,
+    3,
+    3,
+    3
+   ]
+  },
+  "visium_hd_square_002um": {
+   "dgx_cpu": [
+    3027,
+    3027,
+    3027,
+    3027,
+    3027
+   ],
+   "server_cpu": [
+    2559,
+    2559,
+    2559,
+    2559,
+    2559
+   ],
+   "server_gpu": [
+    538,
+    538,
+    538,
+    538,
+    538
+   ]
+  }
+ },
+ "gpu_cooc_zero_slices": {
+  "new_r1:visium": {
+   "shape": [
+    16,
+    16,
+    49
+   ],
+   "all_zero_intervals": []
+  },
+  "new_r1:visium_hd_square_008um": {
+   "shape": [
+    4,
+    4,
+    49
+   ],
+   "all_zero_intervals": [
+    8,
+    9,
+    10,
+    14,
+    15,
+    19,
+    23,
+    27,
+    34,
+    40,
+    41,
+    42,
+    43,
+    45,
+    46,
+    47,
+    48
+   ]
+  },
+  "march_r1:visium": {
+   "shape": [
+    15,
+    15,
+    49
+   ],
+   "all_zero_intervals": []
+  },
+  "march_r1:visium_hd_square_008um": {
+   "shape": [
+    3,
+    3,
+    49
+   ],
+   "all_zero_intervals": [
+    8,
+    9,
+    10,
+    14,
+    15,
+    19,
+    23,
+    27,
+    34,
+    40,
+    41,
+    42,
+    43,
+    45,
+    46,
+    47,
+    48
+   ]
+  }
+ },
+ "hd8_cpu_gpu_same_groups": {
+  "intervals_equal_1e-4": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "first_unequal_interval": 8,
+  "n_unequal": 41
+ }
+}

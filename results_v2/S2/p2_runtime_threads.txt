@@ -1,0 +1,72 @@
+        else:
+            self.knn_search_index = self.precomputed_knn[2]
+
+        self._validate_parameters()
+
+        if self.verbose:
+            print(str(self))
+
+        self._original_n_threads = numba.get_num_threads()
+        if self.n_jobs > 0 and self.n_jobs is not None:
+            numba.set_num_threads(self.n_jobs)
+
+        # Check if we should unique the data
+        # We've already ensured that we aren't in the precomputed case
+        if self.unique:
+            # check if the matrix is dense
+...
+                self.rad_emb_ = aux_data["rad_emb"][inverse]
+
+
+        if self.verbose:
+            print(ts() + " Finished embedding")
+
+        numba.set_num_threads(self._original_n_threads)
+        self._input_hash = joblib.hash(self._raw_data)
+
+==pynn
+
+        if self.max_candidates is None:
+            effective_max_candidates = min(60, self.n_neighbors)
+        else:
+            effective_max_candidates = self.max_candidates
+
+        # Set threading constraints
+        self._original_num_threads = numba.get_num_threads()
+        if self.n_jobs != -1 and self.n_jobs is not None:
+            numba.set_num_threads(self.n_jobs)
+
+        if isspmatrix_csr(self._raw_data):
+
+...
+                " Results may be less than ideal. Try re-running with"
+                " different parameters."
+            )
+
+        numba.set_num_threads(self._original_num_threads)
+
+    def _set_distance_func(self):
+==scanpy-callsites
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scanpy/neighbors/__init__.py:768:                n_jobs=settings.n_jobs,
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scanpy/neighbors/__init__.py:782:                    n_jobs=settings.n_jobs,
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scanpy/tools/_umap.py:185:    from umap.umap_ import find_ab_params, simplicial_set_embedding
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scanpy/tools/_umap.py:217:        x_umap, _ = simplicial_set_embedding(
+/tmp/lnbi_s2_p2_venv/lib/python3.12/site-packages/scanpy/tools/_umap.py:256:        umap = UMAP(
+==benchmark_cpu leiden call
+    # performance for a fair comparison against GPU (cugraph).
+    cluster_results = {}
+    for res in LEIDEN_RESOLUTIONS:
+        key = f"leiden_{res}"
+        time_step(
+            key,
+            lambda r=res: sc.tl.leiden(
+                adata, resolution=r, random_state=RANDOM_SEED,
+                key_added=f"leiden_{r}", flavor="igraph",
+                n_iterations=2,  # required by igraph flavor
+            ),
+            timings, memory,
+        )
+        labels = adata.obs[f"leiden_{res}"].values
+        n_clusters = len(np.unique(labels))
+        cluster_results[key] = {
+THREADS [('start', 8), ('r1 qc', 8), ('r1 norm', 8), ('r1 hvg', 8), ('r1 pca', 8), ('r1 neighbors', 8), ('r1 leiden', 8), ('r1 umap', 8), ('r1 de', 8), ('r2 qc', 8), ('r2 norm', 8), ('r2 hvg', 8), ('r2 pca', 8), ('r2 neighbors', 8), ('r2 leiden', 8), ('r2 umap', 8), ('r2 de', 8)]

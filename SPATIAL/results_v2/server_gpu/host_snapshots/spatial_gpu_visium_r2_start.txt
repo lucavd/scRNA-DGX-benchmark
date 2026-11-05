@@ -1,0 +1,20 @@
+utc: 2026-11-03T13:54:02Z
+loadavg: 0.53 0.26 5.62
+tctl: +50.4°C
+gpu: 0 %, 313 MiB, 45, 210 MHz
+top_processes:
+2038926 user      20   0   15404   6920   3808 R   1.5   0.0   0:00.08 top
+   4032 root      20   0   19.0g  93256  18608 S   1.0   0.0  35:10.59 teamviewerd
+1843744 user      20   0   71.3g  76172  25688 S   1.0   0.0   2:16.48 bun
+      1 root      20   0   24764  15804   9568 S   0.5   0.0  10:28.87 systemd
+   2388 root      20   0       0      0      0 S   0.5   0.0   8:14.28 nvidia-modeset/kthread_q
+   2444 message+  20   0   24532  12216   6824 S   0.5   0.0  11:33.55 dbus-daemon
+   2518 root      20   0 2667104  11792  10208 S   0.5   0.0  38:50.63 fctsched
+   3873 root      20   0   41.0g   1.1g  36264 S   0.5   0.4  21:28.11 java
+1126386 user      20   0 5738720 350688  78996 S   0.5   0.1  41:52.25 claude
+2038888 root      20   0       0      0      0 I   0.5   0.0   0:00.01 kworker/u260:0-writeback
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.04 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_

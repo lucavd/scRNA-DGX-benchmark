@@ -1,0 +1,53 @@
+{
+ "inputs": {
+  "pre": "2e6c57413bcfd70ef152a7fbbb5982bf",
+  "main": "50049fe0e4b13f2039cda7b23537aea9",
+  "sup": "0a43c9ae60825c688f79ada121ebb70f",
+  "bib": "0545ef29119d63866360fb950ce29c11"
+ },
+ "G2_numbers_not_in_pre_main": [],
+ "G2_numbers_not_in_pre_sup": [],
+ "info_pre_numbers_absent_from_both": [],
+ "G2_table_rows_pre": 120,
+ "G2_table_rows_relabelled_only": [
+  [
+   "| 1-8 | Expression analysis (QC through UMAP) | Yes | As in Table 1; Leiden r = 1.0 for Visium, r = 0.1 for HD |",
+   "| 1-8 | Expression analysis (QC through UMAP) | Yes | As in Table S1; Leiden r = 1.0 for Visium, r = 0.1 for HD |"
+  ]
+ ],
+ "G2_table_rows_missing": [],
+ "G2_pass": true,
+ "G3_keys_pre": 34,
+ "G3_keys_main": 31,
+ "G3_keys_sup": 27,
+ "G3_keys_lost": [],
+ "G3_keys_only_in_sup": [
+  "Collange2015",
+  "Marconato2024",
+  "Shanmugavelu2024"
+ ],
+ "G3_bib_unchanged": true,
+ "G3_undefined_main": [],
+ "G3_undefined_sup": [],
+ "G3_pass": true,
+ "G4_pages_main": 15,
+ "G4_latex_errors_main": 0,
+ "G4_abstract_words": 247,
+ "G4_src_md5_matches": true,
+ "G4_pass": true,
+ "G5_dash_lines": {
+  "main": [],
+  "sup": []
+ },
+ "G5_openers_main": [],
+ "G5_listed_words_main": {},
+ "G5_text_pass": true,
+ "P2_keys_main": 31,
+ "P3_sentences": 194,
+ "P3_median_words": 15.0,
+ "P3_p90_words": 24.0,
+ "P3_max_words": 59,
+ "P4_pages_sup": 26,
+ "P1_pages_main": 15,
+ "prose_words_main": 3099
+}

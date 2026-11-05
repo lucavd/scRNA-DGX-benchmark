@@ -1,0 +1,806 @@
+{
+ "10.1145/3731599.3767378": {
+  "DOI": "10.1145/3731599.3767378",
+  "title": [
+   "Evaluating Accuracy and Performance Tradeoffs in GPU Accelerated Single Cell RNA-seq Analysis"
+  ],
+  "container-title": [
+   "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+  ],
+  "volume": null,
+  "issue": null,
+  "page": "349-358",
+  "article-number": null,
+  "published": {
+   "date-parts": [
+    [
+     2025,
+     11,
+     15
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2025,
+     11,
+     16
+    ]
+   ]
+  },
+  "published-online": {
+   "date-parts": [
+    [
+     2025,
+     11,
+     15
+    ]
+   ]
+  },
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0001-5824-3775",
+    "authenticated-orcid": false,
+    "given": "Cory",
+    "family": "Gardner",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "Computer Science, Saint Louis University, St. Louis, MO, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0009-0005-0662-8848",
+    "authenticated-orcid": false,
+    "given": "Seyun",
+    "family": "Jeong",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Computer Science, Saint Louis University, St. Louis, MO, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0009-0004-0003-1883",
+    "authenticated-orcid": false,
+    "given": "Oam",
+    "family": "Khatavkar",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Computer Science, Saint Louis University, St. Louis, MO, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0009-0004-8324-6854",
+    "authenticated-orcid": false,
+    "given": "Aiden",
+    "family": "Moon",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Parkway Central High School, Chesterfield, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-6690-194X",
+    "authenticated-orcid": false,
+    "given": "Qinglei",
+    "family": "Cao",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Computer Science, Saint Louis University, St. Louis, MO, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-7281-9459",
+    "authenticated-orcid": false,
+    "given": "Tae-Hyuk",
+    "family": "Ahn",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Computer Science, Saint Louis University, St. Louis, MO, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ]
+ },
+ "10.1038/s41592-021-01358-2": {
+  "DOI": "10.1038/s41592-021-01358-2",
+  "title": [
+   "Squidpy: a scalable framework for spatial omics analysis"
+  ],
+  "container-title": [
+   "Nature Methods"
+  ],
+  "volume": "19",
+  "issue": "2",
+  "page": "171-178",
+  "article-number": null,
+  "published": {
+   "date-parts": [
+    [
+     2022,
+     1,
+     31
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2022,
+     2
+    ]
+   ]
+  },
+  "published-online": {
+   "date-parts": [
+    [
+     2022,
+     1,
+     31
+    ]
+   ]
+  },
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0002-8004-4462",
+    "authenticated-orcid": false,
+    "given": "Giovanni",
+    "family": "Palla",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-7858-0936",
+    "authenticated-orcid": false,
+    "given": "Hannah",
+    "family": "Spitzer",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Michal",
+    "family": "Klein",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-1293-7656",
+    "authenticated-orcid": false,
+    "given": "David",
+    "family": "Fischer",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Anna Christina",
+    "family": "Schaar",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9193-1243",
+    "authenticated-orcid": false,
+    "given": "Louis Benedikt",
+    "family": "Kuemmerle",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Sergei",
+    "family": "Rybakov",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Ignacio L.",
+    "family": "Ibarra",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Olle",
+    "family": "Holmberg",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-1710-8945",
+    "authenticated-orcid": false,
+    "given": "Isaac",
+    "family": "Virshup",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-6858-7985",
+    "authenticated-orcid": false,
+    "given": "Mohammad",
+    "family": "Lotfollahi",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-6101-2783",
+    "authenticated-orcid": false,
+    "given": "Sabrina",
+    "family": "Richter",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2419-1943",
+    "authenticated-orcid": false,
+    "given": "Fabian J.",
+    "family": "Theis",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ]
+ },
+ "10.1038/s41592-019-0619-0": {
+  "DOI": "10.1038/s41592-019-0619-0",
+  "title": [
+   "Fast, sensitive and accurate integration of single-cell data with Harmony"
+  ],
+  "container-title": [
+   "Nature Methods"
+  ],
+  "volume": "16",
+  "issue": "12",
+  "page": "1289-1296",
+  "article-number": null,
+  "published": {
+   "date-parts": [
+    [
+     2019,
+     11,
+     18
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2019,
+     12
+    ]
+   ]
+  },
+  "published-online": {
+   "date-parts": [
+    [
+     2019,
+     11,
+     18
+    ]
+   ]
+  },
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0003-4848-3948",
+    "authenticated-orcid": false,
+    "given": "Ilya",
+    "family": "Korsunsky",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Nghia",
+    "family": "Millard",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-0212-5451",
+    "authenticated-orcid": false,
+    "given": "Jean",
+    "family": "Fan",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Kamil",
+    "family": "Slowikowski",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-6102-2970",
+    "authenticated-orcid": false,
+    "given": "Fan",
+    "family": "Zhang",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Kevin",
+    "family": "Wei",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9020-6824",
+    "authenticated-orcid": false,
+    "given": "Yuriy",
+    "family": "Baglaenko",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Michael",
+    "family": "Brenner",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-5542-9064",
+    "authenticated-orcid": false,
+    "given": "Po-ru",
+    "family": "Loh",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-1901-8265",
+    "authenticated-orcid": false,
+    "given": "Soumya",
+    "family": "Raychaudhuri",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ]
+ },
+ "10.1038/s41592-018-0229-2": {
+  "DOI": "10.1038/s41592-018-0229-2",
+  "title": [
+   "Deep generative modeling for single-cell transcriptomics"
+  ],
+  "container-title": [
+   "Nature Methods"
+  ],
+  "volume": "15",
+  "issue": "12",
+  "page": "1053-1058",
+  "article-number": null,
+  "published": {
+   "date-parts": [
+    [
+     2018,
+     11,
+     30
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2018,
+     12
+    ]
+   ]
+  },
+  "published-online": {
+   "date-parts": [
+    [
+     2018,
+     11,
+     30
+    ]
+   ]
+  },
+  "author": [
+   {
+    "given": "Romain",
+    "family": "Lopez",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-1472-5235",
+    "authenticated-orcid": false,
+    "given": "Jeffrey",
+    "family": "Regier",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Michael B.",
+    "family": "Cole",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Michael I.",
+    "family": "Jordan",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-9004-1225",
+    "authenticated-orcid": false,
+    "given": "Nir",
+    "family": "Yosef",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ]
+ },
+ "10.1186/s13059-014-0550-8": {
+  "DOI": "10.1186/s13059-014-0550-8",
+  "title": [
+   "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2"
+  ],
+  "container-title": [
+   "Genome Biology"
+  ],
+  "volume": "15",
+  "issue": "12",
+  "page": null,
+  "article-number": "550",
+  "published": {
+   "date-parts": [
+    [
+     2014,
+     12,
+     5
+    ]
+   ]
+  },
+  "published-print": null,
+  "published-online": {
+   "date-parts": [
+    [
+     2014,
+     12,
+     5
+    ]
+   ]
+  },
+  "author": [
+   {
+    "given": "Michael I",
+    "family": "Love",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Wolfgang",
+    "family": "Huber",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Simon",
+    "family": "Anders",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ]
+ },
+ "10.1093/bioinformatics/btp616": {
+  "DOI": "10.1093/bioinformatics/btp616",
+  "title": [
+   "<tt>edgeR</tt>\n                    : a Bioconductor package for differential expression analysis of digital gene expression data"
+  ],
+  "container-title": [
+   "Bioinformatics"
+  ],
+  "volume": "26",
+  "issue": "1",
+  "page": "139-140",
+  "article-number": null,
+  "published": {
+   "date-parts": [
+    [
+     2009,
+     11,
+     11
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2010,
+     1,
+     1
+    ]
+   ]
+  },
+  "published-online": {
+   "date-parts": [
+    [
+     2009,
+     11,
+     11
+    ]
+   ]
+  },
+  "author": [
+   {
+    "given": "Mark D.",
+    "family": "Robinson",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "1 Cancer Program, Garvan Institute of Medical Research, 384 Victoria Street, Darlinghurst, NSW 2010 and 2 Bioinformatics Division, The Walter and Eliza Hall Institute of Medical Research, 1G Royal Parade, Parkville, Victoria 3052, Australia"
+     },
+     {
+      "name": "1 Cancer Program, Garvan Institute of Medical Research, 384 Victoria Street, Darlinghurst, NSW 2010 and 2 Bioinformatics Division, The Walter and Eliza Hall Institute of Medical Research, 1G Royal Parade, Parkville, Victoria 3052, Australia"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Davis J.",
+    "family": "McCarthy",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "1 Cancer Program, Garvan Institute of Medical Research, 384 Victoria Street, Darlinghurst, NSW 2010 and 2 Bioinformatics Division, The Walter and Eliza Hall Institute of Medical Research, 1G Royal Parade, Parkville, Victoria 3052, Australia"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Gordon K.",
+    "family": "Smyth",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "1 Cancer Program, Garvan Institute of Medical Research, 384 Victoria Street, Darlinghurst, NSW 2010 and 2 Bioinformatics Division, The Walter and Eliza Hall Institute of Medical Research, 1G Royal Parade, Parkville, Victoria 3052, Australia"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ]
+ }
+}

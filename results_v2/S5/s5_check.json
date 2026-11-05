@@ -1,0 +1,2018 @@
+{
+ "G2_values": [
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "CPU",
+   "x": "visium",
+   "stat": "mean_s",
+   "value": "33.88286",
+   "n": "5",
+   "expected": 33.88286,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "CPU",
+   "x": "visium",
+   "stat": "sd_s",
+   "value": "0.9972769289420061",
+   "n": "5",
+   "expected": 0.9972769289420061,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "GPU",
+   "x": "visium",
+   "stat": "mean_s",
+   "value": "23.964959999999998",
+   "n": "5",
+   "expected": 23.964959999999998,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "GPU",
+   "x": "visium",
+   "stat": "sd_s",
+   "value": "0.20274751046560327",
+   "n": "5",
+   "expected": 0.20274751046560327,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "speedup",
+   "x": "visium",
+   "stat": "speedup",
+   "value": "1.4138500544127761",
+   "n": "5",
+   "expected": 1.4138500544127761,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "CPU",
+   "x": "visium_hd_square_008um",
+   "stat": "mean_s",
+   "value": "719.0313",
+   "n": "5",
+   "expected": 719.0313,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "CPU",
+   "x": "visium_hd_square_008um",
+   "stat": "sd_s",
+   "value": "3.161803805583116",
+   "n": "5",
+   "expected": 3.161803805583116,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "CPU",
+   "x": "visium_hd_square_008um",
+   "stat": "mean_s_without_co_occurrence",
+   "value": "615.78666",
+   "n": "5",
+   "expected": 615.78666,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "GPU",
+   "x": "visium_hd_square_008um",
+   "stat": "mean_s",
+   "value": "92.20562",
+   "n": "5",
+   "expected": 92.20562,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "GPU",
+   "x": "visium_hd_square_008um",
+   "stat": "sd_s",
+   "value": "0.6839973296731516",
+   "n": "5",
+   "expected": 0.6839973296731516,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "GPU",
+   "x": "visium_hd_square_008um",
+   "stat": "mean_s_without_co_occurrence",
+   "value": "89.65312",
+   "n": "5",
+   "expected": 89.65312,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "speedup",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "7.798128790848107",
+   "n": "5",
+   "expected": 7.798128790848107,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "speedup_without_co_occurrence",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "6.868546906119942",
+   "n": "5",
+   "expected": 6.868546906119943,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "CPU",
+   "x": "visium_hd_square_002um",
+   "stat": "mean_s",
+   "value": "1146.05794",
+   "n": "5",
+   "expected": 1146.05794,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "CPU",
+   "x": "visium_hd_square_002um",
+   "stat": "sd_s",
+   "value": "49.807337453060015",
+   "n": "5",
+   "expected": 49.807337453060015,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "GPU",
+   "x": "visium_hd_square_002um",
+   "stat": "mean_s",
+   "value": "109.92159999999998",
+   "n": "5",
+   "expected": 109.92159999999998,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "GPU",
+   "x": "visium_hd_square_002um",
+   "stat": "sd_s",
+   "value": "0.8235059198329999",
+   "n": "5",
+   "expected": 0.8235059198329999,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig7_spatial_speedup",
+   "panel": "total",
+   "series": "speedup",
+   "x": "visium_hd_square_002um",
+   "stat": "speedup",
+   "value": "10.426139539453574",
+   "n": "5",
+   "expected": 10.426139539453574,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "data_loading",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "0.9866515237940026",
+   "n": "5",
+   "expected": 0.9866515237940026,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "data_loading",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "0.9587113208930897",
+   "n": "5",
+   "expected": 0.9587113208930897,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "data_loading",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "1.0234377888311925",
+   "n": "5",
+   "expected": 1.0234377888311925,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "qc_filtering",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "0.887264129436516",
+   "n": "5",
+   "expected": 0.887264129436516,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "qc_filtering",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "0.8629983174654804",
+   "n": "5",
+   "expected": 0.8629983174654804,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "qc_filtering",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "0.9102799736601362",
+   "n": "5",
+   "expected": 0.9102799736601362,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "normalization",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "30.441811846689895",
+   "n": "5",
+   "expected": 30.441811846689895,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "normalization",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "29.05611910953251",
+   "n": "5",
+   "expected": 29.05611910953251,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "normalization",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "32.124477370038115",
+   "n": "5",
+   "expected": 32.124477370038115,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "hvg_selection",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "1.7693582352331967",
+   "n": "5",
+   "expected": 1.7693582352331967,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "hvg_selection",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "1.601533201977537",
+   "n": "5",
+   "expected": 1.601533201977537,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "hvg_selection",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "1.9180813065317888",
+   "n": "5",
+   "expected": 1.9180813065317888,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "pca",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "37.0181294140943",
+   "n": "5",
+   "expected": 37.0181294140943,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "pca",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "36.121876880270214",
+   "n": "5",
+   "expected": 36.121876880270214,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "pca",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "37.89426090493319",
+   "n": "5",
+   "expected": 37.89426090493319,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "expression_neighbors",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "13.533870727113367",
+   "n": "5",
+   "expected": 13.533870727113367,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "expression_neighbors",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "13.225873867542878",
+   "n": "5",
+   "expected": 13.225873867542878,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "expression_neighbors",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "13.729749257402036",
+   "n": "5",
+   "expected": 13.729749257402036,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "leiden",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "12.906991435339854",
+   "n": "5",
+   "expected": 12.906991435339854,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "leiden",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "12.734954020924386",
+   "n": "5",
+   "expected": 12.734954020924386,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "leiden",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "13.089698788760577",
+   "n": "5",
+   "expected": 13.089698788760577,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "umap",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "197.0912179975394",
+   "n": "5",
+   "expected": 197.0912179975394,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "umap",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "194.39302020881414",
+   "n": "5",
+   "expected": 194.39302020881414,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "umap",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "200.4529964519963",
+   "n": "5",
+   "expected": 200.4529964519963,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_neighbors",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "0.8026325083510424",
+   "n": "5",
+   "expected": 0.8026325083510424,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_neighbors",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "0.7921784061240381",
+   "n": "5",
+   "expected": 0.7921784061240381,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_neighbors",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "0.8138664777370633",
+   "n": "5",
+   "expected": 0.8138664777370633,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_autocorr_moran",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "20.769131024777607",
+   "n": "5",
+   "expected": 20.769131024777607,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_autocorr_moran",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "19.40898355000704",
+   "n": "5",
+   "expected": 19.40898355000704,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_autocorr_moran",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "21.916980371521372",
+   "n": "5",
+   "expected": 21.916980371521372,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_autocorr_geary",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "122.35513684336057",
+   "n": "5",
+   "expected": 122.35513684336057,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_autocorr_geary",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "120.0269380739572",
+   "n": "5",
+   "expected": 120.0269380739572,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "spatial_autocorr_geary",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "124.92218775419738",
+   "n": "5",
+   "expected": 124.92218775419738,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "co_occurrence",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "23.40904123379421",
+   "n": "5",
+   "expected": 23.40904123379421,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "co_occurrence",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "23.267800061751114",
+   "n": "5",
+   "expected": 23.26906147115861,
+   "tolerance": 0.01,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "co_occurrence",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "23.56087247798819",
+   "n": "5",
+   "expected": 23.567959085066235,
+   "tolerance": 0.01,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "nhood_enrichment",
+   "x": "visium_hd_square_008um",
+   "stat": "speedup",
+   "value": "1.0559152368942308",
+   "n": "5",
+   "expected": 1.0559152368942308,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "nhood_enrichment",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_lo",
+   "value": "1.026139241678039",
+   "n": "5",
+   "expected": 1.026139241678039,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig8_spatial_perstep",
+   "panel": "per_step",
+   "series": "nhood_enrichment",
+   "x": "visium_hd_square_008um",
+   "stat": "ci_hi",
+   "value": "1.0840437049587333",
+   "n": "5",
+   "expected": 1.0840437049587333,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium",
+   "stat": "mean",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium",
+   "stat": "min",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium",
+   "stat": "max",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium_hd_square_008um",
+   "stat": "mean",
+   "value": "0.9998774000000001",
+   "n": "5",
+   "expected": 0.9998774000000001,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium_hd_square_008um",
+   "stat": "min",
+   "value": "0.999877",
+   "n": "5",
+   "expected": 0.999877,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium_hd_square_008um",
+   "stat": "max",
+   "value": "0.999878",
+   "n": "5",
+   "expected": 0.999878,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium_hd_square_002um",
+   "stat": "mean",
+   "value": "0.999982",
+   "n": "5",
+   "expected": 0.999982,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium_hd_square_002um",
+   "stat": "min",
+   "value": "0.999982",
+   "n": "5",
+   "expected": 0.999982,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.I_spearman_rho",
+   "x": "visium_hd_square_002um",
+   "stat": "max",
+   "value": "0.999982",
+   "n": "5",
+   "expected": 0.999982,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium",
+   "stat": "mean",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium",
+   "stat": "min",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium",
+   "stat": "max",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium_hd_square_008um",
+   "stat": "mean",
+   "value": "0.999526",
+   "n": "5",
+   "expected": 0.999526,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium_hd_square_008um",
+   "stat": "min",
+   "value": "0.999526",
+   "n": "5",
+   "expected": 0.999526,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium_hd_square_008um",
+   "stat": "max",
+   "value": "0.999526",
+   "n": "5",
+   "expected": 0.999526,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium_hd_square_002um",
+   "stat": "mean",
+   "value": "0.999912",
+   "n": "5",
+   "expected": 0.999912,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium_hd_square_002um",
+   "stat": "min",
+   "value": "0.999912",
+   "n": "5",
+   "expected": 0.999912,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "gearyC.C_spearman_rho",
+   "x": "visium_hd_square_002um",
+   "stat": "max",
+   "value": "0.999912",
+   "n": "5",
+   "expected": 0.999912,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium",
+   "stat": "mean",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium",
+   "stat": "min",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium",
+   "stat": "max",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium_hd_square_008um",
+   "stat": "mean",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium_hd_square_008um",
+   "stat": "min",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium_hd_square_008um",
+   "stat": "max",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium_hd_square_002um",
+   "stat": "mean",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium_hd_square_002um",
+   "stat": "min",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top50",
+   "x": "visium_hd_square_002um",
+   "stat": "max",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium",
+   "stat": "mean",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium",
+   "stat": "min",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium",
+   "stat": "max",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium_hd_square_008um",
+   "stat": "mean",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium_hd_square_008um",
+   "stat": "min",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium_hd_square_008um",
+   "stat": "max",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium_hd_square_002um",
+   "stat": "mean",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium_hd_square_002um",
+   "stat": "min",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top100",
+   "x": "visium_hd_square_002um",
+   "stat": "max",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium",
+   "stat": "mean",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium",
+   "stat": "min",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium",
+   "stat": "max",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium_hd_square_008um",
+   "stat": "mean",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium_hd_square_008um",
+   "stat": "min",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium_hd_square_008um",
+   "stat": "max",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium_hd_square_002um",
+   "stat": "mean",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium_hd_square_002um",
+   "stat": "min",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_top200",
+   "x": "visium_hd_square_002um",
+   "stat": "max",
+   "value": "0.9802",
+   "n": "5",
+   "expected": 0.9802,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium",
+   "stat": "mean",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium",
+   "stat": "min",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium",
+   "stat": "max",
+   "value": "1.0",
+   "n": "5",
+   "expected": 1.0,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium_hd_square_008um",
+   "stat": "mean",
+   "value": "0.9986",
+   "n": "5",
+   "expected": 0.9986,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium_hd_square_008um",
+   "stat": "min",
+   "value": "0.9986",
+   "n": "5",
+   "expected": 0.9986,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium_hd_square_008um",
+   "stat": "max",
+   "value": "0.9986",
+   "n": "5",
+   "expected": 0.9986,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium_hd_square_002um",
+   "stat": "mean",
+   "value": "0.9815",
+   "n": "5",
+   "expected": 0.9815,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium_hd_square_002um",
+   "stat": "min",
+   "value": "0.9815",
+   "n": "5",
+   "expected": 0.9815,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "spatial",
+   "series": "moranI.svg_jaccard_fdr005",
+   "x": "visium_hd_square_002um",
+   "stat": "max",
+   "value": "0.9815",
+   "n": "5",
+   "expected": 0.9815,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium",
+   "stat": "mean",
+   "value": "0.8561",
+   "n": "5",
+   "expected": 0.8561,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium",
+   "stat": "min",
+   "value": "0.8561",
+   "n": "5",
+   "expected": 0.8561,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium",
+   "stat": "max",
+   "value": "0.8561",
+   "n": "5",
+   "expected": 0.8561,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium_hd_square_008um",
+   "stat": "mean",
+   "value": "0.9724400000000001",
+   "n": "5",
+   "expected": 0.97244,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium_hd_square_008um",
+   "stat": "min",
+   "value": "0.971",
+   "n": "5",
+   "expected": 0.971,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium_hd_square_008um",
+   "stat": "max",
+   "value": "0.974",
+   "n": "5",
+   "expected": 0.974,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium_hd_square_002um",
+   "stat": "mean",
+   "value": "0.0708",
+   "n": "5",
+   "expected": 0.0708,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium_hd_square_002um",
+   "stat": "min",
+   "value": "0.0708",
+   "n": "5",
+   "expected": 0.0708,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.ari",
+   "x": "visium_hd_square_002um",
+   "stat": "max",
+   "value": "0.0708",
+   "n": "5",
+   "expected": 0.0708,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium",
+   "stat": "mean",
+   "value": "0.8915",
+   "n": "5",
+   "expected": 0.8915,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium",
+   "stat": "min",
+   "value": "0.8915",
+   "n": "5",
+   "expected": 0.8915,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium",
+   "stat": "max",
+   "value": "0.8915",
+   "n": "5",
+   "expected": 0.8915,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium_hd_square_008um",
+   "stat": "mean",
+   "value": "0.93862",
+   "n": "5",
+   "expected": 0.93862,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium_hd_square_008um",
+   "stat": "min",
+   "value": "0.9356",
+   "n": "5",
+   "expected": 0.9356,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium_hd_square_008um",
+   "stat": "max",
+   "value": "0.9417",
+   "n": "5",
+   "expected": 0.9417,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium_hd_square_002um",
+   "stat": "mean",
+   "value": "0.6362",
+   "n": "5",
+   "expected": 0.6362,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium_hd_square_002um",
+   "stat": "min",
+   "value": "0.6362",
+   "n": "5",
+   "expected": 0.6362,
+   "tolerance": 1e-09,
+   "ok": true
+  },
+  {
+   "figure": "fig9_spatial_concordance",
+   "panel": "clustering",
+   "series": "clusters.nmi",
+   "x": "visium_hd_square_002um",
+   "stat": "max",
+   "value": "0.6362",
+   "n": "5",
+   "expected": 0.6362,
+   "tolerance": 1e-09,
+   "ok": true
+  }
+ ],
+ "G2_text": [
+  {
+   "check": "Table 8 visium",
+   "string": "| Visium v1 | 2,695 | 33.9 +/- 1.0 | 24.0 +/- 0.2 | 1.41x (1.38-1.45) | 1.61x | 0.97 | 12.74 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 8 visium_hd_square_008um",
+   "string": "| Visium HD 8 um | 393,543 | 719 +/- 3 | 92.2 +/- 0.7 | 7.80x (7.75-7.85) | 6.69x | 6.95 | 22.74 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 8 visium_hd_square_002um",
+   "string": "| Visium HD 2 um (random 400k-bin subsample) | 389,492 | 1,146 +/- 50 | 109.9 +/- 0.8 | 10.43x (10.15-10.82) | 9.39x | 7.95 | 22.73 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 8 note",
+   "string": "the totals are 616 s (CPU) and 89.7 s (GPU) and the speedup is 6.9x (6.8-6.9) (6.1x with the workstation CPU)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "headline",
+   "string": "end-to-end GPU speedups were 1.4x on Visium v1 (2,695 spots), 6.9x on Visium HD 8 um (393,543 bins",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "headline 2um",
+   "string": "10.4x on the random 400k-bin subsample of Visium HD 2 um (389,492 bins after QC)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "control",
+   "string": "they were 1.6x, 6.1x and 9.4x: the choice of CPU changed the speedup by 10-14%",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "cooc 0.14.1",
+   "string": "in only 8 of 49 distance intervals",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "cooc 0.15.1",
+   "string": "matched the CPU in 49 of 49 intervals (maximum absolute difference 0.00022)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "cooc ratio",
+   "string": "time ratio 0.98, 95% CI 0.95-1.00",
+   "count": 2,
+   "ok": true
+  },
+  {
+   "check": "cooc check",
+   "string": "took 4.41 s against 103 s on the DGX CPU (23.4x, 95% CI 23.3-23.6)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "cooc share",
+   "string": "co-occurrence took 14.4% of the pipeline time",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "cooc groups",
+   "string": "with the same 4 cell groups as the CPU",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 data_loading",
+   "string": "| Data loading | 3.87 +/- 0.15 | 3.93 +/- 0.08 | 0.99x (0.96-1.02) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 qc_filtering",
+   "string": "| QC and filtering | 2.72 +/- 0.09 | 3.07 +/- 0.04 | 0.89x (0.86-0.91) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 normalization",
+   "string": "| Normalisation | 2.62 +/- 0.14 | 0.0861 +/- 0.0030 | 30.4x (29.1-32.1) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 hvg_selection",
+   "string": "| HVG selection | 1.03 +/- 0.06 | 0.579 +/- 0.059 | 1.8x (1.6-1.9) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 pca",
+   "string": "| PCA | 33.7 +/- 0.1 | 0.909 +/- 0.028 | 37.0x (36.1-37.9) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 expression_neighbors",
+   "string": "| Expression neighbours | 58.1 +/- 0.2 | 4.29 +/- 0.11 | 13.5x (13.2-13.7) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 leiden",
+   "string": "| Leiden clustering | 21.2 +/- 0.2 | 1.65 +/- 0.02 | 12.9x (12.7-13.1) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 umap",
+   "string": "| UMAP | 269 +/- 5 | 1.366 +/- 0.007 | 197x (194-200) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 spatial_neighbors",
+   "string": "| Spatial neighbours (CPU in both) | 45.2 +/- 0.3 | 56.3 +/- 0.9 | 0.80x (0.79-0.81) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 spatial_autocorr_moran",
+   "string": "| Moran's I | 82.6 +/- 1.4 | 3.98 +/- 0.32 | 20.8x (19.4-21.9) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 spatial_autocorr_geary",
+   "string": "| Geary's C | 82.1 +/- 2.0 | 0.671 +/- 0.003 | 122x (120-125) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 nhood_enrichment",
+   "string": "| Neighbourhood enrichment (CPU in both) | 13.5 +/- 0.2 | 12.8 +/- 0.4 | 1.1x (1.0-1.1) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 total",
+   "string": "| Total | 719 +/- 3 | 92.2 +/- 0.7 | 7.80x (7.75-7.85) |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 9 cooc",
+   "string": "| Co-occurrence | 103.2 +/- 0.3 | n.r. | n.r. |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Fig 8 caption",
+   "string": "UMAP (197x) and Geary's C (122x); Moran's I reached 20.8x",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Fig 8 caption CPU steps",
+   "string": "(open circles; 0.80x and 1.1x)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "per-step text",
+   "string": "PCA (with scaling) 37.0x, normalisation 30.4x",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "per-step text 2",
+   "string": "accelerated 13.5x and 12.9x, and data loading, QC and HVG selection ran at 0.99x, 0.89x and 1.8x",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "HD2 shares",
+   "string": "UMAP, the largest CPU cost (72.0% of the CPU time), ran 89.4x faster on the GPU; the GPU pipeline time (110 s) was dominated by spatial neighbours (50.4%) and data loading (27.8%)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "v1",
+   "string": "took 38.2% of the GPU pipeline time, and QC (0.18x), Leiden (0.27x), Moran's I (0.51x) and PCA (0.67x) were slower",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "spatial neighbours",
+   "string": "spatial neighbours took 45.2 s and 45.0 s on the DGX CPU and 56.3 s and 55.4 s in the GPU pipeline on the workstation CPU, 61.1% (HD 8 um) and 50.4%",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "rho min",
+   "string": "were at least 0.9995 in all cases",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "rho min concl",
+   "string": "(Spearman rho at least 0.9995)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "rho min disc",
+   "string": "(Spearman rho >= 0.9995)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 Moran's I Spearman rho",
+   "string": "| Moran's I Spearman rho | 1.0000 | 0.9999 | 1.0000 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 Geary's C Spearman rho",
+   "string": "| Geary's C Spearman rho | 1.0000 | 0.9995 | 0.9999 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 SVG Jaccard (top 50)",
+   "string": "| SVG Jaccard (top 50) | 1.000 | 1.000 | 1.000 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 SVG Jaccard (top 100)",
+   "string": "| SVG Jaccard (top 100) | 1.000 | 0.980 | 0.980 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 SVG Jaccard (top 200)",
+   "string": "| SVG Jaccard (top 200) | 1.000 | 0.980 | 0.980 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 SVG Jaccard (FDR < 0.05)",
+   "string": "| SVG Jaccard (FDR < 0.05) | 1.000 | 0.999 | 0.982 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 Cluster ARI",
+   "string": "| Cluster ARI | 0.856 | 0.971-0.974 | 0.071 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 Cluster NMI",
+   "string": "| Cluster NMI | 0.892 | 0.936-0.942 | 0.636 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 N clusters",
+   "string": "| N clusters (CPU / GPU) | 16 / 15 | 4 / 3-4 | 3,027 / 538 |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 cooc",
+   "string": "| Co-occurrence Spearman rho | 1.0000 | 0.1118 (0.14.1) | n.r. |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 nhood",
+   "string": "| Neighbourhood enrichment Spearman rho | 0.9977-0.9982 | 1.0000 | n.r. |",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "Table 10 control",
+   "string": "CPU Leiden returned 16, 7 and 2,559 groups and the ARI was 0.856, 0.972-0.975 and 0.084",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "clusters text",
+   "string": "(ARI 0.071, NMI 0.636): CPU Leiden returned 3,027 clusters on the DGX reference and GPU Leiden 538",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "granularity",
+   "string": "This 5.63-fold difference",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "GPU groups HD8",
+   "string": "GPU Leiden returned 3 groups in four repeats and 4 in one",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "SVG top100",
+   "string": "the Jaccard index was 1.000 on Visium v1 and 0.980 on both Visium HD platforms",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "VRAM",
+   "string": "12.59 GiB was reserved before data loading in every GPU run, and the peak reading was 12.74 GiB on Visium v1, 22.74 GiB on Visium HD 8 um and 22.73 GiB on the HD 2 um subsample (95% of the 24.0 GiB",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "RAM",
+   "string": "Peak CPU RAM ranged from 0.97 GiB (Visium v1) to 7.95 GiB (HD 2 um subsample) on the DGX CPU reference, and reached 11.30 GiB in the GPU pipeline",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "dense",
+   "string": "about 50 GB (47 GiB) in float32",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "disc autocorr",
+   "string": "accelerated 20.8-21.0x (Moran's I) and 122.4-128.9x (Geary's C) on Visium HD (9.3-13.1x and 55.1-75.6x against the workstation CPU)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "disc times",
+   "string": "each statistic took 0.7-4.0 s on the GPU instead of 82-86 s on the CPU reference",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "disc moran v1",
+   "string": "on Visium v1 it was not accelerated (0.51x)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "disc cpu steps",
+   "string": "(0.80x and 1.1x at Visium HD 8 um)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "disc ligrec",
+   "string": "Squidpy on the CPU in both pipelines, 0.96x)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "disc summary",
+   "string": "end-to-end speedups of 1.4x (Visium v1), 6.9x (Visium HD 8 um, co-occurrence excluded) and 10.4x (Visium HD 2 um subsample) against the 100-CPU DGX reference (1.6x, 6.1x and 9.4x against the workstation CPU)",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "conclusions",
+   "string": "end-to-end speedups against a 100-CPU DGX node were 1.4x on Visium v1, 6.9x on Visium HD 8 um with co-occurrence excluded and 10.4x on a random 400k-bin subsample",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "abstract",
+   "string": "accelerated end-to-end analysis 1.4-fold on Visium v1, 6.9-fold on Visium HD 8 um (without co-occurrence) and 10.4-fold on Visium HD 2 um",
+   "count": 1,
+   "ok": true
+  },
+  {
+   "check": "abstract cooc",
+   "string": "was wrong at 41 of 49 distances",
+   "count": 1,
+   "ok": true
+  }
+ ],
+ "G3": {
+  "pdf": {
+   "fig7_spatial_speedup": {
+    "width_cm": 12.2,
+    "height_cm": 5.6,
+    "min_pt": 7.0,
+    "fonts": [
+     "BMQQDV+DejaVuSans"
+    ],
+    "all_embedded": true,
+    "n_images": 0,
+    "png_dpi": 800,
+    "ok": true
+   },
+   "fig8_spatial_perstep": {
+    "width_cm": 12.2,
+    "height_cm": 6.8,
+    "min_pt": 7.0,
+    "fonts": [
+     "BMQQDV+DejaVuSans"
+    ],
+    "all_embedded": true,
+    "n_images": 0,
+    "png_dpi": 800,
+    "ok": true
+   },
+   "fig9_spatial_concordance": {
+    "width_cm": 12.2,
+    "height_cm": 5.8,
+    "min_pt": 7.0,
+    "fonts": [
+     "BMQQDV+DejaVuSans"
+    ],
+    "all_embedded": true,
+    "n_images": 0,
+    "png_dpi": 800,
+    "ok": true
+   }
+  },
+  "total_height_cm": 18.2,
+  "colours": {
+   "cpu": "#4477AA",
+   "gpu": "#EE6677",
+   "ok": true
+  },
+  "fig8_series_distinct": true,
+  "fig9_platforms_distinct": true
+ },
+ "G4": {
+  "superseded_found": {},
+  "2559_contexts": [
+   "ch repeat. With the workstation CPU as reference, CPU Leiden returned 16, 7 and 2,559 groups and the ARI was 0.856, 0.972-0.9",
+   "ch of the five repeats.\nThe number of CPU clusters depended on the CPU machine (2,559 on the 128-thread workstation).\nThis 5.",
+   "itions (ARI 0.071): CPU Leiden returned 3,027 clusters on the DGX reference and 2,559 on the workstation and 538 on the GPU, "
+  ],
+  "2559_only_control": true,
+  "dashes": 0,
+  "diary_rows": {
+   "ledger_S5": 66,
+   "missing": []
+  },
+  "ok": true
+ },
+ "summary": {
+  "G2_values": "129/129",
+  "G2_text": "65/65",
+  "G3_pdf_ok": true,
+  "G3_colours": true,
+  "G3_fig8": true,
+  "G3_fig9": true,
+  "G3_total_height_cm": 18.2,
+  "G4_ok": true,
+  "G4_superseded": {}
+ }
+}

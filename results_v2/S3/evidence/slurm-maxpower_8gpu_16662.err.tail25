@@ -1,0 +1,25 @@
+2026-03-22 11:55:24 | [INFO] Remove worker addr: tcp://127.0.0.1:37845 name: 3 (stimulus_id='handle-worker-cleanup-1774176924.013741')
+2026-03-22 11:55:24 | [INFO] Remove worker addr: tcp://127.0.0.1:37873 name: 0 (stimulus_id='handle-worker-cleanup-1774176924.0138736')
+2026-03-22 11:55:24 | [INFO] Remove worker addr: tcp://127.0.0.1:42613 name: 1 (stimulus_id='handle-worker-cleanup-1774176924.0140204')
+2026-03-22 11:55:24 | [INFO] Lost all workers
+2026-03-22 11:55:26 | [INFO] Nanny at 'tcp://127.0.0.1:35595' closed.
+2026-03-22 11:55:26 | [INFO] Nanny at 'tcp://127.0.0.1:40225' closed.
+2026-03-22 11:55:26 | [INFO] Nanny at 'tcp://127.0.0.1:38179' closed.
+2026-03-22 11:55:26 | [INFO] Nanny at 'tcp://127.0.0.1:33443' closed.
+2026-03-22 11:55:26 | [INFO] Nanny at 'tcp://127.0.0.1:33999' closed.
+2026-03-22 11:55:26 | [INFO] Nanny at 'tcp://127.0.0.1:41165' closed.
+2026-03-22 11:55:26 | [INFO] Nanny at 'tcp://127.0.0.1:33875' closed.
+2026-03-22 11:55:26 | [INFO] Nanny at 'tcp://127.0.0.1:35909' closed.
+2026-03-22 11:55:26 | [INFO] Closing scheduler. Reason: unknown
+2026-03-22 11:55:26 | [INFO] Scheduler closing all comms
+Traceback (most recent call last):
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 1204, in <module>
+    main()
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 938, in main
+    run_find_limit(adata_path, n_gpus, output_dir, args.fine_low, args.fine_high, args.clustering)
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 1136, in run_find_limit
+    success = _run_in_subprocess(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/u0044/sc-gpu-benchmark/scripts/benchmark_maxpower.py", line 1086, in _run_in_subprocess
+    raise RuntimeError(
+RuntimeError: Benchmark subprocess failed with exit code -9 for target=13,745,880 cells

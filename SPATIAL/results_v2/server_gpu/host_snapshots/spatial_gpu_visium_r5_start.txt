@@ -1,0 +1,20 @@
+utc: 2026-11-03T13:57:16Z
+loadavg: 1.06 1.53 5.22
+tctl: +54.0°C
+gpu: 0 %, 313 MiB, 48, 270 MHz
+top_processes:
+1843744 user      20   0   71.3g  76212  25688 S   1.5   0.0   2:17.48 bun
+2041088 user      20   0   15584   7112   3820 R   1.5   0.0   0:00.08 top
+   2518 root      20   0 2667104  11792  10208 S   1.0   0.0  38:51.34 fctsched
+   4032 root      20   0   19.0g  93256  18608 S   1.0   0.0  35:11.08 teamviewerd
+   1957 root      20   0       0      0      0 S   0.5   0.0   0:05.60 jbd2/sda-8
+   5773 rstudio+  20   0   98764   9888   8512 S   0.5   0.0  24:28.48 rserver-monitor
+   6252 user      20   0   22296  13552   9620 S   0.5   0.0   5:57.94 systemd
+   8279 user      20   0  811660  13012  11404 S   0.5   0.0  14:52.99 cloud-drive-dae
+1126386 user      20   0 5738720 352240  79028 S   0.5   0.1  41:53.88 claude
+1992072 root      20   0       0      0      0 I   0.5   0.0   0:00.43 kworker/u261:4-flush-259:2
+      1 root      20   0   24764  15804   9568 S   0.0   0.0  10:29.21 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:02.04 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_p
